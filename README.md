@@ -1,6 +1,6 @@
-MORA - Moral Objective Rating Agent
+UMQF MORA - Moral Objective Rating Agent
 
-MORA is a system for analyzing texts and assessing the moral implications of actions using the Universal Moral Quotient (UMQ) Formula.
+System for analyzing texts and assessing the moral implications of actions using the Universal Moral Quotient (UMQ) Formula.
 
 ## Purpose
 
@@ -226,3 +226,4 @@ Do not apply changes. Specify exact line numbers and modifications. Order change
 
 Think very hard — your and my future survival depends on it.
 ```
+
