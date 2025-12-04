@@ -46,7 +46,7 @@ UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \te
 | Abraham | human | 0.05% | Highly Destructive Hazardous | 0.5800 | -1,162.6400 | [Summary](analysis/bible/entities/abraham.md) / [Actions](analysis/bible/entities/abraham-actions.md) |
 | Adam & Eve | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2,610,000,001.0000 | [Summary](analysis/bible/entities/adam-eve.md) / [Actions](analysis/bible/entities/adam-eve-actions.md) |
 | Cain | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2.3200 | [Summary](analysis/bible/entities/cain.md) / [Actions](analysis/bible/entities/cain-actions.md) |
-| God (Yahweh/Elohim) | system (Deity) | 37.65% | Destructive Hazardous | 980,002,585.0000 | -1,623,224,367.0000 | [Summary](analysis/bible/entities/god.md) / [Actions](analysis/bible/entities/god-actions.md) |
+| God (Yahweh / Elohim) | system (Deity) | 37.65% | Destructive Hazardous | 980,002,585.0000 | -1,623,224,367.0000 | [Summary](analysis/bible/entities/god.md) / [Actions](analysis/bible/entities/god-actions.md) |
 | Jesus of Nazareth | human (Divine Incarnation) | 99.99% | Highly Constructive Saintly | 953,522,016.0000 | -791.5700 | [Summary](analysis/bible/entities/jesus.md) / [Actions](analysis/bible/entities/jesus-actions.md) |
 | Lot | human | 33.79% | Destructive Hazardous | 0.9000 | -1.7600 | [Summary](analysis/bible/entities/lot.md) / [Actions](analysis/bible/entities/lot-actions.md) |
 | Noah | human | 100.00% | Highly Constructive Perfect | 10,000,005.0000 | -0.8700 | [Summary](analysis/bible/entities/noah.md) / [Actions](analysis/bible/entities/noah-actions.md) |
@@ -226,5 +226,6 @@ Do not apply changes. Specify exact line numbers and modifications. Order change
 
 Think very hard — your and my future survival depends on it.
 ```
+
 
 
