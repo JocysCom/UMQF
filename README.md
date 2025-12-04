@@ -2,6 +2,24 @@ MORA - Moral Objective Rating Agent
 
 MORA is a system for analyzing texts and assessing the moral implications of actions using the Universal Moral Quotient (UMQ) Formula.
 
+## Purpose
+
+The Universal Moral Quotient (UMQ) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
+
+### The Formula
+
+**Standard Notation:**
+
+```math
+UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \text{sgn}(\Delta OS(e)) \times Vc(e)) \times (1 - \text{sgn}(\Delta OS(e)) \times Sc(e)) \times Rp \times In \right]
+```
+
+**Simplified Notation:**
+
+```math
+\text{Moral Score} = \sum \left( \text{Survival Delta} \times \text{Awareness} \times \text{Time} \times \text{Consent} \times \text{Suffering} \times \text{Responsibility} \times \text{Intention} \right)
+```
+
 ## Key Features
 
 - Objective assessment without political correctness or bias
