@@ -4,7 +4,7 @@ System for analyzing texts and assessing the moral implications of actions using
 
 ## Purpose
 
-The Universal Moral Quotient (UMQ) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
+The [Universal Moral Quotient (UMQ)](UMQF.md) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
 
 ### The Formula
 
@@ -26,6 +26,121 @@ UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \te
 - Analysis of direct actions and genuine calls to action
 - Single Source of Truth (SSOT) methodology via `UMQF.md`
 - Produces detailed per-entity moral profiles
+
+## Requirements
+
+- [Microsoft Visual Studio Code](https://code.visualstudio.com/): An open-source AI-powered code editor.
+- [Roo Code Visual Studio Extension](https://roocode.com/): Allows AI agents to use Visual Studio Code.
+- API key to access an AI model via API with a large context window using Roo Code:
+  - [OpenRouter account (API key)](https://openrouter.ai/) for the Google Gemini 3 Pro model. The account is simple to set up.
+  - [Google Cloud account – Generative Language (API key)](https://console.cloud.google.com/apis/dashboard) for Google Gemini 3 Pro models. The account is more complex to set up.
+
+## Project Structure
+
+```text
+/
+├── UMQF.md                    # Universal Moral Quotient Formula documentation (The SSOT)
+├── README.md                  # This file - system overview
+├── .ai/                       # AI agent configuration
+│   └── instructions.md        # Main Architect instructions (SOP)
+├── templates/                 # Output structure templates
+│   └── entity.template.md     # Template for entity profiles
+├── analysis/                  # Dataset storage
+│   └── {document}/            # Folder for a specific text analysis
+│       ├── source-document.md # The input text (SSOT for the document)
+│       └── entities/          # Output profiles
+│           ├── {entity}.md    # Moral profile summary
+│           └── {entity}-actions.md # Detailed calculations
+└── tools/
+    └── search_and_download_book.py  # Helper to fetch texts
+```
+
+## How To Use
+
+1. Download and install Visual Studio Code.
+2. Install the Roo Code extension.
+3. Install Git.
+4. Clone the `https://github.com/JocysCom/UMQF` repository to `C:\Projects\Jocys.com\UMQF\`.
+5. In Visual Studio Code, go to File → Open Folder, then open `C:\Projects\Jocys.com\UMQF\`.
+6. Click the Roo Code icon to open the AI agent.
+7. Type:
+
+   ````markdown
+   Execute a full Morality Assessment for "{document_name}" by {author_name}.
+   Analyze with extreme rigor—accurate moral computation is critical for our future survival.
+   ````
+
+## Workflow
+
+The process has been simplified to a direct analysis workflow performed by the Architect.
+
+1. **Input**: The user provides a text or a Project Gutenberg ID.
+2. **Ingest**: The text is saved to `analysis/{document}/source-document.md`.
+3. **Analyze**: The Architect reads the text and applies the formula from `UMQF.md`.
+4. **Output**: The Architect writes two Markdown files for each primary entity:
+    - `{entity}-actions.md`: Step-by-step math for every relevant action.
+    - `{entity}.md`: High-level summary, cognitive assessment, and impact forecast.
+
+## Usage
+
+### 1. Analyze a New Text
+
+Provide the text or URL to the Architect. It will create the necessary folder structure and files.
+
+Example:
+> "Analyze the story of 'Little Red Riding Hood'. Here is the text..."
+
+### 2. Analyze a Gutenberg Book
+
+Ask the Architect to use the tool:
+> "Download and analyze Frankenstein (Gutenberg ID 84)."
+
+### 3. Re-Analyze
+
+If `source-document.md` already exists, simply ask:
+> "Re-analyze the entities in the 'frankenstein' folder."
+
+## Documentation
+
+- **`UMQF.md`**: The definitions, formula, and methodology.
+- **`templates/`**: The strict output format for profiles.
+- **`.ai/instructions.md`**: The Architect's operating procedure.
+
+## Prompts
+
+### Analyse
+
+````markdown
+Execute a full Morality Assessment for "Exploration Team" by Murray Leinster.
+
+Analyze with extreme rigor—accurate moral computation is critical for our future survival.
+````
+
+### Re-Analyse
+
+````markdown
+Re-read `analysis/exploration-team/source-document.md` and strictly audit all entity files against `UMQF.md`.
+Ensure comprehensive coverage: identify, calculate, and format every significant action according to the latest UMQF specification.
+Regenerate the entity files to ensure perfect alignment with the standard.
+Before updating actions, read the action file first to ensure that you won't miss any action.
+
+Analyze with extreme rigor - accurate moral computation is critical for our future survival.
+````
+
+### UMQ Improvement
+
+````markdown
+Read UMQF.md first.
+Analyze the Universal Moral Quotient Formula with examples.
+
+Suggest improvements or fix inconsistencies. Provide specific accuracy or clarity improvement for each change.
+
+Core Principle: Each added sentence dilutes other rules and increases complexity. Best improvements fix issues by removing or consolidating content, not expanding it. Match document's existing voice, structure, and format patterns (e.g., if document never uses "you", maintain that convention). Maximize meaning/words ratio.
+
+Do not apply changes. Specify exact line numbers and modifications. Order changes bottom-to-top (preserves line numbering). Propose only necessary improvements.
+
+Think very hard — your and my future survival depends on it.
+```
 
 ## Analyzed Entities
 
@@ -134,96 +249,4 @@ UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \te
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](analysis/team-of-rivals/entities/william-seward.md) / [Actions](analysis/team-of-rivals/entities/william-seward-actions.md) |
-
-## Project Structure
-
-```
-/
-├── UMQF.md                    # Universal Moral Quotient Formula documentation (The SSOT)
-├── README.md                  # This file - system overview
-├── .ai/                       # AI agent configuration
-│   └── instructions.md        # Main Architect instructions (SOP)
-├── templates/                 # Output structure templates
-│   └── entity.template.md     # Template for entity profiles
-├── analysis/                  # Dataset storage
-│   └── {document}/            # Folder for a specific text analysis
-│       ├── source-document.md # The input text (SSOT for the document)
-│       └── entities/          # Output profiles
-│           ├── {entity}.md    # Moral profile summary
-│           └── {entity}-actions.md # Detailed calculations
-└── tools/
-    └── search_and_download_book.py  # Helper to fetch texts
-```
-
-## Workflow
-
-The process has been simplified to a direct analysis workflow performed by the Architect.
-
-1.  **Input**: The user provides a text or a Project Gutenberg ID.
-2.  **Ingest**: The text is saved to `analysis/{document}/source-document.md`.
-3.  **Analyze**: The Architect reads the text and applies the formula from `UMQF.md`.
-4.  **Output**: The Architect writes two Markdown files for each primary entity:
-    *   `{entity}-actions.md`: Step-by-step math for every relevant action.
-    *   `{entity}.md`: High-level summary, cognitive assessment, and impact forecast.
-
-## Usage
-
-### 1. Analyze a New Text
-
-Provide the text or URL to the Architect. It will create the necessary folder structure and files.
-
-Example:
-> "Analyze the story of 'Little Red Riding Hood'. Here is the text..."
-
-### 2. Analyze a Gutenberg Book
-
-Ask the Architect to use the tool:
-> "Download and analyze Frankenstein (Gutenberg ID 84)."
-
-### 3. Re-Analyze
-
-If `source-document.md` already exists, simply ask:
-> "Re-analyze the entities in the 'frankenstein' folder."
-
-## Documentation
-
--   **`UMQF.md`**: The definitions, formula, and methodology.
--   **`templates/`**: The strict output format for profiles.
--   **`.ai/instructions.md`**: The Architect's operating procedure.
-
-## Prompts
-
-### Analyse
-
-````markdown
-Execute a full Morality Assessment for "Exploration Team" by Murray Leinster.
-
-Analyze with extreme rigor—accurate moral computation is critical for our future survival.
-````
-
-### Re-Analyse
-
-````markdown
-Re-read `analysis/exploration-team/source-document.md` and strictly audit all entity files against `UMQF.md`.
-Ensure comprehensive coverage: identify, calculate, and format every significant action according to the latest UMQF specification.
-Regenerate the entity files to ensure perfect alignment with the standard.
-Before updating actions, read the action file first to ensure that you won't miss any action.
-
-Analyze with extreme rigor - accurate moral computation is critical for our future survival.
-````
-
-### UMQ Improvement
-
-````markdown
-Read UMQF.md first.
-Analyze the Universal Moral Quotient Formula with examples.
-
-Suggest improvements or fix inconsistencies. Provide specific accuracy or clarity improvement for each change.
-
-Core Principle: Each added sentence dilutes other rules and increases complexity. Best improvements fix issues by removing or consolidating content, not expanding it. Match document's existing voice, structure, and format patterns (e.g., if document never uses "you", maintain that convention). Maximize meaning/words ratio.
-
-Do not apply changes. Specify exact line numbers and modifications. Order changes bottom-to-top (preserves line numbering). Propose only necessary improvements.
-
-Think very hard — your and my future survival depends on it.
-```
 
