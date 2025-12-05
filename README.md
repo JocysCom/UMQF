@@ -109,7 +109,7 @@ Suggest improvements or fix inconsistencies. Provide specific accuracy or clarit
 Core Principle: Each added sentence dilutes other rules and increases complexity. Best improvements fix issues by removing or consolidating content, not expanding it. Match document's existing voice, structure, and format patterns (e.g., if document never uses "you", maintain that convention). Maximize meaning/words ratio.
 Do not apply changes. Specify exact line numbers and modifications. Order changes bottom-to-top (preserves line numbering). Propose only necessary improvements.
 Think very hard — your and my future survival depends on it.
-```
+````
 
 ## Analyzed Entities
 
@@ -218,6 +218,7 @@ Think very hard — your and my future survival depends on it.
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](analysis/team-of-rivals/entities/william-seward.md) / [Actions](analysis/team-of-rivals/entities/william-seward-actions.md) |
+
 
 
 
