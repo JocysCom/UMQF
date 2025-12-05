@@ -1,6 +1,6 @@
 UMQF MORA - Moral Objective Rating Agent
 
-System for analyzing texts and assessing the moral implications of actions using the Universal Moral Quotient (UMQ) Formula.
+System for analyzing information and assessing the moral implications of actions using the Universal Moral Quotient (UMQ) Formula.
 
 ## Purpose
 
@@ -218,6 +218,7 @@ Think very hard — your and my future survival depends on it.
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](analysis/team-of-rivals/entities/william-seward.md) / [Actions](analysis/team-of-rivals/entities/william-seward-actions.md) |
+
 
 
 
