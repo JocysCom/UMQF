@@ -4,7 +4,7 @@ System for analyzing texts and assessing the moral implications of actions using
 
 ## Purpose
 
-The [Universal Moral Quotient (UMQ)](UMQF.md) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
+The [Universal Moral Quotient (UMQ)](MORA/UMQF.md) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
 
 ### The Formula
 
@@ -61,7 +61,7 @@ UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \te
 2. Install the Roo Code extension.
 3. Install Git.
 4. Clone the `https://github.com/JocysCom/UMQF` repository to `C:\Projects\Jocys.com\UMQF\`.
-5. In Visual Studio Code, go to File → Open Folder, then open `C:\Projects\Jocys.com\UMQF\`.
+5. In Visual Studio Code, go to File → Open Folder, then open `C:\Projects\Jocys.com\UMQF\MORA`.
 6. Click the Roo Code icon to open the AI agent.
 7. Type:
 
@@ -158,95 +158,95 @@ Think very hard — your and my future survival depends on it.
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Abraham | human | 0.05% | Highly Destructive Hazardous | 0.5800 | -1,162.6400 | [Summary](analysis/bible/entities/abraham.md) / [Actions](analysis/bible/entities/abraham-actions.md) |
-| Adam & Eve | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2,610,000,001.0000 | [Summary](analysis/bible/entities/adam-eve.md) / [Actions](analysis/bible/entities/adam-eve-actions.md) |
-| Cain | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2.3200 | [Summary](analysis/bible/entities/cain.md) / [Actions](analysis/bible/entities/cain-actions.md) |
-| God (Yahweh/Elohim) | system (Deity) | 37.65% | Destructive Hazardous | 980,002,585.0000 | -1,623,224,367.0000 | [Summary](analysis/bible/entities/god.md) / [Actions](analysis/bible/entities/god-actions.md) |
-| Jesus of Nazareth | human (Divine Incarnation) | 99.99% | Highly Constructive Saintly | 953,522,016.0000 | -791.5700 | [Summary](analysis/bible/entities/jesus.md) / [Actions](analysis/bible/entities/jesus-actions.md) |
-| Lot | human | 33.79% | Destructive Hazardous | 0.9000 | -1.7600 | [Summary](analysis/bible/entities/lot.md) / [Actions](analysis/bible/entities/lot-actions.md) |
-| Noah | human | 100.00% | Highly Constructive Perfect | 10,000,005.0000 | -0.8700 | [Summary](analysis/bible/entities/noah.md) / [Actions](analysis/bible/entities/noah-actions.md) |
-| Sarah (Sarai) | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.3988 | [Summary](analysis/bible/entities/sarah.md) / [Actions](analysis/bible/entities/sarah-actions.md) |
-| Serpent | animal (Symbolic/Supernatural) | 0.00% | Highly Destructive Hazardous | 0.0000 | -522,000,000.0000 | [Summary](analysis/bible/entities/serpent.md) / [Actions](analysis/bible/entities/serpent-actions.md) |
+| Abraham | human | 0.05% | Highly Destructive Hazardous | 0.5800 | -1,162.6400 | [Summary](MORA/analysis/bible/entities/abraham.md) / [Actions](MORA/analysis/bible/entities/abraham-actions.md) |
+| Adam & Eve | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2,610,000,001.0000 | [Summary](MORA/analysis/bible/entities/adam-eve.md) / [Actions](MORA/analysis/bible/entities/adam-eve-actions.md) |
+| Cain | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2.3200 | [Summary](MORA/analysis/bible/entities/cain.md) / [Actions](MORA/analysis/bible/entities/cain-actions.md) |
+| God (Yahweh/Elohim) | system (Deity) | 37.65% | Destructive Hazardous | 980,002,585.0000 | -1,623,224,367.0000 | [Summary](MORA/analysis/bible/entities/god.md) / [Actions](MORA/analysis/bible/entities/god-actions.md) |
+| Jesus of Nazareth | human (Divine Incarnation) | 99.99% | Highly Constructive Saintly | 953,522,016.0000 | -791.5700 | [Summary](MORA/analysis/bible/entities/jesus.md) / [Actions](MORA/analysis/bible/entities/jesus-actions.md) |
+| Lot | human | 33.79% | Destructive Hazardous | 0.9000 | -1.7600 | [Summary](MORA/analysis/bible/entities/lot.md) / [Actions](MORA/analysis/bible/entities/lot-actions.md) |
+| Noah | human | 100.00% | Highly Constructive Perfect | 10,000,005.0000 | -0.8700 | [Summary](MORA/analysis/bible/entities/noah.md) / [Actions](MORA/analysis/bible/entities/noah-actions.md) |
+| Sarah (Sarai) | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.3988 | [Summary](MORA/analysis/bible/entities/sarah.md) / [Actions](MORA/analysis/bible/entities/sarah-actions.md) |
+| Serpent | animal (Symbolic/Supernatural) | 0.00% | Highly Destructive Hazardous | 0.0000 | -522,000,000.0000 | [Summary](MORA/analysis/bible/entities/serpent.md) / [Actions](MORA/analysis/bible/entities/serpent-actions.md) |
 
 ### Einstein (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Albert Einstein | human | 100.00% | Highly Constructive Saintly | 1,655,687.0000 | -1.4100 | [Summary](analysis/einstein/entities/albert-einstein.md) / [Actions](analysis/einstein/entities/albert-einstein-actions.md) |
+| Albert Einstein | human | 100.00% | Highly Constructive Saintly | 1,655,687.0000 | -1.4100 | [Summary](MORA/analysis/einstein/entities/albert-einstein.md) / [Actions](MORA/analysis/einstein/entities/albert-einstein-actions.md) |
 
 ### Elon Musk (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Elon Musk | human | 83.60% | Constructive Hazardous | 29,277.0000 | -5,761.8000 | [Summary](analysis/elon-musk/entities/elon-musk.md) / [Actions](analysis/elon-musk/entities/elon-musk-actions.md) |
+| Elon Musk | human | 83.60% | Constructive Hazardous | 29,277.0000 | -5,761.8000 | [Summary](MORA/analysis/elon-musk/entities/elon-musk.md) / [Actions](MORA/analysis/elon-musk/entities/elon-musk-actions.md) |
 
 ### Ender’s Game (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Alai | human | 100.00% | Highly Constructive Perfect | 0.0927 | -0.0000 | [Summary](analysis/enders-game/entities/alai.md) / [Actions](analysis/enders-game/entities/alai-actions.md) |
-| Bean | human | 99.90% | Highly Constructive Saintly | 0.8652 | -0.0007 | [Summary](analysis/enders-game/entities/bean.md) / [Actions](analysis/enders-game/entities/bean-actions.md) |
-| Bernard | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.0114 | [Summary](analysis/enders-game/entities/bernard.md) / [Actions](analysis/enders-game/entities/bernard-actions.md) |
-| Bonzo Madrid | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2.1703 | [Summary](analysis/enders-game/entities/bonzo-madrid.md) / [Actions](analysis/enders-game/entities/bonzo-madrid-actions.md) |
-| Carn Carby | human | 100.00% | Highly Constructive Perfect | 0.0006 | -0.0000 | [Summary](analysis/enders-game/entities/carn-carby.md) / [Actions](analysis/enders-game/entities/carn-carby-actions.md) |
-| Dink Meeker | human | 100.00% | Highly Constructive Perfect | 0.0350 | -0.0000 | [Summary](analysis/enders-game/entities/dink-meeker.md) / [Actions](analysis/enders-game/entities/dink-meeker-actions.md) |
-| Ender Wiggin | human | 100.00% | Highly Constructive Perfect | 5,500,000.9700 | -1.6300 | [Summary](analysis/enders-game/entities/ender-wiggin.md) / [Actions](analysis/enders-game/entities/ender-wiggin-actions.md) |
-| Colonel Hyrum Graff | human | 100.00% | Highly Constructive Perfect | 44,000,001,079.0000 | -0.5000 | [Summary](analysis/enders-game/entities/graff.md) / [Actions](analysis/enders-game/entities/graff-actions.md) |
-| The Hive Queen | alien (hive mind) | 99.00% | Highly Constructive Virtuous | 5,500,000.3000 | -55,000.0000 | [Summary](analysis/enders-game/entities/hive-queen.md) / [Actions](analysis/enders-game/entities/hive-queen-actions.md) |
-| Major Anderson | human | 100.00% | Highly Constructive Perfect | 5,499.9934 | -0.0113 | [Summary](analysis/enders-game/entities/major-anderson.md) / [Actions](analysis/enders-game/entities/major-anderson-actions.md) |
-| Mazer Rackham | human | 100.00% | Highly Constructive Perfect | 44,000,000,717.0000 | -0.0864 | [Summary](analysis/enders-game/entities/mazer-rackham.md) / [Actions](analysis/enders-game/entities/mazer-rackham-actions.md) |
-| Peter Wiggin | human | 100.00% | Highly Constructive Perfect | 330,000,074.2000 | -3.0100 | [Summary](analysis/enders-game/entities/peter-wiggin.md) / [Actions](analysis/enders-game/entities/peter-wiggin-actions.md) |
-| Petra Arkanian | human | 100.00% | Highly Constructive Perfect | 0.0180 | -0.0000 | [Summary](analysis/enders-game/entities/petra-arkanian.md) / [Actions](analysis/enders-game/entities/petra-arkanian-actions.md) |
-| Rose the Nose | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.0036 | [Summary](analysis/enders-game/entities/rose-the-nose.md) / [Actions](analysis/enders-game/entities/rose-the-nose-actions.md) |
-| Valentine Wiggin | human | 100.00% | Highly Constructive Perfect | 2,750,074.6000 | -0.0000 | [Summary](analysis/enders-game/entities/valentine-wiggin.md) / [Actions](analysis/enders-game/entities/valentine-wiggin-actions.md) |
+| Alai | human | 100.00% | Highly Constructive Perfect | 0.0927 | -0.0000 | [Summary](MORA/analysis/enders-game/entities/alai.md) / [Actions](MORA/analysis/enders-game/entities/alai-actions.md) |
+| Bean | human | 99.90% | Highly Constructive Saintly | 0.8652 | -0.0007 | [Summary](MORA/analysis/enders-game/entities/bean.md) / [Actions](MORA/analysis/enders-game/entities/bean-actions.md) |
+| Bernard | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.0114 | [Summary](MORA/analysis/enders-game/entities/bernard.md) / [Actions](MORA/analysis/enders-game/entities/bernard-actions.md) |
+| Bonzo Madrid | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -2.1703 | [Summary](MORA/analysis/enders-game/entities/bonzo-madrid.md) / [Actions](MORA/analysis/enders-game/entities/bonzo-madrid-actions.md) |
+| Carn Carby | human | 100.00% | Highly Constructive Perfect | 0.0006 | -0.0000 | [Summary](MORA/analysis/enders-game/entities/carn-carby.md) / [Actions](MORA/analysis/enders-game/entities/carn-carby-actions.md) |
+| Dink Meeker | human | 100.00% | Highly Constructive Perfect | 0.0350 | -0.0000 | [Summary](MORA/analysis/enders-game/entities/dink-meeker.md) / [Actions](MORA/analysis/enders-game/entities/dink-meeker-actions.md) |
+| Ender Wiggin | human | 100.00% | Highly Constructive Perfect | 5,500,000.9700 | -1.6300 | [Summary](MORA/analysis/enders-game/entities/ender-wiggin.md) / [Actions](MORA/analysis/enders-game/entities/ender-wiggin-actions.md) |
+| Colonel Hyrum Graff | human | 100.00% | Highly Constructive Perfect | 44,000,001,079.0000 | -0.5000 | [Summary](MORA/analysis/enders-game/entities/graff.md) / [Actions](MORA/analysis/enders-game/entities/graff-actions.md) |
+| The Hive Queen | alien (hive mind) | 99.00% | Highly Constructive Virtuous | 5,500,000.3000 | -55,000.0000 | [Summary](MORA/analysis/enders-game/entities/hive-queen.md) / [Actions](MORA/analysis/enders-game/entities/hive-queen-actions.md) |
+| Major Anderson | human | 100.00% | Highly Constructive Perfect | 5,499.9934 | -0.0113 | [Summary](MORA/analysis/enders-game/entities/major-anderson.md) / [Actions](MORA/analysis/enders-game/entities/major-anderson-actions.md) |
+| Mazer Rackham | human | 100.00% | Highly Constructive Perfect | 44,000,000,717.0000 | -0.0864 | [Summary](MORA/analysis/enders-game/entities/mazer-rackham.md) / [Actions](MORA/analysis/enders-game/entities/mazer-rackham-actions.md) |
+| Peter Wiggin | human | 100.00% | Highly Constructive Perfect | 330,000,074.2000 | -3.0100 | [Summary](MORA/analysis/enders-game/entities/peter-wiggin.md) / [Actions](MORA/analysis/enders-game/entities/peter-wiggin-actions.md) |
+| Petra Arkanian | human | 100.00% | Highly Constructive Perfect | 0.0180 | -0.0000 | [Summary](MORA/analysis/enders-game/entities/petra-arkanian.md) / [Actions](MORA/analysis/enders-game/entities/petra-arkanian-actions.md) |
+| Rose the Nose | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.0036 | [Summary](MORA/analysis/enders-game/entities/rose-the-nose.md) / [Actions](MORA/analysis/enders-game/entities/rose-the-nose-actions.md) |
+| Valentine Wiggin | human | 100.00% | Highly Constructive Perfect | 2,750,074.6000 | -0.0000 | [Summary](MORA/analysis/enders-game/entities/valentine-wiggin.md) / [Actions](MORA/analysis/enders-game/entities/valentine-wiggin-actions.md) |
 
 ### Exploration Team (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Huyghens | human | 20.90% | Destructive Hazardous | 3,628.9400 | -13,751.1500 | [Summary](analysis/exploration-team/entities/huyghens.md) / [Actions](analysis/exploration-team/entities/huyghens-actions.md) |
-| Roane | human | 99.90% | Highly Constructive Saintly | 7,252.9200 | -6.2400 | [Summary](analysis/exploration-team/entities/roane.md) / [Actions](analysis/exploration-team/entities/roane-actions.md) |
-| Sitka Pete | animal (mutated) | 6.10% | Highly Destructive Hazardous | 3.6600 | -60.1000 | [Summary](analysis/exploration-team/entities/sitka-pete.md) / [Actions](analysis/exploration-team/entities/sitka-pete-actions.md) |
+| Huyghens | human | 20.90% | Destructive Hazardous | 3,628.9400 | -13,751.1500 | [Summary](MORA/analysis/exploration-team/entities/huyghens.md) / [Actions](MORA/analysis/exploration-team/entities/huyghens-actions.md) |
+| Roane | human | 99.90% | Highly Constructive Saintly | 7,252.9200 | -6.2400 | [Summary](MORA/analysis/exploration-team/entities/roane.md) / [Actions](MORA/analysis/exploration-team/entities/roane-actions.md) |
+| Sitka Pete | animal (mutated) | 6.10% | Highly Destructive Hazardous | 3.6600 | -60.1000 | [Summary](MORA/analysis/exploration-team/entities/sitka-pete.md) / [Actions](MORA/analysis/exploration-team/entities/sitka-pete-actions.md) |
 
 ### Hitler (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Adolf Hitler | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -207,032,921.0000 | [Summary](analysis/hitler-kershaw/entities/hitler.md) / [Actions](analysis/hitler-kershaw/entities/hitler-actions.md) |
+| Adolf Hitler | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -207,032,921.0000 | [Summary](MORA/analysis/hitler-kershaw/entities/hitler.md) / [Actions](MORA/analysis/hitler-kershaw/entities/hitler-actions.md) |
 
 ### The Strange Case of Dr. Jekyll and Mr. Hyde (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Edward Hyde | human (alter-ego) | 0.00% | Highly Destructive Hazardous | 0.0000 | -4.1720 | [Summary](analysis/jekyll-hyde/entities/hyde.md) / [Actions](analysis/jekyll-hyde/entities/hyde-actions.md) |
-| Henry Jekyll | human | 13.50% | Highly Destructive Hazardous | 0.1160 | -0.7440 | [Summary](analysis/jekyll-hyde/entities/jekyll.md) / [Actions](analysis/jekyll-hyde/entities/jekyll-actions.md) |
+| Edward Hyde | human (alter-ego) | 0.00% | Highly Destructive Hazardous | 0.0000 | -4.1720 | [Summary](MORA/analysis/jekyll-hyde/entities/hyde.md) / [Actions](MORA/analysis/jekyll-hyde/entities/hyde-actions.md) |
+| Henry Jekyll | human | 13.50% | Highly Destructive Hazardous | 0.1160 | -0.7440 | [Summary](MORA/analysis/jekyll-hyde/entities/jekyll.md) / [Actions](MORA/analysis/jekyll-hyde/entities/jekyll-actions.md) |
 
 ### Jordan Peterson (Article)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Jordan Peterson | human | 90.28% | Highly Constructive Moral | 33,350.0000 | -3,592.6200 | [Summary](analysis/jordan-peterson/entities/jordan-peterson.md) / [Actions](analysis/jordan-peterson/entities/jordan-peterson-actions.md) |
+| Jordan Peterson | human | 90.28% | Highly Constructive Moral | 33,350.0000 | -3,592.6200 | [Summary](MORA/analysis/jordan-peterson/entities/jordan-peterson.md) / [Actions](MORA/analysis/jordan-peterson/entities/jordan-peterson-actions.md) |
 
 ### The Koran (Al-Qur'an) (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| God (Allah) | deity | 47.00% | Destructive Hazardous | 700,096,172.2000 | -800,846,012.5000 | [Summary](analysis/koran/entities/god.md) / [Actions](analysis/koran/entities/god-actions.md) |
-| Muhammad | human | 23.00% | Destructive Hazardous | 19,705.4100 | -67,535.5600 | [Summary](analysis/koran/entities/muhammad.md) / [Actions](analysis/koran/entities/muhammad-actions.md) |
+| God (Allah) | deity | 47.00% | Destructive Hazardous | 700,096,172.2000 | -800,846,012.5000 | [Summary](MORA/analysis/koran/entities/god.md) / [Actions](MORA/analysis/koran/entities/god-actions.md) |
+| Muhammad | human | 23.00% | Destructive Hazardous | 19,705.4100 | -67,535.5600 | [Summary](MORA/analysis/koran/entities/muhammad.md) / [Actions](MORA/analysis/koran/entities/muhammad-actions.md) |
 
 ### Steve Jobs (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Steve Jobs | human | 96.13% | Highly Constructive Moral | 2,900.0000 | -116.7100 | [Summary](analysis/steve-jobs/entities/steve-jobs.md) / [Actions](analysis/steve-jobs/entities/steve-jobs-actions.md) |
+| Steve Jobs | human | 96.13% | Highly Constructive Moral | 2,900.0000 | -116.7100 | [Summary](MORA/analysis/steve-jobs/entities/steve-jobs.md) / [Actions](MORA/analysis/steve-jobs/entities/steve-jobs-actions.md) |
 
 ### Team of Rivals (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
 | :--- | :--- | ---: | :--- | ---: | ---: | :--- |
-| Abraham Lincoln | Human (Male) | 96.80% | Highly Constructive Moral | 13,166,580.0000 | -430,669.0000 | [Summary](analysis/team-of-rivals/entities/abraham-lincoln.md) / [Actions](analysis/team-of-rivals/entities/abraham-lincoln-actions.md) |
-| Edward Bates | Human (Male) | 99.40% | Highly Constructive Virtuous | 1,871,950.0000 | -11,960.0000 | [Summary](analysis/team-of-rivals/entities/edward-bates.md) / [Actions](analysis/team-of-rivals/entities/edward-bates-actions.md) |
-| Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
-| Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](analysis/team-of-rivals/entities/salmon-chase-actions.md) |
-| William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](analysis/team-of-rivals/entities/william-seward.md) / [Actions](analysis/team-of-rivals/entities/william-seward-actions.md) |
+| Abraham Lincoln | Human (Male) | 96.80% | Highly Constructive Moral | 13,166,580.0000 | -430,669.0000 | [Summary](MORA/analysis/team-of-rivals/entities/abraham-lincoln.md) / [Actions](MORA/analysis/team-of-rivals/entities/abraham-lincoln-actions.md) |
+| Edward Bates | Human (Male) | 99.40% | Highly Constructive Virtuous | 1,871,950.0000 | -11,960.0000 | [Summary](MORA/analysis/team-of-rivals/entities/edward-bates.md) / [Actions](MORA/analysis/team-of-rivals/entities/edward-bates-actions.md) |
+| Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](MORA/analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](MORA/analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
+| Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](MORA/analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](MORA/analysis/team-of-rivals/entities/salmon-chase-actions.md) |
+| William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](MORA/analysis/team-of-rivals/entities/william-seward.md) / [Actions](MORA/analysis/team-of-rivals/entities/william-seward-actions.md) |
 
