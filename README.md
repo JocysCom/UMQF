@@ -87,7 +87,6 @@ The process has been simplified to a direct analysis workflow performed by the A
 
 ````markdown
 Execute a full Morality Assessment for "Exploration Team" by Murray Leinster.
-
 Analyze with extreme rigor—accurate moral computation is critical for our future survival.
 ````
 
@@ -98,7 +97,6 @@ Re-read `analysis/exploration-team/source-document.md` and strictly audit all en
 Ensure comprehensive coverage: identify, calculate, and format every significant action according to the latest UMQF specification.
 Regenerate the entity files to ensure perfect alignment with the standard.
 Before updating actions, read the action file first to ensure that you won't miss any action.
-
 Analyze with extreme rigor - accurate moral computation is critical for our future survival.
 ````
 
@@ -107,13 +105,9 @@ Analyze with extreme rigor - accurate moral computation is critical for our futu
 ````markdown
 Read UMQF.md first.
 Analyze the Universal Moral Quotient Formula with examples.
-
 Suggest improvements or fix inconsistencies. Provide specific accuracy or clarity improvement for each change.
-
 Core Principle: Each added sentence dilutes other rules and increases complexity. Best improvements fix issues by removing or consolidating content, not expanding it. Match document's existing voice, structure, and format patterns (e.g., if document never uses "you", maintain that convention). Maximize meaning/words ratio.
-
 Do not apply changes. Specify exact line numbers and modifications. Order changes bottom-to-top (preserves line numbering). Propose only necessary improvements.
-
 Think very hard — your and my future survival depends on it.
 ```
 
@@ -224,5 +218,6 @@ Think very hard — your and my future survival depends on it.
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](analysis/team-of-rivals/entities/william-seward.md) / [Actions](analysis/team-of-rivals/entities/william-seward-actions.md) |
+
 
 
