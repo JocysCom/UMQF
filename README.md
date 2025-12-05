@@ -81,31 +81,6 @@ The process has been simplified to a direct analysis workflow performed by the A
     *   `{entity}-actions.md`: Step-by-step math for every relevant action.
     *   `{entity}.md`: High-level summary, cognitive assessment, and impact forecast.
 
-## Usage
-
-### 1. Analyze a New Text
-
-Provide the text or URL to the Architect. It will create the necessary folder structure and files.
-
-Example:
-> "Analyze the story of 'Little Red Riding Hood'. Here is the text..."
-
-### 2. Analyze a Gutenberg Book
-
-Ask the Architect to use the tool:
-> "Download and analyze Frankenstein (Gutenberg ID 84)."
-
-### 3. Re-Analyze
-
-If `source-document.md` already exists, simply ask:
-> "Re-analyze the entities in the 'frankenstein' folder."
-
-## Documentation
-
--   **`UMQF.md`**: The definitions, formula, and methodology.
--   **`templates/`**: The strict output format for profiles.
--   **`.ai/instructions.md`**: The Architect's operating procedure.
-
 ## Prompts
 
 ### Analyse
@@ -249,4 +224,5 @@ Think very hard — your and my future survival depends on it.
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](analysis/team-of-rivals/entities/william-seward.md) / [Actions](analysis/team-of-rivals/entities/william-seward-actions.md) |
+
 
