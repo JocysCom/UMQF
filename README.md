@@ -87,18 +87,46 @@ Moral Score = \sum \left( \text{Survival Delta} \times \text{Awareness} \times \
 
 ### Setup
 
-1. Download and install Visual Studio Code.
-2. Install the Roo Code extension.
-3. Install Git.
-4. Clone the `https://github.com/JocysCom/UMQF` repository to `C:\Projects\Jocys.com\UMQF\`.
-5. In Visual Studio Code, go to File → Open Folder, then open `C:\Projects\Jocys.com\UMQF\MORA`.
-6. Click the Roo Code icon to open the AI agent.
-7. Type:
+#### 1. Install Core Tools
+Before starting, ensure you have the following installed:
+- **[Visual Studio Code](https://code.visualstudio.com/)**: The code editor used to run the project.
+- **[Git](https://git-scm.com/downloads)**: Required to download the repository.
+- **[Python](https://www.python.org/downloads/)**: Required to run data processing scripts. **Important:** Check "Add Python to PATH" during installation.
 
-   ````markdown
-   Execute a full Morality Assessment for "{document_name}" by {author_name}.
-   Analyze with extreme rigor—accurate moral computation is critical for our future survival.
-   ````
+#### 2. Install AI Extension
+- **[Roo Code Extension](https://roocode.com/)**: Install this extension inside VS Code. It serves as the AI agent for analysis.
+- **API Key**: You need access to a model with a large context window (e.g., Google Gemini 1.5 Pro).
+  - [OpenRouter](https://openrouter.ai/) (Recommended)
+  - [Google Cloud Console](https://console.cloud.google.com/apis/dashboard)
+
+#### 3. Download the Project
+1. Open a terminal or command prompt.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/JocysCom/UMQF.git "C:\Projects\Jocys.com\UMQF"
+   ```
+3. Open Visual Studio Code.
+4. Go to **File → Open Folder** and select `C:\Projects\Jocys.com\UMQF\MORA`.
+
+#### 4. Install Dependencies
+Open the integrated terminal in VS Code (**Terminal → New Terminal**) and run:
+```bash
+pip install -r requirements.txt
+playwright install
+```
+
+#### 5. Prepare Commercial Books (Optional)
+To analyze purchased eBooks (DRM-protected), you must convert them into a readable format (EPUB/Markdown) for the AI.
+1. **[Adobe Digital Editions 4.5](https://adedownload.adobe.com/pub/adobe/digitaleditions/ADE_4.5_Installer.exe)**: Required to download `.acsm` files. *Use version 4.5 for best compatibility.*
+2. **[Calibre Portable](https://calibre-ebook.com/download_portable)**: E-book management software.
+3. **[DeDRM Tools](https://github.com/noDRM/DeDRM_tools)**: A Calibre plugin to remove DRM.
+   - Install the DeDRM plugin in Calibre.
+   - Import your book from Adobe Digital Editions to Calibre.
+   - Convert the book to **EPUB** format.
+
+#### 6. Start the Agent
+1. Click the **Roo Code** icon in the VS Code sidebar.
+2. Enter the analysis prompt (see [Workflow](#workflow) below).
 
 ### Workflow
 
