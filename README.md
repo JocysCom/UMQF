@@ -199,6 +199,12 @@ Think very hard — your and my future survival depends on it.
 - **Good**: Positive Score (Total magnitude of positive impact)
 - **Evil**: Negative Score (Total magnitude of negative impact)
 
+### Moral Score
+- UMQ(a, e) range per individual entity is -4.0 to +1.0. Total UMQ(a) scales with population and is unbounded.
+
+  - Min: –4.0 – equivalent to murdering a fully self‐aware, complex entity, causing intense suffering and violating its will.
+  - Max: +1.0 – equivalent to creating or saving a life in a fully consensual act that maximizes survival.
+
 ### The King James Version of the Bible (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
@@ -294,3 +300,4 @@ Think very hard — your and my future survival depends on it.
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](MORA/analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](MORA/analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](MORA/analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](MORA/analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](MORA/analysis/team-of-rivals/entities/william-seward.md) / [Actions](MORA/analysis/team-of-rivals/entities/william-seward-actions.md) |
+
