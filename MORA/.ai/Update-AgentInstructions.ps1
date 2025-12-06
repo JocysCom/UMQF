@@ -40,8 +40,8 @@ function Test-HasInstructionFiles {
 
 # Function to pause at the end (unless -NoWait is specified)
 function Invoke-Pause {
-    Write-Host "Pausing for 5 seconds..."
-    Start-Sleep -Seconds 5
+    Write-Host "Pausing for 2 seconds..."
+    Start-Sleep -Seconds 2
 }
 
 # Function to compare content and write file if different
@@ -115,6 +115,10 @@ function Update-MultipleFileAgent {
     foreach ($sourceFile in $SourceFiles) {
         $targetFile = Join-Path $targetDir $sourceFile.Name
         $sourceContent = Get-Content $sourceFile.FullName -Raw -Encoding UTF8
+        if ([string]::IsNullOrWhiteSpace($sourceContent)) {
+            Write-Warning "Skipping empty file: $($sourceFile.Name)"
+            continue
+        }
         [void](Test-AndWriteFile -TargetPath $targetFile -NewContent $sourceContent -FileDescription "")
     }
 }
@@ -139,6 +143,12 @@ function Update-SingleFileAgent {
     $firstFile = $true
 
     foreach ($sourceFile in $SourceFiles) {
+        $sourceContent = Get-Content $sourceFile.FullName -Raw -Encoding UTF8
+        if ([string]::IsNullOrWhiteSpace($sourceContent)) {
+            Write-Warning "Skipping empty file: $($sourceFile.Name)"
+            continue
+        }
+
         if (-not $firstFile) {
             [void]$allInstructionsContent.AppendLine("") # Add a blank line separator before the next section
         }
@@ -149,7 +159,6 @@ function Update-SingleFileAgent {
         [void]$allInstructionsContent.AppendLine("# Instructions from: $($sourceFile.Name)")
         [void]$allInstructionsContent.AppendLine("") # Blank line after header
         
-        $sourceContent = Get-Content $sourceFile.FullName -Raw -Encoding UTF8
         [void]$allInstructionsContent.AppendLine($sourceContent.Trim())
         
         [void]$allInstructionsContent.AppendLine("") # Blank line before END marker
