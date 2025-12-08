@@ -82,6 +82,7 @@ For each main acting entity, create two files in `analysis/{document}/entities/`
 - Show the math.
 - **MANDATORY SECTIONS** (Strictly follow the structure in `UMQF.md`):
     - Follow the **STRICT OUTPUT FORMAT** defined in `UMQF.md`.
+    - **Context**: You MUST include a `Context: <summary>` line (max 3 sentences) immediately after the entity header to explain the action's impact.
     - **Responsibility & Intention**: You MUST include the `At`, `Cp`, `Ri`, `Rp`, and `In` breakdown for every entity.
     - If analyzing multiple actions, you MUST use the **Multi-Case** format (Cases, Multi-Case Summary) as defined in `UMQF.md`, including the `{Interaction Class}` in the summary.
     - **Actor (Self) Impact**: This section is **MANDATORY** for every action in this project.

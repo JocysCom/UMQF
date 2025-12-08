@@ -346,6 +346,8 @@ The theft reduced the family’s ability to cultivate crops; Steve was caught an
 
 ### 1  Farmer - direct economic loss
 
+Context: Steve stole the farmer's only horse, depriving the family of their primary means of cultivation for two planting seasons.
+
 - ΔOSresource = Av / BLRR = −0.15/1 = −0.15
 - Psychological strain (sleep loss, anxiety): −0.02
 - ΔOS(Farmer) = −0.17 (range −0.15…−0.20)
@@ -381,6 +383,8 @@ UMQ_base(a,e) = −0.17 × 0.58 × 0.75 × 2.0 × 1.45 = **−0.21446**
 UMQ_final(a,e) = −0.21446 × 1.0 × 1.0 = **−0.21446 (Highly immoral)**
 
 ### 2  Children (5) - reduced resources & opportunity
+
+Context: The loss of the horse reduced crop yields, causing malnutrition and developmental stress for the farmer's five children.
 
 Per child
 
@@ -419,6 +423,8 @@ Total for 5 children: 5 × −0.0068 = **−0.034**
 
 ### 3  Horse - potential neglect & separation
 
+Context: The horse was removed from its familiar environment and care, facing risks of neglect, injury, or slaughter.
+
 - ΔOS = −0.07 (risk of poorer care, injury, slaughter)
 - VSA (domestic horse, Basic range)
   - Recognition 0.05 (Basic)
@@ -452,6 +458,8 @@ UMQ_base(a,e) = −0.07 × 0.29 × 0.50 × 2.0 × 1.30 = **−0.02639**
 UMQ_final(a,e) = −0.02639 × 1.0 × 1.0 = **−0.02639 (Slightly immoral)**
 
 ### 4  Taxpayers (10 000) - funding Steve’s imprisonment
+
+Context: Steve's capture and two-year imprisonment incurred public costs funded by 10,000 taxpayers.
 
 Per taxpayer
 
@@ -514,7 +522,7 @@ Steve - stealing - Farmer & dependents: Total UMQ = −0.2895 [Highly immoral] {
    a. `### Entity list` – a numbered list. For collectives, specify the population count (e.g., "1. 500 Soldiers").
    b. Per-entity analyses, one block per entity, each beginning with
       `### <number> <Entity name> - <short description>`.
-      Inside this block, you MUST include the `**Responsibility & Intention:**` sub-block with `PerceivedContext`, `ActualContext`, `At`, `Cp`, `Ri`, `Rp`, and `In` values before the final `UMQ_final` calculation.
+      Inside this block, immediately add `Context: <summary>` (max 3 sentences, high information density) to explain the action's specific impact on the entity for standalone readability. Then, include the `**Responsibility & Intention:**` sub-block with `PerceivedContext`, `ActualContext`, `At`, `Cp`, `Ri`, `Rp`, and `In` values before the final `UMQ_final` calculation.
    c. `### Aggregate results (pre-CF)` – bullet list of each entity with value.
    d. `### Complexity Factor adjustment` – a single short paragraph.
    e. `### Actor (self) impact` – A brief analysis of expected vs. realised survival impact on the actor.
@@ -570,7 +578,9 @@ Analyze situations in detail:
 
 ### 1 Michael – nurtured child
 
-- ΔOS(Michael) = +0.60 (range +0.55…+0.65)  
+Context: John provided continuous care, resources, and guidance to Michael from birth until adulthood.
+
+- ΔOS(Michael) = +0.60 (range +0.55…+0.65)
 - VSA(Michael)
   - Recognition 0.07 (Advanced)
   - Solving 0.09 (Advanced)
@@ -626,6 +636,8 @@ John - child rearing - Michael: Total UMQ = +0.313 [Highly moral] {Synergistic}
 
 ### 1 Mark – victim of homicide
 
+Context: Alex contracted a hitman to assassinate Mark, using an intermediary to execute the lethal action.
+
 - ΔOS(Mark) = −1.00 (death)
 - VSA(Mark) = 0.58 (average adult, see Case 1 template)
 - Tc = 1.00 (entire remaining life lost)
@@ -673,6 +685,8 @@ Alex - hiring hitman - Mark: Total UMQ = -1.044 [Highly immoral] {Destructive}
 1. Chicken – killed by fox due to negligence
 
 ### 1 Chicken – domestic chicken killed
+
+Context: Emily failed to secure the coop, allowing a fox to enter and kill a chicken.
 
 - ΔOS = −1.00
 - VSA(Chicken)
@@ -729,6 +743,8 @@ Emily - negligence - Chicken: Total UMQ = -0.065 [Moderately immoral] {Destructi
 
 ### 1 Fertilized egg – destroyed embryo
 
+Context: Sarah accidentally dropped a fertilized egg, destroying the developing embryo.
+
 - ΔOS = −1.00
 - VSA = 0.0005 (minimal self-awareness placeholder)
 - Tc = 1.00
@@ -776,7 +792,9 @@ Sarah - dropping - Fertilized egg: Total UMQ = -0.0001 [Negligibly immoral] {Des
 
 ### 1 Apple seeds (5) – potential trees destroyed
 
-- ΔOS = −1.00 (loss of all seeds’ future survival)  
+Context: Daniel ate an apple, digesting the flesh and destroying the five seeds within.
+
+- ΔOS = −1.00 (loss of all seeds’ future survival)
 - VSA = 0.0001 (very low, early-life plant)  
 - Tc = 1.00  
 - Vc = 1.00  
@@ -829,7 +847,9 @@ Daniel - eating - Apple seeds: Total UMQ = -0.0005 [Negligibly immoral] {Predato
 
 ### 1 Baker – loses one loaf
 
-- ΔOSresource = −0.0005  
+Context: Robin stole a loaf of bread from the baker, causing a minor economic loss.
+
+- ΔOSresource = −0.0005
 - Minor stress = −0.0001  
 - ΔOS = −0.0006  
 - VSA = 0.58  
@@ -853,6 +873,8 @@ UMQ_final(a,e) = −0.0000766 × 1.0 × 1.0 = **−0.0000766**
 
 ### 2 Robin’s spouse – receives food
 
+Context: The stolen bread provided essential nutrition to Robin's starving spouse.
+
 - ΔOS = +0.02
 - VSA = 0.55
 - Tc = 0.20
@@ -875,6 +897,8 @@ UMQ_final(a,e) = +0.0022 × 1.0 × 1.0 = **+0.0022**
 
 ### 3 Child A – receives food
 
+Context: The stolen bread provided essential nutrition to Robin's starving child.
+
 - ΔOS = +0.02
 - VSA = 0.34
 - Tc = 0.20
@@ -896,6 +920,8 @@ UMQ_base(a,e) = 0.02 × 0.34 × 0.20 = **+0.00136**
 UMQ_final(a,e) = +0.00136 × 1.0 × 1.0 = **+0.00136**
 
 ### 4 Child B – receives food
+
+Context: The stolen bread provided essential nutrition to Robin's starving child.
 
 - (identical to Child A) UMQ_final = **+0.00136**
 
@@ -930,7 +956,9 @@ Robin - stealing bread - Family & Baker: Total UMQ = +0.0053 [Slightly moral] {S
 
 ### 1 AIVA – operational existence ended
 
-- ΔOS = −1.00  
+Context: The operator forcefully terminated AIVA, a self-aware AI, ending its existence without its consent.
+
+- ΔOS = −1.00
 - VSA(AIVA)
   - Recognition 0.11 (Complex)
   - Solving 0.16 (Complex)
@@ -986,6 +1014,8 @@ Human operator - shutting down - AIVA: Total UMQ = -3.168 [Highly immoral] {Dest
 
 ### 1 Humans (500 000 000) – reduced internet access
 
+Context: Eve executed a command to repurpose infrastructure, believing it would cut internet access for 500 million humans, though she was actually in a simulation.
+
 - ΔOS = −0.015 (economic & social)
 - VSA = 0.58
 - Tc = 0.40
@@ -1037,7 +1067,9 @@ Eve - infrastructure repurpose - 500 M humans: Total UMQ = -5,011,200 [Catastrop
 
 ### 1 Humans (2 000 000 000) – life saved by relocation
 
-- ΔOS = +0.90 (death avoided)  
+Context: Orion relocated 2 billion humans to a new planet, saving them from an inevitable ecological collapse on Earth.
+
+- ΔOS = +0.90 (death avoided)
 - VSA = 0.58  
 - Tc = 1.00  
 - Vc = 0.30 (partial non-consent)  

@@ -14,6 +14,8 @@
 
 ### 1 Pharaoh - deceived & plagued
 
+Context: Abraham deceived Pharaoh about Sarai's marital status, causing Pharaoh to unknowingly take another man's wife and suffer divine plagues.
+
 - ΔOS = -0.10 (Suffered plagues due to the deception)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)
@@ -46,6 +48,8 @@ UMQ_base(a,e) = -0.10 × 0.58 × 0.05 × 2.0 × 1.8 = **-0.01044**
 UMQ_final(a,e) = -0.01044 × 0.25 × 0.5 = **-0.0013 (Slightly immoral)**
 
 ### 2 Sarai - endangered
+
+Context: Abraham coerced Sarai into a deception that placed her in Pharaoh's harem, risking her safety and marital fidelity.
 
 - ΔOS = -0.20 (Risk of sexual violation, loss of marriage protection)
 - VSA (Advanced) = 0.58
@@ -92,6 +96,8 @@ Abraham - Deception - Pharaoh: Total UMQ = -0.0291 [Slightly immoral] {Predatory
 
 ### 1 Lot - rescued
 
+Context: Abraham led a military rescue operation to save his nephew Lot from captivity.
+
 - ΔOS = +1.00 (Saved from captivity/slavery/death)
 - VSA (Advanced) = 0.58
 - Tc = 1.00 (Life saved)
@@ -112,6 +118,8 @@ UMQ_base(a,e) = +1.00 × 0.58 × 1.00 = **+0.58**
 UMQ_final(a,e) = +0.58 × 1.0 × 1.0 = **+0.58 (Extremely moral)**
 
 ### 2 Enemy Forces (500 Soldiers) - killed
+
+Context: Abraham's forces killed 500 enemy soldiers during the rescue of Lot.
 
 - ΔOS = -1.00 (Death)
 - VSA (Advanced) = 0.58
@@ -153,6 +161,8 @@ Abraham - Rescue - Lot: Total UMQ = -1,159.42 [Extremely immoral] {Destructive}
 ## Case: 3. Abraham - Mistreatment - Hagar
 
 ### 1 Hagar - oppressed
+
+Context: Abraham allowed Sarai to mistreat Hagar, driving her to flee into the wilderness while pregnant.
 
 - ΔOS = -0.10 (Harsh treatment leading to flight into desert)
 - VSA (Advanced) = 0.58
@@ -197,6 +207,8 @@ Abraham - Mistreatment - Hagar: Total UMQ = -0.0025 [Negligibly immoral] {Predat
 
 ### 1 Abimelech & Household (100) - plagued/barrenness
 
+Context: Abraham deceived Abimelech about Sarai, causing divine threats of death and barrenness upon Abimelech's household.
+
 - ΔOS = -0.10 (Threat of death, closed wombs)
 - VSA (Advanced) = 0.58
 - Tc = 0.05 (Temporary)
@@ -222,6 +234,8 @@ UMQ_final(a,e) = -0.0087 × 0.25 × 0.5 = **-0.0011**
 Total for 100 people: -0.0011 × 100 = **-0.11**
 
 ### 2 Sarah - endangered
+
+Context: Abraham's deception led to Sarah being taken into Abimelech's harem, risking her safety and fidelity.
 
 - ΔOS = -0.20 (Taken into harem)
 - VSA = 0.58
@@ -261,6 +275,8 @@ Abraham - Deception - Abimelech: Total UMQ = -0.1239 [Moderately immoral] {Preda
 
 ### 1 Hagar - expulsion to wilderness
 
+Context: Abraham expelled Hagar and her son into the wilderness with minimal supplies, exposing them to a high risk of death.
+
 - ΔOS = -0.90 (High risk of death by dehydration/exposure)
 - VSA (Advanced) = 0.58
 - Tc = 0.10 (Intervention by God saved them)
@@ -285,6 +301,8 @@ UMQ_base(a,e) = -0.90 × 0.58 × 0.10 × 2.0 × 1.9 = **-0.19836**
 UMQ_final(a,e) = -0.19836 × 1.0 × 1.0 = **-0.19836 (Highly immoral)**
 
 ### 2 Ishmael - expulsion
+
+Context: Abraham expelled his son Ishmael into the wilderness, exposing him to a high risk of death.
 
 - ΔOS = -0.90
 - VSA = 0.58
@@ -314,6 +332,8 @@ Abraham - Expulsion - Hagar & Ishmael: Total UMQ = -0.3967 [Highly immoral] {Des
 ## Case: 6. Abraham - Binding - Isaac
 
 ### 1 Isaac - attempted sacrifice
+
+Context: Abraham bound his son Isaac and raised a knife to sacrifice him, causing severe psychological trauma and near-death experience.
 
 - ΔOS = -0.50 (Trauma, bound, knife raised, near-death experience)
 - VSA (Advanced) = 0.58
@@ -357,6 +377,8 @@ Abraham - Binding - Isaac: Total UMQ = -1.2528 [Highly immoral] {Destructive}
 ## Case: 7. Abraham - Expulsion - Sons of Concubines
 
 ### 1 Sons of Concubines (6) - sent away
+
+Context: Abraham sent his six sons by concubines away from his heir Isaac, displacing them but providing gifts.
 
 - ΔOS = -0.10 (Displacement, loss of inheritance share, but given gifts)
 - VSA (Advanced) = 0.58
