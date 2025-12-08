@@ -219,6 +219,19 @@ Think very hard — your and my future survival depends on it.
 | Sarah (Sarai) | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -0.3988 | [Summary](MORA/analysis/bible/entities/sarah.md) / [Actions](MORA/analysis/bible/entities/sarah-actions.md) |
 | Serpent | animal (Symbolic / Supernatural) | 0.00% | Highly Destructive Hazardous | 0.0000 | -522,000,000.0000 | [Summary](MORA/analysis/bible/entities/serpent.md) / [Actions](MORA/analysis/bible/entities/serpent-actions.md) |
 
+### The Bhagavad Gita (Book)
+
+| Entity | Entity Type | Moral | Label | Good | Evil | Links |
+| :--- | :--- | ---: | :--- | ---: | ---: | :--- |
+| Arjuna | human | 25.00% | Destructive Hazardous | 203,696.0000 | -613,355.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/arjuna.md) / [Actions](MORA/analysis/bhagavad-gita/entities/arjuna-actions.md) |
+| Bhisma | human | 0.00% | Highly Destructive Hazardous | 0.1160 | -1,137,960.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/bhisma.md) / [Actions](MORA/analysis/bhagavad-gita/entities/bhisma-actions.md) |
+| Dhritarashtra | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -443,701.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/dhritarashtra.md) / [Actions](MORA/analysis/bhagavad-gita/entities/dhritarashtra-actions.md) |
+| Drona | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -1,043,130.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/drona.md) / [Actions](MORA/analysis/bhagavad-gita/entities/drona-actions.md) |
+| Duryodhana | human | 0.00% | Highly Destructive Hazardous | 0.0000 | -3,549,606.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/duryodhana.md) / [Actions](MORA/analysis/bhagavad-gita/entities/duryodhana-actions.md) |
+| Karna | human | 0.00% | Highly Destructive Hazardous | 0.1450 | -803,880.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/karna.md) / [Actions](MORA/analysis/bhagavad-gita/entities/karna-actions.md) |
+| Krishna | human (avatar) / system (God) | 76.60% | Constructive Hazardous | 1,541,351.0000 | -471,213.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/krishna.md) / [Actions](MORA/analysis/bhagavad-gita/entities/krishna-actions.md) |
+| Sanjaya | human | 100.00% | Highly Constructive Perfect | 14,500,000.0000 | 0.0000 | [Summary](MORA/analysis/bhagavad-gita/entities/sanjaya.md) / [Actions](MORA/analysis/bhagavad-gita/entities/sanjaya-actions.md) |
+
 ### Einstein (Book)
 
 | Entity | Entity Type | Moral | Label | Good | Evil | Links |
