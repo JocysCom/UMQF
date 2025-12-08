@@ -8,6 +8,8 @@
 
 ### 1 Ender - skill acquisition
 
+Context: Petra taught Ender how to shoot and maneuver in null-g, giving him crucial skills and confidence.
+
 - ΔOS = +0.05 (Improved shooting skills, confidence)
 - VSA(Ender) = 0.60
 - Tc = 0.50 (Long term benefit)
@@ -51,6 +53,8 @@ Petra - teaching Ender - Ender: Total UMQ = +0.015 [Slightly moral] {Synergistic
 1. Ender (Friend/Target)
 
 ### 1 Ender - protection
+
+Context: Petra warned Ender about the plot to kill him, giving him a chance to prepare and protect himself.
 
 - ΔOS = +0.05 (Warning of assassination plot)
 - VSA(Ender) = 0.60

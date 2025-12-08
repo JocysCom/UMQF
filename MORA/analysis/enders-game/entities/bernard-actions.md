@@ -8,6 +8,8 @@
 
 ### 1 Ender - physical and psychological harassment
 
+Context: Bernard physically and psychologically harassed Ender, attempting to isolate him and inflict pain to establish dominance.
+
 - ΔOS = -0.05 (Physical pain, social ostracization)
 - VSA(Ender) = 0.60
 - Tc = 0.10
@@ -51,6 +53,8 @@ Bernard - bullying - Ender: Total UMQ = -0.0096 [Slightly immoral] {Predatory}
 1. Shen (Victim)
 
 ### 1 Shen - humiliation
+
+Context: Bernard publicly humiliated Shen by calling him "Worm" and mocking his gait, aiming to lower Shen's social status.
 
 - ΔOS = -0.02 (Social humiliation "Worm")
 - VSA(Shen) = 0.33 (Basic/Advanced child)

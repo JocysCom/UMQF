@@ -9,6 +9,8 @@
 
 ### 1 Lieserl Einstein - concealed and abandoned daughter
 
+Context: Einstein and Mileva Marić had an illegitimate daughter, Lieserl, whom Einstein never met and whose existence was concealed to protect his career, leading to her likely adoption or early death.
+
 - **ΔOS(Lieserl)**: -0.80 (Severe reduction in survival odds and quality of life; likely led to early death or life as orphan; total loss of parental protection)
 - **VSA(Lieserl)**:
     - Recognition: 0.02 (Basic - Infant)
@@ -42,6 +44,8 @@ UMQ_base(a,e) = -0.80 × 0.08 × 1.00 × 2.0 × 1.6 = **-0.2048**
 UMQ_final(a,e) = -0.2048 × 1.0 × 1.0 = **-0.2048 (Highly immoral)**
 
 ### 2 Mileva Marić - coerced partner
+
+Context: Mileva was forced to bear the burden of the illegitimate child alone and eventually lose her, coerced by circumstances and Einstein's need to protect his career.
 
 - **ΔOS(Mileva)**: -0.20 (Psychological distress, forced to bear burden alone, loss of child)
 - **VSA(Mileva)**:
@@ -106,6 +110,8 @@ Albert Einstein - Abandonment of Lieserl - Daughter & Partner: Total UMQ = -0.46
 
 ### 1 Mileva Marić - humiliated wife
 
+Context: Einstein issued a harsh written ultimatum to his wife Mileva Marić, demanding servitude and emotional distance as conditions for continuing their marriage, which she accepted under duress before their eventual separation.
+
 - **ΔOS(Mileva)**: -0.30 (Severe reduction in social status, psychological crushing, loss of marriage partnership)
 - **VSA(Mileva)**: 0.64 (See Case 1)
 - **Tc**: 0.50 (Medium term; led to separation/divorce)
@@ -131,6 +137,8 @@ UMQ_base(a,e) = -0.30 × 0.64 × 0.50 × 2.0 × 1.9 = **-0.3648**
 UMQ_final(a,e) = -0.3648 × 1.0 × 1.0 = **-0.3648 (Highly immoral)**
 
 ### 2 Hans Albert & Eduard Einstein - children
+
+Context: The harsh conditions imposed on their mother and the subsequent separation deprived the children of a stable family environment and a present father figure.
 
 - **ΔOS(Children)**: -0.15 (Loss of father figure in daily life, witnessing mother's distress)
 - **VSA(Children)**: ~0.30 (Children)
@@ -188,6 +196,8 @@ Albert Einstein - "Conditions" Manifesto - Wife & Family: Total UMQ = -0.4152 [H
 
 ### 1 Scientific Community - recipients of knowledge
 
+Context: Einstein published four revolutionary papers in his "miracle year," establishing special relativity, the photoelectric effect, and Brownian motion, fundamentally altering humanity's understanding of the physical universe.
+
 - **ΔOS**: +0.10 (Significant increase in understanding of reality; career stimulation; new avenues of research)
 - **VSA**: 0.60 (High average intelligence/awareness)
 - **Tc**: 1.00 (Permanent shift in paradigm)
@@ -210,6 +220,8 @@ UMQ_final(a,e) = +0.06
 Total for ~2,000 scientists: **+120.0**
 
 ### 2 Humanity - long-term beneficiaries
+
+Context: The scientific breakthroughs of 1905 laid the groundwork for modern technology and a deeper understanding of the universe, benefiting humanity in the long term.
 
 - **ΔOS**: +0.00001 (Tiny per-person increase in survival odds via technological derivatives like GPS, nuclear energy, etc., balanced by nuclear risks)
 - **VSA**: 0.58 (Average)
@@ -249,6 +261,8 @@ Albert Einstein - 1905 Papers - Humanity: Total UMQ = +9,980 [Extremely moral] {
 1. Marie Winteler (Girlfriend)
 
 ### 1 Marie Winteler - abandoned lover
+
+Context: Einstein abruptly ended his relationship with his first girlfriend, Marie Winteler, withdrawing emotionally to focus on his intellectual pursuits and avoid the "merely personal."
 
 - **ΔOS**: -0.10 (Psychological depression, "nervous depression," missed life path)
 - **VSA**: 0.55 (Average adult)
@@ -303,6 +317,8 @@ Albert Einstein - Withdrawal - Marie Winteler: Total UMQ = -0.0317 [Moderately i
 
 ### 1 Scientific Community - recipients of knowledge
 
+Context: Einstein completed the general theory of relativity, redefining gravity as the curvature of spacetime and providing a new framework for understanding the cosmos.
+
 - **ΔOS**: +0.15 (Profound shift in understanding gravity, space, and time; intellectual liberation from Newtonian absolutes)
 - **VSA**: 0.60 (High average intelligence/awareness)
 - **Tc**: 1.00 (Permanent shift in paradigm)
@@ -325,6 +341,8 @@ UMQ_final(a,e) = +0.09
 Total for ~5,000 scientists: **+450.0**
 
 ### 2 Humanity - long-term beneficiaries
+
+Context: General relativity revolutionized our understanding of the universe, enabling technologies like GPS and deepening human knowledge of the cosmos.
 
 - **ΔOS**: +0.00001 (Tiny per-person increase in survival odds via technological derivatives like GPS, understanding of cosmos)
 - **VSA**: 0.58 (Average)
@@ -364,6 +382,8 @@ Albert Einstein - General Relativity - Humanity: Total UMQ = +10,890 [Extremely 
 1. Eduard Einstein (Son)
 
 ### 1 Eduard Einstein - neglected son with mental illness
+
+Context: Einstein emotionally distanced himself from his schizophrenic son Eduard, leaving him in a Swiss asylum and rarely visiting, prioritizing his own peace and work over his son's needs.
 
 - **ΔOS(Eduard)**: -0.40 (Exacerbation of mental illness due to father's absence and emotional distance; "eating up" of father's sorrow led to withdrawal rather than support)
 - **VSA(Eduard)**:
@@ -427,6 +447,8 @@ Albert Einstein - Neglect of Eduard - Son: Total UMQ = -0.1148 [Highly immoral] 
 
 ### 1 Victims of Hiroshima/Nagasaki - direct casualties
 
+Context: Einstein signed a letter to President Roosevelt warning of German nuclear potential and urging U.S. atomic research, initiating the Manhattan Project which led to the bombing of Hiroshima and Nagasaki.
+
 - **ΔOS**: -1.00 (Death)
 - **VSA**: 0.58 (Average)
 - **Tc**: 1.00 (Permanent)
@@ -454,6 +476,8 @@ Total for 200,000 victims: **-29,000**
 
 ### 2 Allied Civilians/Soldiers - saved lives
 
+Context: The development of the atomic bomb, initiated in part by Einstein's letter, arguably hastened the end of World War II, saving Allied lives.
+
 - **ΔOS**: +0.50 (Avoidance of death/prolonged war)
 - **VSA**: 0.58
 - **Tc**: 1.00
@@ -471,6 +495,8 @@ UMQ_final(a,e) = +0.29 × 0.125 × 1.0 = **+0.03625**
 Total for ~1 million saved: **+36,250**
 
 ### 3 Humanity - Equivalent Counter (Tit for Tat)
+
+Context: Einstein's action was a counter to the potential threat of a Nazi atomic bomb, aiming to deter or prevent a German nuclear monopoly.
 
 **A. Countered Action: Nazi Nuclear Threat**
 - **ΔOS**: -1.00 (Existential threat to freedom/survival)
@@ -532,6 +558,8 @@ Albert Einstein - Letter to FDR - Humanity: Total UMQ = +8,700 [Slightly moral] 
 
 ### 1 Marian Anderson - guest and friend
 
+Context: Einstein hosted the African American singer Marian Anderson at his home when she was denied a hotel room in Princeton, publicly demonstrating his commitment to civil rights and racial equality.
+
 - **ΔOS**: +0.05 (Restoration of dignity, provision of shelter, public validation)
 - **VSA**: 0.65 (High - renowned artist)
 - **Tc**: 0.20 (Specific incidents, but lasting memory)
@@ -553,6 +581,8 @@ UMQ_base(a,e) = +0.05 × 0.65 × 0.20 = **+0.0065**
 UMQ_final(a,e) = +0.0065 × 1.0 × 1.0 = **+0.0065**
 
 ### 2 African American Community - beneficiaries
+
+Context: Einstein's public support for Marian Anderson and civil rights provided moral support and validation to the African American community.
 
 - **ΔOS**: +0.001 (Moral support, validation from world's smartest man)
 - **VSA**: 0.58
@@ -601,6 +631,8 @@ Albert Einstein - Support for Civil Rights - Marian Anderson & Community: Total 
 
 ### 1 Hans Albert Einstein - son
 
+Context: Einstein vehemently opposed his son Hans Albert's marriage to Frieda Knecht, criticizing her appearance and genetics, causing significant emotional distress to his son.
+
 - **ΔOS**: -0.10 (Emotional distress, conflict with father)
 - **VSA**: 0.55 (Adult)
 - **Tc**: 0.20 (Temporary conflict, eventually reconciled)
@@ -626,6 +658,8 @@ UMQ_base(a,e) = -0.10 × 0.55 × 0.20 × 1.8 × 1.4 = **-0.02772**
 UMQ_final(a,e) = -0.02772 × 1.0 × 1.0 = **-0.02772**
 
 ### 2 Frieda Knecht - target of opposition
+
+Context: Frieda Knecht was the target of Einstein's harsh disapproval and insults regarding her suitability as a wife for his son.
 
 - **ΔOS**: -0.15 (Insult, rejection by famous father-in-law)
 - **VSA**: 0.55
@@ -677,6 +711,8 @@ Albert Einstein - Opposition to Marriage - Son & Wife: Total UMQ = -0.0772 [Mode
 
 ### 1 Scientific Community - neglected colleagues
 
+Context: Einstein spent the latter half of his career pursuing a unified field theory to reconcile gravity and electromagnetism, isolating himself from the scientific mainstream which had moved to quantum mechanics.
+
 - **ΔOS**: -0.01 (Loss of Einstein's potential contributions to Quantum Mechanics; distraction of some assistants)
 - **VSA**: 0.60
 - **Tc**: 0.50 (Decades of "stagnation")
@@ -727,6 +763,8 @@ Albert Einstein - Unified Field Theory Quest - Scientific Community: Total UMQ =
 
 ### 1 Jewish Community (Global) - identity and pride
 
+Context: Einstein publicly supported the Zionist movement and the establishment of Hebrew University, lending his fame to the cause of a Jewish homeland and cultural identity.
+
 - **ΔOS**: +0.001 (Boost to cultural survival, pride, rejection of "undignified assimilation")
 - **VSA**: 0.58 (Average)
 - **Tc**: 0.50 (Long-term cultural shift)
@@ -775,6 +813,8 @@ Albert Einstein - Support for Zionism - Jewish Community: Total UMQ = +1,624,000
 1. Peace Movement Participants (approx. 100,000 active followers)
 
 ### 1 Peace Movement Participants - mobilized for peace
+
+Context: Einstein advocated for radical pacifism and war resistance in the 1920s, urging individuals to refuse military service, before shifting his stance in the face of the Nazi threat.
 
 - **ΔOS**: +0.01 (Moral clarity, hope, sense of purpose)
 - **VSA**: 0.58
@@ -825,6 +865,8 @@ Albert Einstein - Radical Pacifism - Peace Movement: Total UMQ = +116 [Highly mo
 
 ### 1 Elsa Einstein - partner and caretaker
 
+Context: Einstein married his cousin Elsa, who provided him with domestic stability and care while allowing him the freedom to pursue his scientific work and other interests.
+
 - **ΔOS**: +0.10 (Social status as Mrs. Einstein, purpose in caring for him, financial security)
 - **VSA**: 0.55
 - **Tc**: 0.50 (Duration of marriage)
@@ -872,6 +914,8 @@ Albert Einstein - Marriage to Elsa - Wife: Total UMQ = +0.0275 [Highly moral] {S
 1. Global Community (Symbolic beneficiaries)
 
 ### 1 Global Community - beneficiaries of internationalist ideal
+
+Context: Einstein renounced his German citizenship at age 16 to avoid military service and authoritarianism, becoming stateless before acquiring Swiss citizenship.
 
 - **ΔOS**: +0.0000001 (Tiny symbolic shift towards world citizenship)
 - **VSA**: 0.58

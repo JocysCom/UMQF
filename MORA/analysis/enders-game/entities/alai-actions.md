@@ -9,6 +9,8 @@
 
 ### 1 Ender - social integration
 
+Context: Alai befriended Ender, breaking the isolation imposed by the teachers and Bernard, providing crucial emotional support and social integration.
+
 - ΔOS = +0.10 (End of isolation, emotional support, safety)
 - VSA(Ender) = 0.60
 - Tc = 0.50 (Medium term impact)
@@ -30,6 +32,8 @@ UMQ_base(a,e) = +0.10 × 0.60 × 0.50 = **+0.03**
 UMQ_final(a,e) = +0.03 × 1.0 × 1.0 = **+0.03**
 
 ### 2 Launch Group - unification
+
+Context: By befriending Ender, Alai bridged the divide in the launch group, ending Bernard's divisive tyranny and fostering group cohesion.
 
 - ΔOS = +0.05 (Reduced tension, better cohesion, end of Bernard's tyranny)
 - VSA = 0.33

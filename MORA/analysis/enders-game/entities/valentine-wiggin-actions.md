@@ -9,6 +9,8 @@
 
 ### 1 Ender - protection from harm
 
+Context: Valentine intervened when Peter was threatening Ender, using her knowledge of Peter's fears to stop him and protect her brother.
+
 - ΔOS = +0.05 (Prevented further physical/psychological harm)
 - VSA(Ender) = 0.60
 - Tc = 0.10
@@ -30,6 +32,8 @@ UMQ_base(a,e) = +0.05 × 0.60 × 0.10 = **+0.003**
 UMQ_final(a,e) = +0.003 × 1.0 × 1.0 = **+0.003**
 
 ### 2 Peter - threat of exposure
+
+Context: Valentine threatened to expose Peter's true nature if he killed Ender, using his ambition against him.
 
 - ΔOS = -0.02 (Threat to future career/reputation)
 - VSA(Peter) = 0.60 (Advanced child)
@@ -79,6 +83,8 @@ Valentine - intervention - Peter & Ender: Total UMQ = +0.00036 [Negligible] {Syn
 
 ### 1 World Population - political influence
 
+Context: Valentine wrote as Demosthenes to influence global politics, creating a dialectic with Peter's Locke to prevent war.
+
 *Note: Valentine writes as Demosthenes, a paranoid anti-Russian voice, to create a dialectic with Peter's Locke. The goal is global stability, but the method involves stoking fear.*
 
 - ΔOS = +0.000001 (Contribution to preventing global war)
@@ -103,6 +109,8 @@ UMQ_final(a,e) = +0.0000001375 × 0.1 × 1.0 = **+0.00000001375**
 Group size: ~6 Billion. Total = **+82.5**
 
 ### 2 Peter - enabling
+
+Context: Valentine's collaboration enabled Peter's rise to power, providing the necessary counterpoint to his Locke persona.
 
 - ΔOS = +0.10 (Enabling his rise to power, keeping him stable)
 - VSA(Peter) = 0.60
@@ -151,6 +159,8 @@ Valentine - collaboration (Demosthenes) - World Population: Total UMQ = +74.277 
 
 ### 1 Ender - psychological manipulation/comfort
 
+Context: Valentine wrote a letter to Ender at Graff's request, knowing it would be used to manipulate him but hoping to provide some comfort.
+
 *Note: She writes the letter at Graff's request to help Ender, but knows it will be used to manipulate him. She tries to include genuine comfort.*
 
 - ΔOS = +0.05 (Provides emotional link, prevents total despair, though also causes pain of manipulation)
@@ -197,6 +207,8 @@ Valentine - writing letter to Ender - Ender: Total UMQ = +0.0072 [Slightly moral
 
 ### 1 Ender - safety/exile
 
+Context: Valentine persuaded Ender to leave Earth and go to the colony worlds, saving him from Peter's control and the political chaos on Earth.
+
 - ΔOS = +0.50 (Saving him from Peter's control and Earth's political chaos)
 - VSA(Ender) = 0.60
 - Tc = 1.00 (Permanent exile)
@@ -242,6 +254,8 @@ Valentine - persuading Ender to leave Earth - Ender: Total UMQ = +0.27 [Highly m
 
 ### 1 Humanity - enlightenment
 
+Context: Valentine wrote the history of the Bugger Wars, fostering a cultural shift towards understanding and preventing future xenocide.
+
 - ΔOS = +0.05 (Cultural shift towards understanding)
 - VSA(Humanity) = 0.55
 - Tc = 1.00
@@ -264,6 +278,8 @@ UMQ_final(a,e) = +0.00275
 Group size: Billions. Total = **+2,750,000**
 
 ### 2 Buggers - memorial
+
+Context: Valentine's history preserved the memory of the Buggers, ensuring they would not be forgotten.
 
 - ΔOS = +0.10 (Preserving their memory)
 - VSA(Queen) = 0.90

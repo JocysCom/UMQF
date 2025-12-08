@@ -35,6 +35,8 @@
 
 ### 1 The Multitude - adoption of cooperative norms
 
+Context: Jesus taught the multitude the Sermon on the Mount, promoting cooperative norms, non-violence, and mutual aid.
+
 - ΔOS(Multitude) = +0.25 (Significant positive shift in survival odds due to reduced intragroup conflict, promotion of mutual aid, and de-escalation strategies)
 - VSA(Multitude) = 0.58 (Average human)
 - Tc = 1.00 (Long-term, intergenerational cultural impact)
@@ -80,6 +82,8 @@ Jesus - teaching - Multitude: Total UMQ = +725 [Highly moral] {Altruistic}
 
 ### 1 The Leper - restoration of health
 
+Context: Jesus healed a leper who asked to be made clean, restoring his health and allowing him to reintegrate into society.
+
 - ΔOS(Leper) = +0.80 (Transformation from certain slow death and total social ostracization to full health and community reintegration)
 - VSA(Leper) = 0.58 (Average human)
 - Tc = 0.40 (Remaining natural lifespan)
@@ -124,6 +128,8 @@ Jesus - healing - Leper: Total UMQ = +0.1856 [Highly moral] {Synergistic}
 
 ### 1 Centurion's Servant - restoration of health
 
+Context: Jesus healed a centurion's servant who was paralyzed and suffering, praising the centurion's faith.
+
 - ΔOS(Servant) = +0.80 (Saved from "grievously tormented" palsy/death)
 - VSA(Servant) = 0.58
 - Tc = 0.40
@@ -163,6 +169,8 @@ Jesus - healing - Centurion's Servant: Total UMQ = +0.1856 [Highly moral] {Syner
 
 ### 1 Peter's Mother-in-law - restoration of health
 
+Context: Jesus healed Peter's mother-in-law of a fever, enabling her to rise and serve them.
+
 - ΔOS = +0.30 (Cured of fever, restored to function)
 - VSA = 0.58
 - Tc = 0.20 (Short term illness vs death risk)
@@ -199,6 +207,8 @@ Jesus - healing - Peter's Mother-in-law: Total UMQ = +0.0348 [Moderately moral] 
 ## Case: 5. Jesus - calming - Storm
 
 ### 1 Disciples - saved from drowning
+
+Context: Jesus calmed a storm on the sea, saving his disciples from drowning.
 
 - ΔOS = +1.00 (Saved from imminent death)
 - VSA = 0.58
@@ -238,6 +248,8 @@ Jesus - calming - Storm: Total UMQ = +6.96 [Extremely moral] {Synergistic}
 
 ### 1 Demoniacs (2) - liberated
 
+Context: Jesus cast out demons from two men in the country of the Gergesenes, restoring their sanity.
+
 - ΔOS = +0.80 (Restored to sanity/society from "exceeding fierce" state)
 - VSA = 0.58
 - Tc = 0.50
@@ -248,6 +260,8 @@ UMQ_base(a,e) = +0.80 × 0.58 × 0.50 = **+0.232**
 Total for 2 = **+0.464**
 
 ### 2 Swine Herd (~2000) - destroyed
+
+Context: The demons cast out by Jesus entered a herd of swine, causing them to run into the sea and drown.
 
 - ΔOS = -1.00 (Drowned)
 - VSA = 0.10 (Advanced animal - Pig)
@@ -263,6 +277,8 @@ UMQ_base(a,e) = -1.00 × 0.10 × 1.00 × 2.0 × 1.8 = **-0.36**
 Total for 2000 = **-720.00**
 
 ### 3 Swine Owners - economic loss
+
+Context: The owners of the swine suffered a significant economic loss due to the destruction of their herd.
 
 - ΔOSresource = -0.05 (Significant economic loss)
 - VSA = 0.58
@@ -295,6 +311,8 @@ Jesus - casting out devils - Gergesene Demoniacs: Total UMQ = -791.57 [Highly im
 ## Case: 7. Jesus - healing - Paralytic
 
 ### 1 Paralytic - healed & forgiven
+
+Context: Jesus healed a paralytic man and forgave his sins, demonstrating his authority.
 
 - ΔOS = +0.70 (Restored mobility + spiritual peace)
 - VSA = 0.58
@@ -333,6 +351,8 @@ Jesus - healing - Paralytic: Total UMQ = +0.203 [Highly moral] {Altruistic}
 
 ### 1 Ruler's Daughter - raised from dead
 
+Context: Jesus raised a ruler's daughter from the dead, restoring her to life.
+
 - ΔOS = +1.00 (Restored life)
 - VSA = 0.58
 - Tc = 0.80 (Child, full life ahead)
@@ -370,6 +390,8 @@ Jesus - raising - Ruler's Daughter: Total UMQ = +0.464 [Highly moral] {Synergist
 
 ### 1 The Woman - healed
 
+Context: A woman with an issue of blood touched Jesus' garment and was healed of her chronic ailment.
+
 - ΔOS = +0.60 (Cured of 12-year chronic illness, social restoration)
 - VSA = 0.58
 - Tc = 0.40
@@ -406,6 +428,8 @@ Jesus - healing - Woman with Issue of Blood: Total UMQ = +0.1392 [Highly moral] 
 ## Case: 10. Jesus - feeding - 5000 Men
 
 ### 1 5000 Men - provision of food
+
+Context: Jesus miraculously fed 5000 men, plus women and children, with five loaves and two fish.
 
 - ΔOS(per person) = +0.01 (One meal; prevents hunger/fainting)
 - VSA = 0.58
@@ -446,6 +470,8 @@ Jesus - feeding - 5000 Men: Total UMQ = +0.058 [Highly moral] {Synergistic}
 
 ### 1 4000 Men - provision of food
 
+Context: Jesus miraculously fed 4000 men, plus women and children, with seven loaves and a few fish.
+
 - ΔOS(per person) = +0.01
 - VSA = 0.58
 - Tc = 0.001
@@ -483,6 +509,8 @@ Jesus - feeding - 4000 Men: Total UMQ = +0.0464 [Highly moral] {Synergistic}
 ## Case: 12. Jesus - cursing - Fig Tree
 
 ### 1 Fig Tree - destruction
+
+Context: Jesus cursed a fig tree that bore no fruit, causing it to wither away.
 
 - ΔOS(Tree) = -1.00 (Withered away)
 - VSA(Tree) = 0.001 (Plant life)
@@ -525,6 +553,8 @@ Jesus - cursing - Fig Tree: Total UMQ = -0.002 [Negligibly immoral] {Predatory}
 
 ### 1 Money Changers - economic disruption
 
+Context: Jesus drove the money changers and merchants out of the temple, overturning their tables.
+
 - ΔOS(Merchants) = -0.05 (Economic loss, physical displacement, minor injury risk)
 - VSA(Merchants) = 0.58
 - Tc = 0.01 (Temporary disruption)
@@ -547,6 +577,8 @@ UMQ_base(a,e) = -0.05 × 0.58 × 0.01 × 2.00 × 1.20 = **-0.000696**
 UMQ_final(a,e) = -0.000696 × 1.0 × 1.0 = **-0.0007 (Negligibly immoral)**
 
 ### 2 The Temple Public - restoration of access
+
+Context: Jesus' cleansing of the temple restored it as a house of prayer for the people.
 
 - ΔOS(Public) = +0.05 (Restoration of fair access to resources/worship)
 - VSA(Public) = 0.58
@@ -587,6 +619,8 @@ Jesus - cleansing - Temple: Total UMQ = +0.0022 [Slightly moral] {Altruistic}
 
 ### 1 Malchus - restoration of ear
 
+Context: Jesus healed the ear of Malchus, the high priest's servant, after it was cut off by Peter.
+
 - ΔOS(Malchus) = +0.05 (Restoration of body part, prevention of pain/disfigurement)
 - VSA(Malchus) = 0.58
 - Tc = 0.40 (Remaining lifespan)
@@ -623,6 +657,8 @@ Jesus - healing - Malchus: Total UMQ = +0.0116 [Slightly moral] {Synergistic}
 ## Case: 15. Jesus - crucifixion - Humanity
 
 ### 1 Humanity - spiritual salvation
+
+Context: Jesus submitted to crucifixion to provide spiritual salvation and a moral framework for humanity.
 
 - ΔOS(Humanity) = +0.60 (Establishment of a psychological/spiritual framework that negates fear of death and promotes pro-social behavior)
 - VSA(Humanity) = 0.58
@@ -661,6 +697,8 @@ Jesus - crucifixion - Humanity: Total UMQ = +765,600,000 [Highly moral] {Altruis
 ## Case: 16. Jesus - commissioning - World
 
 ### 1 Global Population - spread of cooperative norms
+
+Context: Jesus commissioned his disciples to teach all nations, spreading his cooperative and ethical teachings globally.
 
 - ΔOS(Global) = +0.15 (Propagation of high-trust, non-violent cooperative algorithm)
 - VSA(Global) = 0.58
@@ -704,6 +742,8 @@ Jesus - commissioning - World: Total UMQ = +187,920,000 [Highly moral] {Synergis
 
 ### 1 Deaf Man - restoration of hearing/speech
 
+Context: Jesus healed a man who was deaf and had a speech impediment.
+
 - ΔOS = +0.40 (Restored sensory function and communication)
 - VSA = 0.58
 - Tc = 0.50
@@ -740,6 +780,8 @@ Jesus - healing - Deaf Man: Total UMQ = +0.116 [Highly moral] {Synergistic}
 ## Case: 18. Jesus - healing - Blind Man at Bethsaida
 
 ### 1 Blind Man - restoration of sight
+
+Context: Jesus healed a blind man at Bethsaida, restoring his sight.
 
 - ΔOS = +0.50 (Restored vision)
 - VSA = 0.58
@@ -778,6 +820,8 @@ Jesus - healing - Blind Man at Bethsaida: Total UMQ = +0.145 [Highly moral] {Syn
 
 ### 1 Widow's Son - raised from dead
 
+Context: Jesus raised the only son of a widow at Nain from the dead.
+
 - ΔOS = +1.00 (Restored life)
 - VSA = 0.58
 - Tc = 0.80 (Young man)
@@ -796,6 +840,8 @@ UMQ_base(a,e) = +1.00 × 0.58 × 0.80 = **+0.464**
 UMQ_final(a,e) = +0.464 × 1.0 × 1.0 = **+0.464 (Highly moral)**
 
 ### 2 The Widow - restoration of support
+
+Context: The resurrection of her son restored the widow's primary means of support and comfort.
 
 - ΔOS = +0.40 (Restored only son/support system, prevention of destitution)
 - VSA = 0.58
@@ -836,6 +882,8 @@ Jesus - raising - Widow's Son at Nain: Total UMQ = +0.5336 [Highly moral] {Syner
 
 ### 1 The Woman - healed
 
+Context: Jesus healed a woman who had been crippled by a spirit of infirmity for eighteen years.
+
 - ΔOS = +0.40 (Cured of 18-year infirmity, ability to stand straight)
 - VSA = 0.58
 - Tc = 0.30
@@ -872,6 +920,8 @@ Jesus - healing - Woman with Spirit of Infirmity: Total UMQ = +0.0696 [Highly mo
 ## Case: 21. Jesus - healing - Ten Lepers
 
 ### 1 Ten Lepers - healed
+
+Context: Jesus healed ten lepers as they went to show themselves to the priests.
 
 - ΔOS = +0.80 (Restored health and social status)
 - VSA = 0.58
@@ -911,6 +961,8 @@ Jesus - healing - Ten Lepers: Total UMQ = +1.856 [Extremely moral] {Synergistic}
 
 ### 1 Nobleman's Son - healed
 
+Context: Jesus healed a nobleman's son who was at the point of death.
+
 - ΔOS = +0.80 (Saved from point of death)
 - VSA = 0.58
 - Tc = 0.80 (Child)
@@ -947,6 +999,8 @@ Jesus - healing - Nobleman's Son: Total UMQ = +0.3712 [Highly moral] {Synergisti
 ## Case: 23. Jesus - healing - Man at Bethesda
 
 ### 1 Man at Bethesda - healed
+
+Context: Jesus healed a man at the pool of Bethesda who had been an invalid for thirty-eight years.
 
 - ΔOS = +0.50 (Cured of 38-year infirmity)
 - VSA = 0.58
@@ -985,6 +1039,8 @@ Jesus - healing - Man at Bethesda: Total UMQ = +0.058 [Highly moral] {Altruistic
 
 ### 1 Man Born Blind - restoration of sight
 
+Context: Jesus healed a man who had been blind from birth.
+
 - ΔOS = +0.60 (Restored sight, social standing)
 - VSA = 0.58
 - Tc = 0.60
@@ -1021,6 +1077,8 @@ Jesus - healing - Man Born Blind: Total UMQ = +0.2088 [Highly moral] {Altruistic
 ## Case: 25. Jesus - transforming - Water to Wine
 
 ### 1 Wedding Guests (~100) - social preservation
+
+Context: Jesus turned water into wine at a wedding in Cana, preventing social embarrassment for the hosts.
 
 - ΔOS(Guests) = +0.001 (Prevention of social shame, provision of joy/resource)
 - VSA(Guests) = 0.58
@@ -1060,6 +1118,8 @@ Jesus - transforming - Water to Wine: Total UMQ = +0.0001 [Negligibly moral] {Sy
 
 ### 1 Lazarus - restoration of life
 
+Context: Jesus raised Lazarus from the dead after he had been in the tomb for four days.
+
 - ΔOS(Lazarus) = +1.00 (Restoration from death)
 - VSA(Lazarus) = 0.58
 - Tc = 0.30 (Remaining natural lifespan)
@@ -1096,6 +1156,8 @@ Jesus - raising - Lazarus: Total UMQ = +0.174 [Highly moral] {Altruistic}
 ## Case: 27. Jesus - washing feet - Disciples
 
 ### 1 Disciples (12) - lesson in humility
+
+Context: Jesus washed his disciples' feet to teach them a lesson about humility and service.
 
 - ΔOS = +0.05 (Hygiene, comfort, but primarily a lesson in humility/service - social cohesion)
 - VSA = 0.58

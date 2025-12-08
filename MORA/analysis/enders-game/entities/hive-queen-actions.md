@@ -9,6 +9,8 @@
 
 ### 1 Humanity - war/death
 
+Context: The Hive Queen attacked humanity in the First and Second Invasions, not realizing they were sentient, causing mass death.
+
 *Note: The Buggers did not realize humans were sentient ("lonely animals who cannot dream each other's dreams"). Once they realized, they stopped.*
 
 - ΔOS = -0.50 (Significant loss of life, existential threat, but stopped short of total destruction)
@@ -57,6 +59,8 @@ Hive Queen - First/Second Invasions - Humanity: Total UMQ = -55,000 [Highly Dest
 
 ### 1 Ender - psychological healing/truth
 
+Context: The Hive Queen communicated with Ender through the fantasy game, leading him to her cocoon and offering forgiveness.
+
 - ΔOS = +0.50 (Relief from guilt, understanding, purpose)
 - VSA(Ender) = 0.60
 - Tc = 1.00 (Permanent change in life path)
@@ -78,6 +82,8 @@ UMQ_base(a,e) = +0.50 × 0.60 × 1.00 = **+0.30**
 UMQ_final(a,e) = +0.30
 
 ### 2 Humanity - gift of knowledge/forgiveness
+
+Context: The Hive Queen gave humanity the gift of the "Speaker for the Dead" book through Ender, changing human morality.
 
 - ΔOS = +0.10 (The "Speaker for the Dead" book changes human morality)
 - VSA(Humanity) = 0.55

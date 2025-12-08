@@ -29,10 +29,20 @@ God establishes Zakat (alms-giving) as a mandatory religious duty, distinct from
 
 **Moral Calculation:**
 *   `UMQ_base` = 0.2 * 1.0 * 1.0 * (1 - 0.0) * (1 - 0.1) = +0.18
-*   `Rp`: 1.0.
-*   `In`: 1.0.
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   `UMQ_final` = +0.18
 *   **Total UMQ:** +0.18 * 10,000 = **+1,800**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God mandates a wealth transfer system that functions as a social safety net.
@@ -66,7 +76,19 @@ God commands the believers to fight against those who fight them and against ido
     *   Total: -40,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +2,500 - 40,000 = **-37,500**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God institutes a state of perpetual war against non-believers.
@@ -100,7 +122,19 @@ God ordains the law of retaliation for murder: "the free for the free, the slave
     *   Total: -40
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +3,000 - 40 = **+2,960**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God establishes a strict retributive justice system.
@@ -134,7 +168,19 @@ God reinforces the Muslim army against the Meccan army.
     *   Total: -1,800
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +159.5 - 1,800 = **-1,640.5**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God intervenes to ensure the victory of His chosen group.
@@ -162,7 +208,19 @@ God explains the defeat at Ohod as a test.
     *   Total: +63
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+63**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God utilizes military failure as a pedagogical tool.
@@ -196,7 +254,19 @@ God establishes men's superiority and commands beating of rebellious wives.
     *   Total: -4,800
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +500 - 4,800 = **-4,300**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God authorizes violence against women.
@@ -228,7 +298,19 @@ God authorizes violence against women.
     *   Total: -600
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +500 - 600 = **-100**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God codifies economic inequality based on gender.
@@ -260,7 +342,19 @@ Execution, crucifixion, or amputation for rebels.
     *   Total: -40
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +4,000 - 40 = **+3,960**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God authorizes extreme torture/execution for social order.
@@ -292,7 +386,19 @@ Cut off hands for theft.
     *   Total: -18
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +2,000 - 18 = **+1,982**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God mandates permanent mutilation for property crimes.
@@ -324,7 +430,19 @@ God mandates permanent mutilation for property crimes.
     *   Total: -200,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +5,000 - 200,000 = **-195,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God issues a decree of extermination against polytheists.
@@ -356,7 +474,19 @@ Fight People of the Book until they pay tribute.
     *   Total: -42,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +4,000 - 42,000 = **-38,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God institutionalizes a two-tier citizenship.
@@ -384,7 +514,19 @@ God destroys Sodom for wickedness.
     *   Total: -20,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-20,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God executes a total genocide of a population.
@@ -412,7 +554,19 @@ God spares Nineveh upon repentance.
     *   Total: +5,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+5,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God averts punishment due to repentance.
@@ -439,7 +593,19 @@ God refuses to save Noah's son.
     *   `UMQ_final` = -4.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-4.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God prioritizes faith over kinship.
@@ -464,7 +630,19 @@ God establishes Joseph in Egypt.
     *   `UMQ_final` = +0.8
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.8**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God elevates a chosen individual.
@@ -489,7 +667,19 @@ God transports Muhammad to Jerusalem.
     *   `UMQ_final` = +0.2
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.2**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 Miraculous intervention.
@@ -515,7 +705,19 @@ Al Khedr performs acts with hidden purposes.
 *   **Orphans (2):** ΔOS +0.5. UMQ = +0.5. Total: +1.0.
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** 2.25 + 1.0 - 4.0 + 1.0 = **+0.25**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God's higher morality justifies individual harm for greater good.
@@ -542,7 +744,19 @@ God grants permission to fight.
     *   Total: +2,500
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,500**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God authorizes self-defense.
@@ -574,7 +788,19 @@ Stripes for fornication/slander.
     *   Total: -2.8
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+997.2**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God enforces strict sexual morality.
@@ -599,7 +825,19 @@ God clears Ayesha's name.
     *   `UMQ_final` = +0.2
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.2**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God vindicates the innocent.
@@ -626,7 +864,19 @@ God destroys Karun.
     *   `UMQ_final` = -4.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-4.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God executes a wealthy tyrant.
@@ -652,7 +902,19 @@ God predicts Roman victory.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God reassures the faithful.
@@ -677,7 +939,19 @@ God empowers Solomon.
     *   `UMQ_final` = +0.8
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.8**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God empowers a ruler.
@@ -705,7 +979,19 @@ God destroys 9 plotters.
     *   Total: -36
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-36**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God executes a preemptive strike.
@@ -730,7 +1016,19 @@ God saves Abraham from fire.
     *   `UMQ_final` = +1.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God saves a prophet.
@@ -754,7 +1052,19 @@ God saves infant Moses.
 *   **Mother (1):** ΔOS +0.5. Sc 0.2. UMQ = 0.5 * 0.8 = +0.4.
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1.4**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God orchestrates salvation.
@@ -780,7 +1090,19 @@ God creates love between spouses.
     *   Total: +100,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+100,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God fosters bonding.
@@ -812,7 +1134,19 @@ God drives away Confederates.
     *   Total: -4,800
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +3,000 - 4,800 = **-1,800**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God protects His community.
@@ -840,7 +1174,19 @@ God casts terror; execution/enslavement.
     *   Total: -10,800
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-10,800**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God sanctions genocide of a tribe.
@@ -865,7 +1211,19 @@ God grants privileges to Muhammad.
     *   `UMQ_final` = +0.1
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.1**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God supports the prophet.
@@ -893,7 +1251,19 @@ God destroys Saba's dam.
     *   Total: -13,600
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-13,600**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God destroys infrastructure.
@@ -919,7 +1289,19 @@ God recounts wisdom.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God provides ethical guidelines.
@@ -947,7 +1329,19 @@ God commands Hijab.
     *   Total: +450
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+450**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God institutes dress code.
@@ -975,7 +1369,19 @@ God threatens slaughter.
     *   Total: -36
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-36**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God uses threat of violence.
@@ -1003,7 +1409,19 @@ God destroys Antioch.
     *   Total: -20,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-20,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God executes collective punishment.
@@ -1029,7 +1447,19 @@ God ransoms son with ram.
     *   `UMQ_final` = 1.0 * 0.5 = +0.5
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.5**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God prevents human sacrifice.
@@ -1054,7 +1484,19 @@ God restores Job.
     *   `UMQ_final` = +0.8
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.8**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God rewards patience.
@@ -1080,7 +1522,19 @@ God forgives all sins.
     *   Total: +100,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+100,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God offers universal amnesty.
@@ -1105,7 +1559,19 @@ God protects believer.
     *   `UMQ_final` = +1.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God protects dissenters.
@@ -1131,7 +1597,19 @@ God creates the cosmos.
     *   Total: +200,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+200,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God acts as Creator.
@@ -1157,7 +1635,19 @@ God permits retaliation.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God establishes legal framework.
@@ -1185,7 +1675,19 @@ God inflicts smoke plague.
     *   Total: -6,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-6,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God uses environmental catastrophe.
@@ -1211,7 +1713,19 @@ God subjects sea to mankind.
     *   Total: +60,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+60,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God establishes anthropocentric universe.
@@ -1239,7 +1753,19 @@ God destroys Ad.
     *   Total: -20,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-20,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God annihilates a population.
@@ -1267,7 +1793,19 @@ God commands beheading.
     *   Total: -40,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-40,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God legislates extreme violence.
@@ -1293,7 +1831,19 @@ God promises victory.
     *   Total: +5,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+5,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God ensures success.
@@ -1319,7 +1869,19 @@ God commands reconciliation.
     *   Total: +3,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+3,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God mandates conflict resolution.
@@ -1345,7 +1907,19 @@ God forbids defamation.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God legislates social ethics.
@@ -1371,7 +1945,19 @@ Created for service.
     *   Total: +20,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+20,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God defines purpose.
@@ -1397,7 +1983,19 @@ Moon split.
     *   Total: +20,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+20,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God provides sign.
@@ -1423,7 +2021,19 @@ Sent iron.
     *   Total: +100,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+100,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God provides resources.
@@ -1449,7 +2059,19 @@ God regulates divorce.
     *   Total: +1,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God reforms unjust custom.
@@ -1477,7 +2099,19 @@ God expels Banu Nadir.
     *   Total: -7,200
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-7,200**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God executes expulsion.
@@ -1503,7 +2137,19 @@ Protect believing women.
     *   Total: +20
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+20**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God protects refugees.
@@ -1529,7 +2175,19 @@ God loves battle array.
     *   Total: +4,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+4,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God mandates military discipline.
@@ -1555,7 +2213,19 @@ Friday prayer.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God establishes ritual.
@@ -1581,7 +2251,19 @@ Divorce regulations.
     *   Total: +1,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God provides legal framework.
@@ -1606,7 +2288,19 @@ God dissolves oath.
     *   `UMQ_final` = +0.1
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.1**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God releases prophet.
@@ -1632,7 +2326,19 @@ God threatens wives.
     *   Total: +0.2
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.2**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God intervenes in domestic affairs.
@@ -1660,7 +2366,19 @@ God destroys garden.
     *   Total: -6.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-6.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God punishes niggardliness.
@@ -1688,7 +2406,19 @@ Meteorites vs Devils.
     *   Total: -15,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-15,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God weaponizes cosmos.
@@ -1715,7 +2445,19 @@ God stigmatizes enemy.
     *   `UMQ_final` = -0.2 * 2.0 * 1.3 = -0.52
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-0.52**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God inflicts disgrace.
@@ -1740,7 +2482,19 @@ Threat of vein cutting.
     *   `UMQ_final` = +0.1
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.1**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God establishes veracity.
@@ -1768,7 +2522,19 @@ Hellfire torture.
     *   Total: -400,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-400,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God designs torture.
@@ -1796,7 +2562,19 @@ Noah prays for genocide.
     *   Total: -800,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-800,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God validates genocide.
@@ -1822,7 +2600,19 @@ God condemns infanticide.
     *   Total: +50,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+50,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God abolishes infanticide.
@@ -1848,7 +2638,19 @@ God condemns fraud.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God legislates honesty.
@@ -1874,7 +2676,19 @@ Social welfare.
     *   Total: +400
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+400**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God links piety with aid.
@@ -1900,7 +2714,19 @@ God inspires conscience.
     *   Total: +100,000,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+100,000,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God endows moral compass.
@@ -1925,7 +2751,19 @@ God relieves Muhammad.
     *   `UMQ_final` = +0.3
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.3**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God relieves burden.
@@ -1957,7 +2795,19 @@ God destroys Elephant Army.
     *   Total: -20,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +5,000 - 20,000 = **-15,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God intervenes militarily.
@@ -1985,7 +2835,19 @@ God curses Abu Laheb.
     *   Total: -8.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-8.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Immutable)
+*   **UMQ:** 0.0
 
 **Summary:**
 God condemns enemy.

@@ -10,7 +10,7 @@
 
 ### 1 Stilson - severe physical trauma resulting in death
 
-*Note: While Ender perceives this as a severe beating to establish deterrence, the actual outcome is Stilson's death (confirmed later in the narrative).*
+Context: Ender fought Stilson to stop the bullying once and for all, using excessive force to establish deterrence. While Ender perceived this as a severe beating, the actual outcome was Stilson's death.
 
 - ΔOS(Stilson) = -1.00 (Death)
 - VSA(Stilson)
@@ -45,6 +45,8 @@ UMQ_base(a,e) = -1.00 × 0.33 × 1.00 × 2.0 × 2.0 = **-1.32**
 UMQ_final(a,e) = -1.32 × 1.0 × 0.5 = **-0.66 (Extremely immoral)**
 
 ### 2 The Gang - deterrence
+
+Context: Ender's brutal defeat of Stilson deterred the rest of the gang from attacking him, preventing further violence.
 
 - ΔOS = +0.05 (Prevented from attacking Ender, avoided potential injury/guilt of participation)
 - VSA = 0.33 (Average per gang member)
@@ -97,6 +99,8 @@ Ender - fight with Stilson - Stilson: Total UMQ = -0.7187 [Extremely immoral] {D
 
 ### 1 Bernard - broken arm
 
+Context: During the launch, Ender broke Bernard's arm to stop him from hitting him, using the null-g environment to magnify the force.
+
 - ΔOS = -0.15 (Physical injury, pain, humiliation, loss of status)
 - VSA(Bernard) = 0.33 (Basic/Advanced child)
 - Tc = 0.20 (Healing time)
@@ -122,6 +126,8 @@ UMQ_base(a,e) = -0.15 × 0.33 × 0.20 × 2.0 × 1.8 = **-0.03564**
 UMQ_final(a,e) = -0.03564 × 1.0 × 0.5 = **-0.01782 (Slightly immoral)**
 
 ### 2 Launch Group - deterrence
+
+Context: Ender's action against Bernard established a boundary and deterred immediate bullying from the rest of the launch group.
 
 - ΔOS = +0.02 (Safety from Bernard's bullying, established order)
 - VSA = 0.33
@@ -172,6 +178,8 @@ Ender - breaking arm - Bernard: Total UMQ = -0.00528 [Slightly immoral] {Destruc
 
 ### 1 Bernard - humiliation/loss of power
 
+Context: Ender hacked the desk system to send mocking messages signed by "God" and "Bernard", undermining Bernard's authority and ending his tyranny over the launch group.
+
 - ΔOS = -0.01 (Social humiliation, loss of dominance)
 - VSA(Bernard) = 0.33
 - Tc = 0.05 (Short term)
@@ -193,6 +201,8 @@ UMQ_base(a,e) = -0.01 × 0.33 × 0.05 × 2.0 × 1.2 = **-0.000396**
 UMQ_final(a,e) = -0.000396
 
 ### 2 Launch Group - relief/entertainment
+
+Context: The messages provided comic relief and broke the tension, allowing the other Launchies to laugh at Bernard and reducing his power over them.
 
 - ΔOS = +0.01 (Relief from tension, breaking bully's hold)
 - VSA = 0.33
@@ -243,7 +253,7 @@ Ender - hacking desk system - Bernard: Total UMQ = +0.002739 [Negligible] {Syner
 
 ### 1 The Giant - destruction
 
-*Note: The Giant is a software construct. However, Ender perceives the violence as real/disturbing, and the system is sophisticated.*
+Context: Frustrated by the rigged game, Ender attacked the Giant's eye, killing the character to break the stalemate and advance to Fairyland.
 
 - ΔOS = -1.00 (Destruction of avatar)
 - VSA(Giant) = 0.00 (Non-sentient software)
@@ -267,7 +277,7 @@ UMQ_final(a,e) = **0.00**
 
 ### 2 Ender (Self) - psychological impact
 
-*Note: This action is significant for Ender's self-perception ("I am a murderer").*
+Context: The violent solution to the Giant's Drink game reinforced Ender's fear that he was a killer like Peter, causing significant psychological distress.
 
 - ΔOS = -0.05 (Psychological distress, reinforcement of "killer" self-image)
 - VSA(Ender) = 0.60
@@ -317,6 +327,8 @@ Ender - killing the Giant - The Giant: Total UMQ = -0.0045 [Negligible] {Destruc
 
 ### 1 Salamander Army - preventing total defeat
 
+Context: Ender disobeyed Bonzo's orders to remain passive and fired his weapon, freezing enough enemy soldiers to turn a defeat into a draw, saving the army's standing.
+
 - ΔOS = +0.05 (Prevented total elimination, improved standings slightly)
 - VSA = 0.33 (Average soldier)
 - Tc = 0.05 (One game)
@@ -339,6 +351,8 @@ UMQ_final(a,e) = +0.000825
 Group size approx 40. Total = **+0.033**
 
 ### 2 Bonzo - humiliation
+
+Context: Ender's success humiliated Bonzo, proving his orders wrong and undermining his authority in front of his army.
 
 - ΔOS = -0.05 (Humiliation of having orders disobeyed and being saved by the person he despises)
 - VSA(Bonzo) = 0.40 (Commander)
@@ -387,6 +401,8 @@ Ender - saving Salamander Army - Salamander Army: Total UMQ = +0.03 [Moderately 
 
 ### 1 Launchies - skill acquisition
 
+Context: Ender organized extra practice sessions for Launchies, teaching them advanced tactics and giving them the skills to survive and succeed in Battle School.
+
 - ΔOS = +0.10 (Improved survival skills, confidence, ability to defend themselves)
 - VSA = 0.33
 - Tc = 0.50 (Long term benefit)
@@ -433,6 +449,8 @@ Ender - training Launchies - Launchies: Total UMQ = +0.33 [Highly moral] {Synerg
 
 ### 1 Older Boys - physical injury
 
+Context: When older boys attacked his practice session, Ender led the Launchies in a coordinated defense, resulting in physical injuries to the aggressors.
+
 - ΔOS = -0.05 (Bruises, torn ear, broken nose)
 - VSA = 0.40 (Older students)
 - Tc = 0.10 (Healing time)
@@ -455,6 +473,8 @@ UMQ_final(a,e) = -0.0064
 Group size approx 4 injured. Total = **-0.0256**
 
 ### 2 Launchies - defense
+
+Context: Ender's leadership protected the Launchies from a severe beating and established their strength as a group.
 
 - ΔOS = +0.10 (Prevented severe beating, established group strength)
 - VSA = 0.33
@@ -505,6 +525,8 @@ Ender - defense against older boys - Older Boys: Total UMQ = +0.1064 [Moderately
 
 ### 1 The Snake - destruction
 
+Context: In the fantasy game, Ender killed the snake that threatened him, crushing it under his foot.
+
 - ΔOS = -1.00
 - VSA(Snake) = 0.00
 - Tc = 0.00
@@ -527,7 +549,7 @@ UMQ_final(a,e) = **0.00**
 
 ### 2 Ender (Self) - psychological trauma
 
-*Note: Seeing Peter in the mirror reinforces his fear of his own nature.*
+Context: After killing the snake, Ender saw Peter's face in the mirror, reinforcing his fear that he was becoming a killer like his brother.
 
 - ΔOS = -0.10 (Deep psychological trauma, self-hatred)
 - VSA(Ender) = 0.60
@@ -577,7 +599,7 @@ Ender - killing the Snake - The Snake: Total UMQ = -0.0216 [Slightly immoral] {D
 
 ### 1 The Snake - transformation
 
-*Note: The act of kissing (love/acceptance) transforms the snake into Valentine.*
+Context: In a later session, Ender kissed the snake instead of killing it, transforming the monster into his sister Valentine.
 
 - ΔOS = +1.00 (Transformation from monster to beloved sister)
 - VSA(Snake) = 0.00 (AI construct)
@@ -600,6 +622,8 @@ UMQ_base(a,e) = 0.00
 UMQ_final(a,e) = **0.00**
 
 ### 2 Ender (Self) - psychological healing
+
+Context: This act of love and acceptance provided a psychological breakthrough for Ender, reconnecting him with his love for Valentine and offering emotional release.
 
 - ΔOS = +0.20 (Breakthrough in the game, emotional release, connection to Valentine)
 - VSA(Ender) = 0.60
@@ -649,6 +673,8 @@ Ender - kissing the Snake - The Snake: Total UMQ = +0.06 [Moderately moral] {Syn
 
 ### 1 Bean - psychological isolation
 
+Context: Ender deliberately isolated Bean from the rest of Dragon Army, replicating Graff's strategy to force Bean to prove himself and become a stronger soldier.
+
 - ΔOS = -0.05 (Social isolation, resentment from others, psychological pressure)
 - VSA(Bean) = 0.60 (Advanced child)
 - Tc = 0.10 (Short term tactic)
@@ -670,6 +696,8 @@ UMQ_base(a,e) = -0.05 × 0.60 × 0.10 × 2.0 × 1.4 = **-0.0084**
 UMQ_final(a,e) = -0.0084 × 1.0 × 1.0 = **-0.0084**
 
 ### 2 Dragon Army - manipulation
+
+Context: Ender manipulated the army into resenting Bean, using that resentment to foster competition and drive performance.
 
 - ΔOS = -0.01 (Manipulated into resenting Bean)
 - VSA = 0.33
@@ -720,7 +748,7 @@ Ender - isolating Bean - Bean: Total UMQ = -0.022557 [Slightly immoral] {Destruc
 
 ### 1 Bonzo - severe physical trauma resulting in death
 
-*Note: Ender intends to win decisively to prevent future attacks. He does not intend to kill, but the outcome is death.*
+Context: Ender fought Bonzo in the shower room, using lethal force to win decisively and prevent future attacks. Unbeknownst to Ender, Bonzo died from his injuries.
 
 - ΔOS(Bonzo) = -1.00 (Death)
 - VSA(Bonzo) = 0.40 (Advanced child)
@@ -771,6 +799,8 @@ Ender - fight with Bonzo - Bonzo: Total UMQ = -0.88 [Extremely immoral] {Destruc
 
 ### 1 Griffin & Tiger Armies - defeat
 
+Context: Ender defeated two armies simultaneously by ignoring the rules of engagement and going straight for the enemy's gate, humiliating his opponents who had overwhelming odds.
+
 - ΔOS = -0.05 (Humiliation of losing despite 2:1 odds and unfair advantage)
 - VSA = 0.33
 - Tc = 0.05
@@ -793,6 +823,8 @@ UMQ_final(a,e) = -0.00099
 Group size approx 80. Total = **-0.0792**
 
 ### 2 Dragon Army - victory
+
+Context: The victory against impossible odds validated Dragon Army's trust in Ender and proved their superiority.
 
 - ΔOS = +0.10 (Triumph against impossible odds, validation of trust in Ender)
 - VSA = 0.33
@@ -844,7 +876,7 @@ Ender - winning against Two Armies - Griffin & Tiger Armies: Total UMQ = +0.0528
 
 ### 1 Bugger Queens - xenocide
 
-*Note: Ender believes this is a simulation. However, the outcome is real xenocide.*
+Context: Believing he was playing a final simulation, Ender used the Molecular Disruption Device to destroy the Bugger homeworld, resulting in the extinction of the species.
 
 - ΔOS = -1.00 (Total extinction of the species)
 - VSA(Queen) = 0.90 (Complex, hive-mind intelligence)
@@ -869,6 +901,8 @@ Group size: All Queens (Unknown number, but represents the entire species). Let'
 
 ### 2 Bugger Workers - death
 
+Context: The destruction of the homeworld and the queens resulted in the immediate death of all bugger workers and drones.
+
 - ΔOS = -1.00
 - VSA = 0.10 (Low individual sentience, dependent on Queen)
 - Tc = 1.00
@@ -891,6 +925,8 @@ UMQ_final(a,e) = -0.20 × 1.0 × 0.1 = **-0.02**
 Group size: Billions. Total = **-20,000,000** (This number overwhelms everything, but reflects the scale of the tragedy).
 
 ### 3 Humanity - survival
+
+Context: Ender's victory secured the survival of humanity, ending the existential threat posed by the Buggers.
 
 - ΔOS = +1.00 (Prevention of potential extinction)
 - VSA = 0.55
@@ -942,6 +978,8 @@ Ender - destroying the Bugger Homeworld - Bugger Species: Total UMQ = +2,739,999
 
 ### 1 Bugger Species - memorial/truth
 
+Context: Ender wrote "The Hive Queen" to tell the true story of the Buggers, restoring their honor and preventing them from being remembered solely as monsters.
+
 - ΔOS = +0.50 (Restoration of honor, understanding, prevention of total erasure from history)
 - VSA(Queen) = 0.90
 - Tc = 1.00 (Permanent legacy)
@@ -964,6 +1002,8 @@ UMQ_final(a,e) = +0.45
 Group size: The Species (as a concept). Total = **+0.45** (Symbolic)
 
 ### 2 Humanity - enlightenment
+
+Context: The book "Speaker for the Dead" fostered a cultural shift towards understanding and empathy for the "other", changing humanity's moral landscape.
 
 - ΔOS = +0.10 (Moral growth, understanding of the "other", shift away from xenophobia)
 - VSA = 0.55

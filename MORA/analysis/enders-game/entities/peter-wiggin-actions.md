@@ -9,6 +9,8 @@
 
 ### 1 Ender - psychological terror and physical pain
 
+Context: Peter threatened to kill Ender and suffocated him, inflicting psychological terror and physical pain to assert dominance.
+
 - ΔOS(Ender) = -0.05 (Psychological trauma, fear of death, physical pain)
 - VSA(Ender) = 0.60 (Advanced child)
 - Tc = 0.10 (Short duration, though memory persists)
@@ -34,6 +36,8 @@ UMQ_base(a,e) = -0.05 × 0.60 × 0.10 × 2.0 × 1.8 = **-0.0108**
 UMQ_final(a,e) = -0.0108 × 1.0 × 1.0 = **-0.0108 (Slightly immoral)**
 
 ### 2 Valentine - psychological distress
+
+Context: Peter's threats against Ender caused Valentine significant psychological distress and fear for her brother's safety.
 
 - ΔOS = -0.01 (Fear for brother, stress)
 - VSA(Valentine) = 0.60 (Similar to Ender)
@@ -83,6 +87,8 @@ Peter - threatening/suffocating - Ender: Total UMQ = -0.0117 [Slightly immoral] 
 
 ### 1 Ender - emotional relief
 
+Context: Peter apologized to Ender when he thought Ender was asleep, providing a moment of emotional relief and connection.
+
 - ΔOS = +0.01 (Reduction of immediate fear, slight bond reinforcement)
 - VSA(Ender) = 0.60
 - Tc = 0.10
@@ -126,6 +132,8 @@ Peter - apology - Ender: Total UMQ = +0.0006 [Negligible] {Synergistic}
 1. Squirrels (Victims)
 
 ### 1 Squirrels - torture and death
+
+Context: Peter tortured and killed squirrels in the woods, inflicting extreme suffering and death for his own psychological release.
 
 - ΔOS = -1.00 (Death)
 - VSA(Squirrel) = 0.15 (Basic animal)
@@ -173,6 +181,8 @@ Peter - torturing squirrels - Squirrels: Total UMQ = -3.00 [Extremely immoral] {
 
 ### 1 World Population - political manipulation
 
+Context: Peter created the personas of Locke and Demosthenes to manipulate global politics and prevent war, using deception to achieve stability.
+
 *Note: Peter intends to prevent global war (Pax Americana), but uses manipulation and fear (Demosthenes) to achieve it.*
 
 - ΔOS = +0.000001 (Incremental shift towards stability/avoiding war)
@@ -197,6 +207,8 @@ UMQ_final(a,e) = +0.0000001375 × 0.1 × 1.0 = **+0.00000001375**
 Group size: ~6 Billion. Total = **+82.5**
 
 ### 2 Valentine - manipulation
+
+Context: Peter manipulated Valentine into participating in his scheme, forcing her into a role she disliked and binding her to him.
 
 - ΔOS = -0.01 (Forced into a role she dislikes, tied to Peter)
 - VSA(Valentine) = 0.60
@@ -244,6 +256,8 @@ Peter - creating Locke/Demosthenes - World Population: Total UMQ = +74.2455 [Hig
 1. Humanity (Beneficiaries)
 
 ### 1 Humanity - peace treaty
+
+Context: Peter, as Locke, proposed a peace treaty that prevented a major global war, saving millions of lives and establishing a new world order.
 
 - ΔOS = +0.10 (Prevention of major global war, saving millions of lives)
 - VSA(Humanity) = 0.55

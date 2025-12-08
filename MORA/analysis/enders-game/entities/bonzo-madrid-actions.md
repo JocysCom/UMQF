@@ -9,6 +9,8 @@
 
 ### 1 Petra - physical assault
 
+Context: Bonzo slapped Petra across the face for speaking out of turn, inflicting physical pain and public humiliation to assert his dominance.
+
 - ΔOS = -0.01 (Physical pain, humiliation)
 - VSA(Petra) = 0.60 (Advanced child)
 - Tc = 0.05 (Short term)
@@ -54,6 +56,8 @@ Bonzo - slapping Petra - Petra: Total UMQ = -0.00072 [Negligible] {Predatory}
 
 ### 1 Ender - physical assault
 
+Context: Bonzo struck Ender in the face and stomach after Ender was traded to Rat Army, punishing him for disobedience and competence.
+
 - ΔOS = -0.05 (Physical pain, humiliation)
 - VSA(Ender) = 0.60
 - Tc = 0.10
@@ -97,6 +101,8 @@ Bonzo - striking Ender - Ender: Total UMQ = -0.0096 [Slightly immoral] {Predator
 1. Ender (Victim)
 
 ### 1 Ender - attempted murder
+
+Context: Bonzo cornered Ender in the shower room with the intent to kill or permanently maim him, driven by murderous rage and wounded pride.
 
 - ΔOS = -1.00 (Intent to kill or permanently maim)
 - VSA(Ender) = 0.60

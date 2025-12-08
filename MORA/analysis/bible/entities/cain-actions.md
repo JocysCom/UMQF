@@ -6,6 +6,8 @@
 
 ### 1 Abel - killed
 
+Context: Cain rose up against his brother Abel and killed him out of jealousy and anger.
+
 - ΔOS = -1.00 (Death)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)

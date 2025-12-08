@@ -8,6 +8,8 @@
 
 ### 1 Ender - physical risk
 
+Context: Rose ordered Ender to commit suicide in battle by charging straight at the enemy, intending to humiliate him and get him frozen immediately.
+
 - ΔOS = -0.05 (Sent into battle immediately to be frozen/hurt, intended humiliation)
 - VSA(Ender) = 0.60
 - Tc = 0.05

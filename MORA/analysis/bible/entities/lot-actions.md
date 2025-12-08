@@ -7,6 +7,8 @@
 
 ### 1 Daughters (2) - offered to mob
 
+Context: Lot offered his two virgin daughters to a mob of men to protect his guests from sexual assault.
+
 - ΔOS = -0.80 (High risk of rape, injury, death, severe trauma)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)
@@ -40,6 +42,8 @@ UMQ_final(a,e) = -0.8816 × 1.0 × 1.0 = **-0.8816 (Extremely immoral)**
 Total for 2 daughters: **-1.7632**
 
 ### 2 Guests (2) - intended protection
+
+Context: Lot prioritized the safety of his guests (angels) over his own family, adhering to strict hospitality codes.
 
 - ΔOS = +0.50 (Intended to save them from mob violence)
 - VSA (Complex - Angels)

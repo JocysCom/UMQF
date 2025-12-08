@@ -7,6 +7,8 @@
 
 ### 1 Hagar - afflicted
 
+Context: Sarah dealt hardly with her pregnant maidservant Hagar, causing her to flee into the wilderness.
+
 - ΔOS = -0.20 (Forced to flee into wilderness while pregnant; risk of exposure/death)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)
@@ -58,6 +60,8 @@ Sarah - Mistreatment - Hagar: Total UMQ = -0.0418 [Moderately immoral] {Predator
 
 ### 1 Hagar - expulsion
 
+Context: Sarah demanded that Abraham cast out Hagar and her son Ishmael, sending them into the wilderness.
+
 - ΔOS = -0.90 (High risk of death by dehydration/exposure)
 - VSA (Advanced) = 0.58
 - Tc = 0.10 (Intervention by God saved them)
@@ -82,6 +86,8 @@ UMQ_base(a,e) = -0.90 × 0.58 × 0.10 × 2.0 × 1.9 = **-0.19836**
 UMQ_final(a,e) = -0.19836 × 0.9 × 1.0 = **-0.1785 (Highly immoral)**
 
 ### 2 Ishmael - expulsion
+
+Context: Ishmael was expelled along with his mother Hagar, facing the same risks of death in the wilderness.
 
 - ΔOS = -0.90
 - VSA = 0.58

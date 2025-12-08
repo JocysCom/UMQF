@@ -14,7 +14,7 @@
 *Preliminary Discourse, Sect II*
 
 **Context:**
-Muhammad flees Mecca for Medina.
+Mohammed flees Mecca for Medina with his followers to escape persecution and establish the Muslim community.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -29,10 +29,22 @@ Muhammad flees Mecca for Medina.
     *   Total: +50
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+50**
 
+**Actor (self) impact:**
+*   **ΔOS:** +1.0 (Survival)
+*   **UMQ:** +1.0
+
 **Summary:**
-Muhammad executes strategic withdrawal.
+Mohammed executes strategic withdrawal.
 *   **Interaction Class:** Synergistic.
 
 ---
@@ -41,7 +53,7 @@ Muhammad executes strategic withdrawal.
 *Sura 3:13, 3:123; Prelim Disc*
 
 **Context:**
-Muhammad leads 319 men to victory.
+Mohammed leads 319 men to victory against the Meccan army.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -62,10 +74,22 @@ Muhammad leads 319 men to victory.
     *   Total: -720
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +51.04 - 720 = **-668.96**
 
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Victory/Prestige)
+*   **UMQ:** +0.5
+
 **Summary:**
-Muhammad leads military engagement.
+Mohammed leads military engagement.
 *   **Interaction Class:** Predatory.
 
 ---
@@ -74,7 +98,7 @@ Muhammad leads military engagement.
 *Sura 3:70 (Note m)*
 
 **Context:**
-Assassination of poet.
+Mohammed orders the assassination of Kaab ibn Ashraf, a Jewish poet who wrote satirical verses against him.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -89,7 +113,19 @@ Assassination of poet.
     *   `UMQ_final` = -4.0
 
 **Moral Calculation:**
-*   **Total UMQ:** **-4.0**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 0.9 (Passive/Command)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 0.9
+    *   In: 1.0 (Intended)
+*   **Total UMQ:** **-3.6**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Removed threat/critic)
+*   **UMQ:** +0.2
 
 **Summary:**
 Targeted assassination.
@@ -101,7 +137,7 @@ Targeted assassination.
 *Sura 2:142-150*
 
 **Context:**
-Change direction of prayer.
+Mohammed changes the direction of prayer from Jerusalem to Mecca.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -115,7 +151,19 @@ Change direction of prayer.
     *   Total: +50
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+50**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Identity/Cohesion)
+*   **UMQ:** +0.1
 
 **Summary:**
 Symbolic action.
@@ -127,7 +175,7 @@ Symbolic action.
 *Sura 3:121, 3:152-159*
 
 **Context:**
-Rallies survivors.
+Mohammed rallies survivors after a partial defeat at the Battle of Ohod.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -142,10 +190,22 @@ Rallies survivors.
     *   Total: +105
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+105**
 
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Survival/Resilience)
+*   **UMQ:** +0.2
+
 **Summary:**
-Muhammad demonstrates resilience.
+Mohammed demonstrates resilience.
 *   **Interaction Class:** Synergistic.
 
 ---
@@ -154,7 +214,7 @@ Muhammad demonstrates resilience.
 *Sura 3:12 (Note)*
 
 **Context:**
-Expels Jewish tribe.
+Mohammed besieges and expels the Jewish tribe of Banu Kainoka from Medina.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -174,7 +234,19 @@ Expels Jewish tribe.
     *   Total: -2,160
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +300 - 2,160 = **-1,860**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.3 (Consolidation)
+*   **UMQ:** +0.3
 
 **Summary:**
 Ethnic cleansing/exile.
@@ -186,7 +258,7 @@ Ethnic cleansing/exile.
 *Sura 8:67-69*
 
 **Context:**
-Accepts ransom.
+Mohammed accepts ransom for prisoners taken at Badr.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -201,7 +273,19 @@ Accepts ransom.
     *   Total: +44.8
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+44.8**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.4 (Wealth/Resources)
+*   **UMQ:** +0.4
 
 **Summary:**
 Merciful option.
@@ -213,7 +297,7 @@ Merciful option.
 *Sura 9:1-12*
 
 **Context:**
-Nullifies treaties.
+Mohammed declares immunity from idolaters and renounces treaties.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -233,7 +317,19 @@ Nullifies treaties.
     *   Total: -12,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** +5,000 - 12,000 = **-7,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Dominance)
+*   **UMQ:** +0.5
 
 **Summary:**
 Unilateral abrogation of treaties.
@@ -245,7 +341,7 @@ Unilateral abrogation of treaties.
 *Sura 9:107*
 
 **Context:**
-Destroys mosque.
+Mohammed orders the destruction of a mosque built by dissenters.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -261,7 +357,19 @@ Destroys mosque.
     *   Total: -2.6
 
 **Moral Calculation:**
-*   **Total UMQ:** **-2.6**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 0.9 (Command)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 0.9
+    *   In: 1.0 (Intended)
+*   **Total UMQ:** **-2.34**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Unity/Security)
+*   **UMQ:** +0.2
 
 **Summary:**
 Preemptive strike against opposition.
@@ -273,7 +381,7 @@ Preemptive strike against opposition.
 *Sura 9:42*
 
 **Context:**
-Mobilizes 30,000 men.
+Mohammed leads a large army to Tabuk to counter a rumoured Byzantine invasion.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -288,7 +396,19 @@ Mobilizes 30,000 men.
     *   Total: +3,600
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+3,600**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.3 (Prestige)
+*   **UMQ:** +0.3
 
 **Summary:**
 Exerts pressure for strategic gain.
@@ -300,7 +420,7 @@ Exerts pressure for strategic gain.
 *Sura 10:38*
 
 **Context:**
-Intellectual challenge.
+Mohammed challenges his opponents to produce a chapter like the Koran.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -314,7 +434,19 @@ Intellectual challenge.
     *   Total: +900
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+900**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Authority)
+*   **UMQ:** +0.2
 
 **Summary:**
 Intellectual warfare.
@@ -326,7 +458,7 @@ Intellectual warfare.
 *Sura 16:126*
 
 **Context:**
-Spares 70 Koreish.
+Mohammed forbids mutilation of the dead in retaliation for the mutilation of his uncle Hamza.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -340,7 +472,19 @@ Spares 70 Koreish.
     *   Total: +35
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+35**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Moral standing)
+*   **UMQ:** +0.1
 
 **Summary:**
 Demonstrates self-control.
@@ -352,7 +496,7 @@ Demonstrates self-control.
 *Sura 17:1*
 
 **Context:**
-Mystical experience.
+Mohammed claims to have journeyed to Jerusalem and Heaven in one night.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -365,7 +509,19 @@ Mystical experience.
     *   `UMQ_final` = +0.2
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.2**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Spiritual Authority)
+*   **UMQ:** +0.2
 
 **Summary:**
 Spiritual strengthening.
@@ -377,7 +533,7 @@ Spiritual strengthening.
 *Sura 22:39*
 
 **Context:**
-Permission to fight.
+Mohammed promulgates the divine permission to fight against aggressors.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -392,7 +548,19 @@ Permission to fight.
     *   Total: +250
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+250**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Survival)
+*   **UMQ:** +0.5
 
 **Summary:**
 Operationalizes defense.
@@ -404,7 +572,7 @@ Operationalizes defense.
 *Sura 24:11-26*
 
 **Context:**
-Clears Ayesha.
+Mohammed judges the accusation of adultery against his wife Ayesha as false.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -416,7 +584,19 @@ Clears Ayesha.
 *   **Slanderers (3):** ΔOS -0.2. Sc 0.3. UMQ = -0.26. Total: -0.78.
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** 0.8 - 0.78 = **+0.02**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Family honour/Peace)
+*   **UMQ:** +0.2
 
 **Summary:**
 Upholds due process.
@@ -428,7 +608,7 @@ Upholds due process.
 *Sura 24:2*
 
 **Context:**
-Enforces Hudud.
+Mohammed enforces the laws of Hudud (punishments) for crimes.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -442,7 +622,19 @@ Enforces Hudud.
     *   Total: +700
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+700**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.3 (Order/Authority)
+*   **UMQ:** +0.3
 
 **Summary:**
 Acts as magistrate.
@@ -454,7 +646,7 @@ Acts as magistrate.
 *Sura 29:46*
 
 **Context:**
-Dispute mildly.
+Mohammed advises debating mildly with the People of the Book.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -468,7 +660,19 @@ Dispute mildly.
     *   Total: +200
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+200**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Diplomacy)
+*   **UMQ:** +0.1
 
 **Summary:**
 Soft power approach.
@@ -480,7 +684,7 @@ Soft power approach.
 *Sura 30:2-4*
 
 **Context:**
-Predicts victory.
+Mohammed prophesies the victory of the Romans over the Persians.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -494,7 +698,19 @@ Predicts victory.
     *   Total: +200
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+200**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Prophetic Credit)
+*   **UMQ:** +0.2
 
 **Summary:**
 Reassures followers.
@@ -506,7 +722,7 @@ Reassures followers.
 *Sura 26:214*
 
 **Context:**
-Warns clan.
+Mohammed warns his own clan and family to accept Islam.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -520,7 +736,19 @@ Warns clan.
     *   Total: +4.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+4.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Duty fulfillment)
+*   **UMQ:** +0.1
 
 **Summary:**
 Prioritizes family.
@@ -532,7 +760,7 @@ Prioritizes family.
 *Sura 26:227*
 
 **Context:**
-Employs poets.
+Mohammed employs poets to defend Islam and attack enemies.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -546,7 +774,19 @@ Employs poets.
     *   Total: +100
 
 **Moral Calculation:**
-*   **Total UMQ:** **+100**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 0.9 (Command)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 0.9
+    *   In: 1.0 (Intended)
+*   **Total UMQ:** **+90**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Propaganda)
+*   **UMQ:** +0.18
 
 **Summary:**
 Information warfare.
@@ -558,7 +798,7 @@ Information warfare.
 *Sura 33:37*
 
 **Context:**
-Marries Zeinab.
+Mohammed marries Zeinab, the divorced wife of his adopted son Zeid.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -571,7 +811,19 @@ Marries Zeinab.
     *   `UMQ_final` = +0.09
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.09**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Personal satisfaction/Legislative precedent)
+*   **UMQ:** +0.1
 
 **Summary:**
 Breaks social taboo.
@@ -583,7 +835,7 @@ Breaks social taboo.
 *Sura 33:26-27*
 
 **Context:**
-Executes 600-900 men.
+Mohammed orders/approves the execution of 600-900 men of the Banu Koreidha.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -599,7 +851,19 @@ Executes 600-900 men.
     *   Total: -10,800
 
 **Moral Calculation:**
-*   **Total UMQ:** **-10,800**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 0.9 (Command/Approval)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 0.9
+    *   In: 1.0 (Intended)
+*   **Total UMQ:** **-9,720**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Elimination of threat)
+*   **UMQ:** +0.45
 
 **Summary:**
 Executes harsh judgment.
@@ -611,7 +875,7 @@ Executes harsh judgment.
 *Sura 33:9-25*
 
 **Context:**
-Defends Medina.
+Mohammed organizes the defense of Medina by digging a trench.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -626,7 +890,19 @@ Defends Medina.
     *   Total: +1,500
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,500**
+
+**Actor (self) impact:**
+*   **ΔOS:** +1.0 (Survival)
+*   **UMQ:** +1.0
 
 **Summary:**
 Innovative defense.
@@ -638,7 +914,7 @@ Innovative defense.
 *Sura 33:59*
 
 **Context:**
-Commands Hijab.
+Mohammed establishes the rules of Hijab (veiling) for women.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -652,7 +928,19 @@ Commands Hijab.
     *   Total: +135
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+135**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Social Order)
+*   **UMQ:** +0.1
 
 **Summary:**
 Enforces social norms.
@@ -664,7 +952,7 @@ Enforces social norms.
 *Sura 33:60-61*
 
 **Context:**
-Threatens hypocrites.
+Mohammed threatens the hypocrites in Medina with expulsion or slaughter.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -678,7 +966,19 @@ Threatens hypocrites.
     *   Total: +13
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+13**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Security)
+*   **UMQ:** +0.2
 
 **Summary:**
 Uses threat of force.
@@ -690,7 +990,7 @@ Uses threat of force.
 *Sura 42:38*
 
 **Context:**
-Shura.
+Mohammed establishes the principle of Shura (consultation).
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -704,7 +1004,19 @@ Shura.
     *   Total: +1,500
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,500**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Political stability)
+*   **UMQ:** +0.2
 
 **Summary:**
 Institutionalizes consultation.
@@ -716,7 +1028,7 @@ Institutionalizes consultation.
 *Sura 41:34*
 
 **Context:**
-Forgive persecutors.
+Mohammed commands believers to forgive their persecutors.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -730,7 +1042,19 @@ Forgive persecutors.
     *   Total: +18
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+18**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Moral superiority)
+*   **UMQ:** +0.1
 
 **Summary:**
 Non-violent resistance.
@@ -742,7 +1066,7 @@ Non-violent resistance.
 *Sura 42:48*
 
 **Context:**
-Only a warner.
+Mohammed declares he is only a warner.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -756,7 +1080,19 @@ Only a warner.
     *   Total: +500
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+500**
+
+**Actor (self) impact:**
+*   **ΔOS:** 0.0 (Humility)
+*   **UMQ:** 0.0
 
 **Summary:**
 Defines role.
@@ -768,7 +1104,7 @@ Defines role.
 *Sura 48:10*
 
 **Context:**
-Pledge of fealty.
+Mohammed accepts the pledge of fealty from his followers.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -782,7 +1118,19 @@ Pledge of fealty.
     *   Total: +700
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+700**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Loyalty/Power)
+*   **UMQ:** +0.5
 
 **Summary:**
 Secures allegiance.
@@ -794,7 +1142,7 @@ Secures allegiance.
 *Sura 48:1*
 
 **Context:**
-Negotiates truce.
+Mohammed negotiates a ten-year truce with the Meccans.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -812,7 +1160,19 @@ Negotiates truce.
     *   Total: +1,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,700**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Strategic advantage)
+*   **UMQ:** +0.5
 
 **Summary:**
 Diplomatic masterstroke.
@@ -824,7 +1184,7 @@ Diplomatic masterstroke.
 *Sura 47:4*
 
 **Context:**
-Strike off heads.
+Mohammed commands the beheading of unbelievers in battle.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -840,7 +1200,19 @@ Strike off heads.
     *   Total: -40,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-40,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.5 (Victory)
+*   **UMQ:** +0.5
 
 **Summary:**
 Ruthless military doctrine.
@@ -852,7 +1224,7 @@ Ruthless military doctrine.
 *Sura 49:9*
 
 **Context:**
-Make peace.
+Mohammed mediates between conflicting factions of believers.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -866,7 +1238,19 @@ Make peace.
     *   Total: +3,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+3,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.3 (Unity)
+*   **UMQ:** +0.3
 
 **Summary:**
 Judicial framework.
@@ -878,7 +1262,7 @@ Judicial framework.
 *Sura 54:1*
 
 **Context:**
-Sign.
+Mohammed performs the miracle of splitting the moon.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -892,7 +1276,19 @@ Sign.
     *   Total: +1,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Proof of mission)
+*   **UMQ:** +0.2
 
 **Summary:**
 Cosmic miracle.
@@ -904,7 +1300,7 @@ Cosmic miracle.
 *Sura 59:2-4*
 
 **Context:**
-Expels tribe.
+Mohammed expels the Jewish tribe of Banu Nadir from Medina.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -920,7 +1316,19 @@ Expels tribe.
     *   Total: -7,200
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **-7,200**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.4 (Security/Wealth)
+*   **UMQ:** +0.4
 
 **Summary:**
 Executes expulsion.
@@ -932,7 +1340,7 @@ Executes expulsion.
 *Sura 59:7*
 
 **Context:**
-Wealth redistribution.
+Mohammed distributes the spoils (Fay) among the poor and needy.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -946,7 +1354,19 @@ Wealth redistribution.
     *   Total: +200
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+200**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Support/Loyalty)
+*   **UMQ:** +0.2
 
 **Summary:**
 Socialist-style distribution.
@@ -958,7 +1378,7 @@ Socialist-style distribution.
 *Sura 60:1*
 
 **Context:**
-Pardons Hateb.
+Mohammed pardons Hateb who tried to warn the Meccans.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -971,7 +1391,19 @@ Pardons Hateb.
     *   `UMQ_final` = +0.2
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.2**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Mercy/Loyalty)
+*   **UMQ:** +0.1
 
 **Summary:**
 Shows leniency.
@@ -983,7 +1415,7 @@ Shows leniency.
 *Sura 60:12*
 
 **Context:**
-Accepts pledge.
+Mohammed accepts the oath of allegiance from believing women.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -997,7 +1429,19 @@ Accepts pledge.
     *   Total: +200
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+200**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Support)
+*   **UMQ:** +0.2
 
 **Summary:**
 Integrates women.
@@ -1009,7 +1453,7 @@ Integrates women.
 *Sura 62:9*
 
 **Context:**
-Weekly assembly.
+Mohammed establishes the Friday congregational prayer.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -1023,7 +1467,19 @@ Weekly assembly.
     *   Total: +2,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+2,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.2 (Cohesion)
+*   **UMQ:** +0.2
 
 **Summary:**
 Establishes ritual.
@@ -1035,7 +1491,7 @@ Establishes ritual.
 *Sura 65*
 
 **Context:**
-Adjudicates divorce.
+Mohammed enforces the laws regarding divorce.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -1049,7 +1505,19 @@ Adjudicates divorce.
     *   Total: +1,000
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+1,000**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Social Order)
+*   **UMQ:** +0.1
 
 **Summary:**
 Supreme judge.
@@ -1061,7 +1529,7 @@ Supreme judge.
 *Sura 66:3*
 
 **Context:**
-Mercy to wife.
+Mohammed rebukes his wife Hafsa for disclosing a secret.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -1074,7 +1542,19 @@ Mercy to wife.
     *   `UMQ_final` = +0.1
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **+0.1**
+
+**Actor (self) impact:**
+*   **ΔOS:** +0.1 (Domestic control)
+*   **UMQ:** +0.1
 
 **Summary:**
 Emotional intelligence.
@@ -1086,7 +1566,7 @@ Emotional intelligence.
 *Sura 80:1-10*
 
 **Context:**
-Frowned at blind man.
+Mohammed frowns at a blind man while preaching to a wealthy chief.
 
 **Entity Analysis:**
 *   **Entity:** Muhammad
@@ -1099,7 +1579,19 @@ Frowned at blind man.
     *   `UMQ_final` = 0.0
 
 **Moral Calculation:**
+*   **Responsibility & Intention:**
+    *   PerceivedContext: Real
+    *   ActualContext: Real
+    *   At: 1.0 (Active)
+    *   Cp: 1.0 (Immediate)
+    *   Ri: 1.0 (Unique)
+    *   Rp: 1.0
+    *   In: 1.0 (Intended)
 *   **Total UMQ:** **0.0**
+
+**Actor (self) impact:**
+*   **ΔOS:** -0.1 (Reputation/Moral standing)
+*   **UMQ:** -0.1
 
 **Summary:**
 Lapse in judgment.
@@ -1111,13 +1603,13 @@ Lapse in judgment.
 
 1. **The Hijra (Migration to Medina):** +50 [Highly moral] {Synergistic}
 2. **Execution of the Battle of Badr:** -668.96 [Highly immoral] {Predatory}
-3. **Assassination of Kaab ibn Ashraf:** -4.0 [Immoral] {Destructive}
+3. **Assassination of Kaab ibn Ashraf:** -3.6 [Immoral] {Destructive}
 4. **The Change of Qibla:** +50 [Highly moral] {Synergistic}
 5. **Leadership at Ohod:** +105 [Highly moral] {Synergistic}
 6. **Expulsion of the Banu Kainoka:** -1,860 [Highly immoral] {Predatory}
 7. **Ransom of Badr Prisoners:** +44.8 [Highly moral] {Synergistic}
 8. **Renunciation of Treaties (Declaration of Immunity):** -7,000 [Highly immoral] {Predatory}
-9. **Demolition of Masjid al-Dirar:** -2.6 [Immoral] {Destructive}
+9. **Demolition of Masjid al-Dirar:** -2.34 [Immoral] {Destructive}
 10. **The Tabuk Expedition:** +3,600 [Highly moral] {Synergistic}
 11. **The Challenge of the Koran:** +900 [Highly moral] {Synergistic}
 12. **Restraint regarding Hamza's Mutilation:** +35 [Highly moral] {Synergistic}
@@ -1128,9 +1620,9 @@ Lapse in judgment.
 17. **Mild Debate with People of the Book:** +200 [Highly moral] {Synergistic}
 18. **Prophecy of Roman Victory:** +200 [Highly moral] {Synergistic}
 19. **Warning Near Relations:** +4.0 [Moral] {Synergistic}
-20. **Utilization of Poets:** +100 [Highly moral] {Synergistic}
+20. **Utilization of Poets:** +90 [Highly moral] {Synergistic}
 21. **Marriage to Zeinab bint Jahsh:** +0.09 [Slightly moral] {Synergistic}
-22. **Execution of Banu Koreidha:** -10,800 [Highly immoral] {Destructive}
+22. **Execution of Banu Koreidha:** -9,720 [Highly immoral] {Destructive}
 23. **Defense of the Trench:** +1,500 [Highly moral] {Synergistic}
 24. **Institution of Hijab:** +135 [Highly moral] {Synergistic}
 25. **Threat to Hypocrites:** +13 [Moral] {Synergistic}

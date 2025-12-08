@@ -10,6 +10,8 @@
 
 ### 1 Ender - physical and psychological abuse
 
+Context: Mazer physically attacked and psychologically pressured Ender during training, using deception to harden him for the final battle.
+
 - ΔOS = -0.20 (Extreme exhaustion, physical attacks, psychological pressure, deception)
 - VSA(Ender) = 0.60
 - Tc = 0.20 (Duration of training)
@@ -31,6 +33,8 @@ UMQ_base(a,e) = -0.20 × 0.60 × 0.20 × 2.0 × 1.8 = **-0.0864**
 UMQ_final(a,e) = -0.0864 × 1.0 × 1.0 = **-0.0864**
 
 ### 2 Humanity - salvation
+
+Context: Mazer's training enabled Ender to win the war, saving humanity from extinction.
 
 - ΔOS = +1.00
 - VSA = 0.55
@@ -54,6 +58,8 @@ UMQ_final(a,e) = +0.55
 Group size: ~100 Billion. Total = **+55,000,000,000**
 
 ### 3 Buggers - xenocide
+
+Context: Mazer's training and deception led to the xenocide of the Bugger species.
 
 - ΔOS = -1.00
 - VSA = 0.90

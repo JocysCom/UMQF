@@ -8,6 +8,8 @@
 
 ### 1 Ender - skill acquisition and protection
 
+Context: Dink requested Ender for his toon, teaching him advanced tactics and protecting him from Rose the Nose's worst impulses, while also grounding him psychologically about the nature of the "game".
+
 - ΔOS = +0.10 (Improved tactical skills, protection from Rose's worst impulses, psychological grounding regarding the "game")
 - VSA(Ender) = 0.60
 - Tc = 0.50
@@ -53,6 +55,8 @@ Dink - mentoring Ender - Ender: Total UMQ = +0.03 [Moderately moral] {Synergisti
 
 ### 1 Ender - attempted protection
 
+Context: Dink attempted to intervene in the shower fight to protect Ender, providing moral support even though he was physically restrained by Bonzo's gang.
+
 - ΔOS = +0.05 (Attempted to stop the fight, provided moral support, though physically restrained)
 - VSA(Ender) = 0.60
 - Tc = 0.10
@@ -74,6 +78,8 @@ UMQ_base(a,e) = +0.05 × 0.60 × 0.10 = **+0.003**
 UMQ_final(a,e) = +0.003 × 1.0 × 1.0 = **+0.003**
 
 ### 2 Bonzo - warning
+
+Context: Dink warned Bonzo against hurting Ender, trying to prevent him from committing a crime that would ruin his life.
 
 - ΔOS = +0.05 (Tried to prevent Bonzo from committing murder/ruining his life)
 - VSA(Bonzo) = 0.40

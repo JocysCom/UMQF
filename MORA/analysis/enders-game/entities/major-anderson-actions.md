@@ -9,6 +9,8 @@
 
 ### 1 Ender - unfair stress
 
+Context: Anderson rigged the games against Ender, creating unfair scenarios to test his limits.
+
 - ΔOS = -0.05 (Psychological pressure, exhaustion, unfairness)
 - VSA(Ender) = 0.60
 - Tc = 0.20 (Duration of Battle School command)
@@ -30,6 +32,8 @@ UMQ_base(a,e) = -0.05 × 0.60 × 0.20 × 2.0 × 1.4 = **-0.0168**
 UMQ_final(a,e) = -0.0168 × 1.0 × 1.0 = **-0.0168**
 
 ### 2 Graff - complicity
+
+Context: Anderson supported Graff's plan despite his protests, enabling the continued pressure on Ender.
 
 - ΔOS = +0.05 (Supporting Graff's plan, though protesting)
 - VSA(Graff) = 0.55
@@ -79,6 +83,8 @@ Anderson - rigging the games - Ender: Total UMQ = -0.0113 [Slightly immoral] {De
 
 ### 1 Graff - betrayal/check
 
+Context: Anderson reported Graff's negligence regarding the Bonzo fight to the authorities, risking Graff's career to ensure protocol was followed.
+
 - ΔOS = -0.05 (Risk of removal, legal trouble)
 - VSA(Graff) = 0.55
 - Tc = 0.10
@@ -100,6 +106,8 @@ UMQ_base(a,e) = -0.05 × 0.55 × 0.10 × 2.0 × 1.2 = **-0.0066**
 UMQ_final(a,e) = -0.0066
 
 ### 2 Humanity - safety
+
+Context: Anderson's report aimed to ensure safety protocols were followed, potentially protecting humanity from a rogue commander.
 
 - ΔOS = +0.000001 (Ensuring protocols are followed, preventing rogue commanders)
 - VSA(Humanity) = 0.55

@@ -9,6 +9,8 @@
 
 ### 1 Ender - recruitment/monitor removal
 
+Context: Graff authorized Ender's recruitment and the removal of his monitor, initiating his isolation and training.
+
 *Note: This covers the decision "Take him" and the removal of the monitor which causes pain but is a necessary step for his selection.*
 
 - ΔOS = -0.10 (Immediate pain, loss of protection, isolation, beginning of grueling training)
@@ -32,6 +34,8 @@ UMQ_base(a,e) = -0.10 × 0.60 × 1.00 × 2.0 × 1.5 = **-0.18**
 UMQ_final(a,e) = -0.18 × 0.9 × 1.0 = **-0.162**
 
 ### 2 Humanity - potential salvation
+
+Context: Graff bet on Ender being the savior of humanity, authorizing his recruitment to secure the species' survival.
 
 *Note: This is a high-stakes gamble. Graff believes Ender is the one.*
 
@@ -85,6 +89,8 @@ Graff - authorization - Ender & Humanity: Total UMQ = +3,959.87 [Extremely moral
 
 ### 1 Ender - social isolation and physical danger
 
+Context: Graff isolated Ender on the shuttle by praising him, making him a target for the other boys to toughen him up.
+
 - ΔOS = -0.05 (Immediate physical danger from bullies, long-term psychological stress)
 - VSA(Ender) = 0.60
 - Tc = 0.20 (First year impact)
@@ -106,6 +112,8 @@ UMQ_base(a,e) = -0.05 × 0.60 × 0.20 × 2.0 × 1.5 = **-0.018**
 UMQ_final(a,e) = -0.018 × 1.0 × 1.0 = **-0.018**
 
 ### 2 Launchies - manipulation
+
+Context: Graff manipulated the Launchies into resenting Ender, using them as tools to isolate and challenge him.
 
 - ΔOS = -0.01 (Manipulated into hatred, turning against a potential ally)
 - VSA = 0.33
@@ -155,6 +163,8 @@ Graff - isolation in shuttle - Ender & Launchies: Total UMQ = -0.031794 [Moderat
 
 ### 1 Ender - psychological distress
 
+Context: Graff chose not to intervene when Ender was stuck on the Giant's Drink, allowing him to struggle and find his own solution.
+
 - ΔOS = -0.02 (Allowed to suffer in a "suicidal" game loop)
 - VSA(Ender) = 0.60
 - Tc = 0.05 (Short term)
@@ -200,6 +210,8 @@ Graff - non-intervention (Giant's Drink) - Ender: Total UMQ = -0.00096 [Negligib
 
 ### 1 Valentine - manipulation
 
+Context: Graff manipulated Valentine into writing a letter to Ender, using her love for her brother to break his resistance.
+
 - ΔOS = -0.02 (Forced to betray her brother's trust, guilt)
 - VSA(Valentine) = 0.60
 - Tc = 0.20 (Long term guilt)
@@ -221,6 +233,8 @@ UMQ_base(a,e) = -0.02 × 0.60 × 0.20 × 1.5 × 1.4 = **-0.00504**
 UMQ_final(a,e) = -0.00504 × 1.0 × 1.0 = **-0.00504**
 
 ### 2 Ender - psychological manipulation
+
+Context: Graff used Valentine's letter to manipulate Ender psychologically, breaking his resistance but also causing him deep pain.
 
 - ΔOS = -0.10 (Destruction of his last safe memory/relationship, despair)
 - VSA(Ender) = 0.60
@@ -269,6 +283,8 @@ Graff - recruiting Valentine - Valentine & Ender: Total UMQ = -0.11304 [Moderate
 
 ### 1 Ender - unfair stress
 
+Context: Graff rigged the games against Ender, stacking the odds to force him to innovate and reach his limits.
+
 - ΔOS = -0.05 (Extreme exhaustion, unfair pressure, potential burnout)
 - VSA(Ender) = 0.60
 - Tc = 0.20 (Duration of Dragon Army command)
@@ -314,6 +330,8 @@ Graff - rigging the battles - Ender: Total UMQ = -0.018 [Slightly immoral] {Dest
 
 ### 1 Ender - physical danger and trauma
 
+Context: Graff negligently allowed the fight with Bonzo to happen, refusing to intervene to force Ender to solve his own problems, risking Ender's life.
+
 - ΔOS = -0.20 (Risk of death, actual psychological trauma of killing)
 - VSA(Ender) = 0.60
 - Tc = 0.50 (Permanent psychological scar)
@@ -335,6 +353,8 @@ UMQ_base(a,e) = -0.20 × 0.60 × 0.50 × 2.0 × 1.8 = **-0.216**
 UMQ_final(a,e) = -0.216 × 0.5 × 1.0 = **-0.108**
 
 ### 2 Bonzo - death
+
+Context: Graff's negligence allowed Bonzo to attack Ender, resulting in Bonzo's death.
 
 - ΔOS = -1.00 (Death)
 - VSA(Bonzo) = 0.40
@@ -384,6 +404,8 @@ Graff - negligence (Bonzo fight) - Ender & Bonzo: Total UMQ = -0.3388 [Highly im
 
 ### 1 Valentine - manipulation
 
+Context: Graff recruited Valentine again to persuade Ender to go to Command School, using her influence to manipulate him.
+
 - ΔOS = -0.01 (Used again, emotional toll)
 - VSA(Valentine) = 0.60
 - Tc = 0.10
@@ -405,6 +427,8 @@ UMQ_base(a,e) = -0.01 × 0.60 × 0.10 × 1.5 × 1.2 = **-0.00108**
 UMQ_final(a,e) = -0.00108
 
 ### 2 Ender - psychological manipulation
+
+Context: Graff used Valentine to persuade Ender to continue his training, manipulating him back into service.
 
 - ΔOS = +0.10 (Restored will to fight/live, but manipulated back into service)
 - VSA(Ender) = 0.60
@@ -455,6 +479,8 @@ Graff - recruiting Valentine (Lake) - Valentine & Ender: Total UMQ = +0.04842 [M
 
 ### 1 Ender - deception/trauma
 
+Context: Graff deceived Ender into believing the Third Invasion was a simulation, using him as a weapon to destroy the Buggers.
+
 - ΔOS = -0.50 (Used as a weapon without consent, causing massive psychological trauma)
 - VSA(Ender) = 0.60
 - Tc = 1.00 (Permanent guilt)
@@ -476,6 +502,8 @@ UMQ_base(a,e) = -0.50 × 0.60 × 1.00 × 2.0 × 2.0 = **-1.20**
 UMQ_final(a,e) = -1.20 × 1.0 × 1.0 = **-1.20**
 
 ### 2 Humanity - salvation
+
+Context: Graff's deception secured humanity's survival by allowing Ender to fight without the moral inhibition of knowing it was real.
 
 - ΔOS = +1.00
 - VSA = 0.55
@@ -499,6 +527,8 @@ UMQ_final(a,e) = +0.55
 Group size: ~100 Billion. Total = **+55,000,000,000**
 
 ### 3 Buggers - xenocide
+
+Context: Graff's deception led to the xenocide of the Bugger species.
 
 - ΔOS = -1.00
 - VSA = 0.90 (Queens)

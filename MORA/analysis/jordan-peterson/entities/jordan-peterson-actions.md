@@ -7,6 +7,8 @@
 
 ### 1 Transgender Canadians – social & political impact
 
+Context: Peterson publicly opposed Bill C-16, arguing it compelled speech regarding gender pronouns. This opposition was perceived by transgender Canadians as a delegitimization of their identity and a validation of social hostility against them.
+
 - ΔOS = −0.10 (increased social stigma, validation of harassment, psychological stress)
 - VSA(Transgender Canadians)
   - Recognition 0.07 (Advanced)
@@ -42,6 +44,8 @@ Group size: 100 000
 Total = **−2 175.0**
 
 ### 2 Conservative/Free Speech Audience – perceived defense of liberty
+
+Context: Peterson's opposition to Bill C-16 was framed as a defense of free speech and resistance against "political correctness." This stance provided psychological validation and a sense of protected liberty to his conservative audience.
 
 - ΔOS = +0.01 (psychological validation, sense of protected liberty)
 - VSA(Conservative Audience)
@@ -103,6 +107,8 @@ Jordan Peterson - opposing Bill C-16 - Transgender Canadians & Audience: Total U
 
 ### 1 Readers – self-improvement
 
+Context: Peterson published "12 Rules for Life," offering psychological advice and a framework for personal responsibility. Readers utilized these rules to improve their mental health, discipline, and sense of meaning.
+
 - ΔOS = +0.02 (improved mental health, personal responsibility, order)
 - VSA(Readers)
   - Recognition 0.07 (Advanced)
@@ -158,6 +164,8 @@ Jordan Peterson - publishing 12 Rules for Life - Readers: Total UMQ = +29,000.0 
 1. Global Population (8 000 000 000)
 
 ### 1 Global Population – delayed climate action
+
+Context: Peterson used his platform to express skepticism about climate change science and oppose climate action. This influence contributes to delayed public consensus and policy action required to mitigate global environmental risks.
 
 - ΔOS = −0.000001 (tiny individual risk increment via delayed policy/action)
 - VSA(Global Population)
@@ -221,6 +229,8 @@ Jordan Peterson - spreading climate denial - Global Population: Total UMQ = -280
 
 ### 1 Elliot Page – dignity & harassment
 
+Context: Peterson posted a tweet misgendering and deadnaming Elliot Page, calling his physician a "criminal." This direct public attack caused reputational harm and emotional distress to Page.
+
 - ΔOS = −0.05 (public humiliation, harassment, denial of identity)
 - VSA(Elliot Page)
   - Recognition 0.07 (Advanced)
@@ -254,6 +264,8 @@ UMQ_base(a,e) = −0.05 × 0.58 × 0.50 × 2.0 × 1.5 = **−0.0435**
 UMQ_final(a,e) = −0.0435 × 1.0 × 1.0 = **−0.0435 (Moderately immoral)**
 
 ### 2 Trans Community – stigma
+
+Context: Peterson's high-profile targeting of a prominent transgender individual reinforced a hostile online environment. This action signaled to his followers that misgendering and delegitimizing trans identities is acceptable behavior.
 
 - ΔOS = −0.01 (reinforced hostile environment)
 - VSA(Trans Community) = 0.58
@@ -308,6 +320,8 @@ Jordan Peterson - misgendering Elliot Page - Elliot Page & Trans Community: Tota
 1. Followers (10 000)
 
 ### 1 Followers – health risk
+
+Context: Peterson promoted an all-meat "carnivore diet" based on his personal experience, despite lacking nutritional expertise. Followers who adopted this restrictive diet faced potential health risks and nutrient deficiencies.
 
 - ΔOS = −0.05 (risk of dysregulation, nutrient deficiency)
 - VSA(Followers)
@@ -369,6 +383,8 @@ Jordan Peterson - promoting carnivore diet - Followers: Total UMQ = -23.93 [Mode
 
 ### 1 Vulnerable Young Men – radicalization risk
 
+Context: Peterson's rhetoric regarding "enforced monogamy" and the "crisis of masculinity" resonated with incel communities. By validating their grievances without sufficient caveats, he risked radicalizing vulnerable young men into resentment and isolation.
+
 - ΔOS = −0.05 (social isolation, adoption of "harsh fascist political ideology", resentment)
 - VSA(Vulnerable Young Men)
   - Recognition 0.07 (Advanced)
@@ -428,6 +444,8 @@ Jordan Peterson - platforming incel ideology - Vulnerable Young Men: Total UMQ =
 1. University Staff (3)
 
 ### 1 University Staff – legal stress & intimidation
+
+Context: Peterson filed a defamation lawsuit against three Wilfrid Laurier University staff members for comments made in a private meeting. This legal action caused significant stress and financial fear for the targeted individuals before being dismissed.
 
 - ΔOS = −0.05 (psychological stress, legal threat, fear of bankruptcy)
 - VSA(University Staff)

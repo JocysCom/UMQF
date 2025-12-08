@@ -23,6 +23,8 @@
 
 ### 1 Universe & Earth - brought into existence
 
+Context: God brought the universe and earth into existence from nothing, establishing the physical reality.
+
 - ΔOS = +1.00 (Creation of existence)
 - VSA (Non-living/Basic)
   - Recognition 0.01 (Basic)
@@ -51,6 +53,8 @@ UMQ_base(a,e) = +1.00 × 0.05 × 1.00 × 1.0 × 1.0 = **+0.05**
 UMQ_final(a,e) = +0.05 × 1.0 × 1.0 = **+0.05 (Highly moral)**
 
 ### 2 Humanity (Adam & Eve) - created
+
+Context: God created Adam and Eve in His own image, endowing them with life and stewardship over the earth.
 
 - ΔOS = +1.00 (Creation of life)
 - VSA (Advanced - Human baseline)
@@ -81,6 +85,8 @@ UMQ_final(a,e) = +0.58 × 1.0 × 1.0 = **+0.58 (Extremely moral)**
 Total for 2 humans: **+1.16**
 
 ### 3 Animal Kingdom - created
+
+Context: God created the diverse animal kingdom to populate the earth and sea.
 
 - Population: 2,000,000,000 (Estimate: Global ecosystem)
 - ΔOS = +1.00
@@ -134,6 +140,8 @@ God - Creation - Universe & Life: Total UMQ = +400,000,001 [Extremely moral] {Sy
 
 ### 1 Adam & Eve - loss of immortality/paradise
 
+Context: God expelled Adam and Eve from the Garden of Eden and imposed mortality and hardship as a consequence of their disobedience.
+
 - ΔOS = -0.50 (Introduction of death, hardship, loss of easy resources)
 - VSA (Advanced) = 0.58
 - Tc = 1.00 (Permanent change for them and lineage)
@@ -159,6 +167,8 @@ UMQ_final(a,e) = -0.87 × 1.0 × 1.0 = **-0.87 (Extremely immoral)**
 Total for 2 humans: **-1.74**
 
 ### 2 Serpent - cursed
+
+Context: God cursed the serpent to crawl on its belly and be at enmity with humanity.
 
 - ΔOS = -0.30 (Physical degradation)
 - VSA (Advanced animal/symbolic)
@@ -209,6 +219,8 @@ God - Expulsion & Curse - Eden: Total UMQ = -2.15 [Highly immoral] {Destructive}
 
 ### 1 Pre-Flood Humanity - destroyed
 
+Context: God sent a global flood to destroy humanity due to their pervasive wickedness and violence.
+
 - Population estimate: 10,000,000 (Conservative estimate for ancient world)
 - ΔOS = -1.00 (Death)
 - VSA (Advanced) = 0.58
@@ -232,6 +244,8 @@ Total: -2.32 × 10,000,000 = **-23,200,000**
 
 ### 2 Pre-Flood Animals - destroyed
 
+Context: The global flood destroyed the majority of the animal kingdom along with humanity.
+
 - Population: 2,000,000,000 (Global ecosystem)
 - ΔOS = -1.00
 - VSA (Basic) = 0.20
@@ -254,6 +268,8 @@ UMQ_final(a,e) = -0.80 × 1.0 × 1.0 = **-0.80**
 Total: -0.80 × 2,000,000,000 = **-1,600,000,000**
 
 ### 3 Noah & Family (8 people) - saved
+
+Context: God instructed Noah to build an ark, preserving him and his family from the floodwaters.
 
 - ΔOS = +1.00 (Saved from death)
 - VSA (Advanced) = 0.58
@@ -298,6 +314,8 @@ God - The Great Flood - World: Total UMQ = -1,623,200,000 [Catastrophically immo
 
 ### 1 Noah & Family (8) - covenant protection
 
+Context: God established a covenant with Noah, promising never to destroy the earth by flood again.
+
 - ΔOS = +0.20 (Promise of stability, freedom from fear of global flood)
 - VSA (Advanced) = 0.58
 - Tc = 1.00 (Perpetual)
@@ -319,6 +337,8 @@ UMQ_final(a,e) = +0.116 × 1.0 × 1.0 = **+0.116**
 Total: 8 × 0.116 = **+0.928**
 
 ### 2 Ark Animals (50,000) - covenant protection
+
+Context: The covenant extended to the animals preserved in the ark, ensuring their continued existence.
 
 - ΔOS = +0.20 (Promise of stability)
 - VSA (Basic) = 0.20
@@ -361,6 +381,8 @@ God - Noahic Covenant - Survivors: Total UMQ = +2,001 [Extremely moral] {Synergi
 ## Case: 5. God - Confusion of Tongues - Babel
 
 ### 1 Babel Builders - scattered/confused
+
+Context: God confused the language of the builders at Babel and scattered them across the earth to prevent their centralized overreach.
 
 - Population: 50,000 (Concentrated early post-flood population)
 - ΔOS = -0.20 (Loss of cooperation, social fragmentation, resource efficiency loss)
@@ -407,6 +429,8 @@ God - Confusion of Tongues - Babel: Total UMQ = -12,760 [Extremely immoral] {Des
 
 ### 1 Abraham - blessed
 
+Context: God established a covenant with Abraham, promising him land, descendants, and blessings.
+
 - ΔOS = +0.50 (Promise of land, seed, protection, "great reward")
 - VSA (Advanced) = 0.58
 - Tc = 1.00 (Perpetual)
@@ -446,6 +470,8 @@ God - Abrahamic Covenant - Abraham: Total UMQ = +0.29 [Highly moral] {Synergisti
 
 ### 1 Hagar - comforted/blessed
 
+Context: God comforted Hagar in the wilderness, promising that her descendants would be multiplied.
+
 - ΔOS = +0.50 (Saved from despair, promise of lineage)
 - VSA (Advanced) = 0.58
 - Tc = 1.00
@@ -466,6 +492,8 @@ UMQ_base(a,e) = +0.50 × 0.58 × 1.00 = **+0.29**
 UMQ_final(a,e) = +0.29 × 1.0 × 1.0 = **+0.29 (Highly moral)**
 
 ### 2 Ishmael - blessed
+
+Context: God promised that Ishmael would become the father of twelve princes and a great nation.
 
 - ΔOS = +0.50 (Promise of greatness/nationhood)
 - VSA (Advanced) = 0.58
@@ -496,6 +524,8 @@ God - Blessing - Hagar & Ishmael: Total UMQ = +0.58 [Extremely moral] {Synergist
 ## Case: 8. God - Plagues - Pharaoh's House
 
 ### 1 Pharaoh & Household - plagued
+
+Context: God inflicted plagues upon Pharaoh and his household because Pharaoh had taken Sarai, Abraham's wife.
 
 - Population: 100 (Household/Court)
 - ΔOS = -0.10 (Illness/Suffering "grievous stripes")
@@ -542,6 +572,8 @@ God - Plagues - Pharaoh's House: Total UMQ = -1.044 [Highly immoral] {Destructiv
 
 ### 1 Inhabitants - destroyed
 
+Context: God rained fire and brimstone on Sodom and Gomorrah, destroying the cities and their inhabitants due to their grievous sin.
+
 - Population: 5,000 (Estimate for two ancient cities)
 - ΔOS = -1.00
 - VSA (Advanced) = 0.58
@@ -564,6 +596,8 @@ UMQ_final(a,e) = -2.32 × 1.0 × 1.0 = **-2.32**
 Total: -2.32 × 5,000 = **-11,600**
 
 ### 2 Lot & Family (3 people) - saved
+
+Context: God sent angels to rescue Lot and his family from the destruction of Sodom.
 
 - ΔOS = +1.00
 - VSA (Advanced) = 0.58
@@ -607,6 +641,8 @@ God - Destruction - Sodom & Gomorrah: Total UMQ = -11,599 [Extremely immoral] {D
 
 ### 1 Abraham - psychological trauma
 
+Context: God tested Abraham by commanding him to sacrifice his son Isaac, causing him extreme psychological distress.
+
 - ΔOS = -0.20 (Extreme psychological stress, command to kill son)
 - VSA (Advanced) = 0.58
 - Tc = 0.01 (Duration of journey/test)
@@ -631,6 +667,8 @@ UMQ_base(a,e) = -0.20 × 0.58 × 0.01 × 1.0 × 1.9 = **-0.0022**
 UMQ_final(a,e) = -0.0022 × 1.0 × 1.0 = **-0.0022 (Slightly immoral)**
 
 ### 2 Isaac - trauma/threat of death
+
+Context: Isaac was bound and placed on the altar, facing the imminent threat of death by his father's hand.
 
 - ΔOS = -0.50 (Bound, knife raised, near-death trauma)
 - VSA (Advanced) = 0.58
@@ -677,6 +715,8 @@ God - Testing - Abraham: Total UMQ = -0.629 [Extremely immoral] {Destructive}
 
 ### 1 Hagar & Ishmael - saved from thirst
 
+Context: God opened Hagar's eyes to a well of water, saving her and Ishmael from dying of thirst in the wilderness.
+
 - ΔOS = +1.00 (Saved from death by dehydration)
 - VSA (Advanced) = 0.58
 - Tc = 1.00
@@ -716,6 +756,8 @@ God - Saving - Hagar & Ishmael: Total UMQ = +1.16 [Extremely moral] {Synergistic
 ## Case: 12. God - Intervention - Abimelech's House
 
 ### 1 Abimelech's House (Women) - barrenness/healing
+
+Context: God temporarily closed the wombs of Abimelech's household as a warning regarding Sarah, then healed them upon Abraham's prayer.
 
 - ΔOS = -0.05 (Temporary barrenness/stress followed by healing)
 - VSA (Advanced) = 0.58
@@ -761,6 +803,8 @@ God - Intervention - Abimelech's House: Total UMQ = -0.035 [Negligibly immoral] 
 
 ### 1 Er & Onan - slain
 
+Context: God slew Er and Onan for their wickedness in His sight.
+
 - ΔOS = -1.00 (Death)
 - VSA (Advanced) = 0.58
 - Tc = 1.00
@@ -801,6 +845,8 @@ God - Judgment - Er & Onan: Total UMQ = -4.64 [Highly immoral] {Destructive}
 
 ### 1 Jesus - endorsed
 
+Context: God publicly endorsed Jesus as His beloved Son during his baptism.
+
 - ΔOS = +0.10 (Public validation, authority boost)
 - VSA (Advanced/Complex) = 0.58 (Human aspect)
 - Tc = 1.00
@@ -821,6 +867,8 @@ UMQ_base(a,e) = +0.10 × 0.58 × 1.00 = **+0.058**
 UMQ_final(a,e) = +0.058 × 1.0 × 1.0 = **+0.058 (Highly moral)**
 
 ### 2 Humanity - guided
+
+Context: God's endorsement of Jesus provided humanity with a clear guide to divine truth.
 
 - ΔOS = +0.10 (Guidance to truth/salvation)
 - VSA (Advanced) = 0.58
@@ -852,6 +900,8 @@ God - Endorsement - Jesus: Total UMQ = +580 [Extremely moral] {Synergistic}
 
 ### 1 Jesus - raised from dead
 
+Context: God raised Jesus from the dead, granting him victory over death and eternal life.
+
 - ΔOS = +1.00 (Conquest of death)
 - VSA (Advanced/Complex) = 0.58
 - Tc = 1.00 (Eternal life)
@@ -872,6 +922,8 @@ UMQ_base(a,e) = +1.00 × 0.58 × 1.00 = **+0.58**
 UMQ_final(a,e) = +0.58 × 1.0 × 1.0 = **+0.58 (Extremely moral)**
 
 ### 2 Believers - hope of resurrection
+
+Context: The resurrection of Jesus provided believers with the hope of their own resurrection and eternal life.
 
 - ΔOS = +0.50 (Removal of fear of death, promise of eternal life)
 - VSA (Advanced) = 0.58

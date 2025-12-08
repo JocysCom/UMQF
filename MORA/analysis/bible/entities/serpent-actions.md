@@ -7,6 +7,8 @@
 
 ### 1 Eve - deceived into mortality
 
+Context: The serpent deceived Eve into eating the forbidden fruit, leading to her loss of immortality and expulsion from Eden.
+
 - ΔOS = -0.50 (Loss of immortality/paradise)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)
@@ -39,6 +41,8 @@ UMQ_base(a,e) = -0.50 × 0.58 × 1.00 × 1.5 × 1.5 = **-0.6525**
 UMQ_final(a,e) = -0.6525 × 0.25 × 1.0 = **-0.1631 (Highly immoral)**
 
 ### 2 Humanity - inherited mortality
+
+Context: The serpent's deception of Eve initiated the fall of man, causing all future humanity to inherit mortality.
 
 - Population: ~10,000,000,000 (All humans)
 - ΔOS = -0.50 (Inherited mortality)

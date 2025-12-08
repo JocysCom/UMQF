@@ -8,6 +8,8 @@
 
 ### 1 Ender - respect/validation
 
+Context: Carn Carby graciously accepted his defeat by Ender and offered him respect and encouragement, validating Ender's skill despite the general hostility from other commanders.
+
 - ΔOS = +0.01 (Emotional support, validation of Ender's skill amidst hostility)
 - VSA(Ender) = 0.60
 - Tc = 0.10

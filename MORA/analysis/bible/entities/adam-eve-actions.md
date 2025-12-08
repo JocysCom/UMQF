@@ -7,6 +7,8 @@
 
 ### 1 Adam & Eve - loss of immortality
 
+Context: Adam and Eve ate the forbidden fruit, violating God's command and resulting in their expulsion from Eden and loss of immortality.
+
 - ΔOS = -0.50 (Transition from immortal/paradise state to mortal/suffering state)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)
@@ -40,6 +42,8 @@ UMQ_final(a,e) = -0.435 × 1.0 × 1.0 = **-0.435 (Highly immoral)**
 Total for 2 people: **-0.87**
 
 ### 2 Humanity (Future generations) - inherited mortality
+
+Context: The transgression of Adam and Eve introduced sin and death into the world, affecting all future generations with mortality and separation from the divine.
 
 - Population: 10,000,000,000 (All future humans)
 - ΔOS = -0.50 (Loss of potential immortality)

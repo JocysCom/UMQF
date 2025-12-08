@@ -8,6 +8,8 @@
 
 ### 1 Family (8) - saved from extinction
 
+Context: Noah built an ark according to God's instructions, saving his family from the global flood.
+
 - ΔOS = +1.00 (Survival of the flood)
 - VSA (Advanced)
   - Recognition 0.07 (Advanced)
@@ -37,6 +39,8 @@ UMQ_final(a,e) = +0.58 × 1.0 × 1.0 = **+0.58 (Extremely moral)**
 Total for 8 people: **+4.64**
 
 ### 2 Animal Kingdom (Representative pairs) - saved
+
+Context: Noah gathered pairs of every animal species into the ark to preserve them from extinction.
 
 - Population: 50,000 (Estimate for species pairs required for repopulation)
 - ΔOS = +1.00
@@ -80,6 +84,8 @@ Noah - Building the Ark - Family & Animals: Total UMQ = +10,000,005 [Extremely m
 ## Case: 2. Noah - Cursing - Canaan
 
 ### 1 Canaan (Grandson/Lineage) - cursed to slavery
+
+Context: Noah cursed his grandson Canaan to be a servant of servants because his father Ham saw Noah's nakedness.
 
 - ΔOS = -0.50 (Social degradation, "servant of servants")
 - VSA (Advanced) = 0.58
