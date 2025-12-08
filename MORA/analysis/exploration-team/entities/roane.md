@@ -16,9 +16,9 @@ Reference: See methodology and ability scoring in `UMQF.md`
 
 - **Moral Efficiency Score:** 99.9% (Percentage of total impact that is positive)
 - **Moral Efficiency Label:** Highly Constructive Saintly
-- **Moral Fidelity Score:** 3.07 (Logarithmic score of integrity: -log10(1-Efficiency))
-- **Positive (Good):** +7,252.92 (99.9% of total magnitude)
-- **Negative (Evil):** -6.24 (0.1% of total magnitude)
+- **Moral Fidelity Score:** 3.04 (Logarithmic score of integrity: -log10(1-Efficiency))
+- **Positive (Good):** +7,252.64 (99.9% of total magnitude)
+- **Negative (Evil):** -6.25 (0.1% of total magnitude)
 
 ## Executive Summary
 
@@ -69,9 +69,9 @@ Reference: See methodology and ability scoring in `UMQF.md`
 | :--- | :--- | :--- | :--- |
 | Threatening | Huyghens | -0.01 | Destructive |
 | Joining | Expedition | +0.04 | Synergistic |
-| Bonding | Nugget | +0.06 | Synergistic |
+| Bonding | Nugget | +0.05 | Synergistic |
 | Defending | Self & Party | -6.23 | Destructive |
-| Falsifying | Report | +7,252.82 | Synergistic |
+| Falsifying | Report | +7,252.54 | Synergistic |
 
 ## Background
 

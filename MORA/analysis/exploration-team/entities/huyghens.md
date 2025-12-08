@@ -18,7 +18,7 @@ Reference: See methodology and ability scoring in `UMQF.md`
 - **Moral Efficiency Label:** Destructive Hazardous
 - **Moral Fidelity Score:** 0.10 (Logarithmic score of integrity: -log10(1-Efficiency))
 - **Positive (Good):** +3,628.94 (20.9% of total magnitude)
-- **Negative (Evil):** -13,751.15 (79.1% of total magnitude)
+- **Negative (Evil):** -13,751.14 (79.1% of total magnitude)
 
 ## Executive Summary
 

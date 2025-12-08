@@ -14,11 +14,11 @@ Reference: See methodology and ability scoring in `UMQF.md`
 
 ## UMQ Score Summary
 
-- **Moral Efficiency Score:** 6.1% (Percentage of total impact that is positive)
+- **Moral Efficiency Score:** 1.25% (Percentage of total impact that is positive)
 - **Moral Efficiency Label:** Highly Destructive Hazardous
-- **Moral Fidelity Score:** 0.03 (Logarithmic score of integrity: -log10(1-Efficiency))
-- **Positive (Good):** +3.66 (6.1% of total magnitude)
-- **Negative (Evil):** -60.10 (93.9% of total magnitude)
+- **Moral Fidelity Score:** 0.005 (Logarithmic score of integrity: -log10(1-Efficiency))
+- **Positive (Good):** +0.76 (1.25% of total magnitude)
+- **Negative (Evil):** -60.10 (98.75% of total magnitude)
 
 ## Executive Summary
 

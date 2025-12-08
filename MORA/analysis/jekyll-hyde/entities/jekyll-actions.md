@@ -2,7 +2,7 @@
 
 **Entity:** Henry Jekyll
 **Document:** "The Strange Case Of Dr. Jekyll And Mr. Hyde"
-**Analysis Date:** 2025-12-04
+**Analysis Date:** 2025-12-08
 
 ---
 
@@ -14,8 +14,18 @@
 
 ### 1 Society - unleashing a predator
 
+Context: Jekyll synthesized a drug to separate his good and evil natures, knowingly releasing Edward Hyde, a being of pure evil, into society without safeguards, exposing the public to a predator.
+
 - ΔOS(Society) = -0.01 (Introduction of a murderer/monster)
 - VSA(Society) = 0.58 (Average)
+  - Recognition 0.08 (Advanced)
+  - Solving 0.09 (Advanced)
+  - Simulation 0.09 (Advanced)
+  - Planning 0.09 (Advanced)
+  - Adaptation 0.05 (Advanced)
+  - Communication 0.09 (Advanced)
+  - Actions 0.09 (Complex)
+  - **Total VSA = 0.58**
 - Tc = 0.20 (Duration of Hyde's terror)
 - Vc = 1.00 (No consent)
 - Sc = 0.50 (Fear/Harm caused by Hyde)
@@ -66,8 +76,18 @@ Jekyll - creating potion - Society: Total UMQ = -0.00096 [Negligibly immoral] {D
 
 ### 1 Utterson - emotional distress
 
+Context: Jekyll lied to Utterson and forged a letter to protect Hyde, causing his friend significant anxiety and drawing him into a dangerous mystery.
+
 - ΔOS = -0.01 (Anxiety/Stress)
-- VSA = 0.60
+- VSA = 0.60 (Advanced)
+  - Recognition 0.09 (Advanced)
+  - Solving 0.10 (Advanced)
+  - Simulation 0.10 (Advanced)
+  - Planning 0.10 (Advanced)
+  - Adaptation 0.05 (Advanced)
+  - Communication 0.09 (Advanced)
+  - Actions 0.07 (Advanced)
+  - **Total VSA = 0.60**
 - Tc = 0.10
 - Vc = 0.50 (Partial deception)
 - Sc = 0.10
@@ -92,8 +112,18 @@ UMQ_final(a,e) = -0.00099 × 1.0 × 1.0 = **-0.00099 (Negligibly immoral)**
 
 ### 2 Potential Victims - risk exposure
 
+Context: By shielding Hyde from the police and providing him with resources, Jekyll maintained the risk of further violence to the public.
+
 - ΔOS = -0.05 (Increased risk of harm)
-- VSA = 0.58
+- VSA = 0.58 (Average)
+  - Recognition 0.08 (Advanced)
+  - Solving 0.09 (Advanced)
+  - Simulation 0.09 (Advanced)
+  - Planning 0.09 (Advanced)
+  - Adaptation 0.05 (Advanced)
+  - Communication 0.09 (Advanced)
+  - Actions 0.09 (Complex)
+  - **Total VSA = 0.58**
 - Tc = 0.10
 - Vc = 1.00
 - Sc = 0.00 (Risk only)
@@ -141,12 +171,22 @@ Jekyll - shielding - Hyde: Total UMQ = -0.0017 [Slightly immoral] {Destructive}
 
 ### Entity list
 
-1. Poor of London (Beneficiaries of relief)
+1. Poor of London (100)
 
-### 1 Poor of London - relief of suffering
+### 1 Poor of London (100) - relief of suffering
+
+Context: In an attempt to atone for his connection to Hyde, Jekyll dedicated himself to charitable works, providing relief and medical aid to the poor.
 
 - ΔOS = +0.01 (Temporary relief, medical aid)
-- VSA = 0.58
+- VSA = 0.58 (Average)
+  - Recognition 0.08 (Advanced)
+  - Solving 0.09 (Advanced)
+  - Simulation 0.09 (Advanced)
+  - Planning 0.09 (Advanced)
+  - Adaptation 0.05 (Advanced)
+  - Communication 0.09 (Advanced)
+  - Actions 0.09 (Complex)
+  - **Total VSA = 0.58**
 - Tc = 0.10 (Short term)
 - Vc = 0.00
 - Sc = 0.00
@@ -170,7 +210,7 @@ UMQ_base(a,e) = +0.01 × 0.58 × 0.10 × 1.00 × 1.00 = **+0.00058**
 UMQ_final(a,e) = +0.00058 × 1.0 × 1.0 = **+0.00058**
 
 **Group Multiplier:**
-Estimated 100 beneficiaries during the "months" of labor.
+Estimated 100 beneficiaries.
 Total = +0.00058 × 100 = **+0.058**
 
 ### Aggregate results (pre-CF)
@@ -198,6 +238,8 @@ Jekyll - charitable works - Poor of London: Total UMQ = +0.058 [Moderately moral
 1. Dr. Lanyon (Witness to transformation)
 
 ### 1 Dr. Lanyon - psychological shock and death
+
+Context: Driven by desperation to retrieve his drugs, Jekyll revealed his transformation to Lanyon, causing a shock so severe it led to Lanyon's physical decline and death.
 
 - ΔOS = -0.80 (Severe shock leading to physical decline and death)
 - VSA(Lanyon):
@@ -257,8 +299,18 @@ Jekyll - traumatizing - Lanyon: Total UMQ = -0.741 [Extremely immoral] {Predator
 
 ### 1 Society - protection from Hyde
 
+Context: In his final hours, Jekyll resisted the urge to sleep (which would bring Hyde) and ultimately committed suicide to ensure Hyde could not escape to harm others again.
+
 - ΔOS = +0.10 (Removal of threat)
-- VSA = 0.58
+- VSA = 0.58 (Average)
+  - Recognition 0.08 (Advanced)
+  - Solving 0.09 (Advanced)
+  - Simulation 0.09 (Advanced)
+  - Planning 0.09 (Advanced)
+  - Adaptation 0.05 (Advanced)
+  - Communication 0.09 (Advanced)
+  - Actions 0.09 (Complex)
+  - **Total VSA = 0.58**
 - Tc = 1.00
 - Vc = 0.00
 - Sc = 0.00

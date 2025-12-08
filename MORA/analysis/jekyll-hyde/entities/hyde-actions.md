@@ -2,7 +2,7 @@
 
 **Entity:** Edward Hyde
 **Document:** "The Strange Case Of Dr. Jekyll And Mr. Hyde"
-**Analysis Date:** 2025-12-04
+**Analysis Date:** 2025-12-08
 
 ---
 
@@ -14,6 +14,8 @@
 2. The Child's Family (indirect suffering)
 
 ### 1 The Child - physical injury and trauma
+
+Context: Hyde trampled calmly over a young girl who ran into him, leaving her screaming on the ground, displaying a complete lack of empathy.
 
 - ΔOS(Child) = -0.05 (physical injury described as "not much the worse" but trampled; psychological trauma)
 - VSA(Child):
@@ -49,6 +51,8 @@ UMQ_final(a,e) = -0.00368 × 1.0 × 1.0 = **-0.00368 (Slightly immoral)**
 
 ### 2 The Child's Family - emotional distress
 
+Context: The child's family suffered emotional distress and anger upon witnessing the aftermath and the man's callousness.
+
 - ΔOS = -0.01 (distress)
 - VSA = 0.58 (average adult humans)
 - Tc = 0.01 (short duration incident)
@@ -77,8 +81,7 @@ UMQ_final(a,e) = -0.00015 × 0.5 × 0.5 = **-0.0000375 (Negligibly immoral)**
 
 - Child: -0.00368
 - Family: -0.0000375
-
-**Total UMQ = -0.0037175**
+- Total: -0.0037175
 
 ### Complexity Factor adjustment
 
@@ -102,6 +105,8 @@ Hyde - trampling - Child: Total UMQ = -0.0037 [Slightly immoral] {Predatory}
 1. Sir Danvers Carew (victim of homicide)
 
 ### 1 Sir Danvers Carew - loss of life
+
+Context: In a fit of unprovoked, ape-like fury, Hyde clubbed Sir Danvers Carew to death with a heavy cane, shattering his bones.
 
 - ΔOS(Carew) = -1.00 (Death)
 - VSA(Carew):
@@ -162,6 +167,8 @@ Hyde - murdering - Sir Danvers Carew: Total UMQ = -2.16 [Highly immoral] {Destru
 
 ### 1 Match-Seller - physical assault
 
+Context: While fleeing and hunted, Hyde smote a woman who offered him lights in the face, driven by fear and hatred.
+
 - ΔOS(Woman) = -0.02 (Physical blow, likely bruising)
 - VSA(Woman) = 0.58 (Average adult)
 - Tc = 0.05 (Temporary pain)
@@ -213,8 +220,10 @@ Hyde - striking - Match-Seller: Total UMQ = -0.0016 [Slightly immoral] {Predator
 
 ### 1 Henry Jekyll - psychological torment
 
+Context: Resenting Jekyll's dislike and his own dependence, Hyde played "ape-like tricks" on Jekyll, destroying his father's portrait and blaspheming in his books, causing immense distress.
+
 - ΔOS(Jekyll) = -0.10 (Psychological distress, "loathed the despondency", "resented the dislike")
-- VSA(Jekyll) = 0.75 (Complex)
+- VSA(Jekyll) = 0.58 (Advanced)
 - Tc = 0.10 (Weeks/Months of final struggle)
 - Vc = 1.00 (Non-consent)
 - Sc = 0.80 (High suffering, "sicken and freeze", "abjection and passion")
@@ -223,7 +232,7 @@ sign(ΔOS) = -1
 [1 − (-1) × Vc] = 2.00
 [1 − (-1) × Sc] = 1.80
 
-UMQ_base(a,e) = -0.10 × 0.75 × 0.10 × 2.00 × 1.80 = **-0.027**
+UMQ_base(a,e) = -0.10 × 0.58 × 0.10 × 2.00 × 1.80 = **-0.02088**
 
 **Responsibility & Intention:**
 
@@ -235,15 +244,15 @@ UMQ_base(a,e) = -0.10 × 0.75 × 0.10 × 2.00 × 1.80 = **-0.027**
 - Rp = 1.0
 - In = 1.0 (Intended - "ape-like tricks", "resented the dislike")
 
-UMQ_final(a,e) = -0.027 × 1.0 × 1.0 = **-0.027 (Moderately immoral)**
+UMQ_final(a,e) = -0.02088 × 1.0 × 1.0 = **-0.02088 (Moderately immoral)**
 
 ### Aggregate results (pre-CF)
 
-- Jekyll: -0.027
+- Jekyll: -0.02088
 
 ### Complexity Factor adjustment
 
-CF = 1.00. Adjusted Total UMQ = -0.027
+CF = 1.00. Adjusted Total UMQ = -0.021
 
 ### Actor (self) impact
 
@@ -252,7 +261,7 @@ CF = 1.00. Adjusted Total UMQ = -0.027
 
 ### Summary headline
 
-Hyde - tormenting - Jekyll: Total UMQ = -0.027 [Moderately immoral] {Predatory}
+Hyde - tormenting - Jekyll: Total UMQ = -0.021 [Moderately immoral] {Predatory}
 
 ---
 
@@ -264,17 +273,19 @@ Hyde - tormenting - Jekyll: Total UMQ = -0.027 [Moderately immoral] {Predatory}
 
 ### 1 Henry Jekyll - collateral death
 
+Context: Hyde committed suicide to avoid capture by Utterson and Poole, thereby killing the shared body and ending Henry Jekyll's life.
+
 - ΔOS(Jekyll) = -1.00 (Death of shared organism)
-- VSA(Jekyll) = 0.75 (Complex)
+- VSA(Jekyll) = 0.58 (Advanced)
 - Tc = 1.00
-- Vc = 1.00 (Jekyll's will was overpowered by Hyde generally, though Jekyll laid the means. In the specific moment, Hyde acted to save Hyde from capture, killing Jekyll.)
+- Vc = 1.00 (Jekyll did not consent to dying at that specific moment by Hyde's hand, though he had prepared for the end)
 - Sc = 0.20 (Despair)
 
 sign(ΔOS) = -1
 [1 − (-1) × Vc] = 2.00
 [1 − (-1) × Sc] = 1.20
 
-UMQ_base(a,e) = -1.00 × 0.75 × 1.00 × 2.00 × 1.20 = **-1.80**
+UMQ_base(a,e) = -1.00 × 0.58 × 1.00 × 2.00 × 1.20 = **-1.392**
 
 **Responsibility & Intention:**
 
@@ -286,15 +297,15 @@ UMQ_base(a,e) = -1.00 × 0.75 × 1.00 × 2.00 × 1.20 = **-1.80**
 - Rp = 1.0 × 1.0 × 1.0 = **1.0**
 - In = 1.0 (Intended - suicide)
 
-UMQ_final(a,e) = -1.80 × 1.0 × 1.0 = **-1.80 (Highly immoral)**
+UMQ_final(a,e) = -1.392 × 1.0 × 1.0 = **-1.392 (Highly immoral)**
 
 ### Aggregate results (pre-CF)
 
-- Jekyll: -1.80
+- Jekyll: -1.392
 
 ### Complexity Factor adjustment
 
-CF = 1.10 (Complex duality of existence). Adjusted Total UMQ = -1.98
+CF = 1.10 (Complex duality of existence). Adjusted Total UMQ = -1.531
 
 ### Actor (self) impact
 
@@ -302,7 +313,7 @@ CF = 1.10 (Complex duality of existence). Adjusted Total UMQ = -1.98
 
 ### Summary headline
 
-Hyde - suicide - Self & Jekyll: Total UMQ = -1.98 [Highly immoral] {Destructive}
+Hyde - suicide - Self & Jekyll: Total UMQ = -1.531 [Highly immoral] {Destructive}
 
 ---
 
@@ -311,5 +322,5 @@ Hyde - suicide - Self & Jekyll: Total UMQ = -1.98 [Highly immoral] {Destructive}
 1. **Hyde - trampling - Child: -0.0037 [Slightly immoral] {Predatory}**
 2. **Hyde - murdering - Sir Danvers Carew: -2.16 [Highly immoral] {Destructive}**
 3. **Hyde - striking - Match-Seller: -0.0016 [Slightly immoral] {Predatory}**
-4. **Hyde - tormenting - Jekyll: -0.027 [Moderately immoral] {Predatory}**
-5. **Hyde - suicide - Self & Jekyll: -1.98 [Highly immoral] {Destructive}**
+4. **Hyde - tormenting - Jekyll: -0.021 [Moderately immoral] {Predatory}**
+5. **Hyde - suicide - Self & Jekyll: -1.531 [Highly immoral] {Destructive}**
