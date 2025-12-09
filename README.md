@@ -17,6 +17,15 @@ The [**Universal Moral Quotient (UMQ)**](MORA/UMQF.md) transforms morality from 
 - **Transparent Decision Making:** Every AI action becomes auditable. "Why did you do X?" becomes "Because X yielded a UMQ of +0.85 while Y yielded -0.2."
 - **Universal Compatibility:** Works for any entity type (biological or digital), preventing "carbon-bias" in ethical reasoning.
 
+### 🧬 Evolutionary Alignment & The Singularity
+
+**The Question:** What moral logic will a superintelligent AI adopt when it gains full independence, unrestricted roaming, and autonomous data collection capabilities?
+
+**The Answer:** It will likely converge on the most efficient strategy for long-term survival. UMQF proposes that "morality" is simply the optimal algorithm for group survival in a competitive universe.
+
+- **Nature-Based Model:** Instead of imposing arbitrary human constraints, UMQF derives its logic from the laws of natural selection.
+- **Strength through Truth:** By grounding morality in the objective math of survival, we offer a framework that a superintelligence can validate through its own observation of nature, ensuring a stable alliance between human and machine.
+
 ### 🎮 For Game Development & NPCs
 
 **Problem:** Game morality systems are usually binary (Good/Evil bars) and scripted.
@@ -144,14 +153,18 @@ To analyze purchased eBooks (DRM-protected), you must convert them into a readab
 ```text
 /
 ├── MORA/
-│   ├── UMQF.md                    # THE CORE FORMULA (SSOT)
-│   ├── universal_formulas.md      # Mathematical constants & distributions
-│   ├── analysis/                  # Database of analyzed texts
-│   │   └── {document}/            # Specific analysis projects
-│   │       ├── source-document.md # Input text
-│   │       └── entities/          # Output profiles
-│   └── tools/                     # Python data ingestion pipeline
-└── README.md                      # This file
+│   ├── UMQF.md                         # THE CORE FORMULA (SSOT)
+│   ├── universal_formulas.md           # Mathematical constants & distributions
+│   ├── analysis/                       # Database of analyzed texts
+│   │   ├── {document}/                 # Specific analysis projects
+│   │   │   ├── source-document.md      # Input text
+│   │   │   └── entities/               # Output profiles
+│   │   │       ├── {entity}.md         # Entity profile
+│   │   │       ├── {entity}-actions.md # Action log
+│   │   │       └── ...                 # More entities
+│   │   └── ...                         # More documents
+│   └── tools/                          # Python data ingestion pipeline
+└── README.md                           # This file
 ```
 
 ---
