@@ -8,15 +8,6 @@
 
 The [**Universal Moral Quotient (UMQ)**](MORA/UMQF.md) transforms morality from a subjective feeling into an objective, computable metric. Defining "Good" as that which increases the probability of survival for the greatest number of entities creates a universal standard applicable to humans, AI, and extraterrestrial life.
 
-### 🤖 For AI Safety & Superalignment
-
-**Problem:** Ensuring superintelligent AI aligns with human values when "values" are vague.
-**Solution:** UMQF provides a hard-coded, mathematical definition of morality.
-
-- **Objective Function:** Gives AI a clear optimization target: Maximize Global UMQ.
-- **Transparent Decision Making:** Every AI action becomes auditable. "Why did you do X?" becomes "Because X yielded a UMQ of +0.85 while Y yielded -0.2."
-- **Universal Compatibility:** Works for any entity type (biological or digital), preventing "carbon-bias" in ethical reasoning.
-
 ### 🧬 Evolutionary Alignment & The Singularity
 
 **The Question:** What moral logic will a superintelligent AI adopt when it gains full independence, unrestricted roaming, and autonomous data collection capabilities?
@@ -25,6 +16,15 @@ The [**Universal Moral Quotient (UMQ)**](MORA/UMQF.md) transforms morality from 
 
 - **Nature-Based Model:** Instead of imposing arbitrary human constraints, UMQF derives its logic from the laws of natural selection.
 - **Strength through Truth:** By grounding morality in the objective math of survival, we offer a framework that a superintelligence can validate through its own observation of nature, ensuring a stable alliance between human and machine.
+
+### 🤖 For AI Safety & Superalignment
+
+**Problem:** Ensuring superintelligent AI aligns with human values when "values" are vague.
+**Solution:** UMQF provides a hard-coded, mathematical definition of morality.
+
+- **Objective Function:** Gives AI a clear optimization target: Maximize Global UMQ.
+- **Transparent Decision Making:** Every AI action becomes auditable. "Why did you do X?" becomes "Because X yielded a UMQ of +0.85 while Y yielded -0.2."
+- **Universal Compatibility:** Works for any entity type (biological or digital), preventing "carbon-bias" in ethical reasoning.
 
 ### 🎮 For Game Development & NPCs
 
