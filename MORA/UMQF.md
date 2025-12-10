@@ -97,7 +97,15 @@ Where:
   - 0.80 ≤ - Long-term
   - 1.00 ≤ - Permanent
 
-- `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU represents the economic value produced by an average entity over their lifetime. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.*
+- `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU represents the economic value produced by an average entity over their lifetime. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.* Linear scale mapping:
+
+  - 0.0001 ≤ - Trivial
+  - 0.0100 ≤ - Small
+  - 0.1000 ≤ - Significant
+  - 0.5000 ≤ - Substantial
+  - 1.0000 ≤ - Lifetime
+  - 1000.0 ≤ - Generational
+  - 1000000.0 ≤ - Civilizational
 
 - `Vc(e)` - Violation coefficient of Consent of entity (e) caused by action (a), ranging from 0 (no violation) to 1 (full violation). Its application is conditional on `ΔOS(e)`. Full violation neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. Linear scale mapping:
 
@@ -124,6 +132,7 @@ Where:
 
 #### Notes
 
+- Precision of Estimation: When assigning values to variables (e.g., ΔOS, VSA), use the most precise numerical value possible based on the evidence. The provided linear/logarithmic scale mappings (e.g., "0.10 ≤ - Minor") are for guidance and qualitative labeling only; do not default to these threshold values if a more specific number better represents reality.
 - Objective Measurement of Consent and Suffering: Behaviours like fleeing or resisting could indicate non-consent. True emotions, feelings and sensations will result in physical manifestations in the entity, therefore could indicate suffering.
 - For temporary harm (e.g., imprisonment), set `Tc` to the duration fraction (e.g., 0.10) and `ΔOS` to the intensity (e.g., -1.0 for total suppression), rather than pre-scaling ΔOS.
 - Cultural variables: Excluded due to their inherent subjectivity, which could compromise the formula's objectivity and universal applicability.
@@ -340,6 +349,10 @@ A value may be *any real number from 0 up to the stated cut-off*.
      - 0.050 ≤ - Moderate
      - 0.500 ≤ - Extreme
      - 5.000 ≤ - Catastrophic
+     - 5000 ≤ - Kilostrophic
+     - 5000000 ≤ - Megastrophic
+     - 5000000000 ≤ - Gigastrophic
+     - 5000000000000 ≤ - Terastrophic
 
    For aggregate scores UMQ(a) over large populations, qualitative labels should be interpreted relative to population size and context.
 
