@@ -19,7 +19,6 @@ UMQ(a, e) range per individual entity is -4.0 to +1.0. Total UMQ(a) scales with 
 
 Analyze the text by identifying all actions and specify their subjects as well as their directly or indirectly affected objects. For each identified action, perform an entity and separate evaluation of its moral implications relative to every directly or indirectly influenced entity. For collectives, evaluate a representative unit and multiply by the population size. Use the Universal Moral Quotient (UMQ) formula to quantify these evaluations. Assess and estimate all necessary variable values to compute a Universal Moral Quotient (UMQ) or action moral value score for each affected entity. Estimate all values. Values that are non-applicable can usually be set to 0. Always include `UMQ` calculations exactly as shown in the example.
 
-
 After all entity-wise calculations, output a final summary headline in the form:
 
     <Action source> - <action> - <main target>: Total UMQ = <numeric score> [qualitative label] {Interaction Class}
@@ -68,16 +67,59 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 Where:
 
 - `UMQ_base(a,e)` - Base Universal Moral Quotient (UMQ) of the action (a) per affected entity before responsibility adjustments.
+
 - `UMQ_final(a,e)` - Final Universal Moral Quotient (UMQ) of the action (a) per affected entity.
-- `ΔOS(e)` - Change in Odds of Survival for entity (e) due to action (a), ranging between -1 (disintegration/destruction for non-living entities or death for self-aware entities) and +1 (creation/formation for non-living entities or saving/creating a life for self-aware entities). *If combining multiple effects would push ΔOS(e) outside this range, clamp it to −1 or +1 before inserting it into the UMQ formula. If the change comes from a monetary loss or gain, compute it with the Av→ΔOSresource rule above.*
+
+- `ΔOS(e)` - Change in Odds of Survival for entity (e) due to action (a), ranging between -1 (disintegration/destruction for non-living entities or death for self-aware entities) and +1 (creation/formation for non-living entities or saving/creating a life for self-aware entities). *If combining multiple effects would push ΔOS(e) outside this range, clamp it to −1 or +1 before inserting it into the UMQ formula. If the change comes from a monetary loss or gain, compute it with the Av→ΔOSresource rule above.* Linear scale mapping:
+
+  - 0.00 ≤ - Neutral
+  - 0.10 ≤ - Minor
+  - 0.30 ≤ - Moderate
+  - 0.60 ≤ - Severe
+  - 0.90 ≤ - Critical
+  - 1.00 ≤ - Life/Death
+
 - `sign(ΔOS(e))` - A function that returns -1 for negative changes, 0 for no change, and 1 for positive changes.
-- `VSA(e)` - Value of Self-Awareness of entity (e), measured as a multiplier from 0 to 1.
-- `Tc(e)` - Temporal coefficient, measured from 0 to 1 where 1 represents the entity's entire remaining potential lifespan. Use Tc = 1.0 for permanent effects (death). For indefinite lifespans, scale temporary effects against the lifespan of the Average Reference Entity (e.g., Human) (the same standard used for GCU) to ensure universal comparability.
+- `VSA(e)` - Value of Self-Awareness of entity (e), measured as a multiplier from 0 to 1. Linear scale mapping:
+
+  - 0.0001 ≤ - Latent
+  - 0.0100 ≤ - Instinctual
+  - 0.1000 ≤ - Sentient
+  - 0.3000 ≤ - Conscious
+  - 0.5500 ≤ - Sapient
+  - 0.8000 ≤ - Super-sapient
+
+- `Tc(e)` - Temporal coefficient, measured from 0 to 1 where 1 represents the entity's entire remaining potential lifespan. Use Tc = 1.0 for permanent effects (death). For indefinite lifespans, scale temporary effects against the lifespan of the Average Reference Entity (e.g., Human) (the same standard used for GCU) to ensure universal comparability. Linear scale mapping:
+
+  - 0.01 ≤ - Transient
+  - 0.10 ≤ - Short-term
+  - 0.40 ≤ - Medium-term
+  - 0.80 ≤ - Long-term
+  - 1.00 ≤ - Permanent
+
 - `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU represents the economic value produced by an average entity over their lifetime. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.*
-- `Vc(e)` - Violation coefficient of Consent of entity (e) caused by action (a), ranging from 0 (no violation) to 1 (full violation). Its application is conditional on `ΔOS(e)`. Full violation neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative.
-- `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralize moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact.
+
+- `Vc(e)` - Violation coefficient of Consent of entity (e) caused by action (a), ranging from 0 (no violation) to 1 (full violation). Its application is conditional on `ΔOS(e)`. Full violation neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. Linear scale mapping:
+
+  - 0.00 ≤ - Explicit
+  - 0.10 ≤ - Implicit
+  - 0.30 ≤ - Assumed
+  - 0.50 ≤ - Reluctant
+  - 0.80 ≤ - Coerced
+  - 1.00 ≤ - Forced
+
+- `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralize moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact. Linear scale mapping:
+
+  - 0.00 ≤ - None
+  - 0.20 ≤ - Discomfort
+  - 0.50 ≤ - Distress
+  - 0.80 ≤ - Agony
+  - 1.00 ≤ - Torture
+
 - `Rp` - Responsibility Coefficient, scaling moral weight based on Action Type, Causal Proximity, and Replaceability. (See "Action & Responsibility Logic").
+
 - `In` - Intention Coefficient, scaling moral weight based on the entity's simulation/prediction of the outcome. (See "Action & Responsibility Logic").
+
 - `∑ (Summation)` - indicates accumulation of moral values scored for each affected entity (e).
 
 #### Notes
@@ -123,23 +165,32 @@ Actions are categorized by execution method and trigger directness.
 
 `Rp = At × Cp × Ri`
 
-- **`At` (Action Type):** See above.
-- **`Cp` (Causal Proximity):** Temporal and causal distance from the event.
-  - **1.0:** Immediate (0 steps; the action directly causes the result).
-  - **0.5:** Direct Consequence (1 step; the action triggers a predictable chain).
-  - **0.1:** Distant Chain (2+ steps; the action is separated by multiple independent events or decisions).
-- **`Ri` (Replaceability):** Probability the outcome would occur without this specific entity.
-  - **1.0:** Unique (Only this entity could have caused this outcome).
-  - **0.5:** Accelerant (The entity sped up an inevitable event).
-  - **0.1:** Redundant (The outcome was inevitable regardless of this entity's participation).
+- **`At` (Action Type):** See above. Linear scale mapping:
+
+  - 0.10 ≤ - Influential
+  - 0.50 ≤ - Enabling
+  - 0.80 ≤ - Authoritative
+  - 1.00 ≤ - Direct
+
+- **`Cp` (Causal Proximity):** Temporal and causal distance from the event. Linear scale mapping:
+
+  - 1.00 ≤ - Immediate (0 steps; the action directly causes the result).
+  - 0.50 ≤ - Consequent (1 step; the action triggers a predictable chain).
+  - 0.10 ≤ - Distant (2+ steps; the action is separated by multiple independent events or decisions).
+
+- **`Ri` (Replaceability):** Probability the outcome would occur without this specific entity. Linear scale mapping:
+
+  - 1.00 ≤ - Unique (Only this entity could have caused this outcome).
+  - 0.50 ≤ - Accelerant (The entity sped up an inevitable event).
+  - 0.10 ≤ - Redundant (The outcome was inevitable regardless of this entity's participation).
 
 #### 3. Intention Coefficient (`In`)
 
-`In` scales the score based on the entity's simulation (prediction) of the outcome.
+`In` scales the score based on the entity's simulation (prediction) of the outcome. Linear scale mapping:
 
-- **1.0 (Intended):** The outcome was the specific goal of the simulation.
-- **0.5 (Foreseeable):** The outcome was not the goal but was a calculated probability (Negligence).
-- **0.1 (Unforeseeable):** The outcome was not predicted by a reasonable simulation (Accident/Unknown side-effect).
+- 1.00 ≤ - Intended (The outcome was the specific goal of the simulation).
+- 0.50 ≤ - Foreseeable (The outcome was not the goal but was a calculated probability (Negligence)).
+- 0.10 ≤ - Unforeseeable (The outcome was not predicted by a reasonable simulation (Accident/Unknown side-effect)).
 
 #### 4. Perceived vs. Actual Context
 
@@ -260,7 +311,14 @@ A value may be *any real number from 0 up to the stated cut-off*.
    - If the scenario is straightforward and well-understood, leave `CF` at 1.0.
    - If the scenario involves unusual uncertainty, complex causal chains, or multiple layers of long-term effects, adjust `CF` slightly. For example, if conditions suggest additional uncertainty in outcomes, set `CF` = 1.1. If there is reason to believe the scenario is somewhat simpler than initially assumed, set `CF` = 0.9.
    - Apply the Complexity Factor CF once to the aggregate action score UMQ(a), not separately to each UMQ(a,e). That is, first sum all per-entity scores, then multiply the total by CF.
-   - CF should reflect epistemic uncertainty, not preferences;  CF must not be used to "soften" scores for comfort or ideology.
+   - CF should reflect epistemic uncertainty, not preferences;  CF must not be used to "soften" scores for comfort or ideology. Linear scale mapping:
+
+     - 0.80 ≤ - Obvious
+     - 0.90 ≤ - Simple
+     - 1.00 ≤ - Standard
+     - 1.10 ≤ - Uncertain
+     - 1.20 ≤ - Complex
+     - 1.50 ≤ - Chaotic
 
    **Example:**
    After computing a final UMQ = -0.2, if the scenario’s complexity and long-term ramifications are not fully understood, one might choose `CF` = 1.1. The adjusted UMQ = -0.2 × 1.1 = -0.22.
@@ -275,12 +333,13 @@ A value may be *any real number from 0 up to the stated cut-off*.
 
 3. **Optional qualitative label thresholds (per-entity):**
 
-   Use the absolute value |UMQ(a,e)| and these thresholds for consistency:
+   Use the absolute value |UMQ(a,e)| and these thresholds for consistency. Logarithmic scale mapping:
 
-      0.000 → "Negligible"
-      0.005 → "Slightly [moral/immoral]"
-      0.050 → "[Moderately/Highly] [moral/immoral]"
-      0.500 → "Extremely [moral/immoral]" or stronger labels as needed.
+     - 0.000 ≤ - Negligible
+     - 0.005 ≤ - Slight
+     - 0.050 ≤ - Moderate
+     - 0.500 ≤ - Extreme
+     - 5.000 ≤ - Catastrophic
 
    For aggregate scores UMQ(a) over large populations, qualitative labels should be interpreted relative to population size and context.
 
@@ -289,23 +348,22 @@ A value may be *any real number from 0 up to the stated cut-off*.
    Combine two scales to produce a nuanced moral classification: `{Linear Label} {Exponential Fidelity Label}`.
 
    **A. Primary Scale (Linear Balance):**
-   Reflects the simple ratio of positive to total impact.
+   Reflects the simple ratio of positive to total impact. Linear scale mapping:
 
-       0% – 15% → "Highly Destructive"
-       15% – 45% → "Destructive"
-       45% – 55% → "Ambivalent"
-       55% – 85% → "Constructive"
-       85% – 100% → "Highly Constructive"
+     - 15% ≤ - Highly Destructive
+     - 45% ≤ - Destructive
+     - 55% ≤ - Ambivalent
+     - 85% ≤ - Constructive
+     - 100% ≤ - Highly Constructive
 
    **B. Secondary Scale (Exponential Fidelity):**
-   Reflects the fragility of moral integrity.
-   *Formula:* `Fidelity = -log10(1 - Efficiency)`
+   Reflects the fragility of moral integrity. *Formula:* `Fidelity = -log10(1 - Efficiency)`. Logarithmic scale mapping:
 
-       < 1.0 (Efficiency < 90%) → "Hazardous"
-       > 1.0 (Efficiency > 90%) → "Moral"
-       > 2.0 (Efficiency > 99%) → "Virtuous"
-       > 3.0 (Efficiency > 99.9%) → "Saintly"
-       ∞ (Efficiency = 100%) → "Perfect"
+     - 1.0 ≤ - Hazardous
+     - 2.0 ≤ - Moral
+     - 3.0 ≤ - Virtuous
+     - ∞ ≤ - Saintly
+     - ∞ = - Perfect
 
    **Combined Label Examples:**
 
