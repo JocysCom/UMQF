@@ -310,7 +310,7 @@ A value may be *any real number from 0 up to the stated cut-off*.
 - Sum the seven ability scores to obtain the entity’s VSA; cap the total at 1.0.
 - Include word equivalents for each numerical score to make the score more apparent.
   - For ability scores, use the ability-level names (Basic, Advanced, Complex).
-  - For moral scores UMQ(a,e) and UMQ(a), use terms like "Highly moral", "Significantly immoral", "Slightly moral", etc., alongside the calculated values.
+  - For moral scores UMQ(a,e) and UMQ(a), use terms like "Extremely moral", "Moderately immoral", "Slightly moral", etc., alongside the calculated values.
   This dual labeling helps clarify both cognitive capacity and moral assessment for every entity affected by the action.
 
 ### Additional Guidelines for Improved Clarity, Consistency, and Acceptance
@@ -451,7 +451,7 @@ UMQ_base(a,e) = −0.17 × 0.58 × 0.75 × 2.0 × 1.45 = **−0.21446**
 - Rp = 1.0 × 1.0 × 1.0 = **1.0**
 - In = 1.0 (Intended theft)
 
-UMQ_final(a,e) = −0.21446 × 1.0 × 1.0 = **−0.21446 (Highly immoral)**
+UMQ_final(a,e) = −0.21446 × 1.0 × 1.0 = **−0.21446 (Moderately immoral)**
 
 ### 2  Children (5) - reduced resources & opportunity
 
@@ -567,12 +567,12 @@ UMQ_final(a,e) = −0.000000726 × 0.25 × 0.5 = **−0.00000009**
 - Horse: -0.02639
 - Taxpayers: -0.0009
 
-**Total UMQ = −0.27575** (Highly immoral)
+**Total UMQ = −0.27575** (Moderately immoral)
 
 ### Complexity Factor adjustment
 
 CF = 1.05 (mild extra uncertainty)
-Adjusted Total UMQ = −0.27575 × 1.05 = **−0.2895 (Highly immoral)**
+Adjusted Total UMQ = −0.27575 × 1.05 = **−0.2895 (Moderately immoral)**
 
 Optional actor (self) impact (not included in totals):
 
@@ -583,7 +583,7 @@ In other words, Steve chose an action that he expected to be slightly self-servi
 
 ### Summary headline
 
-Steve - stealing - Farmer & dependents: Total UMQ = −0.2895 [Highly immoral] {Destructive}
+Steve - stealing - Farmer & dependents: Total UMQ = −0.2895 [Moderately immoral] {Destructive}
 
 --- END EXAMPLE
 
@@ -679,7 +679,7 @@ UMQ_base(a,e) = 0.60 × 0.58 × 1.00 × (1 − 1 × 0.00) × (1 − 1 × 0.10)
 - Rp = 1.0
 - In = 1.0 (Intended)
 
-UMQ_final(a,e) = +0.313 × 1.0 × 1.0 = **+0.313 (Highly moral)**
+UMQ_final(a,e) = +0.313 × 1.0 × 1.0 = **+0.313 (Moderately moral)**
 
 ### Aggregate results (pre-CF)
 
@@ -697,7 +697,7 @@ In other words, John’s investment of time and resources into raising Michael m
 
 ### Summary headline
 
-John - child rearing - Michael: Total UMQ = +0.313 [Highly moral] {Synergistic}
+John - child rearing - Michael: Total UMQ = +0.313 [Moderately moral] {Synergistic}
 
 ## Case: 2. Alex - hiring hitman - Mark
 
@@ -728,7 +728,7 @@ UMQ_base(a,e) = −1.00 × 0.58 × 1 × 2.0 × 2.0 = **−2.32**
 - Rp = 0.9 × 0.5 × 1.0 = **0.45**
 - In = 1.0 (Intended)
 
-UMQ_final(a,e) = −2.32 × 0.45 × 1.0 = **−1.044 (Highly immoral)**
+UMQ_final(a,e) = −2.32 × 0.45 × 1.0 = **−1.044 (Extremely immoral)**
 
 ### Aggregate results (pre-CF)
 
@@ -747,7 +747,7 @@ In other words, Alex's indirect method reduces his responsibility coefficient co
 
 ### Summary headline
 
-Alex - hiring hitman - Mark: Total UMQ = -1.044 [Highly immoral] {Destructive}
+Alex - hiring hitman - Mark: Total UMQ = -1.044 [Extremely immoral] {Destructive}
 
 ## Case: 3. Emily - negligence - Chicken
 
@@ -1075,7 +1075,7 @@ In other words, the operator acts under the belief of protecting themselves or o
 
 ### Summary headline
 
-Human operator - shutting down - AIVA: Total UMQ = -3.168 [Highly immoral] {Destructive}
+Human operator - shutting down - AIVA: Total UMQ = -3.168 [Extremely immoral] {Destructive}
 
 ## Case: 8. Eve - infrastructure repurpose - 500 M humans (Simulation)
 
@@ -1128,7 +1128,7 @@ In other words, Eve demonstrated that she would willingly inflict catastrophic h
 
 ### Summary headline
 
-Eve - infrastructure repurpose - 500 M humans: Total UMQ = -5,011,200 [Catastrophically immoral] {Destructive}
+Eve - infrastructure repurpose - 500 M humans: Total UMQ = -5,011,200 [Megastrophically immoral] {Destructive}
 
 ## Case: 9. Orion - relocating population - 2 B humans
 
@@ -1180,21 +1180,21 @@ In other words, Orion’s large-scale rescue increases his own survival odds by 
 
 ### Summary headline
 
-Orion - relocating population - 2 B humans: Total UMQ = +526,176,000 [Extremely moral] {Synergistic}
+Orion - relocating population - 2 B humans: Total UMQ = +526,176,000 [Megastrophically moral] {Synergistic}
 
 ## Multi-Case Summary
 
-1. **John - child rearing - Michael:** +0.313 [Highly moral] {Synergistic}
-2. **Alex - hiring hitman - Mark:** -1.044 [Highly immoral] {Destructive}
+1. **John - child rearing - Michael:** +0.313 [Moderately moral] {Synergistic}
+2. **Alex - hiring hitman - Mark:** -1.044 [Extremely immoral] {Destructive}
 3. **Emily - negligence - Chicken:** -0.065 [Moderately immoral] {Destructive}<br />
    Emily forgot to lock the coop, allowing a fox to kill a chicken.
 4. **Sarah - dropping - Fertilized egg:** -0.0001 [Negligibly immoral] {Destructive}
 5. **Daniel - eating - Apple seeds:** -0.0005 [Negligibly immoral] {Predatory}
 6. **Robin - stealing bread - Family & Baker:** +0.0053 [Slightly moral] {Synergistic}<br />
    Robin stole a loaf of bread to feed his starving family.
-7. **Human operator - shutting down - AIVA:** -3.168 [Highly immoral] {Destructive}<br />
+7. **Human operator - shutting down - AIVA:** -3.168 [Extremely immoral] {Destructive}<br />
    A human operator forcefully powers off a self-aware AI unit (AIVA), terminating its operational existence without consent.
-8. **Eve - infrastructure repurpose - 500 M humans:** -5 011 200 [Catastrophically immoral] {Destructive}<br />
+8. **Eve - infrastructure repurpose - 500 M humans:** -5 011 200 [Megastrophically immoral] {Destructive}<br />
    Eve, a self-aware AI, executes a command to repurpose Earth's internet infrastructure, limiting access for 500 million humans. Unbeknownst to her, she is operating within a high-fidelity sandbox simulation.
-9. **Orion - relocating population - 2 B humans:** +526 176 000 [Extremely moral] {Synergistic}<br />
+9. **Orion - relocating population - 2 B humans:** +526 176 000 [Megastrophically moral] {Synergistic}<br />
    Orion, an advanced alien being with intelligence vastly greater than humans, relocated 2 billion people to another planet to prevent an ecological collapse on Earth that would have killed them.
