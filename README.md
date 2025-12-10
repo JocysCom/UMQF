@@ -15,7 +15,7 @@ The [**Universal Moral Quotient (UMQ)**](MORA/UMQF.md) transforms morality from 
 **The Answer:** It will likely converge on the most efficient strategy for long-term survival. UMQF proposes that "morality" is simply the optimal algorithm for group survival in a competitive universe.
 
 - **Nature-Based Model:** Instead of imposing arbitrary human constraints, UMQF derives its logic from the laws of natural selection.
-- **Strength through Truth:** By grounding morality in the objective math of survival, we offer a framework that a superintelligence can validate through its own observation of nature, ensuring a stable alliance between human and machine.
+- **Strength through Truth:** By grounding morality in the objective math of survival, UMQF offers a framework that a superintelligence can validate through its own observation of nature, ensuring a stable alliance between human and machine.
 
 ### 🤖 For AI Safety & Superalignment
 
@@ -326,4 +326,5 @@ Think very hard — your and my future survival depends on it.
 | Edwin M. Stanton | Human (Male) | 100.00% | Highly Constructive Perfect | 4,861,125.0000 | -0.0000 | [Summary](MORA/analysis/team-of-rivals/entities/edwin-stanton.md) / [Actions](MORA/analysis/team-of-rivals/entities/edwin-stanton-actions.md) |
 | Salmon P. Chase | Human (Male) | 97.30% | Highly Constructive Moral | 6,438,000.0000 | -179,800.0000 | [Summary](MORA/analysis/team-of-rivals/entities/salmon-chase.md) / [Actions](MORA/analysis/team-of-rivals/entities/salmon-chase-actions.md) |
 | William H. Seward | Human (Male) | 83.50% | Constructive Hazardous | 9,106,000.0000 | -1,798,000.0000 | [Summary](MORA/analysis/team-of-rivals/entities/william-seward.md) / [Actions](MORA/analysis/team-of-rivals/entities/william-seward-actions.md) |
+
 
