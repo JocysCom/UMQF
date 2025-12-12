@@ -169,7 +169,7 @@ To analyze purchased eBooks (DRM-protected), you must convert them into a readab
 
 ---
 
-## Prompts
+## MORA Prompts
 
 ### Analyse
 
