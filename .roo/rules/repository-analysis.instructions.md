@@ -1,4 +1,4 @@
-﻿# Repository Analysis: UMQF / MORA
+# Repository Analysis: UMQF / MORA
 
 ## 1. Project Overview
 This repository hosts the **Universal Moral Quotient Formula (UMQF)** and the **Moral Objective Rating Agent (MORA)** system. It is a specialized software solution designed to objectively quantify the morality of actions using a standardized mathematical formula. The system combines a Python-based data ingestion pipeline with an AI-driven analysis workflow to assess moral implications across diverse entities and scenarios.
@@ -49,18 +49,16 @@ graph TD
 The repository is organized into clear functional modules.
 
 ### Top-Level Directories
--   **`MORA/`**: The core application directory.
-    -   **`tools/`**: Python scripts implementing the data ingestion pipeline.
-    -   **`analysis/`**: Data storage for processed documents. Each document has its own subdirectory containing the source text and generated analysis files.
-    -   **`templates/`**: Markdown templates ensuring consistent output formatting for entity profiles.
-    -   **`.ai/`**: Configuration and instructions for the AI agents.
-    -   **`.roo/`**: Rules and settings for the Roo Code extension.
--   **`.ai/`** (Root): Repository-level AI instructions and analysis artifacts.
+-   **`UMQF.md`** (root): The core formula (SSOT).
+-   **`universal_formulas.md`** (root): Mathematical constants and distributions.
+-   **`MORA/analysis/`**: Data storage for processed documents. Each document has its own subdirectory containing the source text and generated analysis files.
+-   **`.ai/skills/mora/`**: The MORA agent skill — instructions, Python pipeline, and references (see `.ai/skills/mora/SKILL.md`).
+-   **`.ai/`** (Root): Repository-level AI instructions, skills, and agent configurations. Synced to `.claude/`, `.roo/`, `.github/` via `.ai/skills/ai-self-improvement/scripts/sync_agent_assets.py`.
 
 ### Key Files
 -   **`UMQF.md`**: The core documentation defining the Universal Moral Quotient Formula.
--   **`MORA/requirements.txt`**: Python dependency definitions.
--   **`MORA/tools/run_pipeline_test.py`**: Interactive runner for the ingestion pipeline.
+-   **`.ai/skills/mora/requirements.txt`**: Python dependency definitions.
+-   **`.ai/skills/mora/scripts/run_pipeline_test.py`**: Interactive runner for the ingestion pipeline.
 
 ## 5. Component Interactions & Dependencies
 The system components interact through file-based data exchange.
@@ -90,7 +88,7 @@ graph LR
 graph TD
     Root[Repository Root] --> Formula[UMQF.md<br/>(Formula SSOT)]
     Root --> Readme[README.md<br/>(System Overview)]
-    Root --> AgentInst[MORA/.ai/instructions.md<br/>(Agent SOP)]
+    Root --> AgentInst[.ai/skills/mora/SKILL.md<br/>(Agent SOP)]
     
     AgentInst -->|References| Formula
     AgentInst -->|Governs| Output
@@ -122,4 +120,3 @@ To contribute to or run this project, the following environment is required:
 -   **Decoupled Ingestion and Analysis:** The Python pipeline handles deterministic data formatting, while the AI handles probabilistic semantic analysis. This separation ensures that the AI always works with clean, standardized text.
 -   **File-Based State:** The system uses the file system as its database (Markdown, JSON). This simplifies version control and allows for easy manual inspection of intermediate states.
 -   **Explicit Context Management:** The use of `segments.jsonl` and `utils_extract_segment.py` demonstrates a deliberate architectural choice to handle large texts by breaking them into context-window-friendly chunks.
-

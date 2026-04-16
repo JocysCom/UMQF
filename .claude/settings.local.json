@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python .ai/skills/ai-self-improvement/scripts/sync_agent_assets.py AUTO --no-clear)",
+      "Bash(python .ai/skills/mora/scripts/utils_check_size.py MORA/analysis/exploration-team/source-document.md)",
+      "Bash(python .ai/skills/mora/scripts/s02_extract_metadata.py --document exploration-team)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
