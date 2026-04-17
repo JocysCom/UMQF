@@ -86,65 +86,64 @@ Moral Score = \sum \left( \text{Survival Delta} \times \text{Awareness} \times \
 
 ## 🛠️ How To Use
 
+`MORA` was the original name of the AI workflow; it now ships as the `mora` skill and works with any agent that supports the `.{agent}/skills/` convention (or an agent-specific mirror).
+
 ### Requirements
 
-- [Microsoft Visual Studio Code](https://code.visualstudio.com/): An open-source AI-powered code editor.
-- [Roo Code Visual Studio Extension](https://roocode.com/): Allows AI agents to use Visual Studio Code.
-- API key to access an AI model via API with a large context window using Roo Code:
-  - [OpenRouter account (API key)](https://openrouter.ai/) for the Google Gemini 3 Pro model. The account is simple to set up.
-  - [Google Cloud account – Generative Language (API key)](https://console.cloud.google.com/apis/dashboard) for Google Gemini 3 Pro models. The account is more complex to set up.
+- Any editor paired with your chosen AI agent (e.g., [Visual Studio Code](https://code.visualstudio.com/)).
+- An **AI agent with skills support**. The `mora` skill auto-loads in:
+  - [Claude Code](https://www.anthropic.com/claude-code) — reads `.claude/skills/`.
+  - [Roo Code](https://roocode.com/) — VS Code extension; reads `.roo/skills/`.
+  - [OpenAI Codex](https://openai.com/codex/) — reads `.codex/skills/`.
+  - Any other agent that loads `.{agent}/skills/` or an agent-specific mirror.
+- **API key** for a model with a large context window (e.g., Gemini 3 Pro, Claude Opus, GPT-5). [OpenRouter](https://openrouter.ai/) offers one gateway across providers; [Google Cloud Generative Language](https://console.cloud.google.com/apis/dashboard) is a direct alternative.
+- **[Git](https://git-scm.com/downloads)** and **[Python](https://www.python.org/downloads/)** (check "Add Python to PATH" during install).
 
 ### Setup
 
-#### 1. Install Core Tools
-Before starting, ensure you have the following installed:
-- **[Visual Studio Code](https://code.visualstudio.com/)**: The code editor used to run the project.
-- **[Git](https://git-scm.com/downloads)**: Required to download the repository.
-- **[Python](https://www.python.org/downloads/)**: Required to run data processing scripts. **Important:** Check "Add Python to PATH" during installation.
+#### 1. Clone the repository
 
-#### 2. Install AI Extension
-- **[Roo Code Extension](https://roocode.com/)**: Install this extension inside VS Code. It serves as the AI agent for analysis.
-- **API Key**: You need access to a model with a large context window (e.g., Google Gemini 1.5 Pro).
-  - [OpenRouter](https://openrouter.ai/) (Recommended)
-  - [Google Cloud Console](https://console.cloud.google.com/apis/dashboard)
+```bash
+git clone https://github.com/JocysCom/UMQF.git
+```
 
-#### 3. Download the Project
-1. Open a terminal or command prompt.
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/JocysCom/UMQF.git "C:\Projects\Jocys.com\UMQF"
-   ```
-3. Open Visual Studio Code.
-4. Go to **File → Open Folder** and select `C:\Projects\Jocys.com\UMQF`.
+Open the cloned folder in your editor.
 
-#### 4. Install Dependencies
-Open the integrated terminal in VS Code (**Terminal → New Terminal**) and run:
+#### 2. Install Python dependencies
+
+From the repository root:
+
 ```bash
 pip install -r .ai/skills/mora/requirements.txt
 playwright install
 ```
 
-#### 5. Prepare Commercial Books (Optional)
-To analyze purchased eBooks (DRM-protected), you must convert them into a readable format (EPUB/Markdown) for the AI.
-1. **[Adobe Digital Editions 4.5](https://adedownload.adobe.com/pub/adobe/digitaleditions/ADE_4.5_Installer.exe)**: Required to download `.acsm` files. *Use version 4.5 for best compatibility.*
-2. **[Calibre Portable](https://calibre-ebook.com/download_portable)**: E-book management software.
-3. **[DeDRM Tools](https://github.com/noDRM/DeDRM_tools)**: A Calibre plugin to remove DRM.
-   - Install the DeDRM plugin in Calibre.
-   - Import your book from Adobe Digital Editions to Calibre.
-   - Convert the book to **EPUB** format.
+#### 3. (Optional) Prepare commercial books
 
-#### 6. Start the Agent
-1. Click the **Roo Code** icon in the VS Code sidebar.
-2. Enter the analysis prompt (see [Workflow](#workflow) below).
+To analyse DRM-protected eBooks, convert them to EPUB first using [Adobe Digital Editions 4.5](https://adedownload.adobe.com/pub/adobe/digitaleditions/ADE_4.5_Installer.exe), [Calibre Portable](https://calibre-ebook.com/download_portable), and the [DeDRM Tools](https://github.com/noDRM/DeDRM_tools) Calibre plugin.
+
+#### 4. Trigger the `mora` skill
+
+The skill is auto-discovered from `.{agent}/skills/mora/SKILL.md` (or its agent-specific mirror). Ask your agent in natural language — examples:
+
+> "Execute a full Morality Assessment for *Exploration Team* using UMQF."
+> "Re-audit the entity files in `analysis/bible/` against UMQF.md."
+
+In Claude Code you can also invoke it explicitly:
+
+```text
+/mora Analyse "Exploration Team" by Murray Leinster
+```
+
+See [MORA Prompts](#-mora-prompts) for ready-to-paste templates.
 
 ### Workflow
 
-1. **Ingest:** Place text (book, article, transcript) in `MORA/analysis/{project_name}/source-document.md`.
-2. **Prompt:** Open Roo Code and type:
-    > "Execute a full Morality Assessment for {project_name}. Analyze with extreme rigor using UMQF.md."
-3. **Output:** The Agent will generate:
-    - `{entity}-actions.md`: Step-by-step math for every action.
-    - `{entity}.md`: A psychological and moral profile of the entity.
+1. **Ingest:** place text (book, article, transcript) in `MORA/analysis/{project_name}/source-document.md`.
+2. **Prompt:** ask your agent to run a Morality Assessment (see [MORA Prompts](#-mora-prompts)).
+3. **Output:** the agent generates, per detected entity:
+    - `{entity}-actions.md` — step-by-step math for every action.
+    - `{entity}.md` — psychological and moral profile.
 
 ---
 
@@ -162,8 +161,8 @@ To analyze purchased eBooks (DRM-protected), you must convert them into a readab
 │           └── entities/                # Output profiles
 │               ├── {entity}.md          # Entity profile
 │               └── {entity}-actions.md  # Action log
-└── .ai/skills/mora/                     # MORA agent skill
-    ├── SKILL.md                         # Agent instructions (synced to .claude/, .roo/, .github/)
+└── .ai/skills/mora/                     # `mora` skill (source of truth)
+    ├── SKILL.md                         # Agent instructions (synced to agent mirrors: .claude/, .roo/, .codex/, etc.)
     ├── requirements.txt                 # Python dependencies
     ├── references/
     │   ├── entity.template.md           # Template for {entity}.md output
@@ -173,7 +172,9 @@ To analyze purchased eBooks (DRM-protected), you must convert them into a readab
 
 ---
 
-## MORA Prompts
+## 💬 MORA Prompts
+
+The `mora` skill auto-triggers on any of these prompts — no explicit skill command required. In Claude Code you may also prefix `/mora` to force invocation.
 
 ### Analyse
 
