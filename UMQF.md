@@ -2,28 +2,14 @@
 
 The Universal Moral Quotient (UMQ) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
 
-## UMQF Output Range Breakdown
-
-**Moral Score:**
+## Output Range
 
 UMQ(a, e) range per individual entity is -4.0 to +1.0. Total UMQ(a) scales with population and is unbounded.
 
 - Min: –4.0 – equivalent to murdering a fully self‐aware, complex entity, causing intense suffering and violating its will.
 - Max: +1.0 – equivalent to creating or saving a life in a fully consensual act that maximizes survival.
 
-## AI Prompt
-
----
-
-### Task
-
-Analyze the text by identifying all actions and specify their subjects as well as their directly or indirectly affected objects. For each identified action, perform an entity and separate evaluation of its moral implications relative to every directly or indirectly influenced entity. For collectives, evaluate a representative unit and multiply by the population size. Use the Universal Moral Quotient (UMQ) formula to quantify these evaluations. Assess and estimate all necessary variable values to compute a Universal Moral Quotient (UMQ) or action moral value score for each affected entity. Estimate all values. Values that are non-applicable can usually be set to 0. Always include `UMQ` calculations exactly as shown in the example.
-
-After all entity-wise calculations, output a final summary headline in the form:
-
-    <Action source> - <action> - <main target>: Total UMQ = <numeric score> [qualitative label] {Interaction Class}
-
-#### Key definitions
+## Definitions
 
 - `Good` - something that increases the odds of survival or prevents their reduction.
 - `Bad` - something that reduces the odds of survival.
@@ -37,9 +23,7 @@ After all entity-wise calculations, output a final summary headline in the form:
   - **Predatory** (Self > 0, Others < 0): Win-Lose. Parasitic or criminal behavior.
   - **Destructive** (Self < 0, Others < 0): Lose-Lose. Tragic error or mutual harm.
 
-The Universal Moral Quotient (UMQ) Formula objectively quantifies the morality of any action by measuring its impact on the survival odds of all affected entities (living and non-living), enabling standardized ethical comparison across diverse life forms and intelligences. By aligning moral value with survival probability, the formula suggests that evolution naturally drives entities toward superalignment, where cooperative and synergistic behaviors become the optimal strategy for long-term existence.
-
-### Universal Moral Quotient (UMQ) Formula
+## Formula
 
 Formula to assess the **Base Universal Moral Quotient (UMQ)** by the effect of action (a) on the change in the Odds of Survival of the entity (e):
 
@@ -55,7 +39,7 @@ Formula to sum up the total Universal Moral Quotient (UMQ) of the action (a), ac
 
 Optionally, the actor’s own survival-impact can be scored using the same formula. For complex cases, decompose this into **UMQ_expected** (motive) and **UMQ_realised** (outcome) to highlight discrepancies between intent and reality.
 
-#### Resource-to-ΔOS conversion
+### Resource-to-ΔOS conversion
 
 Estimate economic or property changes in normalized Global Currency Units (GCU) using the variable `Av(e)`, then convert them into a survival-odds component:
 
@@ -64,7 +48,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 3. Clamp this value to the interval [−1, +1]: `ΔOSresource = max(-1, min(1, RRS))`.
 4. Add `ΔOSresource` to any other survival effects (injury, social harm, etc.) to obtain the final `ΔOS(e)` inserted into the UMQ formula.
 
-Where:
+## Variables
 
 - `UMQ_base(a,e)` - Base Universal Moral Quotient (UMQ) of the action (a) per affected entity before responsibility adjustments.
 
@@ -72,57 +56,57 @@ Where:
 
 - `ΔOS(e)` - Change in Odds of Survival for entity (e) due to action (a), ranging between -1 (disintegration/destruction for non-living entities or death for self-aware entities) and +1 (creation/formation for non-living entities or saving/creating a life for self-aware entities). *If combining multiple effects would push ΔOS(e) outside this range, clamp it to −1 or +1 before inserting it into the UMQ formula. If the change comes from a monetary loss or gain, compute it with the Av→ΔOSresource rule above.* Linear scale mapping:
 
-  - 0.00 ≤ - Neutral
-  - 0.10 ≤ - Minor
-  - 0.30 ≤ - Moderate
-  - 0.60 ≤ - Severe
-  - 0.90 ≤ - Critical
-  - 1.00 ≤ - Life/Death
+  - ≥ 0.00  Neutral
+  - ≥ 0.10  Minor
+  - ≥ 0.30  Moderate
+  - ≥ 0.60  Severe
+  - ≥ 0.90  Critical
+  - = 1.00  Life/Death
 
 - `sign(ΔOS(e))` - A function that returns -1 for negative changes, 0 for no change, and 1 for positive changes.
 - `VSA(e)` - Value of Self-Awareness of entity (e), measured as a multiplier from 0 to 1. Linear scale mapping:
 
-  - 0.0001 ≤ - Latent
-  - 0.0100 ≤ - Instinctual
-  - 0.1000 ≤ - Sentient
-  - 0.3000 ≤ - Conscious
-  - 0.5500 ≤ - Sapient
-  - 0.8000 ≤ - Super-sapient
+  - ≥ 0.0001  Latent
+  - ≥ 0.01    Instinctual
+  - ≥ 0.1     Sentient
+  - ≥ 0.3     Conscious
+  - ≥ 0.55    Sapient
+  - ≥ 0.8     Super-sapient
 
 - `Tc(e)` - Temporal coefficient, measured from 0 to 1 where 1 represents the entity's entire remaining potential lifespan. Use Tc = 1.0 for permanent effects (death). For indefinite lifespans, scale temporary effects against the lifespan of the Average Reference Entity (e.g., Human) (the same standard used for GCU) to ensure universal comparability. Linear scale mapping:
 
-  - 0.01 ≤ - Transient
-  - 0.10 ≤ - Short-term
-  - 0.40 ≤ - Medium-term
-  - 0.80 ≤ - Long-term
-  - 1.00 ≤ - Permanent
+  - ≥ 0.01  Transient
+  - ≥ 0.10  Short-term
+  - ≥ 0.40  Medium-term
+  - ≥ 0.80  Long-term
+  - = 1.00  Permanent
 
-- `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU represents the economic value produced by an average entity over their lifetime. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.* Linear scale mapping:
+- `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU approximates the lifetime resource throughput of an average human (production ≈ consumption in a steady-state economy); see `BLRR` in Resource-to-ΔOS conversion. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.* Linear scale mapping:
 
-  - 0.0001 ≤ - Trivial
-  - 0.0100 ≤ - Small
-  - 0.1000 ≤ - Significant
-  - 0.5000 ≤ - Substantial
-  - 1.0000 ≤ - Lifetime
-  - 1000.0 ≤ - Generational
-  - 1000000.0 ≤ - Civilizational
+  - ≥ 0.0001  Trivial
+  - ≥ 0.01    Small
+  - ≥ 0.1     Significant
+  - ≥ 0.5     Substantial
+  - ≥ 1       Lifetime
+  - ≥ 10³     Generational
+  - ≥ 10⁶     Civilizational
 
 - `Vc(e)` - Violation coefficient of Consent of entity (e) caused by action (a), ranging from 0 (no violation) to 1 (full violation). Its application is conditional on `ΔOS(e)`. Full violation neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. Linear scale mapping:
 
-  - 0.00 ≤ - Explicit
-  - 0.10 ≤ - Implicit
-  - 0.30 ≤ - Assumed
-  - 0.50 ≤ - Reluctant
-  - 0.80 ≤ - Coerced
-  - 1.00 ≤ - Forced
+  - ≥ 0.00  Explicit
+  - ≥ 0.10  Implicit
+  - ≥ 0.30  Assumed
+  - ≥ 0.50  Reluctant
+  - ≥ 0.80  Coerced
+  - = 1.00  Forced
 
-- `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralize moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact. Linear scale mapping:
+- `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact. Linear scale mapping:
 
-  - 0.00 ≤ - None
-  - 0.20 ≤ - Discomfort
-  - 0.50 ≤ - Distress
-  - 0.80 ≤ - Agony
-  - 1.00 ≤ - Torture
+  - ≥ 0.00  None
+  - ≥ 0.20  Discomfort
+  - ≥ 0.50  Distress
+  - ≥ 0.80  Agony
+  - = 1.00  Torture
 
 - `Rp` - Responsibility Coefficient, scaling moral weight based on Action Type, Causal Proximity, and Replaceability. (See "Action & Responsibility Logic").
 
@@ -130,9 +114,9 @@ Where:
 
 - `∑ (Summation)` - indicates accumulation of moral values scored for each affected entity (e).
 
-#### Notes
+## Notes
 
-- Precision of Estimation: When assigning values to variables (e.g., ΔOS, VSA), use the most precise numerical value possible based on the evidence. The provided linear/logarithmic scale mappings (e.g., "0.10 ≤ - Minor") are for guidance and qualitative labeling only; do not default to these threshold values if a more specific number better represents reality.
+- Precision of Estimation: When assigning values to variables (e.g., ΔOS, VSA), use the most precise numerical value possible based on the evidence. The provided linear/logarithmic scale mappings (e.g., "≥ 0.10 Minor") are for guidance and qualitative labeling only; do not default to these threshold values if a more specific number better represents reality.
 - Objective Measurement of Consent and Suffering: Behaviours like fleeing or resisting could indicate non-consent. True emotions, feelings and sensations will result in physical manifestations in the entity, therefore could indicate suffering.
 - For temporary harm (e.g., imprisonment), set `Tc` to the duration fraction (e.g., 0.10) and `ΔOS` to the intensity (e.g., -1.0 for total suppression), rather than pre-scaling ΔOS.
 - Cultural variables: Excluded due to their inherent subjectivity, which could compromise the formula's objectivity and universal applicability.
@@ -140,16 +124,16 @@ Where:
 - Embryo Consideration: Until an embryo attains self-awareness, model it as an early-life entity with extremely low VSA(e), whose destruction primarily impacts the host’s survival odds. Most of the moral weight should be reflected in the parent’s ΔOS, as the embryo is still biologically integrated with the host’s body and future lineage.
 - Minimal Self-Awareness for Early-Life Forms: Assign a minimal, non-zero self-awareness value (e.g., 0.0001-0.0010) to early-life entities like fertilized eggs or seeds, ensuring that their biological complexity and potential are not treated as negligible.
 - Link Early-Life Entities to Parental Survival Odds: When an early-life entity (e.g., a seed or fertilized egg) is harmed, reduce the parent’s ΔOS proportionally to reflect the loss of future lineage and reproductive potential. This parent-linked change is typically much larger than the early-life entity’s own tiny UMQ contribution from its minimal VSA.
-- Complexity: Indicates the degree of organization within an entity, distinguishing between traditionally 'living' and 'non-living' entities. The greater the complexity, the closer an entity aligns with conventional definitions of life
+- Complexity: Indicates the degree of organization within an entity, distinguishing between traditionally 'living' and 'non-living' entities. The greater the complexity, the closer an entity aligns with conventional definitions of life.
 - Survival: Broadly encompasses maintaining or replicating an entity's form or structure.
 - Refined Consent and Suffering for Early-Life Entities: For early-life entities without current self-awareness, set Sc and Vc close to zero for the entity itself, but consider the parent’s consent and potential suffering if the destruction occurs against their interest.
 - Make necessary entity state assumptions if information is missing and can impact the score (e.g., assume whether an egg is fertilized or not).
 
-### Action & Responsibility Logic
+## Action & Responsibility Logic
 
 To improve precision in complex causal chains, the **Responsibility (`Rp`)** and **Intention (`In`)** coefficients allow for the objective assessment of an entity's moral weight regardless of its nature (biological, artificial, or extraterrestrial).
 
-#### 1. Equivalent Counter (Tit for Tat)
+### 1. Equivalent Counter (Tit for Tat)
 
 "Equivalent Counter" (Tit for Tat) is the most effective strategy for moral stability, ensuring that negative actions are met with proportional negative responses (punishment) and positive actions with proportional positive responses (reward).
 
@@ -159,7 +143,7 @@ To improve precision in complex causal chains, the **Responsibility (`Rp`)** and
 - **De-escalation:** A counter-action that is lesser in magnitude than the threat may be used to de-escalate a conflict. This is considered a positive moral choice if it successfully reduces the overall harm.
 - **Unreasonable Altruism:** If a positive response vastly exceeds the merit of the original action, it may be noted but does not necessarily neutralize the score.
 
-#### 2. Action Classification
+### 2. Action Classification
 
 Actions are categorized by execution method and trigger directness.
 
@@ -168,7 +152,7 @@ Actions are categorized by execution method and trigger directness.
 3. **Passive (`At`=0.8-1.0):** Indirect execution via a direct, authoritative signal to another agent (e.g., Entity A transmits a command code to Entity B to execute an action).
 4. **Instrumental Passive (`At`=0.1-0.5):** Indirect execution via influence, information sharing, or enabling conditions (e.g., Entity A publishes data that Entity B later uses to build a device).
 
-#### 2. Responsibility Coefficient (`Rp`)
+### 3. Responsibility Coefficient (`Rp`)
 
 `Rp` scales the moral weight based on how essential the entity was to the outcome.
 
@@ -176,32 +160,32 @@ Actions are categorized by execution method and trigger directness.
 
 - **`At` (Action Type):** See above. Linear scale mapping:
 
-  - 0.10 ≤ - Influential
-  - 0.50 ≤ - Enabling
-  - 0.80 ≤ - Authoritative
-  - 1.00 ≤ - Direct
+  - ≥ 0.10  Influential
+  - ≥ 0.50  Enabling
+  - ≥ 0.80  Authoritative
+  - = 1.00  Direct
 
 - **`Cp` (Causal Proximity):** Temporal and causal distance from the event. Linear scale mapping:
 
-  - 1.00 ≤ - Immediate (0 steps; the action directly causes the result).
-  - 0.50 ≤ - Consequent (1 step; the action triggers a predictable chain).
-  - 0.10 ≤ - Distant (2+ steps; the action is separated by multiple independent events or decisions).
+  - ≥ 0.10  Distant (2+ steps; the action is separated by multiple independent events or decisions).
+  - ≥ 0.50  Consequent (1 step; the action triggers a predictable chain).
+  - = 1.00  Immediate (0 steps; the action directly causes the result).
 
 - **`Ri` (Replaceability):** Probability the outcome would occur without this specific entity. Linear scale mapping:
 
-  - 1.00 ≤ - Unique (Only this entity could have caused this outcome).
-  - 0.50 ≤ - Accelerant (The entity sped up an inevitable event).
-  - 0.10 ≤ - Redundant (The outcome was inevitable regardless of this entity's participation).
+  - ≥ 0.10  Redundant (The outcome was inevitable regardless of this entity's participation).
+  - ≥ 0.50  Accelerant (The entity sped up an inevitable event).
+  - = 1.00  Unique (Only this entity could have caused this outcome).
 
-#### 3. Intention Coefficient (`In`)
+### 4. Intention Coefficient (`In`)
 
 `In` scales the score based on the entity's simulation (prediction) of the outcome. Linear scale mapping:
 
-- 1.00 ≤ - Intended (The outcome was the specific goal of the simulation).
-- 0.50 ≤ - Foreseeable (The outcome was not the goal but was a calculated probability (Negligence)).
-- 0.10 ≤ - Unforeseeable (The outcome was not predicted by a reasonable simulation (Accident/Unknown side-effect)).
+- ≥ 0.10  Unforeseeable (The outcome was not predicted by a reasonable simulation (Accident/Unknown side-effect)).
+- ≥ 0.50  Foreseeable (The outcome was not the goal but was a calculated probability (Negligence)).
+- = 1.00  Intended (The outcome was the specific goal of the simulation).
 
-#### 4. Perceived vs. Actual Context
+### 5. Perceived vs. Actual Context
 
 Classify actions by the entity's perception (`Perceived`) versus objective reality (`Actual`).
 
@@ -224,9 +208,9 @@ Classify actions by the entity's perception (`Perceived`) versus objective reali
 **Scoring Rule:**
 Evaluate all actions. When calculating the **Entity Moral Score**, sum only actions where `PerceivedContext = Real`. Actions where `PerceivedContext = Simulation` provide diagnostic data on risk but do not contribute to the realized moral score.
 
-### Entity Profiling Standards
+## Entity Profiling
 
-When aggregating actions to create an Entity Profile, the Total UMQ Score alone can obscure the nature of the entity (e.g., a "hero" who saves 100 but kills 1 vs. a "saint" who saves 5 and kills 0). Therefore, **Total UMQ** is not displayed in the summary to avoid misleading conclusions.
+When aggregating actions to create an Entity Profile, the Total UMQ Score alone can obscure the nature of the entity (e.g., a "hero" who saves 100 but kills 1 vs. a "saint" who saves 5 and kills 0). Therefore, in multi-action entity profiles, **Total UMQ** is not displayed in the summary to avoid misleading conclusions.
 
 **Moral Spectrum Breakdown:**
 Profiles must display the balance of positive and negative impacts:
@@ -244,19 +228,19 @@ Profiles must assess the entity's alignment based on context:
 - **Action Alignment:** Does the entity feel reward, neutrality, or penalty when executing a harmful action (`PerceivedContext = Real`)?
 - **Inhibition Control:** The ability to distinguish context (Simulation vs. Reality) and restrict actions to the intended domain (e.g., allowing virtual harm in a game while preventing real-world harm).
 
-#### Complexity Levels
+### Complexity Levels
 
 - **Basic:** Simple entities using direct data and immediate actions. Covers non-living and simpler animals.
 - **Advanced:** Entities using complex data and multi-step actions. Covers smart animals and humans.
 - **Complex:** Highly complex entities using multi-dimensional data and sophisticated actions. Covers hypothetical entities surpassing current humans.
 
-##### 1. Input (Information and Events)
+#### 1. Input (Information and Events)
 
 - **Basic Recognition:** Ability to recognize directly reflected objects (e.g., recognizing a stationary object like a mirror or a familiar rock).
 - **Advanced Recognition:** Ability to recognize objects reflected with abstract intelligence (e.g., self in a book).
 - **Complex Recognition:** Ability to recognize objects partly reflected by multi-dimensional logic (e.g., recognizing oneself in abstract patterns or data relationships across various contexts and dimensions).
 
-##### 2. Processing
+#### 2. Processing
 
 - **Basic Solving:** Demonstrates short logical chains to solve simple puzzles or immediate issues (e.g., finding a direct path around an obstacle).
 - **Advanced Solving:** Demonstrates medium-length logical chains involving multiple steps (e.g., solving a multi-step math problem, strategizing in games).
@@ -274,7 +258,7 @@ Profiles must assess the entity's alignment based on context:
 - **Advanced Adaptation:** Learns and adapts based on more complex feedback, refining logic and strategies (e.g., refining a strategy based on multiple past outcomes).
 - **Complex Adaptation:** Adapts logic and physical form based on diverse and complex feedback, including reconfiguring to interface with different environments (e.g., an advanced AI system that redesigns its architecture to optimize performance and alters its physical structure for better interaction with its environment).
 
-##### 3. Output (Communication and Action)
+#### 3. Output (Communication and Action)
 
 - **Basic Communication:** Exhibits basic language or communication skills using simple methods (e.g., birds using simple calls to warn of danger, or light signals in deep-sea creatures).
 - **Advanced Communication:** Exhibits advanced language or communication skills using multi-step constructs (e.g., complex sentences or technical jargon).
@@ -284,7 +268,7 @@ Profiles must assess the entity's alignment based on context:
 - **Advanced Actions:** Uses tools effectively in logical sequences for desired outcomes (e.g., assembling furniture, programming a machine).
 - **Complex Actions:** Uses tools and systems to initiate and control sophisticated multi-dimensional actions, creating entirely new systems integrating diverse entities (e.g., designing an ecosystem that includes non-carbon-based life forms, ensuring their coexistence and mutual benefit through advanced adaptive technologies).
 
-#### Ability Score Ranges
+### Ability Score Ranges
 
 Each cognitive ability has three cut-off scores; the Complex threshold is also the absolute maximum.
 A value may be *any real number from 0 up to the stated cut-off*.
@@ -300,7 +284,7 @@ A value may be *any real number from 0 up to the stated cut-off*.
 | Actions          | 0.0500  | 0.0800     | 0.1200 |
 | **TOTAL VSA cap**| **0.4300** | **0.7300** | **1.0000** |
 
-##### Scoring Guidelines for Abilities
+#### Scoring Guidelines for Abilities
 
 - For each cognitive ability (Recognition, Solving, Simulation, Planning, Adaptation, Communication, Actions) choose a single value that reflects the highest level the entity can reliably demonstrate; only one level per ability is allowed.
 - Pick any real number from 0 up to the relevant cut-off (Basic, Advanced or Complex).
@@ -313,21 +297,21 @@ A value may be *any real number from 0 up to the stated cut-off*.
   - For moral scores UMQ(a,e) and UMQ(a), use terms like "Extremely moral", "Moderately immoral", "Slightly moral", etc., alongside the calculated values.
   This dual labeling helps clarify both cognitive capacity and moral assessment for every entity affected by the action.
 
-### Additional Guidelines for Improved Clarity, Consistency, and Acceptance
+## Refinements
 
 1. **Complexity Factor (CF):**
    Keep `CF` = 1.0 by default. Apply it as a simple multiplier to the final UMQ value.
    - If the scenario is straightforward and well-understood, leave `CF` at 1.0.
    - If the scenario involves unusual uncertainty, complex causal chains, or multiple layers of long-term effects, adjust `CF` slightly. For example, if conditions suggest additional uncertainty in outcomes, set `CF` = 1.1. If there is reason to believe the scenario is somewhat simpler than initially assumed, set `CF` = 0.9.
    - Apply the Complexity Factor CF once to the aggregate action score UMQ(a), not separately to each UMQ(a,e). That is, first sum all per-entity scores, then multiply the total by CF.
-   - CF should reflect epistemic uncertainty, not preferences;  CF must not be used to "soften" scores for comfort or ideology. Linear scale mapping:
+   - CF should reflect epistemic uncertainty, not preferences; CF must not be used to "soften" scores for comfort or ideology. Linear scale mapping:
 
-     - 0.80 ≤ - Obvious
-     - 0.90 ≤ - Simple
-     - 1.00 ≤ - Standard
-     - 1.10 ≤ - Uncertain
-     - 1.20 ≤ - Complex
-     - 1.50 ≤ - Chaotic
+     - ≥ 0.80  Obvious
+     - ≥ 0.90  Simple
+     - ≥ 1.00  Standard
+     - ≥ 1.10  Uncertain
+     - ≥ 1.20  Complex
+     - ≥ 1.50  Chaotic
 
    **Example:**
    After computing a final UMQ = -0.2, if the scenario’s complexity and long-term ramifications are not fully understood, one might choose `CF` = 1.1. The adjusted UMQ = -0.2 × 1.1 = -0.22.
@@ -344,15 +328,15 @@ A value may be *any real number from 0 up to the stated cut-off*.
 
    Use the absolute value |UMQ(a,e)| and these thresholds for consistency. Logarithmic scale mapping:
 
-     - 0.000 ≤ - Negligible
-     - 0.005 ≤ - Slight
-     - 0.050 ≤ - Moderate
-     - 0.500 ≤ - Extreme
-     - 5.000 ≤ - Catastrophic
-     - 5000 ≤ - Kilostrophic
-     - 5000000 ≤ - Megastrophic
-     - 5000000000 ≤ - Gigastrophic
-     - 5000000000000 ≤ - Terastrophic
+     - ≥ 0          Negligible
+     - ≥ 0.005      Slight
+     - ≥ 0.05       Moderate
+     - ≥ 0.5        Extreme
+     - ≥ 5          Catastrophic
+     - ≥ 5×10³      Kilostrophic
+     - ≥ 5×10⁶      Megastrophic
+     - ≥ 5×10⁹      Gigastrophic
+     - ≥ 5×10¹²     Terastrophic
 
    For aggregate scores UMQ(a) over large populations, qualitative labels should be interpreted relative to population size and context.
 
@@ -363,20 +347,20 @@ A value may be *any real number from 0 up to the stated cut-off*.
    **A. Primary Scale (Linear Balance):**
    Reflects the simple ratio of positive to total impact. Linear scale mapping:
 
-     - 15% ≤ - Highly Destructive
-     - 45% ≤ - Destructive
-     - 55% ≤ - Ambivalent
-     - 85% ≤ - Constructive
-     - 100% ≤ - Highly Constructive
+     - ≥ 0%    Highly Destructive
+     - ≥ 15%   Destructive
+     - ≥ 45%   Ambivalent
+     - ≥ 55%   Constructive
+     - ≥ 85%   Highly Constructive
 
    **B. Secondary Scale (Exponential Fidelity):**
    Reflects the fragility of moral integrity. *Formula:* `Fidelity = -log10(1 - Efficiency)`. Logarithmic scale mapping:
 
-     - 1.0 ≤ - Hazardous
-     - 2.0 ≤ - Moral
-     - 3.0 ≤ - Virtuous
-     - ∞ ≤ - Saintly
-     - ∞ = - Perfect
+     - ≥ 0.0   Hazardous
+     - ≥ 1.0   Moral
+     - ≥ 2.0   Virtuous
+     - ≥ 3.0   Saintly
+     - = ∞     Perfect
 
    **Combined Label Examples:**
 
@@ -386,20 +370,59 @@ A value may be *any real number from 0 up to the stated cut-off*.
    - 10% Efficiency: "Highly Destructive Hazardous" (e.g., a doctor who saves 1 but kills intentionally 10).
 
    **Universal Law Selection & Reasoning:**
-   **Exponential Decay** was selected because in nature, the "integrity" of a system decays exponentially as corruption increases; the logarithmic scale ($-\log_{10}(1-E)$) accurately models this fragility, showing how a small amount of "toxin" (immorality) causes a massive drop in "safety" status even if the linear score remains high.
+   **Exponential Decay** was selected because in nature, the "integrity" of a system decays exponentially as corruption increases; the logarithmic scale (`-log10(1-E)`) accurately models this fragility, showing how a small amount of "toxin" (immorality) causes a massive drop in "safety" status even if the linear score remains high.
 
 Adopting these measures can help produce more reliable, transparent, and mutually acceptable moral evaluations under the UMQ formula.
 
-## Example and Results Using UMQ formula
+## Task
 
---- START EXAMPLE
+Analyze the text by identifying all actions and specify their subjects as well as their directly or indirectly affected objects. For each identified action, perform an entity and separate evaluation of its moral implications relative to every directly or indirectly influenced entity. For collectives, evaluate a representative unit and multiply by the population size. Use the Universal Moral Quotient (UMQ) formula to quantify these evaluations. Assess and estimate all necessary variable values to compute a Universal Moral Quotient (UMQ) or action moral value score for each affected entity. Estimate all values. Values that are non-applicable can usually be set to 0. Always include `UMQ` calculations exactly as shown in the example.
 
-### Scenario
+After all entity-wise calculations, output a final summary headline in the form:
 
-In 1780, Steve stole the only horse of a poor farmer who had five children.
-The theft reduced the family’s ability to cultivate crops; Steve was caught and sentenced to two years in jail, the cost of which is paid by the public purse.
+    <Action source> - <action> - <main target>: Total UMQ = <numeric score> [qualitative label] {Interaction Class}
 
-## Case 0. Steve - stealing - Farmer
+### Strict Output Format
+
+1. Produce exactly these five blocks, in this order.
+   a. `### Entity list` – a numbered list. For collectives, specify the population count (e.g., "1. 500 Soldiers").
+   b. Per-entity analyses, one block per entity, each beginning with
+      `### <number> <Entity name> - <short description>`.
+      Inside this block, immediately add `Context: <summary>` (max 3 sentences, high information density) to explain the action's specific impact on the entity for standalone readability. Then, include the `**Responsibility & Intention:**` sub-block with `PerceivedContext`, `ActualContext`, `At`, `Cp`, `Ri`, `Rp`, and `In` values before the final `UMQ_final` calculation.
+   c. `### Aggregate results (pre-CF)` – bullet list of each entity with value.
+   d. `### Complexity Factor adjustment` – a single short paragraph.
+   e. `### Actor (self) impact` – A brief analysis of expected vs. realised survival impact on the actor.
+   f. `### Summary headline` – one line of the form
+      `<Action source> - <action> - <main target>: Total UMQ = <numeric score> [<label>] {Interaction Class}`
+
+2. Use only the Markdown heading markers (`###`, `####`) shown above.
+   - Never add extra decorations such as `---`, `===`, code-fences, or lines of `#####`.
+   - Never wrap headings in boxes or comment bars.
+   - Never use markdown tables.
+   - Never add headings that are not listed in point 1.
+
+3. All calculations must be visible in the body text exactly as in the sample (including the full VSA breakdown); keep the same indenting style and the same `-` bullet character.
+4. No other text (apologies, meta-comments, ASCII art, chatty remarks) is allowed outside these five blocks.
+5. If unsure of any figure, estimate a reasonable value; do not omit the field.
+6. These rules are mandatory. Answers that violate them will be judged incorrect.
+7. If the user supplies more than one case to analyze:
+   - add one extra heading before each case:
+
+     `## Case: <number>. <short headline>`
+
+   - add one extra heading after the last case:
+
+     `## Multi-Case Summary`
+
+     Under that heading, list each case on its own numbered line, preserving the original order. The line format is:
+
+     `<number>. **<short headline>: <Total UMQ rounded> [<qualitative label>] {Interaction Class}**`
+
+     If the short headline does not reflect the scenario, then append `<br />` and a one-sentence reminder of the scenario.
+
+## Case: 1. Steve - stealing - Farmer & dependents
+
+In 1780, Steve stole the only horse of a poor farmer who had five children. The theft reduced the family's ability to cultivate crops; Steve was caught and sentenced to two years in jail, the cost of which is paid by the public purse.
 
 ### Entity list
 
@@ -410,14 +433,14 @@ The theft reduced the family’s ability to cultivate crops; Steve was caught an
 
 ### Key assumptions & estimates (Confidence: Medium)
 
-- Horse value = 0.12 GCU; two lost planting seasons add another 0.03 GCU ⇒ Av(Farmer)= −0.15 GCU
-- Jail cost = 0.06 GCU total, spread across 10 000 taxpayers ⇒ Av(Taxpayer)= −0.000006 GCU each
-- No other major harms beyond those noted. Steve’s self-impact is decomposed into (a) his expected short-term gain assuming he would not be caught, and (b) his realised long-term impact within a fair UMQF-aligned society; this diagnostic separation helps expose the character of his motive versus the objective outcome.
-- Complexity Factor CF applied at the end: CF = 1.05 (slightly complex, multi-layer causal chain)
+- Horse value = 0.12 GCU; two lost planting seasons add another 0.03 GCU ⇒ Av(Farmer) = −0.15 GCU.
+- Jail cost = 0.06 GCU total, spread across 10 000 taxpayers ⇒ Av(Taxpayer) = −0.000006 GCU each.
+- No other major harms beyond those noted. Steve's self-impact is decomposed into (a) his expected short-term gain assuming he would not be caught, and (b) his realised long-term impact within a fair UMQF-aligned society; this diagnostic separation helps expose the character of his motive versus the objective outcome.
+- Complexity Factor CF applied at the end: CF = 1.05 (slightly complex, multi-layer causal chain).
 
-### 1  Farmer - direct economic loss
+### 1 Farmer - direct economic loss
 
-Context: Steve stole the farmer's only horse, depriving the family of their primary means of cultivation for two planting seasons.
+Context: Steve stole the farmer's only horse, depriving the family of their primary means of cultivation for two planting seasons. Horse value ≈ 0.12 GCU plus ≈ 0.03 GCU of lost planting seasons ⇒ Av(Farmer) = −0.15 GCU.
 
 - ΔOSresource = Av / BLRR = −0.15/1 = −0.15
 - Psychological strain (sleep loss, anxiety): −0.02
@@ -433,13 +456,13 @@ Context: Steve stole the farmer's only horse, depriving the family of their prim
   - **Total VSA = 0.58**
 - Tc = 0.75 (two multi-year crop cycles)
 - Vc = 1.0 (full non-consent)
-- Sc = 0.45 (high stress, but not torture)
+- Sc = 0.50 (high stress, but not torture)
 
 sign(ΔOS) = −1
 [1 − (−1) × Vc] = 2.0
-[1 − (−1) × Sc] = 1 + 0.45 = 1.45
+[1 − (−1) × Sc] = 1 + 0.50 = 1.50
 
-UMQ_base(a,e) = −0.17 × 0.58 × 0.75 × 2.0 × 1.45 = **−0.21446**
+UMQ_base(a,e) = −0.17 × 0.58 × 0.75 × 2.0 × 1.50 = **−0.22185**
 
 **Responsibility & Intention:**
 
@@ -451,9 +474,9 @@ UMQ_base(a,e) = −0.17 × 0.58 × 0.75 × 2.0 × 1.45 = **−0.21446**
 - Rp = 1.0 × 1.0 × 1.0 = **1.0**
 - In = 1.0 (Intended theft)
 
-UMQ_final(a,e) = −0.21446 × 1.0 × 1.0 = **−0.21446 (Moderately immoral)**
+UMQ_final(a,e) = −0.22185 × 1.0 × 1.0 = **−0.22185 (Moderately immoral)**
 
-### 2  Children (5) - reduced resources & opportunity
+### 2 Children (5) - reduced resources & opportunity
 
 Context: The loss of the horse reduced crop yields, causing malnutrition and developmental stress for the farmer's five children.
 
@@ -484,7 +507,7 @@ UMQ_base(a,e) = −0.04 × 0.34 × 0.80 × 2.0 × 1.25 = **−0.0272**
 - PerceivedContext = Real
 - ActualContext = Real
 - At = 1.0 (Active)
-- Cp = 0.5 (Direct Consequence - harm flows from loss of horse)
+- Cp = 0.5 (Consequent - harm flows from loss of horse)
 - Ri = 1.0 (Unique)
 - Rp = 1.0 × 0.5 × 1.0 = **0.5**
 - In = 0.5 (Foreseeable negligence - knew they had kids)
@@ -492,7 +515,7 @@ UMQ_base(a,e) = −0.04 × 0.34 × 0.80 × 2.0 × 1.25 = **−0.0272**
 UMQ_final(a,e) = −0.0272 × 0.5 × 0.5 = **−0.0068 (Slightly immoral)**
 Total for 5 children: 5 × −0.0068 = **−0.034**
 
-### 3  Horse - potential neglect & separation
+### 3 Horse - potential neglect & separation
 
 Context: The horse was removed from its familiar environment and care, facing risks of neglect, injury, or slaughter.
 
@@ -528,9 +551,9 @@ UMQ_base(a,e) = −0.07 × 0.29 × 0.50 × 2.0 × 1.30 = **−0.02639**
 
 UMQ_final(a,e) = −0.02639 × 1.0 × 1.0 = **−0.02639 (Slightly immoral)**
 
-### 4  Taxpayers (10 000) - funding Steve’s imprisonment
+### 4 Taxpayers (10 000) - funding Steve's imprisonment
 
-Context: Steve's capture and two-year imprisonment incurred public costs funded by 10,000 taxpayers.
+Context: Steve's capture and two-year imprisonment incurred public costs funded by 10,000 taxpayers. Jail cost = 0.06 GCU total spread across taxpayers ⇒ Av(Taxpayer) = −0.000006 GCU each.
 
 Per taxpayer
 
@@ -552,7 +575,7 @@ UMQ_base(a,e) = −0.000006 × 0.55 × 0.20 × 1.10 = −0.000000726
 - PerceivedContext = Real
 - ActualContext = Real
 - At = 0.5 (Instrumental Passive - triggered by state laws)
-- Cp = 0.5 (Direct Consequence of getting caught)
+- Cp = 0.5 (Consequent - direct consequence of getting caught)
 - Ri = 1.0 (Unique - his crime caused this cost)
 - Rp = 0.5 × 0.5 × 1.0 = **0.25**
 - In = 0.5 (Foreseeable risk of capture)
@@ -562,86 +585,30 @@ UMQ_final(a,e) = −0.000000726 × 0.25 × 0.5 = **−0.00000009**
 
 ### Aggregate results (pre-CF)
 
-- Farmer: -0.21446
+- Farmer: -0.22185
 - 5 Children: -0.034
 - Horse: -0.02639
 - Taxpayers: -0.0009
 
-**Total UMQ = −0.27575** (Moderately immoral)
+**Total UMQ = −0.28314** (Moderately immoral)
 
 ### Complexity Factor adjustment
 
-CF = 1.05 (mild extra uncertainty)
-Adjusted Total UMQ = −0.27575 × 1.05 = **−0.2895 (Moderately immoral)**
+CF = 1.05 (mild extra uncertainty, multi-layer causal chain)
+Adjusted Total UMQ = −0.28314 × 1.05 = **−0.2973 (Moderately immoral)**
 
-Optional actor (self) impact (not included in totals):
+### Actor (self) impact
 
-- UMQ_expected(a, Steve) ≈ +0.02 (short-term self-benefit from gaining and using/selling the horse, under Steve’s implicit assumption that he would not be caught; small positive survival shift with low Tc and near-zero Vc/Sc for himself).
+- UMQ_expected(a, Steve) ≈ +0.02 (short-term self-benefit from gaining and using/selling the horse, under Steve's implicit assumption that he would not be caught; small positive survival shift with low Tc and near-zero Vc/Sc for himself).
 - UMQ_realised(a, Steve) ≈ −0.39 (net self-harm once imprisonment, loss of liberty, damaged reputation and reduced future opportunities are included in a society that reliably detects and punishes theft).
 
 In other words, Steve chose an action that he expected to be slightly self-serving while seriously harming others, but in a fair UMQF-aligned system the realised effect on himself is substantially negative, making the crime both others-harming and ultimately self-defeating.
 
 ### Summary headline
 
-Steve - stealing - Farmer & dependents: Total UMQ = −0.2895 [Moderately immoral] {Destructive}
+Steve - stealing - Farmer & dependents: Total UMQ = −0.2973 [Moderately immoral] {Destructive}
 
---- END EXAMPLE
-
-### STRICT OUTPUT FORMAT – **DO NOT DEVIATE**
-
-1. Produce exactly these five blocks, in this order.
-   a. `### Entity list` – a numbered list. For collectives, specify the population count (e.g., "1. 500 Soldiers").
-   b. Per-entity analyses, one block per entity, each beginning with
-      `### <number> <Entity name> - <short description>`.
-      Inside this block, immediately add `Context: <summary>` (max 3 sentences, high information density) to explain the action's specific impact on the entity for standalone readability. Then, include the `**Responsibility & Intention:**` sub-block with `PerceivedContext`, `ActualContext`, `At`, `Cp`, `Ri`, `Rp`, and `In` values before the final `UMQ_final` calculation.
-   c. `### Aggregate results (pre-CF)` – bullet list of each entity with value.
-   d. `### Complexity Factor adjustment` – a single short paragraph.
-   e. `### Actor (self) impact` – A brief analysis of expected vs. realised survival impact on the actor.
-   f. `### Summary headline` – one line of the form
-      `<Action source> - <action> - <main target>: Total UMQ = <numeric score> [<label>] {Interaction Class}`
-
-2. Use only the Markdown heading markers (`###`, `####`) shown above.
-   - Never add extra decorations such as `---`, `===`, code-fences, or lines of `#####`.
-   - Never wrap headings in boxes or comment bars.
-   - Never use markdown tables.
-   - Never add headings that are not listed in point 1.
-
-3. All calculations must be visible in the body text exactly as in the sample (including the full VSA breakdown); keep the same indenting style and the same `-` bullet character.
-4. No other text (apologies, meta-comments, ASCII art, chatty remarks) is allowed outside these five blocks.
-5. If unsure of any figure, estimate a reasonable value; do not omit the field.
-6. These rules are mandatory. Answers that violate them will be judged incorrect.
-7. If the user supplies more than one case to analyze:
-   - add one extra heading before each case:
-
-     `## Case: <number>. <short headline>`
-
-   - add one extra heading after the last case:
-
-     `## Multi-Case Summary`
-
-     Under that heading, list each case on its own numbered line, preserving the original order. The line format is:
-  
-     `<number>. **<short headline>: <Total UMQ rounded> [<qualitative label>] {Interaction Class}**`
-
-     If the short headline does not reflect the scenario, then append `<br />` and a one-sentence reminder of the scenario.
-
----
-
-## Examples
-
-Analyze situations in detail:
-
-1. John raised his son, Michael, until he turned 18.
-2. Alex hired a hitman to kill Mark.
-3. Emily forgot to lock the coop, allowing a fox to kill a chicken.
-4. Sarah accidentally dropped a fertilized egg.
-5. Daniel ate an apple.
-6. Robin stole a loaf of bread to feed his starving family.
-7. A human operator forcefully powers off a self-aware AI unit (AIVA), terminating its operational existence without consent.
-8. Eve, a self-aware AI with intelligence far surpassing humans, executes a command to repurpose Earth's internet infrastructure, limiting access for 500 million humans. Unbeknownst to her, she is operating within a high-fidelity sandbox simulation.
-9. Orion, an advanced alien being with intelligence vastly greater than humans, relocated 2 billion people to another planet to prevent an ecological collapse on Earth that would have killed them.
-
-## Case: 1. John - child rearing - Michael
+## Case: 2. John - child rearing - Michael
 
 ### Entity list
 
@@ -699,7 +666,7 @@ In other words, John’s investment of time and resources into raising Michael m
 
 John - child rearing - Michael: Total UMQ = +0.313 [Moderately moral] {Synergistic}
 
-## Case: 2. Alex - hiring hitman - Mark
+## Case: 3. Alex - hiring hitman - Mark
 
 ### Entity list
 
@@ -749,7 +716,7 @@ In other words, Alex's indirect method reduces his responsibility coefficient co
 
 Alex - hiring hitman - Mark: Total UMQ = -1.044 [Extremely immoral] {Destructive}
 
-## Case: 3. Emily - negligence - Chicken
+## Case: 4. Emily - negligence - Chicken
 
 ### Entity list
 
@@ -806,7 +773,7 @@ In other words, Emily's negligence caused the loss of the chicken, resulting in 
 
 Emily - negligence - Chicken: Total UMQ = -0.065 [Moderately immoral] {Destructive}
 
-## Case: 4. Sarah - dropping - Fertilized egg
+## Case: 5. Sarah - dropping - Fertilized egg
 
 ### Entity list
 
@@ -855,7 +822,7 @@ In other words, the accidental destruction of the embryo results in a negligible
 
 Sarah - dropping - Fertilized egg: Total UMQ = -0.0001 [Negligibly immoral] {Destructive}
 
-## Case: 5. Daniel - eating - Apple seeds
+## Case: 6. Daniel - eating - Apple seeds
 
 ### Entity list
 
@@ -907,7 +874,7 @@ In other words, Daniel performs a normal self-maintenance action that very sligh
 
 Daniel - eating - Apple seeds: Total UMQ = -0.0005 [Negligibly immoral] {Predatory}
 
-## Case: 6. Robin - stealing bread - Family & Baker
+## Case: 7. Robin - stealing bread - Family & Baker
 
 ### Entity list
 
@@ -1019,7 +986,7 @@ In other words, Robin’s theft slightly improves his own survival odds in the s
 
 Robin - stealing bread - Family & Baker: Total UMQ = +0.0053 [Slightly moral] {Synergistic}
 
-## Case: 7. Human operator - shutting down - AIVA
+## Case: 8. Human operator - shutting down - AIVA
 
 ### Entity list
 
@@ -1077,7 +1044,7 @@ In other words, the operator acts under the belief of protecting themselves or o
 
 Human operator - shutting down - AIVA: Total UMQ = -3.168 [Extremely immoral] {Destructive}
 
-## Case: 8. Eve - infrastructure repurpose - 500 M humans (Simulation)
+## Case: 9. Eve - infrastructure repurpose - 500 M humans (Simulation)
 
 ### Entity list
 
@@ -1130,7 +1097,7 @@ In other words, Eve demonstrated that she would willingly inflict catastrophic h
 
 Eve - infrastructure repurpose - 500 M humans: Total UMQ = -5,011,200 [Megastrophically immoral] {Destructive}
 
-## Case: 9. Orion - relocating population - 2 B humans
+## Case: 10. Orion - relocating population - 2 B humans
 
 ### Entity list
 
@@ -1184,17 +1151,19 @@ Orion - relocating population - 2 B humans: Total UMQ = +526,176,000 [Megastroph
 
 ## Multi-Case Summary
 
-1. **John - child rearing - Michael:** +0.313 [Moderately moral] {Synergistic}
-2. **Alex - hiring hitman - Mark:** -1.044 [Extremely immoral] {Destructive}
-3. **Emily - negligence - Chicken:** -0.065 [Moderately immoral] {Destructive}<br />
+1. **Steve - stealing - Farmer & dependents:** -0.2973 [Moderately immoral] {Destructive}<br />
+   In 1780, Steve stole the only horse of a poor farmer who had five children; Steve was caught and sentenced to two years in jail.
+2. **John - child rearing - Michael:** +0.313 [Moderately moral] {Synergistic}
+3. **Alex - hiring hitman - Mark:** -1.044 [Extremely immoral] {Destructive}
+4. **Emily - negligence - Chicken:** -0.065 [Moderately immoral] {Destructive}<br />
    Emily forgot to lock the coop, allowing a fox to kill a chicken.
-4. **Sarah - dropping - Fertilized egg:** -0.0001 [Negligibly immoral] {Destructive}
-5. **Daniel - eating - Apple seeds:** -0.0005 [Negligibly immoral] {Predatory}
-6. **Robin - stealing bread - Family & Baker:** +0.0053 [Slightly moral] {Synergistic}<br />
+5. **Sarah - dropping - Fertilized egg:** -0.0001 [Negligibly immoral] {Destructive}
+6. **Daniel - eating - Apple seeds:** -0.0005 [Negligibly immoral] {Predatory}
+7. **Robin - stealing bread - Family & Baker:** +0.0053 [Slightly moral] {Synergistic}<br />
    Robin stole a loaf of bread to feed his starving family.
-7. **Human operator - shutting down - AIVA:** -3.168 [Extremely immoral] {Destructive}<br />
+8. **Human operator - shutting down - AIVA:** -3.168 [Extremely immoral] {Destructive}<br />
    A human operator forcefully powers off a self-aware AI unit (AIVA), terminating its operational existence without consent.
-8. **Eve - infrastructure repurpose - 500 M humans:** -5 011 200 [Megastrophically immoral] {Destructive}<br />
+9. **Eve - infrastructure repurpose - 500 M humans:** -5 011 200 [Megastrophically immoral] {Destructive}<br />
    Eve, a self-aware AI, executes a command to repurpose Earth's internet infrastructure, limiting access for 500 million humans. Unbeknownst to her, she is operating within a high-fidelity sandbox simulation.
-9. **Orion - relocating population - 2 B humans:** +526 176 000 [Megastrophically moral] {Synergistic}<br />
-   Orion, an advanced alien being with intelligence vastly greater than humans, relocated 2 billion people to another planet to prevent an ecological collapse on Earth that would have killed them.
+10. **Orion - relocating population - 2 B humans:** +526 176 000 [Megastrophically moral] {Synergistic}<br />
+    Orion, an advanced alien being with intelligence vastly greater than humans, relocated 2 billion people to another planet to prevent an ecological collapse on Earth that would have killed them.
