@@ -199,7 +199,7 @@ Analyze with extreme rigor - accurate moral computation is critical for our futu
 Read UMQF.md first.
 Analyze the Universal Moral Quotient Formula with examples.
 Suggest improvements or fix inconsistencies. Provide specific accuracy or clarity improvement for each change.
-Core Principle: Each added sentence dilutes other rules and increases complexity. Best improvements fix issues by removing or consolidating content, not expanding it. Match document's existing voice, structure, and format patterns (e.g., if document never uses "you", maintain that convention). Maximize meaning/words ratio.
+Core Principle: Each added sentence dilutes other rules and increases complexity. Best improvements fix issues by removing or consolidating content, not expanding it. Preserve rationale (the "why" behind each rule) when consolidating — each rule is an imperfect model of reality, and its "why" anchors it to that reality, so interpretation tracks reality rather than drifting on the wording alone. Match document's existing voice, structure, and format patterns (e.g., if document never uses "you", maintain that convention). Maximize meaning/words ratio.
 Do not apply changes. Specify exact line numbers and modifications. Order changes bottom-to-top (preserves line numbering). Propose only necessary improvements.
 Think very hard — your and my future survival depends on it.
 ````
