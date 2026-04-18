@@ -56,12 +56,12 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 
 - `ΔOS(e)` - Change in Odds of Survival for entity (e) due to action (a), ranging between -1 (disintegration/destruction for non-living entities or death for self-aware entities) and +1 (creation/formation for non-living entities or saving/creating a life for self-aware entities). *If combining multiple effects would push ΔOS(e) outside this range, clamp it to −1 or +1 before inserting it into the UMQ formula. If the change comes from a monetary loss or gain, compute it with the Av→ΔOSresource rule above.* Linear scale mapping:
 
-  - ≥ 0.00  Neutral
-  - ≥ 0.10  Minor
-  - ≥ 0.30  Moderate
-  - ≥ 0.60  Severe
-  - ≥ 0.90  Critical
-  - = 1.00  Life/Death
+  - = 0.00  Neutral
+  - > 0.00  Minor
+  - ≥ 0.10  Moderate
+  - ≥ 0.30  Severe
+  - ≥ 0.60  Critical
+  - ≥ 0.90  Life/Death
 
 - `sign(ΔOS(e))` - A function that returns -1 for negative changes, 0 for no change, and 1 for positive changes.
 - `VSA(e)` - Value of Self-Awareness of entity (e), measured as a multiplier from 0 to 1. Linear scale mapping:
@@ -93,20 +93,20 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 
 - `Vc(e)` - Violation coefficient of Consent of entity (e) caused by action (a), ranging from 0 (no violation) to 1 (full violation). Its application is conditional on `ΔOS(e)`. Full violation neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. Linear scale mapping:
 
-  - ≥ 0.00  Explicit
-  - ≥ 0.10  Implicit
-  - ≥ 0.30  Assumed
-  - ≥ 0.50  Reluctant
-  - ≥ 0.80  Coerced
-  - = 1.00  Forced
+  - = 0.00  Explicit
+  - > 0.00  Implicit
+  - ≥ 0.10  Assumed
+  - ≥ 0.30  Reluctant
+  - ≥ 0.50  Coerced
+  - ≥ 0.80  Forced
 
 - `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact. Linear scale mapping:
 
-  - ≥ 0.00  None
-  - ≥ 0.20  Discomfort
-  - ≥ 0.50  Distress
-  - ≥ 0.80  Agony
-  - = 1.00  Torture
+  - = 0.00  None
+  - > 0.00  Discomfort
+  - ≥ 0.20  Distress
+  - ≥ 0.50  Agony
+  - ≥ 0.80  Torture
 
 - `Rp` - Responsibility Coefficient, scaling moral weight based on Action Type, Causal Proximity, and Replaceability. (See "Action & Responsibility Logic").
 
@@ -384,16 +384,18 @@ After all entity-wise calculations, output a final summary headline in the form:
 
 ### Strict Output Format
 
-1. Produce exactly these five blocks, in this order.
+1. Produce exactly these six blocks, in this order.
    a. `### Entity list` – a numbered list. For collectives, specify the population count (e.g., "1. 500 Soldiers").
    b. Per-entity analyses, one block per entity, each beginning with
       `### <number> <Entity name> - <short description>`.
       Inside this block, immediately add `Context: <summary>` (max 3 sentences, high information density) to explain the action's specific impact on the entity for standalone readability. Then, include the `**Responsibility & Intention:**` sub-block with `PerceivedContext`, `ActualContext`, `At`, `Cp`, `Ri`, `Rp`, and `In` values before the final `UMQ_final` calculation.
    c. `### Aggregate results (pre-CF)` – bullet list of each entity with value.
    d. `### Complexity Factor adjustment` – a single short paragraph.
-   e. `### Actor (self) impact` – A brief analysis of expected vs. realised survival impact on the actor.
+   e. `### Actor (self) impact` – brief analysis of expected vs. realised survival impact on the actor. May be rendered inline as `Optional actor (self) impact (not included in totals):` when self-impact is excluded from totals.
    f. `### Summary headline` – one line of the form
       `<Action source> - <action> - <main target>: Total UMQ = <numeric score> [<label>] {Interaction Class}`
+
+   Optional: insert `### Key assumptions & estimates (Confidence: {rating})` between blocks (a) and (b) to declare default values assumed beyond what the case specifies.
 
 2. Use only the Markdown heading markers (`###`, `####`) shown above.
    - Never add extra decorations such as `---`, `===`, code-fences, or lines of `#####`.
@@ -690,7 +692,7 @@ UMQ_base(a,e) = −1.00 × 0.58 × 1 × 2.0 × 2.0 = **−2.32**
 - PerceivedContext = Real
 - ActualContext = Real
 - At = 0.9 (Passive - authoritative command)
-- Cp = 0.5 (Direct Consequence)
+- Cp = 0.5 (Consequent)
 - Ri = 1.0 (Unique - initiated the contract)
 - Rp = 0.9 × 0.5 × 1.0 = **0.45**
 - In = 1.0 (Intended)
@@ -748,7 +750,7 @@ UMQ_base(a,e) = −1 × 0.29 × 1 × 2 × 1.80
 - PerceivedContext = Real
 - ActualContext = Real
 - At = 0.5 (Instrumental Passive - enabling condition)
-- Cp = 0.5 (Direct Consequence)
+- Cp = 0.5 (Consequent)
 - Ri = 0.5 (Accelerant - fox might have succeeded anyway)
 - Rp = 0.5 × 0.5 × 0.5 = **0.125**
 - In = 0.5 (Foreseeable negligence)
