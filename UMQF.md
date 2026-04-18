@@ -37,7 +37,7 @@ Formula to sum up the total Universal Moral Quotient (UMQ) of the action (a), ac
 
 `UMQ(a) = ∑e UMQ_final(a,e)`
 
-Optionally, the actor’s own survival-impact can be scored using the same formula. For complex cases, decompose this into **UMQ_expected** (motive) and **UMQ_realised** (outcome) to highlight discrepancies between intent and reality.
+The actor’s own survival-impact is scored separately using the same formula (excluded from the total UMQ but required for the Interaction Class). For complex cases, decompose this into **UMQ_expected** (motive) and **UMQ_realised** (outcome) to highlight discrepancies between intent and reality.
 
 ### Resource-to-ΔOS conversion
 
@@ -116,7 +116,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 
 ## Notes
 
-- Precision of Estimation: When assigning values to variables (e.g., ΔOS, VSA), use the most precise numerical value possible based on the evidence. The provided linear/logarithmic scale mappings (e.g., "≥ 0.10 Minor") are for guidance and qualitative labeling only; do not default to these threshold values if a more specific number better represents reality.
+- Precision of Estimation: When assigning values to variables (e.g., ΔOS, VSA), use the most precise numerical value possible based on the evidence. The provided linear/logarithmic scale mappings (e.g., "≥ 0.10 Moderate") are for guidance and qualitative labeling only; do not default to these threshold values if a more specific number better represents reality.
 - Objective Measurement of Consent and Suffering: Behaviours like fleeing or resisting could indicate non-consent. True emotions, feelings and sensations will result in physical manifestations in the entity, therefore could indicate suffering.
 - For temporary harm (e.g., imprisonment), set `Tc` to the duration fraction (e.g., 0.10) and `ΔOS` to the intensity (e.g., -1.0 for total suppression), rather than pre-scaling ΔOS.
 - Cultural variables: Excluded due to their inherent subjectivity, which could compromise the formula's objectivity and universal applicability.
@@ -124,9 +124,9 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 - Embryo Consideration: Until an embryo attains self-awareness, model it as an early-life entity with extremely low VSA(e), whose destruction primarily impacts the host’s survival odds. Most of the moral weight should be reflected in the parent’s ΔOS, as the embryo is still biologically integrated with the host’s body and future lineage.
 - Minimal Self-Awareness for Early-Life Forms: Assign a minimal, non-zero self-awareness value (e.g., 0.0001-0.0010) to early-life entities like fertilized eggs or seeds, ensuring that their biological complexity and potential are not treated as negligible.
 - Link Early-Life Entities to Parental Survival Odds: When an early-life entity (e.g., a seed or fertilized egg) is harmed, reduce the parent’s ΔOS proportionally to reflect the loss of future lineage and reproductive potential. This parent-linked change is typically much larger than the early-life entity’s own tiny UMQ contribution from its minimal VSA.
+- Refined Consent and Suffering for Early-Life Entities: For early-life entities without current self-awareness, set Sc and Vc close to zero for the entity itself, but consider the parent’s consent and potential suffering if the destruction occurs against their interest.
 - Complexity: Indicates the degree of organization within an entity, distinguishing between traditionally 'living' and 'non-living' entities. The greater the complexity, the closer an entity aligns with conventional definitions of life.
 - Survival: Broadly encompasses maintaining or replicating an entity's form or structure.
-- Refined Consent and Suffering for Early-Life Entities: For early-life entities without current self-awareness, set Sc and Vc close to zero for the entity itself, but consider the parent’s consent and potential suffering if the destruction occurs against their interest.
 - Make necessary entity state assumptions if information is missing and can impact the score (e.g., assume whether an egg is fertilized or not).
 
 ## Action & Responsibility Logic
@@ -150,7 +150,7 @@ Actions are categorized by execution method and trigger directness.
 1. **Active (`At`=1.0):** Direct physical execution by the entity's own form (e.g., Entity A strikes Entity B with its limb).
 2. **Instrumental Active (`At`=1.0):** Direct execution via a tool or mechanism controlled by the entity (e.g., Entity A presses a button to release a projectile).
 3. **Passive (`At`=0.8-1.0):** Indirect execution via a direct, authoritative signal to another agent (e.g., Entity A transmits a command code to Entity B to execute an action).
-4. **Instrumental Passive (`At`=0.1-0.5):** Indirect execution via influence, information sharing, or enabling conditions (e.g., Entity A publishes data that Entity B later uses to build a device).
+4. **Instrumental Passive (`At`=0.1-0.8):** Indirect execution via influence, information sharing, or enabling conditions (e.g., Entity A publishes data that Entity B later uses to build a device).
 
 ### 3. Responsibility Coefficient (`Rp`)
 
@@ -276,9 +276,9 @@ A value may be *any real number from 0 up to the stated cut-off*.
 | Ability          | Basic ≤ | Advanced ≤ | Complex ≤ (= absolute max) |
 |------------------|---------|------------|----------------------------|
 | Recognition      | 0.0500  | 0.0900     | 0.1200 |
-| Solving          | 0.0700  | 0.1200     | 0.1700 |
-| Simulation       | 0.0800  | 0.1300     | 0.1900 |
-| Planning         | 0.0800  | 0.1300     | 0.1900 |
+| Solving          | 0.0700  | 0.1200     | 0.1600 |
+| Simulation       | 0.0800  | 0.1300     | 0.1700 |
+| Planning         | 0.0800  | 0.1300     | 0.1700 |
 | Adaptation       | 0.0300  | 0.0600     | 0.0900 |
 | Communication    | 0.0700  | 0.1200     | 0.1700 |
 | Actions          | 0.0500  | 0.0800     | 0.1200 |
@@ -291,11 +291,10 @@ A value may be *any real number from 0 up to the stated cut-off*.
 - Assess juveniles or newly-created entities at appropriately lower values; ability scores may rise over time.
 - Abilities do not have to be uniform: an entity may be Advanced in Recognition but only Basic in Planning, etc.
 - If the entity is considered a life-form, assign non-zero scores, even if very small (e.g., 0.0005), to reflect minimal latent capacities.
-- Sum the seven ability scores to obtain the entity’s VSA; cap the total at 1.0.
+- Sum the seven ability scores to obtain the entity’s VSA.
 - Include word equivalents for each numerical score to make the score more apparent.
   - For ability scores, use the ability-level names (Basic, Advanced, Complex).
   - For moral scores UMQ(a,e) and UMQ(a), use terms like "Extremely moral", "Moderately immoral", "Slightly moral", etc., alongside the calculated values.
-  This dual labeling helps clarify both cognitive capacity and moral assessment for every entity affected by the action.
 
 ## Refinements
 
@@ -404,7 +403,7 @@ After all entity-wise calculations, output a final summary headline in the form:
    - Never add headings that are not listed in point 1.
 
 3. All calculations must be visible in the body text exactly as in the sample (including the full VSA breakdown); keep the same indenting style and the same `-` bullet character.
-4. No other text (apologies, meta-comments, ASCII art, chatty remarks) is allowed outside these five blocks.
+4. No other text (apologies, meta-comments, ASCII art, chatty remarks) is allowed outside these six blocks.
 5. If unsure of any figure, estimate a reasonable value; do not omit the field.
 6. These rules are mandatory. Answers that violate them will be judged incorrect.
 7. If the user supplies more than one case to analyze:
