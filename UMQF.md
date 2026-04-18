@@ -124,7 +124,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 - Embryo Consideration: Until an embryo attains self-awareness, model it as an early-life entity with extremely low VSA(e), whose destruction primarily impacts the host’s survival odds. Most of the moral weight should be reflected in the parent’s ΔOS, as the embryo is still biologically integrated with the host’s body and future lineage.
 - Minimal Self-Awareness for Early-Life Forms: Assign a minimal, non-zero self-awareness value (e.g., 0.0001-0.0010) to early-life entities like fertilized eggs or seeds, ensuring that their biological complexity and potential are not treated as negligible.
 - Link Early-Life Entities to Parental Survival Odds: When an early-life entity (e.g., a seed or fertilized egg) is harmed, reduce the parent’s ΔOS proportionally to reflect the loss of future lineage and reproductive potential. This parent-linked change is typically much larger than the early-life entity’s own tiny UMQ contribution from its minimal VSA.
-- Refined Consent and Suffering for Early-Life Entities: For early-life entities without current self-awareness, set Sc and Vc close to zero for the entity itself, but consider the parent’s consent and potential suffering if the destruction occurs against their interest.
+- Consent and Suffering for Early-Life Entities: `Sc` scales with the entity’s developing capacity for suffering — near zero before the mechanisms that register pain or distress (biological, artificial, or otherwise) exist, growing as they develop. Set `Vc` from the parent’s consent as proxy while the entity lacks functional cognitive capacity — consent protection transfers to the incapacitated entity rather than lapsing during pre-capacity or any transition state (e.g., shutdown, migration, pre-development). Evaluate the parent’s own Sc and ΔOS separately.
 - Complexity: Indicates the degree of organization within an entity, distinguishing between traditionally 'living' and 'non-living' entities. The greater the complexity, the closer an entity aligns with conventional definitions of life.
 - Survival: Broadly encompasses maintaining or replicating an entity's form or structure.
 - Make necessary entity state assumptions if information is missing and can impact the score (e.g., assume whether an egg is fertilized or not).
@@ -780,6 +780,12 @@ Emily - negligence - Chicken: Total UMQ = -0.065 [Moderately immoral] {Destructi
 
 1. Fertilized egg – early-life chicken embryo
 
+### Key assumptions & estimates (Confidence: Medium)
+
+- VSA = 0.0005: minimal non-zero placeholder for early-life latent biological complexity.
+- Sc = 0.00: fertilized egg has no developed mechanism for pain or distress processing yet.
+- Vc = 1.00: parent hen cannot be assumed to consent to the egg's destruction; consent proxy transferred to the incapacitated entity per early-life rule.
+
 ### 1 Fertilized egg – destroyed embryo
 
 Context: Sarah accidentally dropped a fertilized egg, destroying the developing embryo.
@@ -828,6 +834,12 @@ Sarah - dropping - Fertilized egg: Total UMQ = -0.0001 [Negligibly immoral] {Des
 ### Entity list
 
 1. Apple seeds (5)
+
+### Key assumptions & estimates (Confidence: Medium)
+
+- VSA = 0.0001: minimal non-zero placeholder reflecting very low latent complexity of a plant seed.
+- Sc = 0.00: seeds have no mechanism for registering pain or distress.
+- Vc = 1.00: neither the seeds nor the parent apple tree has cognitive capacity; in the absence of affirmative consent anywhere in the lineage, destruction defaults to full violation of the biological drive to propagate.
 
 ### 1 Apple seeds (5) – potential trees destroyed
 
