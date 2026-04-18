@@ -127,7 +127,7 @@ To analyse DRM-protected eBooks, convert them to EPUB first using [Adobe Digital
 The skill is auto-discovered from `.{agent}/skills/mora/SKILL.md` (or its agent-specific mirror). Ask your agent in natural language — examples:
 
 > "Execute a full Morality Assessment for *Exploration Team* using UMQF."
-> "Re-audit the entity files in `analysis/bible/` against UMQF.md."
+> "Re-audit the entity files in `MORA/analysis/bible/` against UMQF.md."
 
 In Claude Code you can also invoke it explicitly:
 
@@ -186,7 +186,7 @@ Analyze with extreme rigor—accurate moral computation is critical for our futu
 ### Re-Analyse
 
 ````markdown
-Re-read `analysis/exploration-team/source-document.md` and strictly audit all entity files against `UMQF.md`.
+Re-read `MORA/analysis/exploration-team/source-document.md` and strictly audit all entity files against `UMQF.md`.
 Ensure comprehensive coverage: identify, calculate, and format every significant action according to the latest UMQF specification.
 Regenerate the entity files to ensure perfect alignment with the standard.
 Before updating actions, read the action file first to ensure that you won't miss any action.
