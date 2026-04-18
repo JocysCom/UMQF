@@ -57,7 +57,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 - `ΔOS(e)` - Change in Odds of Survival for entity (e) due to action (a), ranging between -1 (disintegration/destruction for non-living entities or death for self-aware entities) and +1 (creation/formation for non-living entities or saving/creating a life for self-aware entities). *If combining multiple effects would push ΔOS(e) outside this range, clamp it to −1 or +1 before inserting it into the UMQ formula. If the change comes from a monetary loss or gain, compute it with the Av→ΔOSresource rule above.* Linear scale mapping:
 
   - = 0.00  Neutral
-  - > 0.00  Minor
+  - \> 0.00  Minor
   - ≥ 0.10  Moderate
   - ≥ 0.30  Severe
   - ≥ 0.60  Critical
@@ -94,7 +94,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 - `Vc(e)` - Violation coefficient of Consent of entity (e) caused by action (a), ranging from 0 (no violation) to 1 (full violation). Its application is conditional on `ΔOS(e)`. Full violation neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. Linear scale mapping:
 
   - = 0.00  Explicit
-  - > 0.00  Implicit
+  - \> 0.00  Implicit
   - ≥ 0.10  Assumed
   - ≥ 0.30  Reluctant
   - ≥ 0.50  Coerced
@@ -103,7 +103,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 - `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact. Linear scale mapping:
 
   - = 0.00  None
-  - > 0.00  Discomfort
+  - \> 0.00  Discomfort
   - ≥ 0.20  Distress
   - ≥ 0.50  Agony
   - ≥ 0.80  Torture
