@@ -4,7 +4,18 @@
       "Bash(python .ai/skills/ai-self-improvement/scripts/sync_agent_assets.py AUTO --no-clear)",
       "Bash(python .ai/skills/mora/scripts/utils_check_size.py MORA/analysis/exploration-team/source-document.md)",
       "Bash(python .ai/skills/mora/scripts/s02_extract_metadata.py --document exploration-team)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "mcp__n8n-mcp__n8n_update_partial_workflow",
+      "mcp__vscode-ide__run_in_terminal",
+      "mcp__vscode-ide__read_terminal_output",
+      "Bash(powershell.exe -NoProfile -Command '$r = Get-Content -LiteralPath '\\\\''D:\\\\Projects\\\\Jocys.com GitHub\\\\AiPlatform\\\\Scripts\\\\.results\\\\AiDevAgent_WorkflowTests_20260419-180647.json'\\\\'' -Raw | ConvertFrom-Json; '\\\\''total {0} pass {1} fail {2} duration {3}s'\\\\'' -f $r.total,$r.passed,$r.failed,$r.runDurationSec; '\\\\''--- per-test ---'\\\\''; $r.results | ForEach-Object { '\\\\''{0,-4} {1,-7} {2,-5} {3,6:N1}s | {4}'\\\\'' -f $_.testId,$_.cli,$_.status,$_.durationSec,$_.assertion }; '\\\\'''\\\\''; '\\\\''--- replies \\(first 180 chars\\) ---'\\\\''; $r.results | ForEach-Object { '\\\\''[{0,-4} {1,-7}] {2}'\\\\'' -f $_.testId, $_.cli, \\(\\($_.rawOutput -replace \"`r\",'\\\\'''\\\\'' -replace \"`n\",'\\\\'' / '\\\\''\\).Trim\\(\\) | ForEach-Object { if \\($_.Length -gt 180\\) { $_.Substring\\(0,180\\) + '\\\\''...'\\\\'' } else { $_ } }\\) }')",
+      "Bash(ssh -i '/d/Projects/Jocys.com GitHub/AiPlatform/Files/Docker/ai-dev-agent/ssh/ai-dev-agent' -p 2201 -o StrictHostKeyChecking=no agent@localhost ' *)",
+      "Read(//d/Projects/Jocys.com GitHub/AiPlatform/Files/Docker/ai-dev-agent/**)",
+      "Bash(powershell.exe -NoProfile -Command \"podman cp 'D:\\\\Projects\\\\Jocys.com GitHub\\\\AiPlatform\\\\Files\\\\Docker\\\\ai-dev-agent\\\\run-agent-task.sh' ai-dev-agent-001:/usr/local/bin/run-agent-task; podman exec ai-dev-agent-001 chmod +x /usr/local/bin/run-agent-task; podman exec ai-dev-agent-001 sh -c 'rm -rf /workspace/jobs/* && ls -la /workspace/jobs/'\")"
+    ],
+    "additionalDirectories": [
+      "d:\\Projects\\Jocys.com GitHub\\AiPlatform\\Scripts",
+      "d:\\Projects\\Jocys.com GitHub\\AiPlatform\\Files\\Docker\\ai-dev-agent"
     ]
   }
 }
