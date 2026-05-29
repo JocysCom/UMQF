@@ -1,5 +1,5 @@
 {
-  "generated_from": "256 observations in data/observations/*.jsonl",
+  "generated_from": "327 observations in data/observations/*.jsonl",
   "currency": "USD_2024",
   "method": "pandas/numpy fits; forms linear/power/log selected by R2 (see universal_formulas.md)",
   "ratios": [
@@ -7,7 +7,7 @@
       "ratio": "L_to_M",
       "meaning": "GCU value of one life (anchors dOS=-1); income-normalized; split by construct",
       "unit": "GCU per life",
-      "estimate": 1.683,
+      "estimate": 1.356,
       "primary_construct": "wtp",
       "by_construct": {
         "compensation": {
@@ -26,24 +26,30 @@
           ]
         },
         "wtp": {
-          "median_gcu": 1.683,
+          "median_gcu": 1.356,
           "range_gcu": [
             0.029,
-            4.571
+            13.474
           ],
-          "median_usd": 2305000.0,
-          "n": 24,
+          "median_usd": 2355000.0,
+          "n": 40,
           "traditions": [
             "chinese_socialist",
+            "civil law",
+            "civil law (East Asian)",
+            "civil law (Nordic)",
+            "civil law (post-communist)",
             "civil_law",
+            "common law",
             "common_law",
             "islamic_law",
+            "mixed (English common law + civil/Islamic)",
             "other"
           ]
         }
       },
-      "cross_construct_ratio_wtp_over_compensation": 112.2,
-      "n": 42,
+      "cross_construct_ratio_wtp_over_compensation": 90.4,
+      "n": 58,
       "form": "point",
       "confidence": "high",
       "status": "estimated",
@@ -92,27 +98,27 @@
       "ratio": "W_to_M",
       "meaning": "GCU value of one welfare-year (QALY), income-normalized, by construct",
       "unit": "GCU per welfare-yr",
-      "estimate": 0.00931,
+      "estimate": 0.01122,
       "primary_construct": "wtp",
       "by_construct": {
         "budget": {
-          "median_gcu": 0.01562,
+          "median_gcu": 0.0083,
           "range_gcu": [
-            0.006,
+            0.00468,
             0.04368
           ],
-          "n": 7
+          "n": 11
         },
         "wtp": {
-          "median_gcu": 0.00931,
+          "median_gcu": 0.01122,
           "range_gcu": [
-            0.00825,
-            0.025
+            0.00638,
+            0.06842
           ],
-          "n": 4
+          "n": 10
         }
       },
-      "n": 11,
+      "n": 21,
       "form": "point",
       "confidence": "medium",
       "status": "estimated",
@@ -150,18 +156,53 @@
     },
     {
       "ratio": "money_concavity",
-      "meaning": "how punishment scales with money loss",
+      "meaning": "how punishment scales with money loss (within one coherent schedule)",
       "unit": "jail-yr vs USD",
       "form": "power",
       "params": {
-        "a": 0.06603,
-        "b": 0.283861
+        "a": 0.030713,
+        "b": 0.322712
       },
-      "r2": 0.9041,
-      "n": 17,
+      "r2": 0.944,
+      "primary_schedule": "US Federal",
+      "n": 12,
+      "schedules_fitted": 3,
+      "corroborating_concave_schedules": 2,
+      "per_schedule": [
+        {
+          "schedule": "US Federal",
+          "n": 12,
+          "form": "power",
+          "params": {
+            "a": 0.030713,
+            "b": 0.322712
+          },
+          "r2": 0.944
+        },
+        {
+          "schedule": "UK (England & Wales)",
+          "n": 5,
+          "form": "log",
+          "params": {
+            "a": 1.057974,
+            "b": -8.64413
+          },
+          "r2": 0.969
+        },
+        {
+          "schedule": "CN",
+          "n": 4,
+          "form": "linear",
+          "params": {
+            "a": 0.001794,
+            "b": 2.510178
+          },
+          "r2": 0.997
+        }
+      ],
       "confidence": "medium",
       "status": "estimated",
-      "notes": "power exponent b<1 => diminishing (concave); b~1 => linear."
+      "notes": "Fit within one coherent loss->penalty schedule (US USSG 2B1.1 is the cleanest, continuous one); national schemes differ structurally (caps, categorical bands) so a pooled fit is invalid. power b<1 => diminishing/concave; 2 of 3 fitted schedules are concave."
     },
     {
       "ratio": "severity_ladder",
@@ -169,79 +210,79 @@
       "unit": "jail-yr (norm to max)",
       "entries": [
         {
-          "id": "usa-ohio-mozingo-4-days",
-          "label": "USA (Ohio) — State v. William Mozingo Jr., Summit County (Akron)",
-          "jail_years": 31.5,
+          "id": "us-california-dugard-18years-431tolife",
+          "label": "kidnapping and rape",
+          "jail_years": 431.0,
           "norm": 1.0
         },
         {
-          "id": "uk-murder-30-year-starting-point",
-          "label": "Murder, 30-year minimum-term starting point",
-          "jail_years": 30.0,
-          "norm": 0.952
-        },
-        {
-          "id": "jp-satsujin-199-penal-code",
-          "label": "Satsujin (Art. 199) – death, life, or ≥ 5 years",
-          "jail_years": 30.0,
-          "norm": 0.952
+          "id": "usa-ohio-mozingo-4-days",
+          "label": "USA (Ohio) — State v. William Mozingo Jr., Summit County (Akron)",
+          "jail_years": 31.5,
+          "norm": 0.073
         },
         {
           "id": "nl-moord-289-wvsr",
           "label": "Moord (Art. 289 WvSr) – life or up to 30 years",
           "jail_years": 30.0,
-          "norm": 0.952
+          "norm": 0.07
         },
         {
           "id": "fr-meurtre-221-1-cp",
           "label": "Meurtre (Art. 221-1) – 30 years réclusion criminelle",
           "jail_years": 30.0,
-          "norm": 0.952
+          "norm": 0.07
+        },
+        {
+          "id": "uk-murder-30-year-starting-point",
+          "label": "Murder, 30-year minimum-term starting point",
+          "jail_years": 30.0,
+          "norm": 0.07
+        },
+        {
+          "id": "jp-satsujin-199-penal-code",
+          "label": "Satsujin (Art. 199) – death, life, or ≥ 5 years",
+          "jail_years": 30.0,
+          "norm": 0.07
         },
         {
           "id": "australia-nsw-murder-actual-mean-head-25-6yr",
           "label": "Murder, actual sentences imposed (NSW Sentencing Council Homicide report)",
           "jail_years": 25.6,
-          "norm": 0.813
-        },
-        {
-          "id": "nl-doodslag-287-wvsr",
-          "label": "Doodslag (Art. 287 WvSr) – up to 25 years",
-          "jail_years": 25.0,
-          "norm": 0.794
-        },
-        {
-          "id": "canada-first-degree-murder-parole-floor-25yr",
-          "label": "First-degree murder (Criminal Code s. 235 / s. 745(a))",
-          "jail_years": 25.0,
-          "norm": 0.794
+          "norm": 0.059
         },
         {
           "id": "uk-murder-25-year-starting-point",
           "label": "Murder, 25-year minimum-term starting point (weapon taken to scene)",
           "jail_years": 25.0,
-          "norm": 0.794
+          "norm": 0.058
+        },
+        {
+          "id": "nl-doodslag-287-wvsr",
+          "label": "Doodslag (Art. 287 WvSr) – up to 25 years",
+          "jail_years": 25.0,
+          "norm": 0.058
+        },
+        {
+          "id": "canada-first-degree-murder-parole-floor-25yr",
+          "label": "First-degree murder (Criminal Code s. 235 / s. 745(a))",
+          "jail_years": 25.0,
+          "norm": 0.058
         },
         {
           "id": "us-federal-second-degree-murder",
           "label": "Second-degree murder, USSG level 38, 235-293 mo at CHC I",
           "jail_years": 22.0,
-          "norm": 0.698
+          "norm": 0.051
         },
         {
           "id": "scotland-murder-mandatory-life-punishment-part-20-5yr",
           "label": "Murder, mandatory life with punishment part (Criminal Procedure (Scotland) Act 1995 s. 205)",
           "jail_years": 20.5,
-          "norm": 0.651
-        },
-        {
-          "id": "indonesia-art340-premeditated-murder",
-          "label": "Premeditated murder / pembunuhan berencana (Art. 340): death, life, or up to 20 years",
-          "jail_years": 20.0,
-          "norm": 0.635
+          "norm": 0.048
         }
       ],
-      "n": 92,
+      "n": 117,
       "form": "ordinal",
       "confidence": "medium",
       "status": "estimated",
@@ -251,12 +292,12 @@
       "ratio": "liberty_time",
       "meaning": "custodial years imposed per year of liberty taken",
       "unit": "jail-yr per liberty-yr",
-      "estimate": 521.43,
+      "estimate": 273.75,
       "range": [
         0.65,
-        3406.67
+        13140.0
       ],
-      "n": 9,
+      "n": 17,
       "form": "point",
       "confidence": "low",
       "status": "estimated",
@@ -266,7 +307,7 @@
   "triangulation": {
     "check": "W_to_L =? W_to_M / value_of_a_life_year",
     "value_of_a_life_year_usd": 0.0,
-    "implied_W_to_L_from_money": 0.221,
+    "implied_W_to_L_from_money": 0.331,
     "measured_W_to_L": 0.402,
     "verdict": "consistent (same order of magnitude)"
   }

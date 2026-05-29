@@ -2,36 +2,71 @@
   "money_unit": "GCU",
   "nodes_log_value": {
     "gcu": 0.0,
-    "life_year": -3.3673220250468594,
-    "welfare_year": -4.47764570155157
+    "life_year": -3.4491449059053103,
+    "welfare_year": -4.425252737578008
   },
   "LE_years": 40,
   "reconciled_rates": {
-    "life_to_gcu": 1.3792742141830374,
-    "life_year_to_gcu": 0.03448185535457594,
-    "welfare_year_to_gcu": 0.011360126825310653,
-    "welfare_year_to_life_year": 0.329452307844076
+    "life_to_gcu": 1.2709117397422718,
+    "life_year_to_gcu": 0.03177279349355679,
+    "welfare_year_to_gcu": 0.01197118535004274,
+    "welfare_year_to_life_year": 0.3767747193041234
   },
-  "measured_arbitrage_cycle": 1.8167722878625134,
+  "measured_arbitrage_cycle": 1.2145989304812834,
   "reconciliation_residuals_log": {
-    "life_year->gcu (VLY)": -0.199,
-    "welfare_year->gcu": 0.199,
-    "welfare_year->life_year": -0.199
+    "life_year->gcu (VLY)": -0.0648,
+    "welfare_year->gcu": 0.0648,
+    "welfare_year->life_year": -0.0648
   },
   "money_concavity": {
     "ratio": "money_concavity",
-    "meaning": "how punishment scales with money loss",
+    "meaning": "how punishment scales with money loss (within one coherent schedule)",
     "unit": "jail-yr vs USD",
     "form": "power",
     "params": {
-      "a": 0.06603,
-      "b": 0.283861
+      "a": 0.030713,
+      "b": 0.322712
     },
-    "r2": 0.9041,
-    "n": 17,
+    "r2": 0.944,
+    "primary_schedule": "US Federal",
+    "n": 12,
+    "schedules_fitted": 3,
+    "corroborating_concave_schedules": 2,
+    "per_schedule": [
+      {
+        "schedule": "US Federal",
+        "n": 12,
+        "form": "power",
+        "params": {
+          "a": 0.030713,
+          "b": 0.322712
+        },
+        "r2": 0.944
+      },
+      {
+        "schedule": "UK (England & Wales)",
+        "n": 5,
+        "form": "log",
+        "params": {
+          "a": 1.057974,
+          "b": -8.64413
+        },
+        "r2": 0.969
+      },
+      {
+        "schedule": "CN",
+        "n": 4,
+        "form": "linear",
+        "params": {
+          "a": 0.001794,
+          "b": 2.510178
+        },
+        "r2": 0.997
+      }
+    ],
     "confidence": "medium",
     "status": "estimated",
-    "notes": "power exponent b<1 => diminishing (concave); b~1 => linear."
+    "notes": "Fit within one coherent loss->penalty schedule (US USSG 2B1.1 is the cleanest, continuous one); national schemes differ structurally (caps, categorical bands) so a pooled fit is invalid. power b<1 => diminishing/concave; 2 of 3 fitted schedules are concave."
   },
   "In": {
     "ratio": "In",

@@ -238,24 +238,34 @@ def main():
     else:
         ratios.append(pending("In", "need death sentencing rows with intent"))
 
-    # --- money_concavity : fit penalty(jail) vs money loss ---
+    # --- money_concavity : fit penalty(jail) vs loss WITHIN a coherent schedule ---
+    # Pooling structurally-different national schemes (continuous US loss table vs categorical bands /
+    # caps) destroys the fit, so fit per schedule (jurisdiction, else source) and report corroboration.
     m = df[has_ratio(df, "money_concavity")]
-    d2 = pd.DataFrame({"x": numcol(m, "money_value_usd2024"), "y": numcol(m, "penalty_jail_years")}).dropna()
+    d2 = pd.DataFrame({"x": numcol(m, "money_value_usd2024"), "y": numcol(m, "penalty_jail_years"),
+                       "src": col(m, "source"), "jur": col(m, "jurisdiction")}).dropna(subset=["x", "y"])
     d2 = d2[(d2.x > 0) & (d2.y > 0)]
-    if len(d2) >= 3:
-        fit = fit_best(d2.x.values, d2.y.values)
-        if fit:
-            form, params, score = fit
-            ratios.append({
-                "ratio": "money_concavity", "meaning": "how punishment scales with money loss",
-                "unit": "jail-yr vs USD", "form": form,
-                "params": {k: round(v, 6) for k, v in params.items()}, "r2": round(score, 4),
-                "n": int(len(d2)), "confidence": "medium", "status": "estimated",
-                "notes": "power exponent b<1 => diminishing (concave); b~1 => linear."})
-        else:
-            ratios.append(pending("money_concavity", "fit failed on available loss/penalty pairs"))
+    d2["key"] = d2["jur"].fillna(d2["src"])
+    persrc = []
+    for k, grp in d2.groupby("key"):
+        if len(grp) >= 4:
+            f = fit_best(grp.x.values, grp.y.values)
+            if f:
+                persrc.append({"schedule": str(k), "n": int(len(grp)), "form": f[0],
+                               "params": {kk: round(v, 6) for kk, v in f[1].items()}, "r2": round(f[2], 3)})
+    if persrc:
+        persrc.sort(key=lambda r: -r["n"])  # primary = the schedule with the most points (cleanest, continuous)
+        primary = persrc[0]
+        concave = sum(1 for r in persrc if (r["form"] == "power" and r["params"].get("b", 1) < 1) or r["form"] == "log")
+        ratios.append({
+            "ratio": "money_concavity", "meaning": "how punishment scales with money loss (within one coherent schedule)",
+            "unit": "jail-yr vs USD", "form": primary["form"], "params": primary["params"], "r2": primary["r2"],
+            "primary_schedule": primary["schedule"], "n": primary["n"],
+            "schedules_fitted": len(persrc), "corroborating_concave_schedules": concave,
+            "per_schedule": persrc, "confidence": "medium", "status": "estimated",
+            "notes": "Fit within one coherent loss->penalty schedule (US USSG 2B1.1 is the cleanest, continuous one); national schemes differ structurally (caps, categorical bands) so a pooled fit is invalid. power b<1 => diminishing/concave; %d of %d fitted schedules are concave." % (concave, len(persrc))})
     else:
-        ratios.append(pending("money_concavity", "need >=3 theft/fraud loss->penalty tiers"))
+        ratios.append(pending("money_concavity", "need >=4 (loss,penalty) points within one coherent schedule"))
 
     # --- severity_ladder : relative ordering by custodial sentence ---
     s = df.copy()

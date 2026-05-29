@@ -14,6 +14,10 @@
     "South Africa": 400000, "Egypt": 250000, "Nigeria": 120000, "Thailand": 580000, "Chile": 1360000,
     "Pakistan": 110000, "India": 175000, "Saudi Arabia": 2600000, "Iran": 310000,
     "United Arab Emirates": 3900000, "UAE": 3900000, "Qatar": 6400000, "Kuwait": 2600000,
+    "Poland": 1700000, "Turkey": 1000000, "Argentina": 1000000, "Colombia": 520000,
+    "Philippines": 280000, "Vietnam": 320000, "Malaysia": 910000, "Singapore": 7100000,
+    "Israel": 4600000, "Norway": 7200000, "Belgium": 4300000, "Austria": 4600000,
+    "Greece": 1800000, "Portugal": 2200000, "Bangladesh": 200000, "Kenya": 134000,
     "global": 950000, "international": 950000, "EU": 4000000
   },
   "conversion_forms": {

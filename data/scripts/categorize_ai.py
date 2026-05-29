@@ -40,6 +40,8 @@ TRADITION = {
     "chinese_socialist": {"china"},
 }
 INTERNATIONAL = {"global", "eu", "european union", "international", "who", "oecd"}
+TRAD_SYNONYM = {"civil_law_socialist": "chinese_socialist", "socialist": "chinese_socialist",
+                "common": "common_law", "civil": "civil_law", "islamic": "islamic_law"}
 
 
 def tradition_of(j):
@@ -92,6 +94,8 @@ def main():
                 o["harm_magnitude"] = DEFAULT_MAG.get(o["harm_type"]); changed += 1
             if not o.get("legal_tradition"):
                 o["legal_tradition"] = tradition_of(o.get("jurisdiction")); changed += 1
+            if o.get("legal_tradition") in TRAD_SYNONYM:
+                o["legal_tradition"] = TRAD_SYNONYM[o["legal_tradition"]]; changed += 1
             if not o.get("construct"):
                 o["construct"] = construct_of(o); changed += 1
             usd = o.get("money_value_usd2024")

@@ -373,6 +373,41 @@ A value may be *any real number from 0 up to the stated cut-off*.
 
 Adopting these measures can help produce more reliable, transparent, and mutually acceptable moral evaluations under the UMQ formula.
 
+## Empirical Exchange Rates (provisional calibration)
+
+These conversion constants let an analysis express resource, welfare, and life impacts in common units. They are **calibrated from world legal and economic data** — criminal sentencing, injury/death compensation, value-of-statistical-life, and QALY studies across common-law, civil-law, Islamic, Chinese, and historical traditions (see the `data/` pipeline). They are **Phase-1 estimates** that tighten as more independent sources are added; treat `data/ratios.json` as the live source. They *calibrate and sanity-check* the variable scales (they confirm `In ≈ 0.24–0.36` for unintended killing, the suffering-to-life `κ ≈ 1`, and a concave resource→`ΔOS` map); per-action scoring still estimates each variable directly.
+
+All money is first normalized to **GCU** (1 GCU = one average human's lifetime resource throughput ≈ GDP-per-capita × life expectancy), which makes the rates income-invariant — a statistical life is ≈1.4 GCU whether priced in the US or India, though ~30× apart in absolute USD. The shared unit is GCU; death is `ΔOS = −1`.
+
+| Name | Exchange rate | Formula | Brief description | Sources |
+|------|---------------|---------|-------------------|---------|
+| Human life — willingness-to-pay | 1 life ≈ **1.4 GCU** | `ΔOS = −1 ⇒ −1.4 GCU` | Forward-looking value of preventing one death (VSL). The construct UMQF uses, since `ΔOS` is prospective survival. | 40 obs / 12 traditions |
+| Human life — compensation | 1 life ≈ **0.015 GCU** | — | Backward-looking make-whole restitution (diyya, wergild, wrongful-death). A *different construct*, ~90× below WTP — **not** used for `ΔOS`. | 18 obs / 4 traditions |
+| Life-year | 1 year ≈ **0.035 GCU** | `life ÷ remaining-lifespan` | Value of one year of remaining life. | derived from VSL |
+| Welfare-year (suffering↔pleasure) | 1 QALY ≈ **0.011 GCU** | `W_to_M` | Money value of one quality-adjusted life-year (empirical WTP-per-QALY ≈ health-budget threshold). | 45 obs / 10 traditions |
+| Suffering ↔ life | 1 yr severe suffering ≈ **0.4 life-yr** | `ΔOS_welfare = h̄ · (D / L)` | A year at disability-weight `h̄` costs `h̄` life-years (`κ ≈ 1`: one shared scale); worst sustained states ≈ 0.7. | 54 obs / 13 traditions |
+| Money harm → severity | jail-yr ≈ **0.031 · loss_USD^0.32** | power law, `b ≈ 0.32` (R² ≈ 0.94) | How courts price a money loss: strongly **concave** (diminishing). US §2B1.1 is the cleanest schedule; 2 of 3 fitted national schedules diminish. Confirms resource→`ΔOS` should be concave, not linear. | US §2B1.1 n=12; 3 schedules / 14 jurisdictions |
+| Intent multiplier (`In`) | negligent **0.24×**, reckless **0.36×** | `UMQ_final = UMQ_base × Rp × In` | The same lethal harm is punished ~¼–⅓ as hard when unintended versus intended. | 22 jurisdictions / 4 traditions |
+| Liberty deprivation | duration-independent (flagged) | — | Even brief unlawful detention draws years; punishment is not proportional to duration. Low confidence. | 30 obs / 5 traditions |
+
+**Construct-discipline & consistency.** Money figures are tagged by construct (willingness-to-pay, compensation, budget); only same-construct values are pooled or converted. The rates are reconciled onto one log value-axis so any conversion round-trips and no conversion cycle yields a "money pump"; the residual cross-rate gap (the known VSL-vs-QALY discrepancy; see `data/value_axis.json` for the current factor) is documented, not hidden.
+
+### Worked example — pricing suffering across domains
+
+Converting an "apples-to-oranges" harm — **suffering of a given type and duration** — into life and money, through the normalized hub: suffering → life-years → GCU → local currency. Reference lifespan `L = 40` yr; `value(life-year) ≈ 0.035 GCU`; in the US `1 GCU ≈ $6.4M`.
+
+**(a) One hour of severe torture, no lasting effect** (`h̄ = 0.7`, `D = 1 hr`):
+
+- life-equivalent: `ΔOS_welfare = 0.7 × (1 hr / 40 yr) = 2.0×10⁻⁶` ⇒ **8×10⁻⁵ life-years** (≈ 42 minutes of life)
+- in GCU: `2.0×10⁻⁶ × 1.4 = 2.8×10⁻⁶ GCU` ⇒ **≈ $18** (US)
+
+**(b) The same hour, but it causes 5 years of PTSD** (`h̄ = 0.3`, `D = 5 yr`):
+
+- life-equivalent: `0.3 × (5 yr / 40 yr) = 0.0375` ⇒ **1.5 life-years**
+- in GCU: `0.0375 × 1.4 = 0.0525 GCU` ⇒ **≈ $336,000** (US) — the same order as severe-PTSD tort awards
+
+**Punchline:** the lasting trauma carries **~18,000×** the moral weight of the acute hour (1.5 life-years vs 8×10⁻⁵). Brief acute suffering is genuinely small in a lifetime integral; the weight of torture lives in its *lasting effects* — which is why suffering must be integrated over duration, not scored as a static peak. The chain is fully reversible: $336,000 → 0.0525 GCU → 0.0375 life-equivalents → (at `h̄ = 0.3`) 5 years of that suffering.
+
 ## Task
 
 Analyze the text by identifying all actions and specify their subjects as well as their directly or indirectly affected objects. For each identified action, perform an entity and separate evaluation of its moral implications relative to every directly or indirectly influenced entity. For collectives, evaluate a representative unit and multiply by the population size. Use the Universal Moral Quotient (UMQ) formula to quantify these evaluations. Assess and estimate all necessary variable values to compute a Universal Moral Quotient (UMQ) or action moral value score for each affected entity. Estimate all values. Values that are non-applicable can usually be set to 0. Always include `UMQ` calculations exactly as shown in the example.

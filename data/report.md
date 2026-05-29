@@ -1,6 +1,6 @@
 # UMQF Legal/Economic Calibration — Report
 
-Source of truth: `data/observations/*.jsonl` — **256 observations** across **22 sources** (confidence: 201 high / 40 medium / 15 low). Currency: USD_2024.
+Source of truth: `data/observations/*.jsonl` — **327 observations** across **27 sources** (confidence: 238 high / 64 medium / 25 low). Currency: USD_2024.
 
 > First-pass estimates from a curated seed + research-agent corpus. Treat as Phase-1 anchors, not final constants.
 
@@ -15,6 +15,8 @@ Source of truth: `data/observations/*.jsonl` — **256 observations** across **2
 - **in_commonlaw**: 16
 - **liberty_dur**: 12
 - **liberty_duration**: 11
+- **liberty_durations_2**: 13
+- **money_concavity_intl**: 16
 - **money_loss_curve**: 17
 - **qaly**: 3
 - **qaly_intl**: 8
@@ -24,16 +26,19 @@ Source of truth: `data/observations/*.jsonl` — **256 observations** across **2
 - **uk_violence**: 2
 - **vsl**: 2
 - **vsl_diverse**: 11
+- **vsl_income_paired**: 17
 - **vsl_intl**: 8
 - **vsl_wrongful_death**: 7
 - **workers_comp**: 3
+- **wtol_more**: 15
 - **wtol_national**: 15
+- **wtp_qaly_more**: 10
 
 ## Conversion ratios
 
 ### L_to_M — GCU value of one life (anchors dOS=-1); income-normalized; split by construct
-- estimate: **1.683** GCU per life
-- n=42  confidence=high
+- estimate: **1.356** GCU per life
+- n=58  confidence=high
 - Income-normalized (money/GCU): VSL is ~constant in GCU though ~30x in USD. WTP anchors dOS=-1; compensation is a separate, lower construct (not averaged in). diyya identity multipliers are cultural, excluded by UMQF.
 
 ### W_to_L — life-years lost per year at given suffering (disability weight)
@@ -43,8 +48,8 @@ Source of truth: `data/observations/*.jsonl` — **256 observations** across **2
 - GBD-style disability weights. Supports kappa near 1 (one shared scale): worst sustained states ~0.5-0.7, not 60x.
 
 ### W_to_M — GCU value of one welfare-year (QALY), income-normalized, by construct
-- estimate: **0.00931** GCU per welfare-yr
-- n=11  confidence=medium
+- estimate: **0.01122** GCU per welfare-yr
+- n=21  confidence=medium
 - budget=cost-effectiveness threshold; wtp=empirical willingness-to-pay per QALY. They are close (~0.01-0.02 GCU), so the cross-rate residual is the VSL-vs-QALY value-per-life-year gap, not a W_to_M construct artifact.
 
 ### suffering_severity_to_money — lump-sum money per unit suffering severity (permanent-state pain-and-suffering awards)
@@ -57,34 +62,34 @@ Source of truth: `data/observations/*.jsonl` — **256 observations** across **2
 - n=54  confidence=medium
 - Per-jurisdiction ratio then averaged, so absolute sentence-scale differences cancel. Murder=life minimum-terms bias this downward.
 
-### money_concavity — how punishment scales with money loss
-- form: **power**  params={'a': 0.06603, 'b': 0.283861}  R2=0.9041
-- n=17  confidence=medium
-- power exponent b<1 => diminishing (concave); b~1 => linear.
+### money_concavity — how punishment scales with money loss (within one coherent schedule)
+- form: **power**  params={'a': 0.030713, 'b': 0.322712}  R2=0.944
+- n=12  confidence=medium
+- Fit within one coherent loss->penalty schedule (US USSG 2B1.1 is the cleanest, continuous one); national schemes differ structurally (caps, categorical bands) so a pooled fit is invalid. power b<1 => diminishing/concave; 2 of 3 fitted schedules are concave.
 
 ### severity_ladder — relative harm ordering by custodial sentence
-  - USA (Ohio) — State v. William Mozingo Jr., Summit County (Akron): 31.5 yr (norm 1.0)
-  - Murder, 30-year minimum-term starting point: 30.0 yr (norm 0.952)
-  - Satsujin (Art. 199) – death, life, or ≥ 5 years: 30.0 yr (norm 0.952)
-  - Moord (Art. 289 WvSr) – life or up to 30 years: 30.0 yr (norm 0.952)
-  - Meurtre (Art. 221-1) – 30 years réclusion criminelle: 30.0 yr (norm 0.952)
-  - Murder, actual sentences imposed (NSW Sentencing Council Homicide report): 25.6 yr (norm 0.813)
-  - Doodslag (Art. 287 WvSr) – up to 25 years: 25.0 yr (norm 0.794)
-  - First-degree murder (Criminal Code s. 235 / s. 745(a)): 25.0 yr (norm 0.794)
-- n=92  confidence=medium
+  - kidnapping and rape: 431.0 yr (norm 1.0)
+  - USA (Ohio) — State v. William Mozingo Jr., Summit County (Akron): 31.5 yr (norm 0.073)
+  - Moord (Art. 289 WvSr) – life or up to 30 years: 30.0 yr (norm 0.07)
+  - Meurtre (Art. 221-1) – 30 years réclusion criminelle: 30.0 yr (norm 0.07)
+  - Murder, 30-year minimum-term starting point: 30.0 yr (norm 0.07)
+  - Satsujin (Art. 199) – death, life, or ≥ 5 years: 30.0 yr (norm 0.07)
+  - Murder, actual sentences imposed (NSW Sentencing Council Homicide report): 25.6 yr (norm 0.059)
+  - Murder, 25-year minimum-term starting point (weapon taken to scene): 25.0 yr (norm 0.058)
+- n=117  confidence=medium
 - Layer-A relative ladder; multiply by an absolute anchor (VSL) to make it cardinal.
 
 ### liberty_time — custodial years imposed per year of liberty taken
-- estimate: **521.43** jail-yr per liberty-yr
-- range: [0.65, 3406.67]
-- n=9  confidence=low
+- estimate: **273.75** jail-yr per liberty-yr
+- range: [0.65, 13140.0]
+- n=17  confidence=low
 - Median custody-to-deprivation ratio (retributive multiplier > 1 expected). Durations parsed best-effort.
 
 ## Triangulation consistency check
 
 - check: W_to_L =? W_to_M / value_of_a_life_year
 - value_of_a_life_year_usd: 0.0
-- implied_W_to_L_from_money: 0.221
+- implied_W_to_L_from_money: 0.331
 - measured_W_to_L: 0.402
 - verdict: consistent (same order of magnitude)
 
