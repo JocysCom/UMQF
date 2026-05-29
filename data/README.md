@@ -1,6 +1,6 @@
-# UMQF Calibration Data (`/data`)
+# UMQF Human-Rendering Benchmark (`/data`)
 
-**Goal:** estimate UMQF's conversion ratios and the *functional form* of each, empirically, from how the real world already prices harm — legal sentencing, compensation tariffs, and economic value-of-life/health figures. Calibrate for humans; a few constant tweaks then generalize to any entity.
+**What this is — and is not.** UMQF itself is grounded only in survival (`ΔOS`) and is **not** calibrated from human law, markets, or tradition. This folder is a separate **benchmark**: a record of how *one species — humans —* currently renders survival-value into law and money (sentencing, compensation, value-of-statistical-life, QALYs). Its only legitimate roles are to (1) **sanity-check** UMQF's first-principles outputs against what humans actually do, and (2) let UMQF **judge** human institutions (e.g. it scores blood-money gender/religion multipliers as immoral). These figures must **never** be imported as the formula's constants — doing so would inject one species' bias into a formula meant to apply to any entity in the universe. The math below (medians, GCU normalization, reconciliation) is how this *human benchmark* is summarized, not how UMQF is defined.
 
 This is the spec + the working pipeline. Everything here is **plain text** (JSON Lines / JSON / Markdown / Python) — open and readable to humans and AI, RAG-indexable, git-diffable. **No hidden binary database.**
 
@@ -95,8 +95,8 @@ Conversions never use raw quantities; each value type is first normalized to a u
 entity-relative unit, then converted between the normalized units:
 
 - **Money → GCU** (`gcu.py`): USD ÷ local lifetime resource throughput (GDP/capita × life
-  expectancy). Income-invariant — a statistical life is ≈1.7 GCU in the US or India alike, though
-  ~30× apart in absolute USD. GCU is the **money hub**: `usd → GCU → life | welfare`.
+  expectancy). Income-invariant — by this human benchmark a statistical life is ≈1.4 GCU in the US
+  or India alike, though ~30× apart in absolute USD. GCU is the **money hub**: `usd → GCU → life | welfare`.
 - **Life → fraction of remaining lifespan** (`ΔOS`/`Tc`): death = −1 for every entity.
 - **Welfare → quality-adjusted life-year** (κ≈1): a disability weight is a fraction of a healthy year.
 
@@ -111,6 +111,6 @@ converted (WTP-vs-compensation differ ~100×, so they are reported separately, n
 - **Phase 2:** USSC individual-offender datafiles (~70k cases/yr) for robust harm-spacing and `In`.
 - **Phase 3 (optional):** CourtListener bulk opinions (10M+) NLP-mined for pain-and-suffering awards.
 
-## How it feeds UMQF
+## How UMQF relates to this benchmark
 
-`ratios.json` proposes empirical values + forms for: the GCU↔ΔOS anchor (BLRR), the ΔOS severity ladder, the welfare scale κ, the `In` multiplier, the money-loss curve, and — via the **torture-murder premium** — whether suffering is priced *beyond* death (informs the welfare floor: clamp at −1 vs allow below). Each calibration pass re-checks the UMQF worked examples.
+UMQF is defined from first principles (survival), **not** from `ratios.json`. The relationship runs the other way: UMQF scores an act in `ΔOS`/GCU, and this benchmark records how humans *happen* to render comparable acts into jail-time, money, or QALYs. **Convergence** between the two is reassurance that UMQF's survival-grounded outputs are sane; **divergence** is a finding — usually human bias UMQF should flag (e.g. blood-money identity multipliers), occasionally a gap in our own estimation to investigate. Nothing here sets a UMQF constant.

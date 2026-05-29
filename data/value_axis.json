@@ -2,21 +2,21 @@
   "money_unit": "GCU",
   "nodes_log_value": {
     "gcu": 0.0,
-    "life_year": -3.4491449059053103,
-    "welfare_year": -4.425252737578008
+    "life_year": -3.5130476398750163,
+    "welfare_year": -4.2963967454771606
   },
   "LE_years": 40,
   "reconciled_rates": {
-    "life_to_gcu": 1.2709117397422718,
-    "life_year_to_gcu": 0.03177279349355679,
-    "welfare_year_to_gcu": 0.01197118535004274,
-    "welfare_year_to_life_year": 0.3767747193041234
+    "life_to_gcu": 1.192237524412209,
+    "life_year_to_gcu": 0.029805938110305224,
+    "welfare_year_to_gcu": 0.01361753817302828,
+    "welfare_year_to_life_year": 0.45687332915450485
   },
-  "measured_arbitrage_cycle": 1.2145989304812834,
+  "measured_arbitrage_cycle": 1.7877930035650624,
   "reconciliation_residuals_log": {
-    "life_year->gcu (VLY)": -0.0648,
-    "welfare_year->gcu": 0.0648,
-    "welfare_year->life_year": -0.0648
+    "life_year->gcu (VLY)": -0.1937,
+    "welfare_year->gcu": 0.1937,
+    "welfare_year->life_year": -0.1937
   },
   "money_concavity": {
     "ratio": "money_concavity",

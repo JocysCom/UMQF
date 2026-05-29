@@ -149,7 +149,7 @@ def main():
 
     # --- W_to_L : life-years lost per welfare-year (GBD disability weights only) ---
     # Filter by SOURCE: the QALY sources carry genuine DALY weights (any harm_type); tort severity-proxies are NOT weights.
-    m = df[has_ratio(df, "W_to_L") & col(df, "source").isin(["qaly", "qaly_weights"])]
+    m = df[has_ratio(df, "W_to_L") & col(df, "source").astype(str).str.startswith(("qaly", "wtol"))]
     dw = numcol(m, "harm_magnitude").dropna()
     if len(dw) >= 1:
         ratios.append({

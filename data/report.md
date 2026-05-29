@@ -37,14 +37,14 @@ Source of truth: `data/observations/*.jsonl` — **327 observations** across **2
 ## Conversion ratios
 
 ### L_to_M — GCU value of one life (anchors dOS=-1); income-normalized; split by construct
-- estimate: **1.356** GCU per life
+- estimate: **1.447** GCU per life
 - n=58  confidence=high
 - Income-normalized (money/GCU): VSL is ~constant in GCU though ~30x in USD. WTP anchors dOS=-1; compensation is a separate, lower construct (not averaged in). diyya identity multipliers are cultural, excluded by UMQF.
 
 ### W_to_L — life-years lost per year at given suffering (disability weight)
-- estimate: **0.402** life-yr per suffering-yr
-- range: [0.03, 0.732]
-- n=22  confidence=medium
+- estimate: **0.5545** life-yr per suffering-yr
+- range: [0.003, 0.923]
+- n=52  confidence=medium
 - GBD-style disability weights. Supports kappa near 1 (one shared scale): worst sustained states ~0.5-0.7, not 60x.
 
 ### W_to_M — GCU value of one welfare-year (QALY), income-normalized, by construct
@@ -89,8 +89,8 @@ Source of truth: `data/observations/*.jsonl` — **327 observations** across **2
 
 - check: W_to_L =? W_to_M / value_of_a_life_year
 - value_of_a_life_year_usd: 0.0
-- implied_W_to_L_from_money: 0.331
-- measured_W_to_L: 0.402
+- implied_W_to_L_from_money: 0.31
+- measured_W_to_L: 0.554
 - verdict: consistent (same order of magnitude)
 
 ## Status

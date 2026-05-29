@@ -7,17 +7,17 @@
       "ratio": "L_to_M",
       "meaning": "GCU value of one life (anchors dOS=-1); income-normalized; split by construct",
       "unit": "GCU per life",
-      "estimate": 1.356,
+      "estimate": 1.447,
       "primary_construct": "wtp",
       "by_construct": {
         "compensation": {
-          "median_gcu": 0.015,
+          "median_gcu": 0.02,
           "range_gcu": [
             0.001,
             139.062
           ],
           "median_usd": 40000.0,
-          "n": 18,
+          "n": 20,
           "traditions": [
             "civil_law",
             "common_law",
@@ -26,13 +26,13 @@
           ]
         },
         "wtp": {
-          "median_gcu": 1.356,
+          "median_gcu": 1.447,
           "range_gcu": [
             0.029,
             13.474
           ],
-          "median_usd": 2355000.0,
-          "n": 40,
+          "median_usd": 2450000.0,
+          "n": 38,
           "traditions": [
             "chinese_socialist",
             "civil law",
@@ -42,13 +42,12 @@
             "civil_law",
             "common law",
             "common_law",
-            "islamic_law",
             "mixed (English common law + civil/Islamic)",
             "other"
           ]
         }
       },
-      "cross_construct_ratio_wtp_over_compensation": 90.4,
+      "cross_construct_ratio_wtp_over_compensation": 72.4,
       "n": 58,
       "form": "point",
       "confidence": "high",
@@ -59,12 +58,12 @@
       "ratio": "W_to_L",
       "meaning": "life-years lost per year at given suffering (disability weight)",
       "unit": "life-yr per suffering-yr",
-      "estimate": 0.402,
+      "estimate": 0.5545,
       "range": [
-        0.03,
-        0.732
+        0.003,
+        0.923
       ],
-      "n": 22,
+      "n": 52,
       "form": "point",
       "confidence": "medium",
       "sources": [
@@ -89,7 +88,37 @@
         "spinal-cord-neck-tetraplegia-treated",
         "spinal-cord-neck-tetraplegia-untreated",
         "terminal-phase-disease-with-medication",
-        "terminal-phase-disease-without-medication"
+        "terminal-phase-disease-without-medication",
+        "brazil-eq5d3l-worst-state-33333",
+        "china-eq5d5l-worst-state-55555",
+        "gbd-opioid-dependence-moderate-severe-dw",
+        "gbd-schizophrenia-acute-dw",
+        "gbd-severe-anxiety-disorders-dw",
+        "gbd-severe-major-depressive-disorder-dw",
+        "gbd-severe-multiple-sclerosis-dw",
+        "gbd-spinal-cord-lesion-below-neck-untreated-dw",
+        "gbd-spinal-cord-lesion-neck-untreated-dw",
+        "gbd-terminal-phase-cancer-untreated-dw",
+        "india-eq5d5l-worst-state-55555",
+        "indonesia-eq5d5l-worst-state-55555",
+        "poland-eq5d5l-worst-state-55555",
+        "russia-eq5d3l-worst-state-33333",
+        "thailand-eq5d5l-worst-state-55555",
+        "china-eq5d5l-worst-state-utility",
+        "gbd2013-cancer-terminal-no-medication-disability-weight",
+        "gbd2013-heroin-opioid-dependence-severe-disability-weight",
+        "gbd2013-icu-admission-disability-weight",
+        "gbd2013-major-depressive-disorder-severe-disability-weight",
+        "gbd2013-mild-distance-vision-impairment-disability-weight",
+        "gbd2013-schizophrenia-acute-disability-weight",
+        "gbd2013-severe-multiple-sclerosis-disability-weight",
+        "gbd2013-spinal-cord-lesion-neck-untreated-disability-weight",
+        "germany-eq5d5l-worst-state-utility",
+        "japan-eq5d5l-worst-state-utility",
+        "netherlands-eq5d5l-worst-state-utility",
+        "south-korea-eq5d5l-worst-state-utility",
+        "spain-eq5d5l-worst-state-utility",
+        "us-eq5d5l-worst-state-utility"
       ],
       "status": "estimated",
       "notes": "GBD-style disability weights. Supports kappa near 1 (one shared scale): worst sustained states ~0.5-0.7, not 60x."
@@ -307,8 +336,8 @@
   "triangulation": {
     "check": "W_to_L =? W_to_M / value_of_a_life_year",
     "value_of_a_life_year_usd": 0.0,
-    "implied_W_to_L_from_money": 0.331,
-    "measured_W_to_L": 0.402,
+    "implied_W_to_L_from_money": 0.31,
+    "measured_W_to_L": 0.554,
     "verdict": "consistent (same order of magnitude)"
   }
 }

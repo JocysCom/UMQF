@@ -98,6 +98,8 @@ def main():
                 o["legal_tradition"] = TRAD_SYNONYM[o["legal_tradition"]]; changed += 1
             if not o.get("construct"):
                 o["construct"] = construct_of(o); changed += 1
+            if o.get("source") == "diyya_blood_money" and o.get("construct") != "compensation":
+                o["construct"] = "compensation"; changed += 1  # diyya is definitionally compensation, never WTP
             usd = o.get("money_value_usd2024")
             if usd is not None and o.get("money_value_gcu") is None:
                 g = to_gcu(usd, o.get("jurisdiction"))
