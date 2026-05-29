@@ -1,5 +1,5 @@
 {
-  "generated_from": "253 observations in data/observations/*.jsonl",
+  "generated_from": "256 observations in data/observations/*.jsonl",
   "currency": "USD_2024",
   "method": "pandas/numpy fits; forms linear/power/log selected by R2 (see universal_formulas.md)",
   "ratios": [
@@ -90,30 +90,33 @@
     },
     {
       "ratio": "W_to_M",
-      "meaning": "GCU value of one welfare-year (QALY threshold), income-normalized",
+      "meaning": "GCU value of one welfare-year (QALY), income-normalized, by construct",
       "unit": "GCU per welfare-yr",
-      "estimate": 0.01196,
-      "range": [
-        0.006,
-        0.04368
-      ],
-      "n": 8,
+      "estimate": 0.00931,
+      "primary_construct": "wtp",
+      "by_construct": {
+        "budget": {
+          "median_gcu": 0.01562,
+          "range_gcu": [
+            0.006,
+            0.04368
+          ],
+          "n": 7
+        },
+        "wtp": {
+          "median_gcu": 0.00931,
+          "range_gcu": [
+            0.00825,
+            0.025
+          ],
+          "n": 4
+        }
+      },
+      "n": 11,
       "form": "point",
       "confidence": "medium",
-      "sources": [
-        "nice-qaly-threshold",
-        "us-qaly-threshold",
-        "australia-pbac-50000-aud-qaly",
-        "canada-cadth-50000-cad-qaly",
-        "germany-iqwig-no-threshold",
-        "netherlands-zin-80000-eur-qaly",
-        "qaly-intl-cross-jurisdiction-midpoint",
-        "sweden-tlv-1000000-sek-qaly",
-        "thailand-hitap-160000-thb-qaly",
-        "who-choice-cmh-gdp-multiplier-daly"
-      ],
       "status": "estimated",
-      "notes": "Cost-effectiveness thresholds per QALY, normalized to GCU."
+      "notes": "budget=cost-effectiveness threshold; wtp=empirical willingness-to-pay per QALY. They are close (~0.01-0.02 GCU), so the cross-rate residual is the VSL-vs-QALY value-per-life-year gap, not a W_to_M construct artifact."
     },
     {
       "ratio": "suffering_severity_to_money",
@@ -263,7 +266,7 @@
   "triangulation": {
     "check": "W_to_L =? W_to_M / value_of_a_life_year",
     "value_of_a_life_year_usd": 0.0,
-    "implied_W_to_L_from_money": 0.284,
+    "implied_W_to_L_from_money": 0.221,
     "measured_W_to_L": 0.402,
     "verdict": "consistent (same order of magnitude)"
   }

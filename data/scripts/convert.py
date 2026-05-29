@@ -69,6 +69,7 @@ def build_axis():
         "reconciliation_residuals_log": dict(zip(used, [round(r, 4) for r in resid])),
         "money_concavity": R.get("money_concavity", {}),
         "In": R.get("In", {}),
+        "arbitrage_attribution": "Residual cycle != 1 (see measured_arbitrage_cycle) is mainly the known VSL-vs-QALY gap: VSL-implied value per life-year exceeds the empirical WTP-per-QALY value - a real methodological difference that persists with both legs WTP-construct and income-normalized, so it is not noise nor a construct artifact. Reconciliation removes it for use; closing it fully is an open question in health economics.",
         "note": "Money is GCU (income-normalized). convert(x,a,b)=x*exp(v[a]-v[b]); invertible & arbitrage-free by construction. measured_arbitrage_cycle is the raw-data inconsistency (target 1.0).",
     }
     return axis

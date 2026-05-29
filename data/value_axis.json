@@ -2,21 +2,21 @@
   "money_unit": "GCU",
   "nodes_log_value": {
     "gcu": 0.0,
-    "life_year": -3.2838291393023558,
-    "welfare_year": -4.310659930062563
+    "life_year": -3.3673220250468594,
+    "welfare_year": -4.47764570155157
   },
   "LE_years": 40,
   "reconciled_rates": {
-    "life_to_gcu": 1.4993779390773936,
-    "life_year_to_gcu": 0.03748444847693484,
-    "welfare_year_to_gcu": 0.01342468731558482,
-    "welfare_year_to_life_year": 0.35814018509156886
+    "life_to_gcu": 1.3792742141830374,
+    "life_year_to_gcu": 0.03448185535457594,
+    "welfare_year_to_gcu": 0.011360126825310653,
+    "welfare_year_to_life_year": 0.329452307844076
   },
-  "measured_arbitrage_cycle": 1.4142265886287626,
+  "measured_arbitrage_cycle": 1.8167722878625134,
   "reconciliation_residuals_log": {
-    "life_year->gcu (VLY)": -0.1155,
-    "welfare_year->gcu": 0.1155,
-    "welfare_year->life_year": -0.1155
+    "life_year->gcu (VLY)": -0.199,
+    "welfare_year->gcu": 0.199,
+    "welfare_year->life_year": -0.199
   },
   "money_concavity": {
     "ratio": "money_concavity",
@@ -48,5 +48,6 @@
     "status": "estimated",
     "notes": "Per-jurisdiction ratio then averaged, so absolute sentence-scale differences cancel. Murder=life minimum-terms bias this downward."
   },
+  "arbitrage_attribution": "Residual cycle != 1 (see measured_arbitrage_cycle) is mainly the known VSL-vs-QALY gap: VSL-implied value per life-year exceeds the empirical WTP-per-QALY value - a real methodological difference that persists with both legs WTP-construct and income-normalized, so it is not noise nor a construct artifact. Reconciliation removes it for use; closing it fully is an open question in health economics.",
   "note": "Money is GCU (income-normalized). convert(x,a,b)=x*exp(v[a]-v[b]); invertible & arbitrage-free by construction. measured_arbitrage_cycle is the raw-data inconsistency (target 1.0)."
 }

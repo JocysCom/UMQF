@@ -81,8 +81,9 @@ Requires `numpy pandas` (and `scipy` for richer fits). Re-runnable; idempotent.
 
 A rate is only usable once it is **invertible** and **arbitrage-free**: converting A→B→A returns A,
 and no conversion cycle (life→money→welfare→life) multiplies to anything but 1. Because the rates
-come from different instruments they are *not* mutually consistent as measured (currently the cycle
-is ~2.1× off). `convert.py` reconciles them onto one log "value axis" by least-squares, so all
+come from different instruments they are *not* mutually consistent as measured (the cycle differs
+from 1.0 — see `value_axis.json` → `measured_arbitrage_cycle` and `arbitrage_attribution`).
+`convert.py` reconciles them onto one log "value axis" by least-squares, so all
 conversions become invertible and arbitrage-free **by construction**; the leftover residual is the
 data inconsistency. `test_conversions.py` asserts these properties (T1 round-trip, T2 no-arbitrage,
 T3 monotonic/sign, T4 curve-invertible, T5 anchor). `SAMPLING.md` + `sampling_adequacy.py` define

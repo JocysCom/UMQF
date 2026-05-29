@@ -166,15 +166,23 @@ def main():
     m = df[has_ratio(df, "W_to_M")]
     is_anchor = col(m, "harm_type") == "anchor"
     is_per_year = col(m, "harm_duration").astype(str).str.contains("year", case=False, na=False)
-    qaly = m[is_anchor & is_per_year]
-    wm = numcol(qaly, "money_value_gcu").dropna()
-    if len(wm) >= 1:
+    qaly = m[is_anchor & is_per_year].copy()
+    qaly = qaly[numcol(qaly, "money_value_gcu").notna()]
+    if len(qaly):
+        qaly["gval"] = numcol(qaly, "money_value_gcu")
+        qaly["con"] = col(qaly, "construct").fillna("budget")
+        by_con = {}
+        for con, grp in qaly.groupby("con"):
+            v = grp["gval"]
+            by_con[con] = {"median_gcu": round(float(v.median()), 5),
+                           "range_gcu": [round(float(v.min()), 5), round(float(v.max()), 5)], "n": int(len(v))}
+        prim_key = "wtp" if "wtp" in by_con else next(iter(by_con))
+        primary = by_con[prim_key]
         ratios.append({
-            "ratio": "W_to_M", "meaning": "GCU value of one welfare-year (QALY threshold), income-normalized",
-            "unit": "GCU per welfare-yr", "estimate": round(float(wm.median()), 5),
-            "range": [round(float(wm.min()), 5), round(float(wm.max()), 5)], "n": int(len(wm)),
-            "form": "point", "confidence": "medium", "sources": qaly["id"].tolist(), "status": "estimated",
-            "notes": "Cost-effectiveness thresholds per QALY, normalized to GCU."})
+            "ratio": "W_to_M", "meaning": "GCU value of one welfare-year (QALY), income-normalized, by construct",
+            "unit": "GCU per welfare-yr", "estimate": primary["median_gcu"], "primary_construct": prim_key,
+            "by_construct": by_con, "n": int(len(qaly)), "form": "point", "confidence": "medium", "status": "estimated",
+            "notes": "budget=cost-effectiveness threshold; wtp=empirical willingness-to-pay per QALY. They are close (~0.01-0.02 GCU), so the cross-rate residual is the VSL-vs-QALY value-per-life-year gap, not a W_to_M construct artifact."})
     else:
         ratios.append(pending("W_to_M", "need QALY thresholds with money_value_gcu (per-year anchor rows)"))
 

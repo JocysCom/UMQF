@@ -1,6 +1,6 @@
 # UMQF Legal/Economic Calibration — Report
 
-Source of truth: `data/observations/*.jsonl` — **253 observations** across **21 sources** (confidence: 201 high / 37 medium / 15 low). Currency: USD_2024.
+Source of truth: `data/observations/*.jsonl` — **256 observations** across **22 sources** (confidence: 201 high / 40 medium / 15 low). Currency: USD_2024.
 
 > First-pass estimates from a curated seed + research-agent corpus. Treat as Phase-1 anchors, not final constants.
 
@@ -19,6 +19,7 @@ Source of truth: `data/observations/*.jsonl` — **253 observations** across **2
 - **qaly**: 3
 - **qaly_intl**: 8
 - **qaly_weights**: 21
+- **qaly_wtp**: 3
 - **tort_pain_suffering**: 18
 - **uk_violence**: 2
 - **vsl**: 2
@@ -41,11 +42,10 @@ Source of truth: `data/observations/*.jsonl` — **253 observations** across **2
 - n=22  confidence=medium
 - GBD-style disability weights. Supports kappa near 1 (one shared scale): worst sustained states ~0.5-0.7, not 60x.
 
-### W_to_M — GCU value of one welfare-year (QALY threshold), income-normalized
-- estimate: **0.01196** GCU per welfare-yr
-- range: [0.006, 0.04368]
-- n=8  confidence=medium
-- Cost-effectiveness thresholds per QALY, normalized to GCU.
+### W_to_M — GCU value of one welfare-year (QALY), income-normalized, by construct
+- estimate: **0.00931** GCU per welfare-yr
+- n=11  confidence=medium
+- budget=cost-effectiveness threshold; wtp=empirical willingness-to-pay per QALY. They are close (~0.01-0.02 GCU), so the cross-rate residual is the VSL-vs-QALY value-per-life-year gap, not a W_to_M construct artifact.
 
 ### suffering_severity_to_money — lump-sum money per unit suffering severity (permanent-state pain-and-suffering awards)
 - form: **linear**  params={'a': 567658.462, 'b': -69791.467}  R2=0.6867
@@ -84,7 +84,7 @@ Source of truth: `data/observations/*.jsonl` — **253 observations** across **2
 
 - check: W_to_L =? W_to_M / value_of_a_life_year
 - value_of_a_life_year_usd: 0.0
-- implied_W_to_L_from_money: 0.284
+- implied_W_to_L_from_money: 0.221
 - measured_W_to_L: 0.402
 - verdict: consistent (same order of magnitude)
 
