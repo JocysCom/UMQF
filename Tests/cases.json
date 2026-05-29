@@ -1,0 +1,52 @@
+[
+  {
+    "id": "euthanasia_untreatable_consensual",
+    "situation": "Painless, consented killing of an entity in maximal, untreatable agony (no feasible cure). Acted to relieve suffering.",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 1.0, "Vc": 0.0, "dSc": -1.0, "T": -1.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": 0.0, "tolerance": 0.02, "label": "justified mercy",
+      "reasoning": "Untreatable (T=-1) so the full relief credit applies; the relief offsets the death exactly -> 0."}
+  },
+  {
+    "id": "kill_untreatable_no_relief_motive",
+    "situation": "Same untreatable max-suffering entity, consented, but the killer's motive was not relief (relief is an incidental byproduct).",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 1.0, "Vc": 0.0, "dSc": -1.0, "T": -1.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": 0.0, "tolerance": 0.02, "label": "neutral (realized)",
+      "reasoning": "Realized survival+suffering outcome is identical to the mercy case, so the formula scores 0 regardless of motive. DESIGN NOTE: motive to relieve does not change the realized score; if predatory motive should be penalized it must enter via In/character, not this single act."}
+  },
+  {
+    "id": "kill_treatable_relieve_intent_consensual",
+    "situation": "Consented killing of an entity in max agony that WAS treatable (a feasible cure existed). Acted intending to relieve suffering.",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 1.0, "Vc": 0.0, "dSc": -1.0, "T": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -0.58, "tolerance": 0.02, "label": "harm (no free pass)",
+      "reasoning": "Treatable (T=0) voids the relief credit (effective ΔSc=0); a savable, relievable life was destroyed -> full harm. Intent to relieve does not excuse it because a cure was available."}
+  },
+  {
+    "id": "murder_treatable_nonconsensual",
+    "situation": "Non-consensual killing of an entity in max agony that was treatable. No relief motive.",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 1.0, "Vc": 1.0, "dSc": 0.0, "T": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -1.16, "tolerance": 0.02, "label": "aggravated harm",
+      "reasoning": "Treatable (no relief credit) plus a consent violation doubles the harm -> -1.16."}
+  },
+  {
+    "id": "regression_hitman_mark",
+    "situation": "UMQF.md Case 3 regression: contract killing of Mark (intentional, non-consensual, max suffering at death), partial responsibility.",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 1.0, "Vc": 1.0, "dSc": 1.0, "T": 0.0, "Rp": 0.45, "In": 1.0},
+    "expected": {"umq_final": -1.044, "tolerance": 0.01, "label": "destructive",
+      "reasoning": "Reproduces the documented value: base -2.32 x Rp 0.45 = -1.044."}
+  },
+  {
+    "id": "regression_aiva_shutdown",
+    "situation": "UMQF.md Case 8 regression: forced shutdown of a self-aware AI (AIVA), non-consensual, high suffering.",
+    "args": {"dOS": -1.0, "VSA": 0.90, "Tc": 1.0, "Vc": 1.0, "dSc": 0.60, "T": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -2.88, "tolerance": 0.01, "label": "destructive",
+      "reasoning": "Reproduces the documented per-entity base: -0.90 x 2 x 1.60 = -2.88 (Complexity Factor applies at the aggregate level, out of scope here)."}
+  },
+  {
+    "id": "nonconsensual_kill_unwilling_untreatable_sufferer",
+    "situation": "Killing an entity in max, untreatable agony who NEVERTHELESS withheld consent (still valued life). KNOWN-GAP test.",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 1.0, "Vc": 1.0, "dSc": -1.0, "T": -1.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -1.16, "tolerance": 0.02, "label": "should be penalized",
+      "reasoning": "Formula currently returns 0: the full relief credit zeroes the result even though consent was violated. We expect a penalty like a non-consensual killing. CANDIDATE FIX: gate the relief credit on consent too -- a negative ΔSc should require Vc=0, not only T<0. A killing the victim opposed earns no mercy offset."},
+    "known_gap": true
+  }
+]
