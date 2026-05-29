@@ -1,0 +1,250 @@
+{
+  "generated_from": "111 observations in data/observations/*.jsonl",
+  "currency": "USD_2024",
+  "method": "pandas/numpy fits; forms linear/power/log selected by R2 (see universal_formulas.md)",
+  "ratios": [
+    {
+      "ratio": "L_to_M",
+      "meaning": "money value of one life (anchors dOS=-1)",
+      "unit": "USD_2024 per life",
+      "estimate": 13700000.0,
+      "range": [
+        11500000.0,
+        890000000.0
+      ],
+      "n": 9,
+      "form": "point",
+      "confidence": "high",
+      "sources": [
+        "vsl-dot-2024",
+        "vsl-epa-approx-2024",
+        "chicago-hospital-malpractice-verdict",
+        "hill-v-naphcare-jail-death",
+        "metro-north-valhalla-crossing-settlement",
+        "vsl-us-dot",
+        "vsl-us-epa",
+        "vsl-us-hhs",
+        "williams-v-greystar-crane-collapse"
+      ],
+      "status": "estimated",
+      "notes": "Median of VSL / wrongful-death figures. dOS=-1 maps to this USD amount."
+    },
+    {
+      "ratio": "W_to_L",
+      "meaning": "life-years lost per year at given suffering (disability weight)",
+      "unit": "life-yr per suffering-yr",
+      "estimate": 0.402,
+      "range": [
+        0.03,
+        0.732
+      ],
+      "n": 22,
+      "form": "point",
+      "confidence": "medium",
+      "sources": [
+        "gbd-terminal-cancer-dw",
+        "amputation-both-legs-treated",
+        "amputation-both-legs-untreated",
+        "amputation-one-arm-untreated",
+        "amputation-one-leg-treated",
+        "amputation-one-leg-untreated",
+        "anxiety-disorders-severe",
+        "anxiety-severity-ladder-mild-severe",
+        "back-pain-most-severe-with-leg-pain",
+        "back-pain-most-severe-without-leg-pain",
+        "copd-respiratory-severe",
+        "distance-vision-blindness",
+        "distance-vision-severe-impairment",
+        "major-depressive-disorder-severe",
+        "mdd-severity-ladder-mild-moderate-severe",
+        "musculoskeletal-generalized-severe",
+        "spinal-cord-below-neck-paraplegia-treated",
+        "spinal-cord-below-neck-paraplegia-untreated",
+        "spinal-cord-neck-tetraplegia-treated",
+        "spinal-cord-neck-tetraplegia-untreated",
+        "terminal-phase-disease-with-medication",
+        "terminal-phase-disease-without-medication"
+      ],
+      "status": "estimated",
+      "notes": "GBD-style disability weights. Supports kappa near 1 (one shared scale): worst sustained states ~0.5-0.7, not 60x."
+    },
+    {
+      "ratio": "W_to_M",
+      "meaning": "money value of one welfare-year (QALY)",
+      "unit": "USD_2024 per welfare-yr",
+      "estimate": 65500.0,
+      "range": [
+        31000.0,
+        100000.0
+      ],
+      "n": 2,
+      "form": "point",
+      "confidence": "medium",
+      "sources": [
+        "nice-qaly-threshold",
+        "us-qaly-threshold"
+      ],
+      "status": "estimated",
+      "notes": "Cost-effectiveness thresholds per QALY."
+    },
+    {
+      "ratio": "suffering_severity_to_money",
+      "meaning": "lump-sum money per unit suffering severity (permanent-state pain-and-suffering awards)",
+      "unit": "USD_2024 vs severity(0-1)",
+      "form": "linear",
+      "params": {
+        "a": 567658.462,
+        "b": -69791.467
+      },
+      "r2": 0.6867,
+      "n": 18,
+      "confidence": "medium",
+      "status": "estimated",
+      "notes": "Tort PSLA awards; exponent/curvature shows how suffering price scales with severity (lump-sum, not per-year)."
+    },
+    {
+      "ratio": "In",
+      "meaning": "intent multiplier (jail vs intentional, harm=death)",
+      "unit": "x of intentional",
+      "estimate": {
+        "reckless": 0.404,
+        "negligent": 0.27
+      },
+      "form": "point",
+      "n": 15,
+      "confidence": "medium",
+      "status": "estimated",
+      "notes": "Empirical In from murder vs manslaughter sentencing."
+    },
+    {
+      "ratio": "money_concavity",
+      "meaning": "how punishment scales with money loss",
+      "unit": "jail-yr vs USD",
+      "form": "power",
+      "params": {
+        "a": 0.06603,
+        "b": 0.283861
+      },
+      "r2": 0.9041,
+      "n": 17,
+      "confidence": "medium",
+      "status": "estimated",
+      "notes": "power exponent b<1 => diminishing (concave); b~1 => linear."
+    },
+    {
+      "ratio": "severity_ladder",
+      "meaning": "relative harm ordering by custodial sentence",
+      "unit": "jail-yr (norm to max)",
+      "entries": [
+        {
+          "id": "uk-murder-30-year-starting-point",
+          "label": "Murder, 30-year minimum-term starting point",
+          "jail_years": 30.0,
+          "norm": 1.0
+        },
+        {
+          "id": "uk-murder-25-year-starting-point",
+          "label": "Murder, 25-year minimum-term starting point (weapon taken to scene)",
+          "jail_years": 25.0,
+          "norm": 0.833
+        },
+        {
+          "id": "us-federal-second-degree-murder",
+          "label": "Second-degree murder, USSG level 38, 235-293 mo at CHC I",
+          "jail_years": 22.0,
+          "norm": 0.733
+        },
+        {
+          "id": "us-federal-kidnapping-minor-victim-mandatory-minimum-20-years",
+          "label": "18 U.S.C. §1201(g): mandatory minimum 20 years where victim is a minor and offender is not parent/close relative/legal custodian",
+          "jail_years": 20.0,
+          "norm": 0.667
+        },
+        {
+          "id": "uk-unlawful-act-manslaughter-tier-a",
+          "label": "Unlawful-act manslaughter tier A (start 18yr, range 11-24yr)",
+          "jail_years": 18.0,
+          "norm": 0.6
+        },
+        {
+          "id": "ussg-2b1-1-loss-over-550000000-level36",
+          "label": "USSG §2B1.1(b)(1)(P): >$550,000,000 → +30 levels (level 36) → 188–235 months, Category I",
+          "jail_years": 17.625,
+          "norm": 0.588
+        },
+        {
+          "id": "uk-kidnap-false-imprisonment-overall-range",
+          "label": "Kidnap/False Imprisonment definitive guideline; range community order to 16 years; max life",
+          "jail_years": 16.0,
+          "norm": 0.533
+        },
+        {
+          "id": "uk-murder-15-year-default-starting-point",
+          "label": "Murder, 15-year default minimum-term starting point",
+          "jail_years": 15.0,
+          "norm": 0.5
+        },
+        {
+          "id": "ussg-2b1-1-loss-over-250000000-level34",
+          "label": "USSG §2B1.1(b)(1)(O): >$250,000,000 → +28 levels (level 34) → 151–188 months, Category I",
+          "jail_years": 14.13,
+          "norm": 0.471
+        },
+        {
+          "id": "us-federal-kidnapping-30-day-duration-enhancement-level-34",
+          "label": "USSG §2A4.1(b)(4)(A): +2 levels if not released before 30 days; level 34 = 151-188 months at CHC I; Background note cites increased suffering and incentive to release",
+          "jail_years": 12.58,
+          "norm": 0.419
+        },
+        {
+          "id": "uk-unlawful-act-manslaughter-tier-b",
+          "label": "Unlawful-act manslaughter tier B (start 12yr, range 8-16yr)",
+          "jail_years": 12.0,
+          "norm": 0.4
+        },
+        {
+          "id": "uk-gbh-s18-cat1",
+          "label": "GBH s.18 Category 1",
+          "jail_years": 12.0,
+          "norm": 0.4
+        }
+      ],
+      "n": 43,
+      "form": "ordinal",
+      "confidence": "medium",
+      "status": "estimated",
+      "notes": "Layer-A relative ladder; multiply by an absolute anchor (VSL) to make it cardinal."
+    },
+    {
+      "ratio": "liberty_time",
+      "meaning": "custodial response per duration of liberty taken",
+      "unit": "jail-yr per yr liberty lost",
+      "n": 12,
+      "form": "point",
+      "confidence": "low",
+      "status": "estimated",
+      "sources": [
+        "germany-substitute-imprisonment-2to1",
+        "uk-kidnap-duration-formal-grading-axis",
+        "uk-kidnap-false-imprisonment-overall-range",
+        "uk-kidnap-least-serious-culpability-c-harm-3",
+        "uk-kidnap-mid-tier-culpability-b-harm-2",
+        "uk-kidnap-most-serious-culpability-a-harm-1",
+        "us-federal-kidnapping-30-day-duration-enhancement-level-34",
+        "us-federal-kidnapping-7-day-duration-enhancement-level-33",
+        "us-federal-kidnapping-base-offense-level-32",
+        "us-federal-kidnapping-minor-victim-mandatory-minimum-20-years",
+        "us-federal-kidnapping-non-duration-aggravators-context",
+        "us-federal-kidnapping-statutory-penalty-18-usc-1201"
+      ],
+      "notes": "From false imprisonment / kidnapping; refine with explicit durations."
+    }
+  ],
+  "triangulation": {
+    "check": "W_to_L =? W_to_M / value_of_a_life_year",
+    "value_of_a_life_year_usd": 342500.0,
+    "implied_W_to_L_from_money": 0.191,
+    "measured_W_to_L": 0.402,
+    "verdict": "consistent (same order of magnitude)"
+  }
+}

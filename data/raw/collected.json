@@ -1,0 +1,1975 @@
+{
+  "bySource": {
+    "tort_pain_suffering": [
+      {
+        "id": "jcg17-tetraplegia-quadriplegia",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value tetraplegia/quadriplegia (complete paralysis of all four limbs) PSLA at GBP396,140-GBP493,000 (~USD503,000-USD626,000 at 1.27), the top non-fatal suffering bracket in English tort; midpoint ~USD565,000 prices the suffering of permanent total paralysis.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.85,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 565000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder",
+          "W_to_L"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Tetraplegia (Quadriplegia)",
+        "year": 2024,
+        "compensation_usd2024": 565000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.2(A); bracket GBP396,140-GBP493,000 reported in Keoghs 'Judicial College Guidelines Version 17' https://www.keoghs.co.uk/keoghs-insight/judicial-college-guidelines-version-17 (confirmed verbatim)",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-brain-very-severe",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value very severe brain damage (little/no meaningful response to environment, double incontinence, need for full-time nursing care) PSLA at GBP344,150-GBP493,000 (~USD437,000-USD626,000); midpoint ~USD531,000 prices the suffering of catastrophic permanent brain injury just short of death.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.9,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 531000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder",
+          "W_to_L"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Very Severe Brain Damage",
+        "year": 2024,
+        "compensation_usd2024": 531000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.3(A)(a); 16th-ed GBP219,070-GBP403,990 uplifted to 17th-ed GBP344,150-GBP493,000 confirmed by Morton Fraser MacRoberts 2024 JCG summary https://www.mfmac.com/insights/personal-injury/judicial-college-guidelines-in-personal-injury-claims-2024/",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-brain-moderately-severe",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value moderately severe brain injury (very serious disability, substantial dependence on care, marked intellectual/personality impairment) PSLA at GBP267,340-GBP344,150 (~USD339,500-USD437,000); midpoint ~USD388,000.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.7,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 388000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Moderately Severe Brain Injury",
+        "year": 2024,
+        "compensation_usd2024": 388000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.3(A)(b); bracket GBP267,340-GBP344,150 reported by Mooneerams Solicitors https://www.mooneerams.com/blog/guide-to-traumatic-brain-injury-compensation-claims/ . Note: bracket sits between confirmed very-severe (GBP344,150-GBP493,000) and lower brain categories, consistent with JCG ladder; relied on a single secondary table for exact endpoints.",
+        "confidence": "medium"
+      },
+      {
+        "id": "jcg17-total-blindness",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value total blindness (loss of sight in both eyes) PSLA in the region of GBP327,940 (~USD416,000), pricing the permanent loss of all sight as suffering; sits just below the GBP493,000 'total blindness and deafness' category.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.6,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 416000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Total Blindness",
+        "year": 2024,
+        "compensation_usd2024": 416000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.5; 'in region of GBP327,940' per compensationcalculatoruk.co.uk JCG table https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/ and corroborated as 'GBP327,940-GBP354,260' by Connaught Law eye-injury guide. Some secondary sites quote a lower 'GBP268,720+' for total blindness; the GBP327,940 anchor is the better-corroborated figure.",
+        "confidence": "medium"
+      },
+      {
+        "id": "jcg17-sight-one-eye",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value loss of sight in one eye WITH some reduced vision in the remaining eye at GBP117,150-GBP219,400 (~USD148,800-USD278,600); midpoint ~USD214,000. NOTE (corrected): this bracket is a two-eye injury (sight lost in one eye plus impairment of the other), NOT pure single-eye loss; total loss of sight in one eye with a sound other eye is only GBP54,880-GBP80,210, so the original 'half of losing both eyes / single-vs-double concavity' framing was wrong.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.45,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 214000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Loss of sight in one eye with reduced vision in the remaining eye",
+        "year": 2024,
+        "compensation_usd2024": 214000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.5; bracket GBP117,150-GBP219,400 confirmed by compensationcalculatoruk.co.uk JCG table https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/ as 'Sight loss in one eye and reduction of vision in remaining eye'. Connaught Law and comparecompensationclaims.com confirm pure single-eye loss is far lower (complete loss of sight in one eye GBP66,920-GBP80,210; total loss of one eye GBP54,880-GBP60,910), so the figure is right but the original label/concavity interpretation was wrong.",
+        "confidence": "low"
+      },
+      {
+        "id": "jcg17-amputation-one-arm",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value loss of one arm (amputation at the shoulder) PSLA at not less than ~GBP167,380 (~USD212,600), anchoring the suffering value of a single major limb amputation.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.4,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 212600,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Loss of one arm (amputation at the shoulder)",
+        "year": 2024,
+        "compensation_usd2024": 212600,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.6(B); 'amputation at the shoulder / loss of one arm not less than GBP167,380' confirmed across multiple amputation-claims sources (medicalaccidentlawyers.co.uk, compensationcalculatoruk.co.uk) https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-amputation-both-legs-above-knee",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value amputation of both legs PSLA at GBP293,850-GBP344,150 (~USD373,200-USD437,000); midpoint ~USD405,000, sitting just below tetraplegia in the suffering ladder.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.6,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 405000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Amputation of both legs",
+        "year": 2024,
+        "compensation_usd2024": 405000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.7(I); bracket GBP293,850-GBP344,150 confirmed verbatim ('Loss of both legs') by Keoghs JCG v17 https://www.keoghs.co.uk/keoghs-insight/judicial-college-guidelines-version-17 . 'Above knee' qualifier dropped from label as the cited bracket is the 'loss of both legs' category.",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-ptsd-severe",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value severe PTSD (permanent effects preventing the victim from working or functioning at pre-trauma level) at GBP73,050-GBP122,850 (~USD92,800-USD156,000); midpoint ~USD124,000 - the cleanest pure psychological-suffering<->money anchor.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.45,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 124000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "Post-Traumatic Stress Disorder - Severe",
+        "year": 2024,
+        "compensation_usd2024": 124000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.4(B); bracket GBP73,050-GBP122,850 confirmed by multiple sources via WebSearch of JCG 17th-ed PTSD brackets and compensationcalculatoruk.co.uk https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-ptsd-moderately-severe",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value moderately severe PTSD (better prognosis with professional help but significant continuing disability) at GBP28,250-GBP73,050 (~USD35,900-USD92,800); midpoint ~USD64,000.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.3,
+        "harm_duration": "several years",
+        "intent": "na",
+        "money_value_usd2024": 64000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "PTSD - Moderately Severe",
+        "year": 2024,
+        "compensation_usd2024": 64000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.4(B); bracket GBP28,250-GBP73,050 confirmed via WebSearch of JCG 17th-ed PTSD brackets and compensationcalculatoruk.co.uk https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-ptsd-moderate",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value moderate PTSD (largely recovered, any continuing effects not grossly disabling) at GBP9,980-GBP28,250 (~USD12,700-USD35,900); midpoint ~USD24,000.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.15,
+        "harm_duration": "1-3 years",
+        "intent": "na",
+        "money_value_usd2024": 24000,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "PTSD - Moderate",
+        "year": 2024,
+        "compensation_usd2024": 24000,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.4(B); bracket GBP9,980-GBP28,250 confirmed via WebSearch of JCG 17th-ed PTSD brackets and compensationcalculatoruk.co.uk https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/",
+        "confidence": "high"
+      },
+      {
+        "id": "jcg17-ptsd-less-severe",
+        "source": "tort_pain_suffering",
+        "summary": "UK Judicial College Guidelines 17th ed. (2024) value less severe PTSD (virtually full recovery within 1-2 years, only minor symptoms persisting) at GBP4,820-GBP9,980 (~USD6,100-USD12,700); midpoint ~USD9,400 - the floor of the PTSD suffering<->money ladder.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.05,
+        "harm_duration": "1-2 years",
+        "intent": "na",
+        "money_value_usd2024": 9400,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England and Wales",
+        "label_raw": "PTSD - Less Severe",
+        "year": 2024,
+        "compensation_usd2024": 9400,
+        "source_citation": "Judicial College Guidelines 17th ed. (Apr 2024), Ch.4(B); bracket GBP4,820-GBP9,980 confirmed via WebSearch of JCG 17th-ed PTSD brackets and compensationcalculatoruk.co.uk https://www.compensationcalculatoruk.co.uk/list-of-compensation-payouts-in-the-uk/",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-quadriplegia-tetraplegia-a20",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff sets the maximum single-injury payment at GBP250,000 (Level A20, ~USD317,500 at 1.27) - the statutory cap, awarded for the worst survivable injuries: quadriplegia/tetraplegia substantially complete to both upper and lower limb levels, and the most severe brain injury; a fixed, no-fault price far below court PSLA awards for the same injuries (~GBP493k JCG), showing strong concavity/cap behaviour in a statutory scheme.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.9,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 317500,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder",
+          "money_concavity"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Quadriplegia/tetraplegia, substantially complete (Level A20)",
+        "year": 2012,
+        "compensation_usd2024": 317500,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E Part A; gov.uk official guidance confirms A20 = GBP250,000 = 'quadriplegia/tetraplegia substantially complete to both upper and lower limb levels' and most-severe brain injury https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments . NOTE: 'very serious brain injury' is the lower A19 (GBP175,000); only the most severe brain-injury category reaches A20.",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-paraplegia-a19",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff pays GBP175,000 (Level A19, ~USD222,250) for substantially complete paraplegia (impairment of motor/sensory function of the lower extremities), one statutory step below the A20 cap.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.6,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 222250,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Paraplegia, substantially complete (Level A19)",
+        "year": 2012,
+        "compensation_usd2024": 222250,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E Part A; gov.uk official guidance confirms paraplegia 'substantially complete' = A19 = GBP175,000 https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-moderately-severe-brain-a18",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff pays GBP110,000 (Level A18, ~USD139,700) for moderately severe brain damage (serious disablement of physical/mental faculties requiring substantial dependence on care, marked impairment of intellect and personality).",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.7,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 139700,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Moderately severe brain damage (Level A18)",
+        "year": 2012,
+        "compensation_usd2024": 139700,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E Part A; gov.uk official guidance confirms moderately severe brain damage = A18 = GBP110,000 https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-blind-both-eyes-a18",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff pays GBP110,000 (Level A18, ~USD139,700) for total loss of sight in both eyes (blindness), equating permanent total blindness to moderately severe brain damage in this statutory ladder.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.6,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 139700,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Loss of sight - both eyes (Level A18)",
+        "year": 2012,
+        "compensation_usd2024": 139700,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E Part A; gov.uk official guidance confirms loss of sight in both eyes = A18 = GBP110,000 https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-loss-sight-one-eye-a12",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff pays GBP22,000 (Level A12, ~USD27,940) for total loss of sight in one eye - one fifth of the GBP110,000 paid for both eyes, a clean within-scheme single-vs-double concavity point.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.3,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 27940,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder",
+          "money_concavity"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Loss of sight - one eye (Level A12)",
+        "year": 2012,
+        "compensation_usd2024": 27940,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E Part A; gov.uk official guidance confirms loss of sight in one eye = A12 = GBP22,000 https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-permanent-serious-mental-injury-a13",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff pays GBP27,000 (Level A13, ~USD34,290) for permanent, seriously disabling mental injury (confirmed by psychiatrist/clinical psychologist) - the scheme's top pure-psychological tariff, a no-fault floor for severe permanent psychological suffering.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.4,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 34290,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Permanent mental injury, seriously disabling (Level A13)",
+        "year": 2012,
+        "compensation_usd2024": 34290,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E Part A; gov.uk official guidance confirms permanent mental injury 'seriously disabling' = A13 = GBP27,000 (moderately disabling = A11 = GBP19,000) https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments",
+        "confidence": "high"
+      },
+      {
+        "id": "cics2012-tariff-floor-a1",
+        "source": "tort_pain_suffering",
+        "summary": "The UK Criminal Injuries Compensation Scheme 2012 fixed tariff floor is GBP1,000 (Level A1, ~USD1,270), the minimum award - covering e.g. disabling mental injury lasting 6 weeks up to 28 weeks, permanent slight loss of visual field, simple/minor fractures - the bottom anchor of the 25-level statutory suffering<->money scale that runs A1=GBP1,000 to A20=GBP250,000.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.02,
+        "harm_duration": "weeks",
+        "intent": "na",
+        "money_value_usd2024": 1270,
+        "informs_ratio": [
+          "W_to_M",
+          "severity_ladder",
+          "money_concavity"
+        ],
+        "jurisdiction": "England, Scotland and Wales (Great Britain)",
+        "label_raw": "Lowest tariff level (Level A1 = GBP1,000)",
+        "year": 2012,
+        "compensation_usd2024": 1270,
+        "source_citation": "Criminal Injuries Compensation Scheme 2012, Annex E; gov.uk official guidance confirms A1 = GBP1,000 is the lowest level and that 'disabling mental injury lasting 6 weeks or more up to 28 weeks' is an A1 (GBP1,000) injury https://www.gov.uk/guidance/criminal-injuries-compensation-scheme-injury-payments ; A1-GBP1,000 to A20-GBP250,000 range corroborated by cica-uk.co.uk and multiple secondary tables.",
+        "confidence": "high"
+      }
+    ],
+    "day_fines": [
+      {
+        "id": "germany-stgb-40-dayfine-unit-range",
+        "source": "day_fines",
+        "summary": "German StGB Section 40 sets a fine as 5 to 360 daily units (severity/culpability), each unit valued from EUR 1 to EUR 30,000 (about USD 1 to USD 32,400 in 2024) based on the offender's net income per day; the count encodes severity and the per-unit value encodes the money metric.",
+        "harm_type": "anchor",
+        "intent": "na",
+        "label_raw": "StGB Section 40 daily-unit count (5-360) and unit value (EUR 1-30,000)",
+        "jurisdiction": "Germany",
+        "year": 2024,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder",
+          "In"
+        ],
+        "source_citation": "German Criminal Code (StGB) Section 40, lewik.org/term/15370 (verbatim: 'minimum fine shall consist of five and ... maximum ... three hundred and sixty full daily units'; 'A daily unit shall not be set at less than one and not at more than thirty thousand euros') and official translation gesetze-im-internet.de/englisch_stgb.",
+        "confidence": "high"
+      },
+      {
+        "id": "germany-substitute-imprisonment-2to1",
+        "source": "day_fines",
+        "summary": "In Germany an unpaid day-fine converts to substitute prison time: historically 1 day-unit = 1 day in prison, and since the 1 Feb 2024 reform 2 day-units = 1 day in prison, giving an explicit legal exchange rate between roughly two days of disposable income and one day of lost liberty.",
+        "harm_type": "liberty",
+        "intent": "na",
+        "label_raw": "Ersatzfreiheitsstrafe conversion: pre-2024 1 unit=1 prison day; post-2024 2 units=1 prison day",
+        "jurisdiction": "Germany",
+        "year": 2024,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": 0.00274,
+        "harm_magnitude": null,
+        "harm_duration": "1 day per 2 unpaid day-units",
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "liberty_time",
+          "money_concavity",
+          "L_to_M"
+        ],
+        "source_citation": "KFN (Kriminologisches Forschungsinstitut Niedersachsen) study on the Section 43 StGB reform, en.kfn.de/research-projects/ersatzfreiheitsstrafe: conversion shifted to '2:1 ... two daily fine rates correspond to one day of imprisonment', effective 1 February 2024; previously 1:1. Corroborated by KriPoZ commentary (kripoz.de, Feb 2024).",
+        "confidence": "high"
+      },
+      {
+        "id": "germany-severity-ladder-dayunits",
+        "source": "day_fines",
+        "summary": "German day-unit counts form an empirical severity ladder: ~42% of 2018 fine cases were under 30 units and ~49% were 31-90 units, and a fine over 90 daily units is the threshold above which the conviction appears on the certificate of conduct (Fuehrungszeugnis), pricing relative offence seriousness on the 5-360 scale.",
+        "harm_type": "anchor",
+        "intent": "na",
+        "label_raw": "ordinary offences 30-90 units; >90 units = entry on Fuehrungszeugnis (criminal record)",
+        "jurisdiction": "Germany",
+        "year": 2018,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "severity_ladder",
+          "money_concavity"
+        ],
+        "source_citation": "Mitali Nagrecha, 'The Limits of Fairer Fines: Lessons from Germany' (Criminal Justice Policy Program, Harvard Law School / Fines and Fees Justice Center, 2020), finesandfeesjusticecenter.org: '42% of all cases ... less than 30 units and another 49% ... between 31 and 90 units'. Record threshold: German Federal Office of Justice (bundesjustizamt.de) / criminal-law-germany.lawyer 'When do I have a criminal record in Germany?': fines of '90 daily rates or more' are entered on the Fuehrungszeugnis.",
+        "confidence": "medium"
+      },
+      {
+        "id": "finland-dayfine-calculation-rule",
+        "source": "day_fines",
+        "summary": "A Finnish day-fine equals about half of daily disposable income, where disposable income is ~1/60 of monthly net income after a EUR 255 living allowance, with a EUR 6 floor per unit; a single offence carries 1 to 120 day-units (240 if multiple offences combined) and a speeding fine is at least EUR 115, separating income-scaled money from severity-scaled count.",
+        "harm_type": "anchor",
+        "intent": "na",
+        "label_raw": "day-unit = 1/2 of (monthly net /60) after EUR 255 allowance; range 1-120 units (240 combined); floor EUR 6/unit; speeding min EUR 115",
+        "jurisdiction": "Finland",
+        "year": 2024,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": 124,
+        "penalty_jail_years": null,
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "Wikipedia 'Day-fine' (en.wikipedia.org/wiki/Day-fine), verbatim: 'the day-fine is one half of daily disposable income ... one 60th part of the person's monthly mean income ... after ... a basic living allowance of EUR 255'; 'minimum of 1 day-fine, up to a maximum of 120 day-fines ... 240 day-fines' if combined; 'minimum amount of a day-fine is 6 euros'; 'For speeding ... the fine is at least ... EUR 115' (~USD 124 in 2024).",
+        "confidence": "high"
+      },
+      {
+        "id": "finland-wiklof-2023-speeding",
+        "source": "day_fines",
+        "summary": "Finnish multimillionaire Anders Wiklof was fined EUR 121,000 (about USD 131,000 in 2024) in 2023 for driving 82 km/h in a 50 km/h zone, a single low-severity offence whose few day-units became enormous solely because the per-unit value tracks his very high income (no cap).",
+        "harm_type": "property",
+        "intent": "reckless",
+        "label_raw": "speeding 82 in 50 km/h zone; EUR 121,000 fine + 10-day licence suspension",
+        "jurisdiction": "Finland",
+        "year": 2023,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": 131000,
+        "penalty_jail_years": null,
+        "harm_magnitude": 0.02,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity"
+        ],
+        "source_citation": "ABC News (abcnews.com/ABCNews/finnish-businessman-handed-121000-speeding-ticket, story id 99861907, 2023): fine 'EUR 121,000', '82 kilometers per hour ... 50 km/h' zone (Aland), plus a 10-day driving-licence suspension; report also notes a prior EUR 63,680 fine (2013) and an earlier EUR 95,000 fine. CAUTION: the original collector citation transposed the prior-fine years/amounts ('EUR 63,000 (2018) and EUR 95,000 (2013)') -- per ABC the 2013 fine was EUR 63,680 and the EUR 95,000 fine was several years earlier (~2008); the headline 2023 figure is correct.",
+        "confidence": "medium"
+      },
+      {
+        "id": "finland-businessman-2009-112k-speeding",
+        "source": "day_fines",
+        "summary": "A Finnish businessman was fined EUR 112,000 (about USD 160,000 in 2024 after FX and inflation) in 2009 for driving 82 km/h in a 60 km/h zone, illustrating how the same trivial-harm offence scales to six figures purely via the income-indexed per-unit value.",
+        "harm_type": "property",
+        "intent": "reckless",
+        "label_raw": "speeding 82 in 60 km/h zone; EUR 112,000 fine",
+        "jurisdiction": "Finland",
+        "year": 2009,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": 160000,
+        "penalty_jail_years": null,
+        "harm_magnitude": 0.015,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity"
+        ],
+        "source_citation": "Wikipedia 'Day-fine' (en.wikipedia.org/wiki/Day-fine), verbatim: 'In 2009 a businessman was fined EUR 112,000 for travelling at 82 kilometres per hour in an area with a speed limit of 60 kilometres per hour.' (~USD 160,000 normalized to 2024 via EUR x1.08 + ~30% cumulative inflation 2009-2024; the USD figure is the collector's estimate, not a sourced number).",
+        "confidence": "medium"
+      },
+      {
+        "id": "finland-nokia-2001-redlight",
+        "source": "day_fines",
+        "summary": "A Finnish (Nokia) businessman with a ~EUR 10 million yearly income received only 6 day-units in 2001 but a total of EUR 26,000 (about USD 43,000 in 2024) for running a red light, showing that with severity (unit count) held very low the total money is set almost entirely by income.",
+        "harm_type": "property",
+        "intent": "reckless",
+        "label_raw": "ran red light; 6 day-units = EUR 26,000",
+        "jurisdiction": "Finland",
+        "year": 2001,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": 43000,
+        "penalty_jail_years": null,
+        "harm_magnitude": 0.01,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "Wikipedia 'Day-fine' (en.wikipedia.org/wiki/Day-fine), verbatim: 'a Finnish businessman with a yearly income of 10 million euros, received a relatively mild punishment of six day-fines, amounting EUR 26,000' for running a red light. (~USD 43,000 normalized to 2024; USD figure is the collector's estimate.)",
+        "confidence": "medium"
+      },
+      {
+        "id": "sweden-dagsboter-range-and-floor",
+        "source": "day_fines",
+        "summary": "Swedish day-fines run 30 to 150 units (up to 200 for multiple offences) with each unit valued from SEK 50 to SEK 1,000 (about USD 5 to USD 95 in 2024), one unit being roughly one-thousandth of annual income; unlike Finland the per-unit value is capped, bounding the money axis.",
+        "harm_type": "anchor",
+        "intent": "na",
+        "label_raw": "30-150 units (200 combined); SEK 50-1,000 per unit; ~1/1000 of annual income; total floor SEK 750",
+        "jurisdiction": "Sweden",
+        "year": 2024,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "Swedish Penal Code (Brottsbalken) Chapter 25 on fines, as summarized by TheLocal.se (thelocal.se/20240423, 2024) and Swedish legal sources (domarbloggen.se, aklagare.se): number of day-fines 'at least thirty and at most one hundred fifty ... up to two hundred' for joint sentences; each day-fine 'a minimum of 50 kronor and a maximum of 1,000 kronor'; 'one daily fine ... equivalent to one thousandth of the yearly income'. SEK 50/1000 ~ USD 5 / USD 95 (SEK->USD x0.095, 2024). CORRECTED: collector stated SEK 30 floor; current statutory minimum is SEK 50 (the SEK 30 floor is an outdated figure). Collector's Wikipedia 'Day-fine' citation does not contain these Swedish figures and was replaced.",
+        "confidence": "high"
+      },
+      {
+        "id": "denmark-dayfine-range-floor",
+        "source": "day_fines",
+        "summary": "Danish Penal Code violations are punishable by up to 60 day-fines, with the fine halved (minimum DKK 500, about USD 73 in 2024) for offenders under 18 or whose gross annual income does not exceed DKK 171,795 (2020), giving a lower severity ceiling than Germany/Finland plus an explicit income-based reduction band.",
+        "harm_type": "anchor",
+        "intent": "na",
+        "label_raw": "up to 60 day-units; halve if gross income <= DKK 171,795/yr or under 18; floor DKK 500",
+        "jurisdiction": "Denmark",
+        "year": 2020,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": 73,
+        "penalty_jail_years": null,
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "severity_ladder",
+          "money_concavity"
+        ],
+        "source_citation": "Wikipedia 'Day-fine' (en.wikipedia.org/wiki/Day-fine), verbatim: 'may be punishable by up to 60 day-fines'; reduced 'by half (to a minimum of DKK 500)' for offenders under 18 or 'whose gross annual income does not exceed DKK 171,795 (as of 2020)'. DKK 500 ~ USD 73 (DKK->USD x0.145, 2024).",
+        "confidence": "medium"
+      },
+      {
+        "id": "switzerland-2010-million-euro-speeding",
+        "source": "day_fines",
+        "summary": "A Swedish motorist in Switzerland in 2010 was fined CHF 3,600 per day for 300 days, more than EUR 1,000,000 total (CHF ~1.08 million; about USD 1.36 million in 2024) for driving ~290 km/h, the extreme high end showing day-unit count (300, near the ceiling) multiplied by an income-indexed per-day value can rival serious-injury compensation in magnitude.",
+        "harm_type": "property",
+        "intent": "reckless",
+        "label_raw": "speeding ~290 km/h; CHF 3,600/day x 300 day-units = CHF ~1.08M (>EUR 1,000,000)",
+        "jurisdiction": "Switzerland",
+        "year": 2010,
+        "money_value_usd2024": null,
+        "penalty_fine_usd2024": 1360000,
+        "penalty_jail_years": null,
+        "harm_magnitude": 0.03,
+        "harm_duration": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "SWI swissinfo.ch ('Driver faces $1,000,000 speeding fine', swissinfo.ch, 2010) and Euronews (2023-01-04, 'Finland's progressive punishment'): a 2010 motorist 'received 3,600 Swiss francs per day for 300 days -- that's more than a million euros in total' (CHF ~1.08M). ~USD 1.36M normalized to 2024 (CHF->USD x1.13 + inflation; USD figure is the collector's estimate).",
+        "confidence": "medium"
+      }
+    ],
+    "homicide_intent": [
+      {
+        "id": "uk-murder-whole-life-order",
+        "source": "homicide_intent",
+        "summary": "England & Wales whole-life order (no fixed minimum term, effectively life with no release) applies to the most serious murders such as premeditated multiple murder or terrorist murder for offenders 21+.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "England & Wales",
+        "year": 2020,
+        "label_raw": "Whole-life order (highest seriousness murder)",
+        "penalty_jail_years": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Act 2020, Schedule 21, para 2(1) (https://www.legislation.gov.uk/ukpga/2020/17/schedule/21)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-murder-30-year-starting-point",
+        "source": "homicide_intent",
+        "summary": "England & Wales sets a 30-year minimum-term starting point for murders of particularly high seriousness (firearm/explosive, murder for gain, sexual/sadistic, two or more victims) for offenders 18+.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "England & Wales",
+        "year": 2020,
+        "label_raw": "Murder, 30-year minimum-term starting point",
+        "penalty_jail_years": 30,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Act 2020, Sch 21, para 3(1) (https://www.legislation.gov.uk/ukpga/2020/17/schedule/21)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-murder-25-year-starting-point",
+        "source": "homicide_intent",
+        "summary": "England & Wales sets a 25-year minimum-term starting point where the offender took a weapon to the scene intending to use it and did so, for offenders 18+ (offence on/after 2 Mar 2010).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "England & Wales",
+        "year": 2020,
+        "label_raw": "Murder, 25-year minimum-term starting point (weapon taken to scene)",
+        "penalty_jail_years": 25,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Act 2020, Sch 21, para 4 (https://www.legislation.gov.uk/ukpga/2020/17/schedule/21)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-murder-15-year-default-starting-point",
+        "source": "homicide_intent",
+        "summary": "England & Wales applies a 15-year default minimum-term starting point for any other murder by an offender aged 18+ not falling within the higher paragraphs.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "England & Wales",
+        "year": 2020,
+        "label_raw": "Murder, 15-year default minimum-term starting point",
+        "penalty_jail_years": 15,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Act 2020, Sch 21, para 5 (re-enacting Criminal Justice Act 2003 Sch 21) (https://www.legislation.gov.uk/ukpga/2020/17/schedule/21)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-unlawful-act-manslaughter-tier-a",
+        "source": "homicide_intent",
+        "summary": "England & Wales unlawful-act manslaughter culpability tier A has an 18-year starting point (range 11-24 years) under the 2018 definitive guideline, reflecting an intentional unlawful dangerous act without intent to kill.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "reckless",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Unlawful-act manslaughter tier A (start 18yr, range 11-24yr)",
+        "penalty_jail_years": 18,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Unlawful act manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/unlawful-act-manslaughter/); corroborated by manslaughter offences guidelines evaluation (https://sentencingcouncil.org.uk/html-publications/evaluation-of-the-sentencing-council-s-manslaughter-offences-guidelines/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-unlawful-act-manslaughter-tier-b",
+        "source": "homicide_intent",
+        "summary": "England & Wales unlawful-act manslaughter culpability tier B has a 12-year starting point (range 8-16 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "reckless",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Unlawful-act manslaughter tier B (start 12yr, range 8-16yr)",
+        "penalty_jail_years": 12,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Unlawful act manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/unlawful-act-manslaughter/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-unlawful-act-manslaughter-tier-c",
+        "source": "homicide_intent",
+        "summary": "England & Wales unlawful-act manslaughter culpability tier C has a 6-year starting point (range 3-9 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "reckless",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Unlawful-act manslaughter tier C (start 6yr, range 3-9yr)",
+        "penalty_jail_years": 6,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Unlawful act manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/unlawful-act-manslaughter/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-unlawful-act-manslaughter-tier-d",
+        "source": "homicide_intent",
+        "summary": "England & Wales unlawful-act manslaughter culpability tier D has a 2-year starting point (range 1-4 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "reckless",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Unlawful-act manslaughter tier D (start 2yr, range 1-4yr)",
+        "penalty_jail_years": 2,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Unlawful act manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/unlawful-act-manslaughter/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-gross-negligence-manslaughter-tier-a",
+        "source": "homicide_intent",
+        "summary": "England & Wales gross-negligence manslaughter very-high-culpability tier A has a 12-year starting point (range 10-18 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Gross-negligence manslaughter tier A (start 12yr, range 10-18yr)",
+        "penalty_jail_years": 12,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Gross negligence manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/gross-negligence-manslaughter/); confirmed via DWF/Pinsent Masons analyses (https://dwfgroup.com/en/news-and-insights/insights/2018/9/manslaughter-sentencing-guidelines)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-gross-negligence-manslaughter-tier-b",
+        "source": "homicide_intent",
+        "summary": "England & Wales gross-negligence manslaughter high-culpability tier B has an 8-year starting point (range 6-12 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Gross-negligence manslaughter tier B (start 8yr, range 6-12yr)",
+        "penalty_jail_years": 8,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Gross negligence manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/gross-negligence-manslaughter/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-gross-negligence-manslaughter-tier-c",
+        "source": "homicide_intent",
+        "summary": "England & Wales gross-negligence manslaughter medium-culpability tier C has a 4-year starting point (range 3-7 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Gross-negligence manslaughter tier C (start 4yr, range 3-7yr)",
+        "penalty_jail_years": 4,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Gross negligence manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/gross-negligence-manslaughter/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-gross-negligence-manslaughter-tier-d",
+        "source": "homicide_intent",
+        "summary": "England & Wales gross-negligence manslaughter lower-culpability tier D has a 2-year starting point (range 1-4 years) under the 2018 definitive guideline.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "jurisdiction": "England & Wales",
+        "year": 2018,
+        "label_raw": "Gross-negligence manslaughter tier D (start 2yr, range 1-4yr)",
+        "penalty_jail_years": 2,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Gross negligence manslaughter\" definitive guideline (https://sentencingcouncil.org.uk/guidelines/gross-negligence-manslaughter/)",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-first-degree-murder",
+        "source": "homicide_intent",
+        "summary": "US federal first-degree (premeditated) murder carries USSG base offense level 43, which maps to a guideline sentence of life at Criminal History Category I.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "First-degree murder, USSG level 43 = life",
+        "penalty_jail_years": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG 2A1.1; Sentencing Table level 43 = life; 18 U.S.C. 1111 (https://www.ussc.gov/guidelines/2025-guidelines-manual/annotated-2025-chapter-2-c)",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-second-degree-murder",
+        "source": "homicide_intent",
+        "summary": "US federal second-degree (intentional non-premeditated / depraved-heart) murder carries USSG base offense level 38, mapping to 235-293 months (~19.6-24.4 years) at CHC I.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "Second-degree murder, USSG level 38, 235-293 mo at CHC I",
+        "penalty_jail_years": 22,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG 2A1.2; Sentencing Table level 38 CHC I = 235-293 mo (https://www.ussc.gov/guidelines/2025-guidelines-manual/annotated-2025-chapter-2-c; https://en.wikipedia.org/wiki/United_States_Federal_Sentencing_Guidelines)",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-voluntary-manslaughter",
+        "source": "homicide_intent",
+        "summary": "US federal voluntary manslaughter (intentional kill in heat of passion / sudden quarrel) carries USSG base offense level 29, mapping to 87-108 months (~7.25-9 years) at CHC I.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "Voluntary manslaughter, USSG level 29, 87-108 mo at CHC I",
+        "penalty_jail_years": 8.125,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG 2A1.3; Sentencing Table level 29 CHC I = 87-108 mo; 18 U.S.C. 1112 (https://www.ussc.gov/guidelines/2025-guidelines-manual/annotated-2025-chapter-2-c)",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-involuntary-manslaughter-reckless",
+        "source": "homicide_intent",
+        "summary": "US federal involuntary manslaughter (reckless) carries USSG base offense level 18, mapping to 27-33 months (~2.25-2.75 years) at CHC I.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "reckless",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "Involuntary manslaughter (reckless), USSG level 18, 27-33 mo at CHC I",
+        "penalty_jail_years": 2.5,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG 2A1.4(a)(2); Sentencing Table level 18 CHC I = 27-33 mo; 18 U.S.C. 1112 (https://www.ussc.gov/guidelines/2025-guidelines-manual/annotated-2025-chapter-2-c)",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-involuntary-manslaughter-negligent",
+        "source": "homicide_intent",
+        "summary": "US federal involuntary manslaughter (criminally negligent) carries USSG base offense level 12, mapping to 10-16 months (~0.83-1.33 years) at CHC I.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "Involuntary manslaughter (negligent), USSG level 12, 10-16 mo at CHC I",
+        "penalty_jail_years": 1.083,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG 2A1.4(a)(1); Sentencing Table level 12 CHC I = 10-16 mo; 18 U.S.C. 1112 (https://www.ussc.gov/guidelines/2025-guidelines-manual/annotated-2025-chapter-2-c)",
+        "confidence": "high"
+      }
+    ],
+    "money_loss_curve": [
+      {
+        "id": "ussg-2b1-1-loss-over-6500-level8",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $6,500 adds +2 offense levels (total 8), yielding a 0-6 month Criminal History Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(B): >$6,500 → +2 levels (level 8) → 0–6 months, Category I",
+        "money_value_usd2024": 6500,
+        "penalty_jail_years": 0.25,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(B); 2024 Guidelines Manual, Chapter 2 A–C p.85–86; Sentencing Table (Ch.5 Pt.A, p.416). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf ; https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_5.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-40000-level12",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $40,000 adds +6 offense levels (total 12), yielding a 10-16 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(D): >$40,000 → +6 levels (level 12) → 10–16 months, Category I",
+        "money_value_usd2024": 40000,
+        "penalty_jail_years": 1.08,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(D); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-150000-level16",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $150,000 adds +10 offense levels (total 16), yielding a 21-27 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(F): >$150,000 → +10 levels (level 16) → 21–27 months, Category I",
+        "money_value_usd2024": 150000,
+        "penalty_jail_years": 2,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(F); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-550000-level20",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $550,000 adds +14 offense levels (total 20), yielding a 33-41 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(H): >$550,000 → +14 levels (level 20) → 33–41 months, Category I",
+        "money_value_usd2024": 550000,
+        "penalty_jail_years": 3.08,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(H); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-1500000-level22",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $1,500,000 adds +16 offense levels (total 22), yielding a 41-51 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(I): >$1,500,000 → +16 levels (level 22) → 41–51 months, Category I",
+        "money_value_usd2024": 1500000,
+        "penalty_jail_years": 3.83,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(I); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-3500000-level24",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $3,500,000 adds +18 offense levels (total 24), yielding a 51-63 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(J): >$3,500,000 → +18 levels (level 24) → 51–63 months, Category I",
+        "money_value_usd2024": 3500000,
+        "penalty_jail_years": 4.75,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(J); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-9500000-level26",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $9,500,000 adds +20 offense levels (total 26), yielding a 63-78 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(K): >$9,500,000 → +20 levels (level 26) → 63–78 months, Category I",
+        "money_value_usd2024": 9500000,
+        "penalty_jail_years": 5.875,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(K); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-25000000-level28",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $25,000,000 adds +22 offense levels (total 28), yielding a 78-97 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(L): >$25,000,000 → +22 levels (level 28) → 78–97 months, Category I",
+        "money_value_usd2024": 25000000,
+        "penalty_jail_years": 7.29,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(L); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-65000000-level30",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $65,000,000 adds +24 offense levels (total 30), yielding a 97-121 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(M): >$65,000,000 → +24 levels (level 30) → 97–121 months, Category I",
+        "money_value_usd2024": 65000000,
+        "penalty_jail_years": 9.08,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(M); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-150000000-level32",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $150,000,000 adds +26 offense levels (total 32), yielding a 121-151 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(N): >$150,000,000 → +26 levels (level 32) → 121–151 months, Category I",
+        "money_value_usd2024": 150000000,
+        "penalty_jail_years": 11.33,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(N); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-250000000-level34",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $250,000,000 adds +28 offense levels (total 34), yielding a 151-188 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(O): >$250,000,000 → +28 levels (level 34) → 151–188 months, Category I",
+        "money_value_usd2024": 250000000,
+        "penalty_jail_years": 14.13,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(O); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_2_A-C.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ussg-2b1-1-loss-over-550000000-level36",
+        "source": "money_loss_curve",
+        "summary": "US Federal fraud/theft loss exceeding $550,000,000 adds +30 offense levels (total 36, top of table), yielding a 188-235 month Category I sentence.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "US Federal",
+        "year": 2024,
+        "label_raw": "USSG §2B1.1(b)(1)(P): >$550,000,000 → +30 levels (level 36) → 188–235 months, Category I",
+        "money_value_usd2024": 550000000,
+        "penalty_jail_years": 17.625,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG §2B1.1(b)(1)(P); 2024 Guidelines Manual, Chapter 2 A–C; Sentencing Table (Ch.5 Pt.A). https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2024/CHAPTER_5.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-fraud-culpA-harm5-under-5000",
+        "source": "money_loss_curve",
+        "summary": "UK Culpability A fraud with loss under £5,000 (starting point £2,500, ~$4,200 in 2024 USD) carries a starting point of 36 weeks custody.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "UK (England & Wales)",
+        "year": 2014,
+        "label_raw": "UK Fraud Definitive Guideline Table 1 Culpability A, Harm 5: loss <£5,000 (SP £2,500) → SP 36 weeks custody; range high-level community order – 1 year custody",
+        "money_value_usd2024": 4200,
+        "penalty_jail_years": 0.69,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "UK Sentencing Council, Fraud, Bribery and Money Laundering Offences — Definitive Guideline (eff. 1 Oct 2014), Table 1, Culpability A, p.8–9. https://sentencingcouncil.org.uk/media/oz3nw1qq/fraud_bribery_and_money_laundering_offences_-_definitive_guideline.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-fraud-culpA-harm4-5000-20000",
+        "source": "money_loss_curve",
+        "summary": "UK Culpability A fraud with loss £5,000–£20,000 (starting point £12,500, ~$21,000 in 2024 USD) carries a starting point of 18 months custody.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "UK (England & Wales)",
+        "year": 2014,
+        "label_raw": "UK Fraud Definitive Guideline Table 1 Culpability A, Harm 4: £5,000–£20,000 (SP £12,500) → SP 18 months custody; range 26 weeks – 3 years",
+        "money_value_usd2024": 21000,
+        "penalty_jail_years": 1.5,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "UK Sentencing Council, Fraud, Bribery and Money Laundering Offences — Definitive Guideline (eff. 1 Oct 2014), Table 1, Culpability A, p.8–9. https://sentencingcouncil.org.uk/media/oz3nw1qq/fraud_bribery_and_money_laundering_offences_-_definitive_guideline.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-fraud-culpA-harm3-20000-100000",
+        "source": "money_loss_curve",
+        "summary": "UK Culpability A fraud with loss £20,000–£100,000 (starting point £50,000, ~$84,000 in 2024 USD) carries a starting point of 3 years custody.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "UK (England & Wales)",
+        "year": 2014,
+        "label_raw": "UK Fraud Definitive Guideline Table 1 Culpability A, Harm 3: £20,000–£100,000 (SP £50,000) → SP 3 years custody; range 18 months – 4 years",
+        "money_value_usd2024": 84000,
+        "penalty_jail_years": 3,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "UK Sentencing Council, Fraud, Bribery and Money Laundering Offences — Definitive Guideline (eff. 1 Oct 2014), Table 1, Culpability A, p.8–9. https://sentencingcouncil.org.uk/media/oz3nw1qq/fraud_bribery_and_money_laundering_offences_-_definitive_guideline.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-fraud-culpA-harm2-100000-500000",
+        "source": "money_loss_curve",
+        "summary": "UK Culpability A fraud with loss £100,000–£500,000 (starting point £300,000, ~$505,000 in 2024 USD) carries a starting point of 5 years custody.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "UK (England & Wales)",
+        "year": 2014,
+        "label_raw": "UK Fraud Definitive Guideline Table 1 Culpability A, Harm 2: £100,000–£500,000 (SP £300,000) → SP 5 years custody; range 3 – 6 years",
+        "money_value_usd2024": 505000,
+        "penalty_jail_years": 5,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "UK Sentencing Council, Fraud, Bribery and Money Laundering Offences — Definitive Guideline (eff. 1 Oct 2014), Table 1, Culpability A, p.8–9. https://sentencingcouncil.org.uk/media/oz3nw1qq/fraud_bribery_and_money_laundering_offences_-_definitive_guideline.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-fraud-culpA-harm1-over-500000",
+        "source": "money_loss_curve",
+        "summary": "UK Culpability A fraud with loss of £500,000 or more (starting point £1,000,000, ~$1.68M in 2024 USD) carries a starting point of 7 years custody.",
+        "harm_type": "property",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "UK (England & Wales)",
+        "year": 2014,
+        "label_raw": "UK Fraud Definitive Guideline Table 1 Culpability A, Harm 1: ≥£500,000 (SP £1,000,000) → SP 7 years custody; range 5 – 8 years (may exceed where value greatly exceeds £1M)",
+        "money_value_usd2024": 1680000,
+        "penalty_jail_years": 7,
+        "informs_ratio": [
+          "money_concavity",
+          "severity_ladder"
+        ],
+        "source_citation": "UK Sentencing Council, Fraud, Bribery and Money Laundering Offences — Definitive Guideline (eff. 1 Oct 2014), Table 1, Culpability A, p.8–9. https://sentencingcouncil.org.uk/media/oz3nw1qq/fraud_bribery_and_money_laundering_offences_-_definitive_guideline.pdf",
+        "confidence": "high"
+      }
+    ],
+    "liberty_duration": [
+      {
+        "id": "uk-kidnap-false-imprisonment-overall-range",
+        "source": "liberty_duration",
+        "summary": "The UK definitive guideline for kidnap and false imprisonment spans a community order up to 16 years' custody, with a statutory maximum of life imprisonment.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "penalty_jail_years": 16,
+        "jurisdiction": "England & Wales",
+        "year": 2025,
+        "label_raw": "Kidnap/False Imprisonment definitive guideline; range community order to 16 years; max life",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council, \"Kidnap/False Imprisonment\" definitive guideline, effective 1 April 2025 — https://www.sentencingcouncil.org.uk/offences/crown-court/item/kidnap-false-imprisonment/ (overview at https://sentencingcouncil.org.uk/guidelines/kidnap-false-imprisonment/)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-kidnap-most-serious-culpability-a-harm-1",
+        "source": "liberty_duration",
+        "summary": "The most serious UK kidnap/false imprisonment (Culpability A, Harm 1, tied to prolonged detention) has an 11-year starting point and an 8-16 year category range.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "prolonged / long period of detention (qualitative)",
+        "intent": "intentional",
+        "penalty_jail_years": 11,
+        "jurisdiction": "England & Wales",
+        "year": 2025,
+        "label_raw": "Culpability A / Harm 1: starting point 11 years, range 8-16 years",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council guideline table (mirror: https://sentencing.uk/offences/kidnapping and .../false-imprisonment)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-kidnap-mid-tier-culpability-b-harm-2",
+        "source": "liberty_duration",
+        "summary": "Mid-tier UK kidnap/false imprisonment (Culpability B, Harm 2, moderate period of detention) has a 5-year starting point and a 2-7 year range.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "moderate / some period of detention (qualitative)",
+        "intent": "intentional",
+        "penalty_jail_years": 5,
+        "jurisdiction": "England & Wales",
+        "year": 2025,
+        "label_raw": "Culpability B / Harm 2: starting point 5 years, range 2-7 years",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council \"Kidnap/False Imprisonment\" guideline (sentencing.uk mirror)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-kidnap-least-serious-culpability-c-harm-3",
+        "source": "liberty_duration",
+        "summary": "The least serious custodial-borderline UK kidnap/false imprisonment (Culpability C, Harm 3, very brief detention) has a 26-week (0.5 year) starting point and a range from high-level community order to 2 years.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "very brief detention (qualitative)",
+        "intent": "intentional",
+        "penalty_jail_years": 0.5,
+        "jurisdiction": "England & Wales",
+        "year": 2025,
+        "label_raw": "Culpability C / Harm 3: starting point 26 weeks custody, range high-level community order to 2 years",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council \"Kidnap/False Imprisonment\" guideline (same definitive guideline)",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-kidnap-duration-formal-grading-axis",
+        "source": "liberty_duration",
+        "summary": "In the UK guideline, detention duration is a formal qualitative grading axis (prolonged / period / very brief) across both culpability and harm, with no fixed day-count thresholds.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "qualitative ordinal: prolonged > moderate/period > very brief; no fixed day counts",
+        "intent": "intentional",
+        "jurisdiction": "England & Wales",
+        "year": 2025,
+        "label_raw": "Duration graded qualitatively as culpability and harm indicators, not by day-count thresholds",
+        "informs_ratio": [
+          "liberty_time"
+        ],
+        "source_citation": "Sentencing Council \"Kidnap/False Imprisonment\" guideline, culpability and harm factor lists",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-kidnapping-base-offense-level-32",
+        "source": "liberty_duration",
+        "summary": "US federal kidnapping has a base offense level of 32, which at Criminal History Category I yields 121-151 months (about 10.1-12.6 years).",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "penalty_jail_years": 10.08,
+        "jurisdiction": "United States (federal)",
+        "year": 2023,
+        "label_raw": "USSG §2A4.1(a) base level 32 = 121-151 months at CHC I",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG Manual (Nov 1, 2023) §2A4.1(a), p.74; Sentencing Table, USSC, Nov 1, 2016 (table values unchanged) — https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2023/CHAPTER_2.pdf and https://www.ussc.gov/sites/default/files/pdf/guidelines-manual/2016/Sentencing_Table.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-kidnapping-7-day-duration-enhancement-level-33",
+        "source": "liberty_duration",
+        "summary": "A +1 level enhancement applies if a US federal kidnapping victim is not released before 7 days elapse, raising level 33 to 135-168 months (about 11.25-14 years).",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": ">=7 days",
+        "intent": "intentional",
+        "penalty_jail_years": 11.25,
+        "jurisdiction": "United States (federal)",
+        "year": 2023,
+        "label_raw": "USSG §2A4.1(b)(4)(B): +1 level if not released before 7 days; level 33 = 135-168 months at CHC I",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG (Nov 1, 2023) §2A4.1(b)(4)(B), p.74; Sentencing Table level 33 / CHC I",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-kidnapping-30-day-duration-enhancement-level-34",
+        "source": "liberty_duration",
+        "summary": "A +2 level enhancement applies if a US federal kidnapping victim is not released before 30 days elapse, raising level 34 to 151-188 months (about 12.6-15.7 years), reflecting the increased suffering of lengthy kidnappings.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": ">=30 days",
+        "intent": "intentional",
+        "penalty_jail_years": 12.58,
+        "jurisdiction": "United States (federal)",
+        "year": 2023,
+        "label_raw": "USSG §2A4.1(b)(4)(A): +2 levels if not released before 30 days; level 34 = 151-188 months at CHC I; Background note cites increased suffering and incentive to release",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG (Nov 1, 2023) §2A4.1(b)(4)(A) and Background, pp.74–76",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-kidnapping-non-duration-aggravators-context",
+        "source": "liberty_duration",
+        "summary": "Non-duration aggravators on US federal kidnapping (ransom +6, bodily injury +2 to +4, weapon +2, sexual exploitation +6, death cross-referenced to first-degree murder level 43/life) dwarf the 1-2 levels assigned purely to detention duration, framing relative weighting.",
+        "harm_type": "mixed",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "jurisdiction": "United States (federal)",
+        "year": 2023,
+        "label_raw": "USSG §2A4.1(b)(1)-(5): ransom/demand +6, serious bodily injury +2/+3/+4 (permanent or life-threatening), dangerous weapon +2, sexual exploitation +6; §2A4.1(c)(1) cross-reference to §2A1.1 first-degree murder base level 43 = life if victim killed",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "USSG (Nov 1, 2023) §2A4.1(b)–(c), pp.74–75",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-kidnapping-statutory-penalty-18-usc-1201",
+        "source": "liberty_duration",
+        "summary": "The federal kidnapping statute (18 U.S.C. §1201) authorizes imprisonment for any term of years or for life, and death or life imprisonment if death results, setting the statutory ceiling above the guideline ranges.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "any term of years to life",
+        "intent": "intentional",
+        "jurisdiction": "United States (federal)",
+        "year": 2023,
+        "label_raw": "18 U.S.C. §1201(a): imprisonment for any term of years or life; death or life imprisonment if death results",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "18 U.S.C. §1201(a) — https://www.law.cornell.edu/uscode/text/18/1201",
+        "confidence": "high"
+      },
+      {
+        "id": "us-federal-kidnapping-minor-victim-mandatory-minimum-20-years",
+        "source": "liberty_duration",
+        "summary": "A 20-year mandatory minimum applies under 18 U.S.C. §1201(g) where the kidnapping victim is a minor and the offender is not a parent, close relative, or legal custodian, setting a floor on liberty-deprivation pricing for child kidnapping.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "intentional",
+        "penalty_jail_years": 20,
+        "jurisdiction": "United States (federal)",
+        "year": 2023,
+        "label_raw": "18 U.S.C. §1201(g): mandatory minimum 20 years where victim is a minor and offender is not parent/close relative/legal custodian",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "18 U.S.C. §1201(g), Cornell LII https://www.law.cornell.edu/uscode/text/18/1201; USSG §2A4.1 Background (p.76); cf. Pub. L. 101-647 §401",
+        "confidence": "high"
+      }
+    ],
+    "qaly_weights": [
+      {
+        "id": "spinal-cord-neck-tetraplegia-untreated",
+        "source": "qaly_weights",
+        "summary": "Untreated spinal cord lesion at the neck (tetraplegia/quadriplegia) carries a disability weight of 0.732, one of the most severe non-fatal chronic states in the GBD catalogue.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.732,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 46; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Spinal cord lesion at neck (tetraplegia/quadriplegia), untreated"
+      },
+      {
+        "id": "major-depressive-disorder-severe",
+        "source": "qaly_weights",
+        "summary": "A severe episode of major depressive disorder carries a disability weight of 0.658, the highest-weighted mental-health state in the table and near the level of untreated AIDS.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.658,
+        "harm_duration": "episode",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 43; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Major depressive disorder, severe episode"
+      },
+      {
+        "id": "spinal-cord-below-neck-paraplegia-untreated",
+        "source": "qaly_weights",
+        "summary": "Untreated spinal cord lesion below the neck (paraplegia) carries a disability weight of 0.623.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.623,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 46; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Spinal cord lesion below neck (paraplegia), untreated"
+      },
+      {
+        "id": "spinal-cord-neck-tetraplegia-treated",
+        "source": "qaly_weights",
+        "summary": "Treated spinal cord lesion at the neck (tetraplegia) carries a disability weight of 0.589, showing that treatment only marginally reduces the neck-level burden (0.732 to 0.589), unlike below-neck lesions.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.589,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 46; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Spinal cord lesion at neck (tetraplegia), treated"
+      },
+      {
+        "id": "musculoskeletal-generalized-severe",
+        "source": "qaly_weights",
+        "summary": "Generalized musculoskeletal problems at the severe level (e.g., severe widespread/rheumatic pain) carry a disability weight of 0.581.",
+        "harm_type": "suffering",
+        "harm_magnitude": 0.581,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Musculoskeletal problems, generalized, severe"
+      },
+      {
+        "id": "terminal-phase-disease-without-medication",
+        "source": "qaly_weights",
+        "summary": "The terminal phase of disease (cancers, end-stage kidney or liver disease) without pain medication carries a disability weight of 0.569, serving as an empirical anchor for end-of-life suffering and euthanasia edge-case calibration.",
+        "harm_type": "suffering",
+        "harm_magnitude": 0.569,
+        "harm_duration": "terminal/end-of-life",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 41; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Terminal phase of disease, without medication"
+      },
+      {
+        "id": "terminal-phase-disease-with-medication",
+        "source": "qaly_weights",
+        "summary": "The terminal phase of disease with pain medication carries a disability weight of 0.540, meaning medication removes only about 0.03 of the end-of-life suffering burden.",
+        "harm_type": "suffering",
+        "harm_magnitude": 0.54,
+        "harm_duration": "terminal/end-of-life",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 41; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Terminal phase of disease, with medication"
+      },
+      {
+        "id": "anxiety-disorders-severe",
+        "source": "qaly_weights",
+        "summary": "Severe anxiety disorders carry a disability weight of 0.523.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.523,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 43; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Anxiety disorders, severe"
+      },
+      {
+        "id": "amputation-both-legs-untreated",
+        "source": "qaly_weights",
+        "summary": "Long-term amputation of both legs without a prosthesis carries a disability weight of 0.443, dropping to 0.088 when treated/fitted with a prosthesis.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.443,
+        "harm_duration": "long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Amputation of both legs, long term, untreated (no prosthesis)"
+      },
+      {
+        "id": "amputation-both-legs-treated",
+        "source": "qaly_weights",
+        "summary": "Long-term amputation of both legs treated with a prosthesis carries a disability weight of 0.088, far below the untreated value of 0.443.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.088,
+        "harm_duration": "long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Amputation of both legs, long term, treated (with prosthesis)"
+      },
+      {
+        "id": "copd-respiratory-severe",
+        "source": "qaly_weights",
+        "summary": "Severe COPD and other chronic respiratory problems carry a disability weight of 0.408.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.408,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 42; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "COPD and other chronic respiratory problems, severe"
+      },
+      {
+        "id": "back-pain-most-severe-with-leg-pain",
+        "source": "qaly_weights",
+        "summary": "Most severe back pain with leg pain carries a disability weight of 0.384, anchoring severe musculoskeletal pain.",
+        "harm_type": "suffering",
+        "harm_magnitude": 0.384,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Back pain, most severe, with leg pain"
+      },
+      {
+        "id": "back-pain-most-severe-without-leg-pain",
+        "source": "qaly_weights",
+        "summary": "Most severe back pain without leg pain carries a disability weight of 0.372.",
+        "harm_type": "suffering",
+        "harm_magnitude": 0.372,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Back pain, most severe, without leg pain"
+      },
+      {
+        "id": "distance-vision-blindness",
+        "source": "qaly_weights",
+        "summary": "Distance-vision blindness (complete/near-complete bilateral blindness) carries a disability weight of 0.338, which experts have flagged as surprisingly low.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.338,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Distance-vision blindness (complete/near-complete bilateral)"
+      },
+      {
+        "id": "distance-vision-severe-impairment",
+        "source": "qaly_weights",
+        "summary": "Severe (not total) distance-vision impairment carries a disability weight of 0.314.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.314,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Distance vision, severe impairment"
+      },
+      {
+        "id": "spinal-cord-below-neck-paraplegia-treated",
+        "source": "qaly_weights",
+        "summary": "Treated spinal cord lesion below the neck (paraplegia) carries a disability weight of 0.296, showing treatment substantially reduces the below-neck burden (0.623 to 0.296).",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.296,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 46; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Spinal cord lesion below neck (paraplegia), treated"
+      },
+      {
+        "id": "amputation-one-leg-untreated",
+        "source": "qaly_weights",
+        "summary": "Long-term untreated amputation of one leg carries a disability weight of 0.173, dropping to 0.039 if treated.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.173,
+        "harm_duration": "long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Amputation of one leg, long term, untreated"
+      },
+      {
+        "id": "amputation-one-leg-treated",
+        "source": "qaly_weights",
+        "summary": "Long-term treated amputation of one leg carries a disability weight of 0.039.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.039,
+        "harm_duration": "long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Amputation of one leg, long term, treated"
+      },
+      {
+        "id": "amputation-one-arm-untreated",
+        "source": "qaly_weights",
+        "summary": "Long-term untreated amputation of one arm carries a disability weight of 0.118, provided for comparison with single-leg amputation.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.118,
+        "harm_duration": "long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 44; derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Amputation of one arm, long term"
+      },
+      {
+        "id": "mdd-severity-ladder-mild-moderate-severe",
+        "source": "qaly_weights",
+        "summary": "Major depressive disorder shows a steep severity gradient: mild 0.145, moderate 0.396, severe 0.658, illustrating how harm weight scales with severity within a single condition.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.396,
+        "harm_duration": "episode",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 43 (cross-check, mild 0.145 / moderate 0.396 / severe 0.658); derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "MDD severity ladder: mild 0.145 / moderate 0.396 / severe 0.658"
+      },
+      {
+        "id": "anxiety-severity-ladder-mild-severe",
+        "source": "qaly_weights",
+        "summary": "Anxiety disorders show a steep severity gradient from mild 0.030 to severe 0.523, illustrating within-condition scaling of harm weight.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.03,
+        "harm_duration": "chronic/long term",
+        "intent": "na",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "source_citation": "WHO GHE2019 DALY methods, Annex Table C, GBD 2019 column, p. 43 (cross-check, mild 0.030 / severe 0.523); derived from Salomon et al., Lancet Glob Health 2015.",
+        "confidence": "high",
+        "jurisdiction": null,
+        "year": 2019,
+        "label_raw": "Anxiety severity ladder: mild 0.030 / severe 0.523"
+      }
+    ],
+    "vsl_wrongful_death": [
+      {
+        "id": "vsl-us-dot",
+        "source": "vsl_wrongful_death",
+        "summary": "US DOT regulatory value of a statistical life used to value one prevented transportation fatality in benefit-cost analysis, headline ~$13.7M for 2024 (cited as $13.2M in 2023 dollars), ~$11.6-13.6M in 2024 USD.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "US DOT VSL guidance value",
+        "money_value_usd2024": 13700000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "US DOT, \"Revised Departmental Guidance on Valuation of a Statistical Life in Economic Analysis,\" transportation.gov/office-policy/transportation-policy/revised-departmental-guidance-on-valuation-of-a-statistical-life-in-economic-analysis ; DHS/USCG VSL memo 9 May 2024, dco.uscg.mil/Portals/9/VSL%202024%209May24%20FINAL%20for%20DIST.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "vsl-us-hhs",
+        "source": "vsl_wrongful_death",
+        "summary": "US HHS central value of a statistical life used to value a prevented fatality in regulatory impact analyses for drug, food, and health rules, ~$11.5M in 2023 dollars (~$11.8M in 2024 USD; range $5.9M-$17.0M).",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "US federal",
+        "year": 2023,
+        "label_raw": "US HHS central VSL ($11.5M 2023$)",
+        "money_value_usd2024": 11800000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "HHS/ASPE, \"HHS Standard Values for Regulatory Analysis, 2025\" (Feb 2025), aspe.hhs.gov/sites/default/files/documents/639756a60fbe7e51786bcec176ad52f1/Standard-RIA-Values-2025.pdf — \"central estimate of $11.5 million … in 2023 dollars and 2023 income year.\"",
+        "confidence": "high"
+      },
+      {
+        "id": "vsl-us-epa",
+        "source": "vsl_wrongful_death",
+        "summary": "US EPA central value of a statistical life used to value one prevented fatality in air and water benefit-cost analysis, base $7.4M in 2006 dollars updated to the analysis year (~$11.6M in 2024 USD).",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "US federal",
+        "year": 2024,
+        "label_raw": "US EPA central VSL ($7.4M 2006$)",
+        "money_value_usd2024": 11600000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "US EPA, \"Mortality Risk Valuation,\" epa.gov/environmental-economics/mortality-risk-valuation — \"central estimate of $7.4 million ($2006), updated to the year of the analysis.\" (See also EPA final VSL guidance, Fed. Reg. 89 FR, 18 Apr 2024, doc. 2024-08300.)",
+        "confidence": "high"
+      },
+      {
+        "id": "williams-v-greystar-crane-collapse",
+        "source": "vsl_wrongful_death",
+        "summary": "Texas jury awarded $860M total (~$890M in 2024 USD) for the single wrongful death of Kiersten Smith, killed when a tower crane collapsed onto her apartment, finding developer Greystar grossly negligent with a large punitive component.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": null,
+        "intent": "negligent",
+        "jurisdiction": "Dallas County, Texas (US state court)",
+        "year": 2023,
+        "label_raw": "$860M total verdict (Williams v. Bigge Crane & Rigging / Greystar)",
+        "money_value_usd2024": 890000000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Lyons & Simmons, lyons-simmons.com/news-events/2024/june/-860-million-trial-win-recognized-among-largest-/",
+        "confidence": "high"
+      },
+      {
+        "id": "hill-v-naphcare-jail-death",
+        "source": "vsl_wrongful_death",
+        "summary": "Federal jury awarded $26.75M total (~$28.8M in 2024 USD; $2.75M compensatory + $24M punitive) for the death of Cindy Lou Hill from a ruptured intestine after denied jail medical care, a Section 1983 deliberate-indifference case later capped at a 4:1 punitive ratio.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": null,
+        "intent": "reckless",
+        "jurisdiction": "U.S. District Court, E.D. Washington (Spokane)",
+        "year": 2022,
+        "label_raw": "$26.75M total verdict ($2.75M compensatory + $24M punitive)",
+        "money_value_usd2024": 28800000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": 2956250,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Budge & Heipt, budgeandheipt.com/news-press/federal-court-upholds-24-million-punitive-damages-jury-verdict-for-wrongful-jail-death/ ; Prison Legal News, prisonlegalnews.org/news/2023/oct/15/naphcares-lack-care-leads-2675-million-verdict-washington-jail-death/",
+        "confidence": "high"
+      },
+      {
+        "id": "metro-north-valhalla-crossing-settlement",
+        "source": "vsl_wrongful_death",
+        "summary": "MTA/Metro-North reached a ~$182M global settlement (~$182M in 2024 USD) for the 2015 Valhalla train-crossing crash resolving five passenger deaths plus dozens of injuries, with per-death payouts ranging roughly $4M to $35M after the jury assigned Metro-North 71% liability.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": null,
+        "intent": "negligent",
+        "jurisdiction": "Westchester County, NY (US state court)",
+        "year": 2024,
+        "label_raw": "~$182M global settlement (five deaths plus injuries; ~$4M-$35M per death)",
+        "money_value_usd2024": 182000000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": 182000000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Gair Gair Conason (PR Newswire), prnewswire.com/news-releases/...-182-million-metro-north-settlement... ; ABC7 NY, abc7ny.com/post/mta-settlement-worth-182m-reached-2015-metro-north-...",
+        "confidence": "high"
+      },
+      {
+        "id": "chicago-hospital-malpractice-verdict",
+        "source": "vsl_wrongful_death",
+        "summary": "A Cook County, Illinois jury returned a $28.7M wrongful-death verdict (~$29.6M in 2024 USD) against a Chicago-area hospital for medical negligence.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": null,
+        "intent": "negligent",
+        "jurisdiction": "Cook County, Illinois (US state court)",
+        "year": 2023,
+        "label_raw": "$28.7M wrongful-death verdict (Chicago-area hospital)",
+        "money_value_usd2024": 29600000,
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": 29600000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Reported via Lubin & Meyer / TopVerdict roundup of 2023-2024 largest verdicts (lubinandmeyer.com/news/largest-verdicts-settlements.html) — verdict total documented but full party/court detail not independently confirmed in primary filings.",
+        "confidence": "low"
+      }
+    ]
+  }
+}

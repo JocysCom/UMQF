@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UMQF calibration observation",
+  "description": "One priced-harm data point (a guideline cell, tariff entry, award, or anchor figure). Stored one-object-per-line in data/observations/<source>.jsonl. Plain text, RAG-indexable, DuckDB-queryable in place.",
+  "type": "object",
+  "required": ["id", "source", "summary", "harm_type", "intent", "informs_ratio", "source_citation", "confidence"],
+  "properties": {
+    "id": { "type": "string", "description": "unique kebab-case slug" },
+    "source": { "type": "string", "description": "source key (see config.json)" },
+    "jurisdiction": { "type": ["string", "null"] },
+    "year": { "type": ["integer", "null"] },
+    "summary": { "type": "string", "description": "one natural-language sentence (for RAG) stating the figure and what it prices" },
+    "label_raw": { "type": ["string", "null"], "description": "original offence/injury/figure label" },
+    "harm_type": { "enum": ["death", "bodily", "suffering", "liberty", "property", "psychological", "mixed", "anchor"] },
+    "harm_magnitude": { "type": ["number", "null"], "description": "0..1 severity, fraction toward death=1 (null for a pure money/anchor figure)" },
+    "harm_duration": { "type": ["string", "null"], "description": "e.g. permanent, 5 years, 1 hour" },
+    "intent": { "enum": ["intentional", "reckless", "negligent", "accidental", "na"] },
+    "penalty_jail_years": { "type": ["number", "null"] },
+    "penalty_fine_usd2024": { "type": ["number", "null"] },
+    "compensation_usd2024": { "type": ["number", "null"] },
+    "money_value_usd2024": { "type": ["number", "null"], "description": "headline money figure normalized to 2024 USD" },
+    "harm": {
+      "type": ["object", "null"],
+      "description": "optional zoom-in: sub-particles of the harm",
+      "properties": {
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "level": { "type": "number" },
+              "dur_yrs": {}
+            }
+          }
+        }
+      }
+    },
+    "informs_ratio": { "type": "array", "items": { "type": "string" }, "description": "L_to_M | W_to_M | W_to_L | In | money_concavity | liberty_time | severity_ladder" },
+    "source_citation": { "type": "string" },
+    "confidence": { "enum": ["high", "medium", "low"] }
+  }
+}

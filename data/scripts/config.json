@@ -1,0 +1,22 @@
+{
+  "currency": "USD",
+  "currency_year": 2024,
+  "life_expectancy_years_ref": 40,
+  "conversion_forms": {
+    "default": "power",
+    "survival_odds": "logistic",
+    "decay": "exponential",
+    "note": "Power law y=a*x^b nests linear at b=1. compute_ratios.py fits linear/power/log and selects by R2. Logistic is reserved for bounded survival-odds; exponential for time-decay. See universal_formulas.md."
+  },
+  "sources": [
+    { "key": "vsl", "title": "Value of a Statistical Life", "url": "https://www.epa.gov/environmental-economics/mortality-risk-valuation", "fetch": "curated", "informs": ["L_to_M"] },
+    { "key": "qaly", "title": "QALY/DALY thresholds & GBD disability weights", "url": "https://ghdx.healthdata.org/record/ihme-data/gbd-2019-disability-weights", "fetch": "curated", "informs": ["W_to_L", "W_to_M"] },
+    { "key": "uk_violence", "title": "UK Sentencing Council - violence/homicide", "url": "https://sentencingcouncil.org.uk/", "fetch": "curated", "informs": ["In", "severity_ladder"] },
+    { "key": "uk_property_liberty", "title": "UK Sentencing Council - theft/fraud/false imprisonment", "url": "https://sentencingcouncil.org.uk/", "fetch": "curated", "informs": ["money_concavity", "liberty_time"] },
+    { "key": "us_sentencing", "title": "US Federal Sentencing Guidelines + USSC datafiles", "url": "https://www.ussc.gov/research/datafiles/commission-datafiles", "fetch": "phase2", "informs": ["money_concavity", "In", "severity_ladder"] },
+    { "key": "workers_comp", "title": "US workers' compensation schedule of injuries", "url": "https://www.wcb.ny.gov/content/main/Workers/ScheduledLossUse.jsp", "fetch": "curated", "informs": ["severity_ladder", "W_to_M"] },
+    { "key": "tort_pain_suffering", "title": "Tort pain-and-suffering tariffs (UK Judicial College / criminal injuries)", "url": "https://www.judiciary.uk/", "fetch": "curated", "informs": ["W_to_M", "severity_ladder"] },
+    { "key": "day_fines", "title": "Day-fine systems (Finland/Germany/Scandinavia)", "url": "", "fetch": "curated", "informs": ["money_concavity", "severity_ladder"] },
+    { "key": "courtlistener", "title": "CourtListener bulk opinions (Phase 3 NLP)", "url": "https://www.courtlistener.com/help/api/bulk-data/", "fetch": "phase3", "informs": ["W_to_M", "severity_ladder"] }
+  ]
+}

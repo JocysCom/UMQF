@@ -1,0 +1,77 @@
+{
+  "L_to_M": {
+    "kind": "geomean",
+    "n": 9,
+    "jurisdictions": 7,
+    "sigma_log": 1.525,
+    "geo_mean": 32530565.898713637,
+    "achieved_95ci_factor": 2.71,
+    "n_for_25pct": 180,
+    "n_for_10pct": 984,
+    "gap_to_25pct": 171
+  },
+  "W_to_M": {
+    "kind": "geomean",
+    "n": 22,
+    "jurisdictions": 7,
+    "sigma_log": 1.493,
+    "geo_mean": 98204.59179432112,
+    "achieved_95ci_factor": 1.87,
+    "n_for_25pct": 173,
+    "n_for_10pct": 944,
+    "gap_to_25pct": 151
+  },
+  "W_to_L": {
+    "kind": "geomean",
+    "n": 24,
+    "jurisdictions": 2,
+    "sigma_log": 0.904,
+    "geo_mean": 0.33699449326491066,
+    "achieved_95ci_factor": 1.44,
+    "n_for_25pct": 64,
+    "n_for_10pct": 346,
+    "gap_to_25pct": 40
+  },
+  "liberty_time": {
+    "kind": "geomean",
+    "n": 9,
+    "jurisdictions": 3,
+    "sigma_log": 2.867,
+    "geo_mean": 3.1919681398004682,
+    "achieved_95ci_factor": 6.51,
+    "n_for_25pct": 635,
+    "n_for_10pct": 3477,
+    "gap_to_25pct": 626
+  },
+  "In": {
+    "kind": "group_ratio",
+    "n": 16,
+    "jurisdictions": 4,
+    "sigma_log": 1.011,
+    "geo_mean": 7.623142380583624,
+    "jur_target": 8,
+    "jur_gap": 4,
+    "precision_note": "precision = CI on the group contrast / ordinal coverage; driven by jurisdiction count, not raw-N."
+  },
+  "money_concavity": {
+    "kind": "curve",
+    "n": 20,
+    "jurisdictions": 8,
+    "sigma_log": 3.827,
+    "geo_mean": 741709.7629376696,
+    "decades_covered": 5.6,
+    "jur_target": 8,
+    "jur_gap": 0,
+    "precision_note": "fit the exponent; bootstrap its CI. Need >=1 pt/decade and >=8 jurisdictions; raw-N target N/A."
+  },
+  "severity_ladder": {
+    "kind": "ladder",
+    "n": 42,
+    "jurisdictions": 16,
+    "sigma_log": 1.115,
+    "geo_mean": 5.584172237029478,
+    "jur_target": 8,
+    "jur_gap": 0,
+    "precision_note": "precision = CI on the group contrast / ordinal coverage; driven by jurisdiction count, not raw-N."
+  }
+}
