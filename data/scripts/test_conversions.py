@@ -53,8 +53,8 @@ for a, b, c in itertools.permutations(nodes, 3):
 check("T2 no-arbitrage (all conversion cycles multiply to 1)", ok)
 
 # T3 monotonic & sign-preserving
-mono = C.convert(2.0, "usd", "life_year", axis) > C.convert(1.0, "usd", "life_year", axis)
-sign = C.convert(-1.0, "usd", "life_year", axis) < 0
+mono = C.convert(2.0, "gcu", "life_year", axis) > C.convert(1.0, "gcu", "life_year", axis)
+sign = C.convert(-1.0, "gcu", "life_year", axis) < 0
 check("T3 monotonic & sign-preserving", mono and sign)
 
 # T4 money-concavity invertible
@@ -72,8 +72,8 @@ else:
 R = {x["ratio"]: x for x in json.loads((DATA / "ratios.json").read_text(encoding="utf-8"))["ratios"]}
 lm = R.get("L_to_M", {}).get("estimate")
 if lm:
-    recon = axis["reconciled_rates"]["life_to_usd"]
-    check("T5 reconciled life value within 3x of VSL anchor", 0.33 <= recon / lm <= 3.0, f"${recon:,.0f} vs ${lm:,.0f}")
+    recon = axis["reconciled_rates"]["life_to_gcu"]
+    check("T5 reconciled life value within 3x of VSL anchor", 0.33 <= recon / lm <= 3.0, f"{recon:.2f} vs {lm:.2f} GCU")
 
 arb = axis.get("measured_arbitrage_cycle")
 if arb:

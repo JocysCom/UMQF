@@ -11,6 +11,7 @@ fitted and selected by R2 (power law nests linear at b=1) per universal_formulas
 """
 import json
 import math
+import re
 from pathlib import Path
 
 import numpy as np
@@ -40,6 +41,31 @@ def col(df, name):
 
 def numcol(df, name):
     return pd.to_numeric(col(df, name), errors="coerce")
+
+
+def parse_years(s):
+    """Best-effort freeform duration -> years (e.g. '6 months' -> 0.5)."""
+    if s is None:
+        return None
+    if isinstance(s, (int, float)):
+        return float(s)
+    t = str(s).lower()
+    m = re.search(r"\d+(?:\.\d+)?", t)
+    if not m:
+        return None
+    try:
+        val = float(m.group(0))
+    except ValueError:
+        return None
+    if "month" in t:
+        return val / 12.0
+    if "week" in t:
+        return val * 7 / 365.0
+    if "day" in t:
+        return val / 365.0
+    if "hour" in t:
+        return val / (365.0 * 24)
+    return val
 
 
 def has_ratio(df, name):
@@ -90,19 +116,36 @@ def main():
     n = len(df)
     ratios = []
 
-    # --- L_to_M : money value of one statistical life (anchors dOS = -1) ---
-    m = df[has_ratio(df, "L_to_M")]
-    vals = numcol(m, "money_value_usd2024").dropna()
-    if len(vals) >= 1:
+    # --- L_to_M : GCU value of one life (income-normalized), SPLIT BY CONSTRUCT ---
+    m = df[has_ratio(df, "L_to_M")].copy()
+    m = m[numcol(m, "money_value_gcu").notna()]
+    if len(m):
+        m["gval"] = numcol(m, "money_value_gcu")
+        m["uval"] = numcol(m, "money_value_usd2024")
+        m["con"] = col(m, "construct").fillna("unspecified")
+        by_con = {}
+        for con, grp in m.groupby("con"):
+            v = grp["gval"]
+            trad = sorted(set(col(grp, "legal_tradition").dropna().tolist()))
+            by_con[con] = {"median_gcu": round(float(v.median()), 3),
+                           "range_gcu": [round(float(v.min()), 3), round(float(v.max()), 3)],
+                           "median_usd": round(float(grp["uval"].median()), 0) if grp["uval"].notna().any() else None,
+                           "n": int(len(v)), "traditions": trad}
+        # primary anchor = willingness-to-pay (forward-looking, matches the survival-odds framing of dOS)
+        prim_key = "wtp" if "wtp" in by_con else ("unspecified" if "unspecified" in by_con else next(iter(by_con)))
+        primary = by_con[prim_key]
+        cross = None
+        if "wtp" in by_con and "compensation" in by_con and by_con["compensation"]["median_gcu"]:
+            cross = round(by_con["wtp"]["median_gcu"] / by_con["compensation"]["median_gcu"], 1)
         ratios.append({
-            "ratio": "L_to_M", "meaning": "money value of one life (anchors dOS=-1)",
-            "unit": "USD_2024 per life", "estimate": float(vals.median()),
-            "range": [float(vals.min()), float(vals.max())], "n": int(len(vals)),
-            "form": "point", "confidence": "high" if len(vals) >= 2 else "medium",
-            "sources": m[numcol(m, "money_value_usd2024").notna()]["id"].tolist(), "status": "estimated",
-            "notes": "Median of VSL / wrongful-death figures. dOS=-1 maps to this USD amount."})
+            "ratio": "L_to_M", "meaning": "GCU value of one life (anchors dOS=-1); income-normalized; split by construct",
+            "unit": "GCU per life", "estimate": primary["median_gcu"], "primary_construct": prim_key,
+            "by_construct": by_con, "cross_construct_ratio_wtp_over_compensation": cross,
+            "n": int(len(m)), "form": "point",
+            "confidence": "high" if primary["n"] >= 2 else "medium", "status": "estimated",
+            "notes": "Income-normalized (money/GCU): VSL is ~constant in GCU though ~30x in USD. WTP anchors dOS=-1; compensation is a separate, lower construct (not averaged in). diyya identity multipliers are cultural, excluded by UMQF."})
     else:
-        ratios.append(pending("L_to_M", "need VSL or wrongful-death money figures"))
+        ratios.append(pending("L_to_M", "need money_value_gcu (run categorize_ai after the gcu backfill)"))
 
     # --- W_to_L : life-years lost per welfare-year (GBD disability weights only) ---
     # Filter by SOURCE: the QALY sources carry genuine DALY weights (any harm_type); tort severity-proxies are NOT weights.
@@ -124,16 +167,16 @@ def main():
     is_anchor = col(m, "harm_type") == "anchor"
     is_per_year = col(m, "harm_duration").astype(str).str.contains("year", case=False, na=False)
     qaly = m[is_anchor & is_per_year]
-    wm = numcol(qaly, "money_value_usd2024").dropna()
+    wm = numcol(qaly, "money_value_gcu").dropna()
     if len(wm) >= 1:
         ratios.append({
-            "ratio": "W_to_M", "meaning": "money value of one welfare-year (QALY)",
-            "unit": "USD_2024 per welfare-yr", "estimate": float(wm.median()),
-            "range": [float(wm.min()), float(wm.max())], "n": int(len(wm)),
+            "ratio": "W_to_M", "meaning": "GCU value of one welfare-year (QALY threshold), income-normalized",
+            "unit": "GCU per welfare-yr", "estimate": round(float(wm.median()), 5),
+            "range": [round(float(wm.min()), 5), round(float(wm.max()), 5)], "n": int(len(wm)),
             "form": "point", "confidence": "medium", "sources": qaly["id"].tolist(), "status": "estimated",
-            "notes": "Cost-effectiveness thresholds per QALY."})
+            "notes": "Cost-effectiveness thresholds per QALY, normalized to GCU."})
     else:
-        ratios.append(pending("W_to_M", "need QALY money thresholds (per-year anchor rows)"))
+        ratios.append(pending("W_to_M", "need QALY thresholds with money_value_gcu (per-year anchor rows)"))
 
     # --- suffering_severity_to_money : lump-sum money vs suffering severity (tort/CICS PSLA) ---
     sm = df[col(df, "source") == "tort_pain_suffering"]
@@ -155,26 +198,35 @@ def main():
     else:
         ratios.append(pending("suffering_severity_to_money", "need >=3 tort severity/money pairs"))
 
-    # --- In : intent multiplier from same-harm (death) sentencing at different intent ---
-    d = df[(col(df, "harm_type") == "death") & numcol(df, "penalty_jail_years").notna()] if n else df
+    # --- In : intent multiplier, computed WITHIN each jurisdiction then averaged ---
+    # (per-jurisdiction ratio cancels absolute sentence-scale differences, e.g. UK life-minimums vs German terms)
+    d = df[(col(df, "harm_type") == "death") & numcol(df, "penalty_jail_years").notna()].copy()
     if len(d):
-        g = d.assign(j=numcol(d, "penalty_jail_years")).groupby("intent")["j"].mean()
-        base = g.get("intentional", float("nan"))
-        if base and not math.isnan(base) and base > 0:
-            mult = {}
-            for k in ["reckless", "negligent", "accidental"]:
-                if k in g and not math.isnan(g[k]):
-                    mult[k] = round(float(g[k] / base), 3)
-            if mult:
-                ratios.append({
-                    "ratio": "In", "meaning": "intent multiplier (jail vs intentional, harm=death)",
-                    "unit": "x of intentional", "estimate": mult, "form": "point",
-                    "n": int(len(d)), "confidence": "medium", "status": "estimated",
-                    "notes": "Empirical In from murder vs manslaughter sentencing."})
-            else:
-                ratios.append(pending("In", "have intentional-death baseline; need manslaughter (reckless/negligent) deaths"))
+        d["j"] = numcol(d, "penalty_jail_years")
+        d["jur"] = col(d, "jurisdiction").fillna("?")
+        per = {"reckless": [], "negligent": [], "accidental": []}
+        njur = 0
+        for _, grp in d.groupby("jur"):
+            gi = grp[grp["intent"] == "intentional"]["j"]
+            base = gi.mean()
+            if not (base and base > 0):
+                continue
+            used = False
+            for k in per:
+                gk = grp[grp["intent"] == k]["j"]
+                if len(gk):
+                    per[k].append(float(gk.mean() / base)); used = True
+            if used:
+                njur += 1
+        mult = {k: round(float(np.mean(v)), 3) for k, v in per.items() if v}
+        if mult:
+            ratios.append({
+                "ratio": "In", "meaning": "intent multiplier (jail vs intentional, harm=death), averaged within-jurisdiction",
+                "unit": "x of intentional", "estimate": mult, "form": "point",
+                "n": int(len(d)), "jurisdictions": njur, "confidence": "medium", "status": "estimated",
+                "notes": "Per-jurisdiction ratio then averaged, so absolute sentence-scale differences cancel. Murder=life minimum-terms bias this downward."})
         else:
-            ratios.append(pending("In", "need intentional-death (murder) baseline sentence"))
+            ratios.append(pending("In", "need a jurisdiction with BOTH intentional and non-intentional death sentences"))
     else:
         ratios.append(pending("In", "need death sentencing rows with intent"))
 
@@ -214,14 +266,23 @@ def main():
     else:
         ratios.append(pending("severity_ladder", "need custodial sentences"))
 
-    # --- liberty_time : custodial response per duration of liberty taken ---
-    m = df[has_ratio(df, "liberty_time")]
-    if len(m) >= 2:
-        ratios.append({
-            "ratio": "liberty_time", "meaning": "custodial response per duration of liberty taken",
-            "unit": "jail-yr per yr liberty lost", "n": int(len(m)), "form": "point",
-            "confidence": "low", "status": "estimated", "sources": m["id"].tolist(),
-            "notes": "From false imprisonment / kidnapping; refine with explicit durations."})
+    # --- liberty_time : custodial years imposed per year of liberty taken ---
+    m = df[has_ratio(df, "liberty_time")].copy()
+    if len(m):
+        m["dur"] = col(m, "harm_duration").apply(parse_years)
+        m["jy"] = numcol(m, "penalty_jail_years")
+        pairs = m.dropna(subset=["dur", "jy"])
+        pairs = pairs[(pairs["dur"] > 0) & (pairs["jy"] > 0)]
+        if len(pairs) >= 2:
+            rate = pairs["jy"] / pairs["dur"]
+            ratios.append({
+                "ratio": "liberty_time", "meaning": "custodial years imposed per year of liberty taken",
+                "unit": "jail-yr per liberty-yr", "estimate": round(float(rate.median()), 2),
+                "range": [round(float(rate.min()), 2), round(float(rate.max()), 2)],
+                "n": int(len(pairs)), "form": "point", "confidence": "low", "status": "estimated",
+                "notes": "Median custody-to-deprivation ratio (retributive multiplier > 1 expected). Durations parsed best-effort."})
+        else:
+            ratios.append(pending("liberty_time", f"have {len(m)} liberty rows but <2 with parseable durations; need explicit detention durations"))
     else:
         ratios.append(pending("liberty_time", "need false-imprisonment/kidnap sentences with durations"))
 

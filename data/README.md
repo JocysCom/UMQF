@@ -88,6 +88,22 @@ data inconsistency. `test_conversions.py` asserts these properties (T1 round-tri
 T3 monotonic/sign, T4 curve-invertible, T5 anchor). `SAMPLING.md` + `sampling_adequacy.py` define
 how many data points and which world sources are needed to shrink the residual and tighten each CI.
 
+## Normalization (each value type → a universal unit)
+
+Conversions never use raw quantities; each value type is first normalized to a universal,
+entity-relative unit, then converted between the normalized units:
+
+- **Money → GCU** (`gcu.py`): USD ÷ local lifetime resource throughput (GDP/capita × life
+  expectancy). Income-invariant — a statistical life is ≈1.7 GCU in the US or India alike, though
+  ~30× apart in absolute USD. GCU is the **money hub**: `usd → GCU → life | welfare`.
+- **Life → fraction of remaining lifespan** (`ΔOS`/`Tc`): death = −1 for every entity.
+- **Welfare → quality-adjusted life-year** (κ≈1): a disability weight is a fraction of a healthy year.
+
+`convert.py` reconciles the normalized rates onto one log value-axis (money node = GCU), so
+round-trip and no-arbitrage hold by construction. **Construct-discipline**: a money figure is also
+tagged `construct` (wtp / compensation / budget); only same-construct figures are pooled or
+converted (WTP-vs-compensation differ ~100×, so they are reported separately, never averaged).
+
 ## Phasing
 
 - **Phase 1 (now):** curated structured tariffs + a web-verified research-agent seed → first `ratios.json`. KB-scale, high signal.

@@ -60,7 +60,9 @@ def main():
         sel = [r for r in rows if ratio in (r.get("informs_ratio") or [])]
         vals = [float(r.get(field)) for r in sel if isinstance(r.get(field), (int, float)) and r.get(field) and r.get(field) > 0]
         jur = {r.get("jurisdiction") for r in sel if r.get("jurisdiction")}
-        rec = {"kind": kind, "n": len(vals), "jurisdictions": len(jur)}
+        trad = {r.get("legal_tradition") for r in sel if r.get("legal_tradition")}
+        rec = {"kind": kind, "n": len(vals), "jurisdictions": len(jur),
+               "legal_traditions": len(trad), "traditions": sorted(t for t in trad if t)}
         if len(vals) >= 2:
             lv = np.log(vals)
             sigma = float(np.std(lv, ddof=1))
@@ -86,7 +88,7 @@ def main():
 
     OUT.write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"sampling_adequacy: wrote {OUT.relative_to(DATA)}")
-    print(f"  {'ratio':16s} {'kind':11s} {'n':>3s} {'jur':>3s} {'sig':>5s}  target")
+    print(f"  {'ratio':16s} {'kind':11s} {'n':>3s} {'jur':>3s} {'trd':>3s} {'sig':>5s}  target")
     for k, v in out.items():
         tgt = ""
         if v.get("kind") == "geomean" and "n_for_25pct" in v:
@@ -97,7 +99,8 @@ def main():
         else:
             tgt = v.get("status", "")
         sig = f"{v.get('sigma_log', float('nan')):5.2f}" if "sigma_log" in v else "  -  "
-        print(f"  {k:16s} {v['kind']:11s} {v['n']:3d} {v['jurisdictions']:3d} {sig}  {tgt}")
+        print(f"  {k:16s} {v['kind']:11s} {v['n']:3d} {v['jurisdictions']:3d} {v.get('legal_traditions', 0):3d} {sig}  {tgt}")
+    print("  (trd = independent legal traditions represented; universality wants this high, not just jur)")
 
 
 if __name__ == "__main__":

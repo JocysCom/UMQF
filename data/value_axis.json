@@ -1,21 +1,22 @@
 {
+  "money_unit": "GCU",
   "nodes_log_value": {
-    "usd": 0.0,
-    "life_year": 12.496387495118427,
-    "welfare_year": 11.33744486318933
+    "gcu": 0.0,
+    "life_year": -3.2838291393023558,
+    "welfare_year": -4.310659930062563
   },
   "LE_years": 40,
   "reconciled_rates": {
-    "life_to_usd": 10694786.623335708,
-    "life_year_to_usd": 267369.6655833927,
-    "welfare_year_to_usd": 83905.36731625903,
-    "welfare_year_to_life_year": 0.313817826465766
+    "life_to_gcu": 1.4993779390773936,
+    "life_year_to_gcu": 0.03748444847693484,
+    "welfare_year_to_gcu": 0.01342468731558482,
+    "welfare_year_to_life_year": 0.35814018509156886
   },
-  "measured_arbitrage_cycle": 2.10206106870229,
+  "measured_arbitrage_cycle": 1.4142265886287626,
   "reconciliation_residuals_log": {
-    "life_year->usd (VLY)": -0.2476,
-    "welfare_year->usd": 0.2476,
-    "welfare_year->life_year": -0.2476
+    "life_year->gcu (VLY)": -0.1155,
+    "welfare_year->gcu": 0.1155,
+    "welfare_year->life_year": -0.1155
   },
   "money_concavity": {
     "ratio": "money_concavity",
@@ -34,17 +35,18 @@
   },
   "In": {
     "ratio": "In",
-    "meaning": "intent multiplier (jail vs intentional, harm=death)",
+    "meaning": "intent multiplier (jail vs intentional, harm=death), averaged within-jurisdiction",
     "unit": "x of intentional",
     "estimate": {
-      "reckless": 0.404,
-      "negligent": 0.27
+      "reckless": 0.357,
+      "negligent": 0.24
     },
     "form": "point",
-    "n": 15,
+    "n": 54,
+    "jurisdictions": 16,
     "confidence": "medium",
     "status": "estimated",
-    "notes": "Empirical In from murder vs manslaughter sentencing."
+    "notes": "Per-jurisdiction ratio then averaged, so absolute sentence-scale differences cancel. Murder=life minimum-terms bias this downward."
   },
-  "note": "convert(x,a,b)=x*exp(v[a]-v[b]); invertible & arbitrage-free by construction. measured_arbitrage_cycle is the raw-data inconsistency (target 1.0)."
+  "note": "Money is GCU (income-normalized). convert(x,a,b)=x*exp(v[a]-v[b]); invertible & arbitrage-free by construction. measured_arbitrage_cycle is the raw-data inconsistency (target 1.0)."
 }

@@ -2,6 +2,20 @@
   "currency": "USD",
   "currency_year": 2024,
   "life_expectancy_years_ref": 40,
+  "money_hub_unit": "GCU",
+  "gcu_usd_default": 950000,
+  "_gcu_note": "1 GCU ~ lifetime resource throughput (GDP per capita x life expectancy), approx 2024 USD. Money is normalized to GCU before conversion so exchange rates are income-invariant.",
+  "gcu_usd_by_jurisdiction": {
+    "US": 6400000, "UK": 4000000, "England": 4000000, "Wales": 4000000, "Scotland": 4000000,
+    "Canada": 4400000, "Australia": 5500000, "Ireland": 6000000, "New Zealand": 3900000,
+    "Germany": 4200000, "France": 3700000, "Netherlands": 5100000, "Sweden": 4600000,
+    "Japan": 2800000, "Spain": 2700000, "South Korea": 2900000, "Korea": 2900000, "Italy": 3000000,
+    "China": 980000, "Russia": 950000, "Brazil": 760000, "Mexico": 860000, "Indonesia": 350000,
+    "South Africa": 400000, "Egypt": 250000, "Nigeria": 120000, "Thailand": 580000, "Chile": 1360000,
+    "Pakistan": 110000, "India": 175000, "Saudi Arabia": 2600000, "Iran": 310000,
+    "United Arab Emirates": 3900000, "UAE": 3900000, "Qatar": 6400000, "Kuwait": 2600000,
+    "global": 950000, "international": 950000, "EU": 4000000
+  },
   "conversion_forms": {
     "default": "power",
     "survival_odds": "logistic",

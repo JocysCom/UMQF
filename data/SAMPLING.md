@@ -6,6 +6,34 @@ independent world sources that its confidence interval is tight and stable. This
 the target sample sizes and the source matrix. `scripts/sampling_adequacy.py` reports the
 achieved CI and the remaining gap per ratio, so collection is **variance-driven**, not arbitrary.
 
+## Universality through diverse, independent sources
+
+The formula seeks rates that are **universal** — survival-grounded invariants, not one culture's
+quirks. So prefer **maximally independent** value systems: geographically, culturally, and
+temporally distant, drawn from different legal traditions (common law, civil law, Islamic/Sharia,
+Chinese-socialist, customary, and historical codes). Six Anglophone common-law jurisdictions are
+*not* six independent samples — they share heritage and count as roughly one. `sampling_adequacy.py`
+therefore reports **independent legal traditions** (`trd`) alongside jurisdiction count; target
+≥3–4 distinct traditions per ratio.
+
+**Convergence is the universality test.** When distant, independent systems agree on a ratio, that
+is strong evidence it is a real invariant. When they diverge, either the ratio is culture-dependent
+or the instruments measure different *constructs* — which must then be separated, not averaged.
+
+- **Independent life↔money anchors:** Islamic **diyya** (blood money, ~1,400 years, many cultures)
+  and historical **wergild** / Code of Hammurabi / Roman law give life and injury prices from systems
+  with no shared lineage. Expect diyya (~$50–100k *compensation*) to diverge ~100× from Western
+  **VSL** (~$13.7M *willingness-to-pay*): that gap is not noise but a construct difference
+  (backward-looking compensation vs forward-looking WTP vs healthcare budget). Reconcile *within* a
+  construct; treat cross-construct gaps as informative.
+- **Effective independent N:** down-weight correlated jurisdictions (shared legal family / colonial
+  origin). A ratio confirmed by common law **and** civil law **and** Islamic law **and** a historical
+  code is far more "universal" than one confirmed by 20 EU states.
+- **Non-human entities (aspiration):** universality ultimately spans life forms. The schema carries
+  `entity_type` (human/ai/alien); only `human` data exists today, but AI-derived or hypothetically
+  non-human valuations would slot in as further independent systems — agreement *across life forms*
+  would be the ultimate universality proof.
+
 ## How target N is set (precision, not a guess)
 
 Values span orders of magnitude, so we work in log space. For a geometric-mean estimate to fall

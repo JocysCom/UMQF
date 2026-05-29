@@ -1,62 +1,104 @@
 {
   "L_to_M": {
     "kind": "geomean",
-    "n": 9,
-    "jurisdictions": 7,
-    "sigma_log": 1.525,
-    "geo_mean": 32530565.898713637,
-    "achieved_95ci_factor": 2.71,
-    "n_for_25pct": 180,
-    "n_for_10pct": 984,
-    "gap_to_25pct": 171
+    "n": 42,
+    "jurisdictions": 31,
+    "legal_traditions": 5,
+    "traditions": [
+      "chinese_socialist",
+      "civil_law",
+      "common_law",
+      "islamic_law",
+      "other"
+    ],
+    "sigma_log": 2.988,
+    "geo_mean": 652224.0548791586,
+    "achieved_95ci_factor": 2.47,
+    "n_for_25pct": 689,
+    "n_for_10pct": 3777,
+    "gap_to_25pct": 647
   },
   "W_to_M": {
     "kind": "geomean",
-    "n": 22,
-    "jurisdictions": 7,
-    "sigma_log": 1.493,
-    "geo_mean": 98204.59179432112,
-    "achieved_95ci_factor": 1.87,
-    "n_for_25pct": 173,
-    "n_for_10pct": 944,
-    "gap_to_25pct": 151
+    "n": 32,
+    "jurisdictions": 23,
+    "legal_traditions": 5,
+    "traditions": [
+      "civil_law",
+      "common_law",
+      "customary",
+      "islamic_law",
+      "other"
+    ],
+    "sigma_log": 1.473,
+    "geo_mean": 65580.81000614657,
+    "achieved_95ci_factor": 1.67,
+    "n_for_25pct": 168,
+    "n_for_10pct": 918,
+    "gap_to_25pct": 136
   },
   "W_to_L": {
     "kind": "geomean",
-    "n": 24,
-    "jurisdictions": 2,
-    "sigma_log": 0.904,
-    "geo_mean": 0.33699449326491066,
-    "achieved_95ci_factor": 1.44,
-    "n_for_25pct": 64,
-    "n_for_10pct": 346,
-    "gap_to_25pct": 40
+    "n": 39,
+    "jurisdictions": 11,
+    "legal_traditions": 5,
+    "traditions": [
+      "chinese_socialist",
+      "civil_law",
+      "common_law",
+      "international",
+      "other"
+    ],
+    "sigma_log": 1.099,
+    "geo_mean": 0.3651310920887351,
+    "achieved_95ci_factor": 1.41,
+    "n_for_25pct": 94,
+    "n_for_10pct": 511,
+    "gap_to_25pct": 55
   },
   "liberty_time": {
     "kind": "geomean",
-    "n": 9,
-    "jurisdictions": 3,
-    "sigma_log": 2.867,
-    "geo_mean": 3.1919681398004682,
-    "achieved_95ci_factor": 6.51,
-    "n_for_25pct": 635,
-    "n_for_10pct": 3477,
-    "gap_to_25pct": 626
+    "n": 19,
+    "jurisdictions": 11,
+    "legal_traditions": 3,
+    "traditions": [
+      "civil_law",
+      "common_law",
+      "other"
+    ],
+    "sigma_log": 2.067,
+    "geo_mean": 5.920722995683882,
+    "achieved_95ci_factor": 2.53,
+    "n_for_25pct": 330,
+    "n_for_10pct": 1807,
+    "gap_to_25pct": 311
   },
   "In": {
     "kind": "group_ratio",
-    "n": 16,
-    "jurisdictions": 4,
-    "sigma_log": 1.011,
-    "geo_mean": 7.623142380583624,
+    "n": 55,
+    "jurisdictions": 22,
+    "legal_traditions": 4,
+    "traditions": [
+      "chinese_socialist",
+      "civil_law",
+      "common_law",
+      "islamic_law"
+    ],
+    "sigma_log": 0.941,
+    "geo_mean": 8.4730875686744,
     "jur_target": 8,
-    "jur_gap": 4,
+    "jur_gap": 0,
     "precision_note": "precision = CI on the group contrast / ordinal coverage; driven by jurisdiction count, not raw-N."
   },
   "money_concavity": {
     "kind": "curve",
     "n": 20,
     "jurisdictions": 8,
+    "legal_traditions": 2,
+    "traditions": [
+      "civil_law",
+      "common_law"
+    ],
     "sigma_log": 3.827,
     "geo_mean": 741709.7629376696,
     "decades_covered": 5.6,
@@ -66,10 +108,19 @@
   },
   "severity_ladder": {
     "kind": "ladder",
-    "n": 42,
-    "jurisdictions": 16,
-    "sigma_log": 1.115,
-    "geo_mean": 5.584172237029478,
+    "n": 91,
+    "jurisdictions": 55,
+    "legal_traditions": 6,
+    "traditions": [
+      "chinese_socialist",
+      "civil_law",
+      "common_law",
+      "customary",
+      "islamic_law",
+      "other"
+    ],
+    "sigma_log": 1.019,
+    "geo_mean": 7.277247769700918,
     "jur_target": 8,
     "jur_gap": 0,
     "precision_note": "precision = CI on the group contrast / ordinal coverage; driven by jurisdiction count, not raw-N."

@@ -19,6 +19,7 @@
     "penalty_fine_usd2024": { "type": ["number", "null"] },
     "compensation_usd2024": { "type": ["number", "null"] },
     "money_value_usd2024": { "type": ["number", "null"], "description": "headline money figure normalized to 2024 USD" },
+    "money_value_gcu": { "type": ["number", "null"], "description": "money_value normalized to Global Currency Units (USD / local lifetime throughput); income-invariant, used for all conversion (backfilled by categorize_ai/gcu.py)" },
     "harm": {
       "type": ["object", "null"],
       "description": "optional zoom-in: sub-particles of the harm",
@@ -38,6 +39,9 @@
     },
     "informs_ratio": { "type": "array", "items": { "type": "string" }, "description": "L_to_M | W_to_M | W_to_L | In | money_concavity | liberty_time | severity_ladder" },
     "source_citation": { "type": "string" },
-    "confidence": { "enum": ["high", "medium", "low"] }
+    "confidence": { "enum": ["high", "medium", "low"] },
+    "legal_tradition": { "enum": ["common_law", "civil_law", "islamic_law", "chinese_socialist", "customary", "historical", "international", "other"], "description": "value-system family; used to measure cross-system universality (independent traditions count more than correlated jurisdictions)" },
+    "entity_type": { "enum": ["human", "ai", "alien", "other"], "description": "the entity whose value is priced; default human. Reserved for future non-human calibration (the formula aims to be universal across life forms)." },
+    "construct": { "enum": ["wtp", "compensation", "budget", "punishment", "other"], "description": "what a money figure measures: wtp=willingness-to-pay (VSL), compensation=make-whole (diyya/wrongful-death/tort), budget=cost-effectiveness threshold (QALY). Different constructs are NOT comparable and must never be averaged together." }
   }
 }

@@ -1,33 +1,53 @@
 {
-  "generated_from": "111 observations in data/observations/*.jsonl",
+  "generated_from": "253 observations in data/observations/*.jsonl",
   "currency": "USD_2024",
   "method": "pandas/numpy fits; forms linear/power/log selected by R2 (see universal_formulas.md)",
   "ratios": [
     {
       "ratio": "L_to_M",
-      "meaning": "money value of one life (anchors dOS=-1)",
-      "unit": "USD_2024 per life",
-      "estimate": 13700000.0,
-      "range": [
-        11500000.0,
-        890000000.0
-      ],
-      "n": 9,
+      "meaning": "GCU value of one life (anchors dOS=-1); income-normalized; split by construct",
+      "unit": "GCU per life",
+      "estimate": 1.683,
+      "primary_construct": "wtp",
+      "by_construct": {
+        "compensation": {
+          "median_gcu": 0.015,
+          "range_gcu": [
+            0.001,
+            139.062
+          ],
+          "median_usd": 40000.0,
+          "n": 18,
+          "traditions": [
+            "civil_law",
+            "common_law",
+            "islamic_law",
+            "other"
+          ]
+        },
+        "wtp": {
+          "median_gcu": 1.683,
+          "range_gcu": [
+            0.029,
+            4.571
+          ],
+          "median_usd": 2305000.0,
+          "n": 24,
+          "traditions": [
+            "chinese_socialist",
+            "civil_law",
+            "common_law",
+            "islamic_law",
+            "other"
+          ]
+        }
+      },
+      "cross_construct_ratio_wtp_over_compensation": 112.2,
+      "n": 42,
       "form": "point",
       "confidence": "high",
-      "sources": [
-        "vsl-dot-2024",
-        "vsl-epa-approx-2024",
-        "chicago-hospital-malpractice-verdict",
-        "hill-v-naphcare-jail-death",
-        "metro-north-valhalla-crossing-settlement",
-        "vsl-us-dot",
-        "vsl-us-epa",
-        "vsl-us-hhs",
-        "williams-v-greystar-crane-collapse"
-      ],
       "status": "estimated",
-      "notes": "Median of VSL / wrongful-death figures. dOS=-1 maps to this USD amount."
+      "notes": "Income-normalized (money/GCU): VSL is ~constant in GCU though ~30x in USD. WTP anchors dOS=-1; compensation is a separate, lower construct (not averaged in). diyya identity multipliers are cultural, excluded by UMQF."
     },
     {
       "ratio": "W_to_L",
@@ -70,22 +90,30 @@
     },
     {
       "ratio": "W_to_M",
-      "meaning": "money value of one welfare-year (QALY)",
-      "unit": "USD_2024 per welfare-yr",
-      "estimate": 65500.0,
+      "meaning": "GCU value of one welfare-year (QALY threshold), income-normalized",
+      "unit": "GCU per welfare-yr",
+      "estimate": 0.01196,
       "range": [
-        31000.0,
-        100000.0
+        0.006,
+        0.04368
       ],
-      "n": 2,
+      "n": 8,
       "form": "point",
       "confidence": "medium",
       "sources": [
         "nice-qaly-threshold",
-        "us-qaly-threshold"
+        "us-qaly-threshold",
+        "australia-pbac-50000-aud-qaly",
+        "canada-cadth-50000-cad-qaly",
+        "germany-iqwig-no-threshold",
+        "netherlands-zin-80000-eur-qaly",
+        "qaly-intl-cross-jurisdiction-midpoint",
+        "sweden-tlv-1000000-sek-qaly",
+        "thailand-hitap-160000-thb-qaly",
+        "who-choice-cmh-gdp-multiplier-daly"
       ],
       "status": "estimated",
-      "notes": "Cost-effectiveness thresholds per QALY."
+      "notes": "Cost-effectiveness thresholds per QALY, normalized to GCU."
     },
     {
       "ratio": "suffering_severity_to_money",
@@ -104,17 +132,18 @@
     },
     {
       "ratio": "In",
-      "meaning": "intent multiplier (jail vs intentional, harm=death)",
+      "meaning": "intent multiplier (jail vs intentional, harm=death), averaged within-jurisdiction",
       "unit": "x of intentional",
       "estimate": {
-        "reckless": 0.404,
-        "negligent": 0.27
+        "reckless": 0.357,
+        "negligent": 0.24
       },
       "form": "point",
-      "n": 15,
+      "n": 54,
+      "jurisdictions": 16,
       "confidence": "medium",
       "status": "estimated",
-      "notes": "Empirical In from murder vs manslaughter sentencing."
+      "notes": "Per-jurisdiction ratio then averaged, so absolute sentence-scale differences cancel. Murder=life minimum-terms bias this downward."
     },
     {
       "ratio": "money_concavity",
@@ -137,79 +166,79 @@
       "unit": "jail-yr (norm to max)",
       "entries": [
         {
+          "id": "usa-ohio-mozingo-4-days",
+          "label": "USA (Ohio) — State v. William Mozingo Jr., Summit County (Akron)",
+          "jail_years": 31.5,
+          "norm": 1.0
+        },
+        {
           "id": "uk-murder-30-year-starting-point",
           "label": "Murder, 30-year minimum-term starting point",
           "jail_years": 30.0,
-          "norm": 1.0
+          "norm": 0.952
+        },
+        {
+          "id": "jp-satsujin-199-penal-code",
+          "label": "Satsujin (Art. 199) – death, life, or ≥ 5 years",
+          "jail_years": 30.0,
+          "norm": 0.952
+        },
+        {
+          "id": "nl-moord-289-wvsr",
+          "label": "Moord (Art. 289 WvSr) – life or up to 30 years",
+          "jail_years": 30.0,
+          "norm": 0.952
+        },
+        {
+          "id": "fr-meurtre-221-1-cp",
+          "label": "Meurtre (Art. 221-1) – 30 years réclusion criminelle",
+          "jail_years": 30.0,
+          "norm": 0.952
+        },
+        {
+          "id": "australia-nsw-murder-actual-mean-head-25-6yr",
+          "label": "Murder, actual sentences imposed (NSW Sentencing Council Homicide report)",
+          "jail_years": 25.6,
+          "norm": 0.813
+        },
+        {
+          "id": "nl-doodslag-287-wvsr",
+          "label": "Doodslag (Art. 287 WvSr) – up to 25 years",
+          "jail_years": 25.0,
+          "norm": 0.794
+        },
+        {
+          "id": "canada-first-degree-murder-parole-floor-25yr",
+          "label": "First-degree murder (Criminal Code s. 235 / s. 745(a))",
+          "jail_years": 25.0,
+          "norm": 0.794
         },
         {
           "id": "uk-murder-25-year-starting-point",
           "label": "Murder, 25-year minimum-term starting point (weapon taken to scene)",
           "jail_years": 25.0,
-          "norm": 0.833
+          "norm": 0.794
         },
         {
           "id": "us-federal-second-degree-murder",
           "label": "Second-degree murder, USSG level 38, 235-293 mo at CHC I",
           "jail_years": 22.0,
-          "norm": 0.733
+          "norm": 0.698
         },
         {
-          "id": "us-federal-kidnapping-minor-victim-mandatory-minimum-20-years",
-          "label": "18 U.S.C. §1201(g): mandatory minimum 20 years where victim is a minor and offender is not parent/close relative/legal custodian",
+          "id": "scotland-murder-mandatory-life-punishment-part-20-5yr",
+          "label": "Murder, mandatory life with punishment part (Criminal Procedure (Scotland) Act 1995 s. 205)",
+          "jail_years": 20.5,
+          "norm": 0.651
+        },
+        {
+          "id": "indonesia-art340-premeditated-murder",
+          "label": "Premeditated murder / pembunuhan berencana (Art. 340): death, life, or up to 20 years",
           "jail_years": 20.0,
-          "norm": 0.667
-        },
-        {
-          "id": "uk-unlawful-act-manslaughter-tier-a",
-          "label": "Unlawful-act manslaughter tier A (start 18yr, range 11-24yr)",
-          "jail_years": 18.0,
-          "norm": 0.6
-        },
-        {
-          "id": "ussg-2b1-1-loss-over-550000000-level36",
-          "label": "USSG §2B1.1(b)(1)(P): >$550,000,000 → +30 levels (level 36) → 188–235 months, Category I",
-          "jail_years": 17.625,
-          "norm": 0.588
-        },
-        {
-          "id": "uk-kidnap-false-imprisonment-overall-range",
-          "label": "Kidnap/False Imprisonment definitive guideline; range community order to 16 years; max life",
-          "jail_years": 16.0,
-          "norm": 0.533
-        },
-        {
-          "id": "uk-murder-15-year-default-starting-point",
-          "label": "Murder, 15-year default minimum-term starting point",
-          "jail_years": 15.0,
-          "norm": 0.5
-        },
-        {
-          "id": "ussg-2b1-1-loss-over-250000000-level34",
-          "label": "USSG §2B1.1(b)(1)(O): >$250,000,000 → +28 levels (level 34) → 151–188 months, Category I",
-          "jail_years": 14.13,
-          "norm": 0.471
-        },
-        {
-          "id": "us-federal-kidnapping-30-day-duration-enhancement-level-34",
-          "label": "USSG §2A4.1(b)(4)(A): +2 levels if not released before 30 days; level 34 = 151-188 months at CHC I; Background note cites increased suffering and incentive to release",
-          "jail_years": 12.58,
-          "norm": 0.419
-        },
-        {
-          "id": "uk-unlawful-act-manslaughter-tier-b",
-          "label": "Unlawful-act manslaughter tier B (start 12yr, range 8-16yr)",
-          "jail_years": 12.0,
-          "norm": 0.4
-        },
-        {
-          "id": "uk-gbh-s18-cat1",
-          "label": "GBH s.18 Category 1",
-          "jail_years": 12.0,
-          "norm": 0.4
+          "norm": 0.635
         }
       ],
-      "n": 43,
+      "n": 92,
       "form": "ordinal",
       "confidence": "medium",
       "status": "estimated",
@@ -217,33 +246,24 @@
     },
     {
       "ratio": "liberty_time",
-      "meaning": "custodial response per duration of liberty taken",
-      "unit": "jail-yr per yr liberty lost",
-      "n": 12,
+      "meaning": "custodial years imposed per year of liberty taken",
+      "unit": "jail-yr per liberty-yr",
+      "estimate": 521.43,
+      "range": [
+        0.65,
+        3406.67
+      ],
+      "n": 9,
       "form": "point",
       "confidence": "low",
       "status": "estimated",
-      "sources": [
-        "germany-substitute-imprisonment-2to1",
-        "uk-kidnap-duration-formal-grading-axis",
-        "uk-kidnap-false-imprisonment-overall-range",
-        "uk-kidnap-least-serious-culpability-c-harm-3",
-        "uk-kidnap-mid-tier-culpability-b-harm-2",
-        "uk-kidnap-most-serious-culpability-a-harm-1",
-        "us-federal-kidnapping-30-day-duration-enhancement-level-34",
-        "us-federal-kidnapping-7-day-duration-enhancement-level-33",
-        "us-federal-kidnapping-base-offense-level-32",
-        "us-federal-kidnapping-minor-victim-mandatory-minimum-20-years",
-        "us-federal-kidnapping-non-duration-aggravators-context",
-        "us-federal-kidnapping-statutory-penalty-18-usc-1201"
-      ],
-      "notes": "From false imprisonment / kidnapping; refine with explicit durations."
+      "notes": "Median custody-to-deprivation ratio (retributive multiplier > 1 expected). Durations parsed best-effort."
     }
   ],
   "triangulation": {
     "check": "W_to_L =? W_to_M / value_of_a_life_year",
-    "value_of_a_life_year_usd": 342500.0,
-    "implied_W_to_L_from_money": 0.191,
+    "value_of_a_life_year_usd": 0.0,
+    "implied_W_to_L_from_money": 0.284,
     "measured_W_to_L": 0.402,
     "verdict": "consistent (same order of magnitude)"
   }

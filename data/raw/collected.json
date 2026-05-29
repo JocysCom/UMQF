@@ -1970,6 +1970,2900 @@
         "source_citation": "Reported via Lubin & Meyer / TopVerdict roundup of 2023-2024 largest verdicts (lubinandmeyer.com/news/largest-verdicts-settlements.html) — verdict total documented but full party/court detail not independently confirmed in primary filings.",
         "confidence": "low"
       }
+    ],
+    "in_commonlaw": [
+      {
+        "id": "canada-first-degree-murder-parole-floor-25yr",
+        "source": "in_commonlaw",
+        "summary": "Canada first-degree (planned and deliberate, intentional) murder carries mandatory life imprisonment with a fixed 25-year parole-ineligibility period.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "25 years (parole-ineligibility floor)",
+        "intent": "intentional",
+        "jurisdiction": "Canada (federal)",
+        "year": null,
+        "label_raw": "First-degree murder (Criminal Code s. 235 / s. 745(a))",
+        "penalty_jail_years": 25,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Criminal Code of Canada, RSC 1985 c. C-46, ss. 235, 745(a); Justice Laws Website https://laws-lois.justice.gc.ca/eng/acts/C-46/section-745.html; Public Safety Canada, Sentence Calculation Fast Facts (2021)",
+        "confidence": "high"
+      },
+      {
+        "id": "canada-second-degree-murder-parole-floor-10-25yr",
+        "source": "in_commonlaw",
+        "summary": "Canada second-degree (intentional but not planned) murder carries mandatory life imprisonment with a judge-set parole-ineligibility period of 10 to 25 years (default 10).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "10 to 25 years (parole-ineligibility floor; default 10)",
+        "intent": "intentional",
+        "jurisdiction": "Canada (federal)",
+        "year": null,
+        "label_raw": "Second-degree murder (Criminal Code s. 745(c) / s. 745.4)",
+        "penalty_jail_years": 10,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Criminal Code of Canada, RSC 1985 c. C-46, ss. 745(c), 745.4; https://laws-lois.justice.gc.ca/eng/acts/C-46/section-745.html",
+        "confidence": "high"
+      },
+      {
+        "id": "canada-manslaughter-parole-floor-7yr",
+        "source": "in_commonlaw",
+        "summary": "Canada manslaughter (reckless/negligent unlawful-act homicide, no intent to kill) has no general mandatory minimum and, where a life sentence is imposed, parole eligibility arises at 7 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "7 years (parole-eligibility floor where life imposed; extendable to 10 under s. 743.6)",
+        "intent": "reckless",
+        "jurisdiction": "Canada (federal)",
+        "year": null,
+        "label_raw": "Manslaughter (Criminal Code s. 236)",
+        "penalty_jail_years": 7,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Criminal Code of Canada, RSC 1985 c. C-46, s. 236; https://laws-lois.justice.gc.ca/eng/acts/C-46/section-236.html",
+        "confidence": "high"
+      },
+      {
+        "id": "australia-nsw-murder-snpp-20yr",
+        "source": "in_commonlaw",
+        "summary": "NSW (Australia) murder (intentional or reckless indifference to human life) carries a standard non-parole period of 20 years, rising to 25 years where the victim is a child or certain public officials.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "20 years (standard non-parole period; 25 years for child/public-official victims)",
+        "intent": "intentional",
+        "jurisdiction": "Australia (New South Wales)",
+        "year": 2003,
+        "label_raw": "Murder, SNPP (Crimes Act 1900 (NSW) s. 19A; Crimes (Sentencing Procedure) Act 1999 s. 54D)",
+        "penalty_jail_years": 20,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Crimes Act 1900 (NSW) s. 19A; Crimes (Sentencing Procedure) Act 1999 (NSW) Table to s. 54D; NSW Judicial Commission Sentencing Bench Book 'Murder' https://www.judcom.nsw.gov.au/publications/benchbks/sentencing/murder.html",
+        "confidence": "high"
+      },
+      {
+        "id": "australia-nsw-murder-actual-mean-head-25-6yr",
+        "source": "in_commonlaw",
+        "summary": "NSW (Australia) actual murder sentences in the 20-year SNPP cohort (80 of 85 adults, excluding 5 life) had a mean head sentence of 25.6 years and a mean non-parole period of 18.9 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "25.6 years mean head sentence; 18.9 years mean non-parole period",
+        "intent": "intentional",
+        "jurisdiction": "Australia (New South Wales)",
+        "year": 2021,
+        "label_raw": "Murder, actual sentences imposed (NSW Sentencing Council Homicide report)",
+        "penalty_jail_years": 25.6,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "NSW Sentencing Council, Homicide report, May 2021, https://sentencingcouncil.nsw.gov.au/content/dam/dcj/sentencing-council/documents/our-work/homicide/homicide-report.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "australia-nsw-manslaughter-actual-mean-head-8yr",
+        "source": "in_commonlaw",
+        "summary": "NSW (Australia) manslaughter (reckless/negligent, no intent to kill) actual sentences for 80 imprisoned adults had a mean head sentence of 8 years (range 3-16) and a mean non-parole period of 5.3 years (range 1.5-12).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "8 years mean head sentence (range 3-16); 5.3 years mean non-parole period (range 1.5-12)",
+        "intent": "reckless",
+        "jurisdiction": "Australia (New South Wales)",
+        "year": 2021,
+        "label_raw": "Manslaughter, actual sentences imposed (max 25 years; NSW Sentencing Council Homicide report)",
+        "penalty_jail_years": 8,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "NSW Sentencing Council, Homicide report, May 2021, https://sentencingcouncil.nsw.gov.au/content/dam/dcj/sentencing-council/documents/our-work/homicide/homicide-report.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "ireland-murder-mandatory-life-served-20yr",
+        "source": "in_commonlaw",
+        "summary": "Ireland murder (intentional killing or intent to cause serious injury) carries mandatory life imprisonment, with parole eligibility after 12 years and average time actually served on a life sentence of about 20 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "~20 years average time served (parole eligibility after 12 years)",
+        "intent": "intentional",
+        "jurisdiction": "Ireland (Republic of Ireland)",
+        "year": null,
+        "label_raw": "Murder (Criminal Justice Act 1990, s. 2)",
+        "penalty_jail_years": 20,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Criminal Justice Act 1990 (Ireland), s. 2; Parole Act 2019; Law Reform Commission Mandatory Sentences (LRC 108-2013); 'Life imprisonment in Ireland', https://en.wikipedia.org/wiki/Life_imprisonment_in_Ireland",
+        "confidence": "medium"
+      },
+      {
+        "id": "ireland-manslaughter-typical-4-15yr",
+        "source": "in_commonlaw",
+        "summary": "Ireland manslaughter (unlawful act or gross negligence, no intent to kill) has no mandatory minimum and a maximum of life, with a typical custodial range cited at roughly 4 to 15 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "~4 to 15 years (indicative typical custodial range; no formal guideline)",
+        "intent": "reckless",
+        "jurisdiction": "Ireland (Republic of Ireland)",
+        "year": null,
+        "label_raw": "Manslaughter (no statutory minimum; max life)",
+        "penalty_jail_years": 9.5,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Judicial Council Sentencing Guidelines & Information Committee materials, https://judicialcouncil.ie/assets/uploads/Sentence%20Information%20the%20General%20Public.pdf (practitioner/secondary characterization, indicative only)",
+        "confidence": "low"
+      },
+      {
+        "id": "nz-murder-life-min-10yr",
+        "source": "in_commonlaw",
+        "summary": "New Zealand murder (intentional, or reckless knowing death likely) carries a presumption of life imprisonment with a default minimum period of imprisonment of 10 years before parole.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "10 years (default minimum period of imprisonment before parole)",
+        "intent": "intentional",
+        "jurisdiction": "New Zealand",
+        "year": 2002,
+        "label_raw": "Murder (Sentencing Act 2002 ss. 102-103)",
+        "penalty_jail_years": 10,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Act 2002 (NZ) ss. 102-103, https://www.legislation.govt.nz/act/public/2002/0009/latest/DLM136497.html",
+        "confidence": "high"
+      },
+      {
+        "id": "nz-aggravated-murder-min-17yr",
+        "source": "in_commonlaw",
+        "summary": "New Zealand aggravated murder (s. 104 list, e.g. high brutality or multiple victims) requires a minimum non-parole period of 17 years unless manifestly unjust.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "17 years (minimum non-parole period)",
+        "intent": "intentional",
+        "jurisdiction": "New Zealand",
+        "year": 2002,
+        "label_raw": "Aggravated murder (Sentencing Act 2002 s. 104)",
+        "penalty_jail_years": 17,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Act 2002 (NZ) s. 104; R v Williams [2005] 2 NZLR 506 (CA); https://www.legislation.govt.nz/act/public/2002/0009/latest/DLM136497.html",
+        "confidence": "high"
+      },
+      {
+        "id": "nz-manslaughter-max-life-no-minimum",
+        "source": "in_commonlaw",
+        "summary": "New Zealand manslaughter (no murderous intent, unlawful act or gross negligence) has a maximum of life imprisonment but life is optional, with no statutory minimum and determinate terms usual.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "no statutory minimum; determinate terms usual (max life)",
+        "intent": "reckless",
+        "jurisdiction": "New Zealand",
+        "year": 1961,
+        "label_raw": "Manslaughter (Crimes Act 1961 s. 177)",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Crimes Act 1961 (NZ) s. 177; NZ Law Commission R139 ch. 11 'Sentencing for manslaughter', https://www.lawcom.govt.nz/sites/html-pubs/r139/Chapter+11+-+Sentencing+for+homicide/Sentencing+for+manslaughter.html",
+        "confidence": "medium"
+      },
+      {
+        "id": "india-ipc-302-murder-death-or-life",
+        "source": "in_commonlaw",
+        "summary": "India murder under IPC s. 302 (intent to kill, or intent to cause injury sufficient in the ordinary course to cause death) is punishable by death or life imprisonment plus fine, with life the standard and death reserved for the rarest of rare cases.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "life imprisonment (or death penalty in rarest-of-rare cases)",
+        "intent": "intentional",
+        "jurisdiction": "India",
+        "year": 1860,
+        "label_raw": "Murder, IPC s. 302 (re-enacted as BNS 2023 s. 103)",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Indian Penal Code 1860 s. 302; India Code https://www.indiacode.nic.in/; Bharatiya Nyaya Sanhita 2023 s. 103; analysis https://thelegalschool.in/blog/difference-between-302-and-304-ipc",
+        "confidence": "high"
+      },
+      {
+        "id": "india-ipc-304-part1-culpable-homicide-life-or-10yr",
+        "source": "in_commonlaw",
+        "summary": "India culpable homicide not amounting to murder under IPC s. 304 Part I (act done with intention or knowledge of likely death) is punishable by life imprisonment or up to 10 years plus fine.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "life imprisonment, or up to 10 years (statutory maximum)",
+        "intent": "reckless",
+        "jurisdiction": "India",
+        "year": 1860,
+        "label_raw": "Culpable homicide not amounting to murder, IPC s. 304 Part I (BNS 2023 s. 105)",
+        "penalty_jail_years": 10,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Indian Penal Code 1860 s. 304 Part I; https://www.indiacode.nic.in/show-data?actid=AC_CEN_5_23_00037_186045_1523266765688&orderno=341; BNS 2023 s. 105",
+        "confidence": "high"
+      },
+      {
+        "id": "india-ipc-304-part2-culpable-homicide-up-to-10yr",
+        "source": "in_commonlaw",
+        "summary": "India culpable homicide not amounting to murder under IPC s. 304 Part II (knowledge act is likely to cause death but no intention) is punishable by up to 10 years imprisonment, or fine, or both.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 10 years (statutory maximum; no life)",
+        "intent": "negligent",
+        "jurisdiction": "India",
+        "year": 1860,
+        "label_raw": "Culpable homicide not amounting to murder, IPC s. 304 Part II",
+        "penalty_jail_years": 10,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Indian Penal Code 1860 s. 304 Part II; https://www.indiacode.nic.in/show-data?actid=AC_CEN_5_23_00037_186045_1523266765688&orderno=341",
+        "confidence": "high"
+      },
+      {
+        "id": "scotland-murder-mandatory-life-punishment-part-20-5yr",
+        "source": "in_commonlaw",
+        "summary": "Scotland murder (intent to kill or wicked recklessness) carries mandatory life imprisonment, with an average punishment part of 20.5 years for life sentences in 2023-24.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "20.5 years average punishment part (parole floor) in 2023-24",
+        "intent": "intentional",
+        "jurisdiction": "Scotland (United Kingdom)",
+        "year": 2024,
+        "label_raw": "Murder, mandatory life with punishment part (Criminal Procedure (Scotland) Act 1995 s. 205)",
+        "penalty_jail_years": 20.5,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Criminal Procedure (Scotland) Act 1995 s. 205; Scottish Government, Criminal Proceedings in Scotland 2023-24, Appendix on punishment part of life sentences and OLRs, https://www.gov.scot/publications/criminal-proceedings-in-scotland-2023-24/pages/appendix-length-of-the-punishment-part-of-life-sentences-and-olrs/",
+        "confidence": "high"
+      },
+      {
+        "id": "scotland-culpable-homicide-mean-7yr",
+        "source": "in_commonlaw",
+        "summary": "Scotland culpable homicide (lacks the wicked intent/recklessness of murder, analogous to manslaughter) attracts determinate terms, with 16 offenders receiving an average sentence of about 7 years (2,589 days) in 2021-22.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "~7 years (2,589 days) average determinate sentence in 2021-22",
+        "intent": "reckless",
+        "jurisdiction": "Scotland (United Kingdom)",
+        "year": 2022,
+        "label_raw": "Culpable homicide, determinate sentences (Scots common law)",
+        "penalty_jail_years": 7,
+        "penalty_fine_usd2024": null,
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Scottish Government, Criminal Proceedings in Scotland 2021-22, custodial sentences by type of crime, https://www.gov.scot/publications/criminal-proceedings-scotland-2021-22/pages/13/",
+        "confidence": "high"
+      }
+    ],
+    "in_civillaw": [
+      {
+        "id": "de-mord-211-stgb",
+        "source": "in_civillaw",
+        "summary": "Germany StGB § 211 (Mord): intentional killing with statutory aggravators (base motives, treachery, cruelty) carries mandatory life imprisonment, parole eligible after a 15-year minimum (longer where particular gravity of guilt is found).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "life",
+        "intent": "intentional",
+        "penalty_jail_years": null,
+        "year": 2024,
+        "jurisdiction": "Germany",
+        "label_raw": "Mord (§ 211 StGB) – mandatory life imprisonment",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "StGB § 211 (dejure.org/gesetze/StGB/211.html; gesetze-im-internet.de); summary: Murder in German law, Wikipedia. Premeditated/aggravated intentional killing; parole min 15 yr.",
+        "confidence": "high"
+      },
+      {
+        "id": "de-totschlag-212-stgb",
+        "source": "in_civillaw",
+        "summary": "Germany StGB § 212 (Totschlag): intentional homicide without § 211 aggravators carries 5 to 15 years; especially grave cases → life, lesser cases under § 213 → 1 to 10 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "5 to 15 years (life in especially grave cases)",
+        "intent": "intentional",
+        "penalty_jail_years": 15,
+        "year": 2024,
+        "jurisdiction": "Germany",
+        "label_raw": "Totschlag (§ 212 StGB) – 5 to 15 years",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "StGB § 212 (dejure.org/gesetze/StGB/212.html). Range 5-15 yr; § 213 lesser cases 1-10 yr; especially grave → life.",
+        "confidence": "high"
+      },
+      {
+        "id": "de-fahrlassige-totung-222-stgb",
+        "source": "in_civillaw",
+        "summary": "Germany StGB § 222 (Fahrlässige Tötung): negligent homicide carries up to 5 years imprisonment or a fine.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 5 years",
+        "intent": "negligent",
+        "penalty_jail_years": 5,
+        "year": 2024,
+        "jurisdiction": "Germany",
+        "label_raw": "Fahrlässige Tötung (§ 222 StGB) – up to 5 years or fine",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "StGB § 222 (gesetze-im-internet.de); summary: Murder in German law, Wikipedia. Up to 5 yr imprisonment or fine.",
+        "confidence": "high"
+      },
+      {
+        "id": "fr-meurtre-221-1-cp",
+        "source": "in_civillaw",
+        "summary": "France Code pénal Art. 221-1 (Meurtre): intentional killing carries 30 years' criminal imprisonment (réclusion criminelle).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "30 years",
+        "intent": "intentional",
+        "penalty_jail_years": 30,
+        "year": 2024,
+        "jurisdiction": "France",
+        "label_raw": "Meurtre (Art. 221-1) – 30 years réclusion criminelle",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Légifrance, Code pénal Art. 221-1 (LEGIARTI000006417561). 30 yr réclusion criminelle.",
+        "confidence": "high"
+      },
+      {
+        "id": "fr-assassinat-221-3-cp",
+        "source": "in_civillaw",
+        "summary": "France Code pénal Art. 221-3 (Assassinat): premeditated or ambush murder carries life imprisonment (réclusion criminelle à perpétuité).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "life",
+        "intent": "intentional",
+        "penalty_jail_years": null,
+        "year": 2024,
+        "jurisdiction": "France",
+        "label_raw": "Assassinat (Art. 221-3) – réclusion criminelle à perpétuité (life)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Légifrance, Code pénal Section 1 Art. 221-1 to 221-5-4 (LEGISCTA000006165276). Premeditated/ambush intentional killing → life.",
+        "confidence": "high"
+      },
+      {
+        "id": "fr-homicide-involontaire-221-6-cp",
+        "source": "in_civillaw",
+        "summary": "France Code pénal Art. 221-6 (Homicide involontaire): involuntary/negligent homicide carries up to 5 years plus a €75,000 fine, raised to 10 years plus €150,000 where committed with a deliberate breach of a safety obligation.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 5 years (10 years with deliberate breach)",
+        "intent": "negligent",
+        "penalty_jail_years": 5,
+        "penalty_fine_usd2024": null,
+        "year": 2024,
+        "jurisdiction": "France",
+        "label_raw": "Homicide involontaire (Art. 221-6) – up to 5 yr + €75,000 (10 yr + €150,000 aggravated)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Légifrance, Code pénal Art. 221-6 (LEGIARTI000006417578). Up to 5 yr + €75,000 fine; 10 yr + €150,000 with manquement délibéré. Fine in original EUR; not USD-normalized.",
+        "confidence": "high"
+      },
+      {
+        "id": "nl-doodslag-287-wvsr",
+        "source": "in_civillaw",
+        "summary": "Netherlands Wetboek van Strafrecht Art. 287 (Doodslag): intentional killing without premeditation (manslaughter) carries up to 25 years or a fifth-category fine.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 25 years",
+        "intent": "intentional",
+        "penalty_jail_years": 25,
+        "year": 2024,
+        "jurisdiction": "Netherlands",
+        "label_raw": "Doodslag (Art. 287 WvSr) – up to 25 years",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Dutch Penal Code Art. 287; summary: Murder (Dutch law), Wikipedia. Up to 25 yr or 5th-category fine.",
+        "confidence": "high"
+      },
+      {
+        "id": "nl-moord-289-wvsr",
+        "source": "in_civillaw",
+        "summary": "Netherlands Wetboek van Strafrecht Art. 289 (Moord): premeditated killing (murder) carries life imprisonment or a determinate term up to 30 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "life or up to 30 years",
+        "intent": "intentional",
+        "penalty_jail_years": 30,
+        "year": 2024,
+        "jurisdiction": "Netherlands",
+        "label_raw": "Moord (Art. 289 WvSr) – life or up to 30 years",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Dutch Penal Code Art. 289; summary: Murder (Dutch law), Wikipedia. Premeditated intentional killing; life or determinate ≤ 30 yr.",
+        "confidence": "high"
+      },
+      {
+        "id": "nl-dood-door-schuld-307-wvsr",
+        "source": "in_civillaw",
+        "summary": "Netherlands Wetboek van Strafrecht Art. 307 (Dood door schuld): death by negligence carries up to 2 years for ordinary negligence and up to 4 years for reckless/gross negligence (roekeloosheid).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 2 years (up to 4 years if reckless/gross)",
+        "intent": "negligent",
+        "penalty_jail_years": 4,
+        "year": 2024,
+        "jurisdiction": "Netherlands",
+        "label_raw": "Dood door schuld (Art. 307 WvSr) – up to 2 yr (4 yr gross)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Dutch Penal Code Art. 307; summary: Murder (Dutch law), Wikipedia. Ordinary negligence ≤ 2 yr; reckless/gross negligence ≤ 4 yr.",
+        "confidence": "high"
+      },
+      {
+        "id": "jp-satsujin-199-penal-code",
+        "source": "in_civillaw",
+        "summary": "Japan Penal Code Art. 199 (Satsujin): homicide/murder is punishable by death, life imprisonment with labour, or a definite term of not less than 5 years (up to the 20/30-year statutory cap).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "death, life, or 5 years to statutory cap (20/30 years)",
+        "intent": "intentional",
+        "penalty_jail_years": 30,
+        "year": 1907,
+        "jurisdiction": "Japan",
+        "label_raw": "Satsujin (Art. 199) – death, life, or ≥ 5 years",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Japanese Law Translation, Penal Code Art. 199 (japaneselawtranslation.go.jp/en/laws/view/3581/en). Act No. 45 of 1907, current translation. Death / life with labour / ≥ 5 yr.",
+        "confidence": "high"
+      },
+      {
+        "id": "jp-death-by-negligence-210-penal-code",
+        "source": "in_civillaw",
+        "summary": "Japan Penal Code Art. 210 (death due to negligence): punishable by a fine of up to ¥1,000,000, with no imprisonment as the base penalty.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": null,
+        "intent": "negligent",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "year": 1907,
+        "jurisdiction": "Japan",
+        "label_raw": "Death due to negligence (Art. 210) – fine up to ¥1,000,000",
+        "informs_ratio": [
+          "In"
+        ],
+        "source_citation": "Japanese Law Translation, Penal Code Art. 210 (japaneselawtranslation.go.jp/en/laws/view/3581/en). Fine ≤ ¥1,000,000, no base imprisonment. Fine in original JPY; not USD-normalized.",
+        "confidence": "high"
+      },
+      {
+        "id": "jp-gross-negligence-211-penal-code",
+        "source": "in_civillaw",
+        "summary": "Japan Penal Code Art. 211 (negligence in pursuit of social activities / gross negligence causing death): punishable by imprisonment without work up to 5 years or a fine up to ¥2,500,000.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 5 years",
+        "intent": "negligent",
+        "penalty_jail_years": 5,
+        "penalty_fine_usd2024": null,
+        "year": 1907,
+        "jurisdiction": "Japan",
+        "label_raw": "Gross/occupational negligence causing death (Art. 211) – ≤ 5 yr or ¥2,500,000",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Japanese Law Translation, Penal Code Art. 211 (japaneselawtranslation.go.jp/en/laws/view/3581/en). Imprisonment without work ≤ 5 yr or fine ≤ ¥2,500,000. Fine in original JPY; not USD-normalized.",
+        "confidence": "high"
+      },
+      {
+        "id": "se-mord-brb-ch3-1",
+        "source": "in_civillaw",
+        "summary": "Sweden Brottsbalken Ch. 3 § 1 (Mord): intentional killing (murder) carries a fixed term of 10 to 18 years or life.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "10 to 18 years or life",
+        "intent": "intentional",
+        "penalty_jail_years": 18,
+        "year": 2024,
+        "jurisdiction": "Sweden",
+        "label_raw": "Mord (Brottsbalken Ch.3 §1) – 10 to 18 years or life",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Brottsbalken Ch. 3 § 1; summary: Murder in Swedish law, Wikipedia. Fixed 10-18 yr or life.",
+        "confidence": "high"
+      },
+      {
+        "id": "se-drap-brb-ch3-2",
+        "source": "in_civillaw",
+        "summary": "Sweden Brottsbalken Ch. 3 § 2 (Dråp): less-serious intentional killing (manslaughter) carries 6 to 10 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "6 to 10 years",
+        "intent": "intentional",
+        "penalty_jail_years": 10,
+        "year": 2024,
+        "jurisdiction": "Sweden",
+        "label_raw": "Dråp (Brottsbalken Ch.3 §2) – 6 to 10 years",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Brottsbalken Ch. 3 § 2; summary: Murder in Swedish law, Wikipedia. 6-10 yr.",
+        "confidence": "high"
+      },
+      {
+        "id": "se-vallande-till-annans-dod-brb-ch3-3",
+        "source": "in_civillaw",
+        "summary": "Sweden Brottsbalken Ch. 3 § 3 (Vållande till annans död): negligent homicide carries day-fines (petty cases) up to 2 years imprisonment, with the gross (grovt) variant 1 to 6 years.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "up to 2 years (1 to 6 years if gross)",
+        "intent": "negligent",
+        "penalty_jail_years": 6,
+        "year": 2024,
+        "jurisdiction": "Sweden",
+        "label_raw": "Vållande till annans död (Brottsbalken Ch.3 §3) – day-fines to 2 yr (gross 1-6 yr)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "source_citation": "Brottsbalken Ch. 3 § 3; summary: Murder in Swedish law, Wikipedia. Base: day-fines to ≤ 2 yr; grovt 1-6 yr.",
+        "confidence": "high"
+      }
+    ],
+    "wtol_national": [
+      {
+        "id": "us-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "The United States EQ-5D-5L worst health state (55555) has a utility of -0.573, with about 19.8% of all 3,125 states valued worse than dead, marking the US societal worse-than-dead floor.",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.573,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "United States",
+        "year": 2019,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.573",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Pickard AS, Law EH, Jiang R, et al. United States Valuation of EQ-5D-5L Health States Using an International Protocol. Value in Health 2019;22(8):931-941. https://pubmed.ncbi.nlm.nih.gov/31426935/",
+        "confidence": "high"
+      },
+      {
+        "id": "south-korea-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "South Korea's EQ-5D-5L worst health state (55555) has a utility of -0.778, the most negative and widest worse-than-dead band of the seven jurisdictions.",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.778,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "South Korea",
+        "year": 2016,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.778",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Kim SH, Ahn J, Ock M, et al. The EQ-5D-5L valuation study in Korea. Quality of Life Research 2016;25(7):1845-1852. https://link.springer.com/article/10.1007/s11136-015-1205-2 ; NCBI Bookshelf EQ-5D-5L Value Set Summaries https://www.ncbi.nlm.nih.gov/books/NBK589305/",
+        "confidence": "high"
+      },
+      {
+        "id": "germany-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "Germany's EQ-5D-5L worst health state (55555) has a utility of -0.661 per the primary Ludwig 2018 paper, marking the German worse-than-dead floor (NCBI Bookshelf summary reports -0.612).",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.661,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Germany",
+        "year": 2018,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.661 (NCBI summary -0.612)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Ludwig K, Graf von der Schulenburg JM, Greiner W. German Value Set for the EQ-5D-5L. PharmacoEconomics 2018;36(6):663-674. https://pmc.ncbi.nlm.nih.gov/articles/PMC5954069/ (primary states -0.661; NCBI Bookshelf summary reports -0.612 - discrepancy flagged, verify primary table before final use)",
+        "confidence": "medium"
+      },
+      {
+        "id": "japan-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "Japan's EQ-5D-5L worst health state (55555) has a utility of -0.609, marking the Japanese worse-than-dead floor.",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.609,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Japan",
+        "year": 2016,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.609",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Shiroiwa T, Ikeda S, Noto S, et al. Comparison of Value Set Based on DCE and/or TTO Data: Scoring for EQ-5D-5L Health States in Japan. Value in Health 2016;19(5):648-654. https://pubmed.ncbi.nlm.nih.gov/27565282/ ; NCBI Bookshelf https://www.ncbi.nlm.nih.gov/books/NBK589305/",
+        "confidence": "high"
+      },
+      {
+        "id": "netherlands-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "The Netherlands' EQ-5D-5L worst health state (55555) has a utility of -0.446 (cTTO left-censored at -1, Tobit model), marking the Dutch worse-than-dead floor (NCBI Bookshelf summary reports -0.415).",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.446,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Netherlands",
+        "year": 2016,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.446 (NCBI summary -0.415)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Versteegh MM, Vermeulen KM, Evers SMAA, et al. Dutch Tariff for the Five-Level Version of EQ-5D. Value in Health 2016;19(4):343-352. https://pubmed.ncbi.nlm.nih.gov/27325326/ (NCBI Bookshelf summary lists -0.415 - discrepancy flagged, primary preferred)",
+        "confidence": "high"
+      },
+      {
+        "id": "spain-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "Spain's EQ-5D-5L worst health state (55555) has a utility of -0.382 (hybrid interval-regression approach), the least negative and narrowest worse-than-dead band of the seven jurisdictions.",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.382,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Spain",
+        "year": 2018,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.382",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Ramos-Goni JM, Craig BM, Oppe M, et al. Handling Data Quality Issues to Estimate the Spanish EQ-5D-5L Value Set Using a Hybrid Interval Regression Approach. Value in Health 2018;21(5):596-604. https://pubmed.ncbi.nlm.nih.gov/29753358/ ; NCBI Bookshelf https://www.ncbi.nlm.nih.gov/books/NBK589305/",
+        "confidence": "high"
+      },
+      {
+        "id": "china-eq5d5l-worst-state-utility",
+        "source": "wtol_national",
+        "summary": "China's EQ-5D-5L worst health state (55555) has a utility of -0.391 (TTO, urban Chinese residents), marking the Chinese worse-than-dead floor (NCBI Bookshelf summary reports -0.345).",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.391,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "China",
+        "year": 2017,
+        "label_raw": "EQ-5D-5L worst state (55555) utility = -0.391 (NCBI summary -0.345)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Luo N, Liu G, Li M, et al. Estimating an EQ-5D-5L Value Set for China. Value in Health 2017;20(4):662-669. https://pubmed.ncbi.nlm.nih.gov/28408009/ (NCBI Bookshelf summary lists -0.345 - discrepancy flagged, primary preferred)",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-schizophrenia-acute-disability-weight",
+        "source": "wtol_national",
+        "summary": "Acute schizophrenia has a GBD 2013 disability weight of 0.778 (95% UI 0.606-0.900), the single highest weight across all 235 GBD 2013 health states.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.778,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Global",
+        "year": 2015,
+        "label_raw": "GBD 2013 disability weight, schizophrenia acute state = 0.778 (UI 0.606-0.900)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Salomon JA, Haagsma JA, Davis A, et al. Disability weights for the Global Burden of Disease 2013 study. Lancet Global Health 2015;3(11):e712-e723. https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(15)00069-8/fulltext",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-severe-multiple-sclerosis-disability-weight",
+        "source": "wtol_national",
+        "summary": "Severe multiple sclerosis has a GBD 2013 disability weight of 0.677 (95% UI 0.594-0.757).",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.677,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Global",
+        "year": 2015,
+        "label_raw": "GBD 2013 disability weight, severe multiple sclerosis = 0.677 (UI 0.594-0.757)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Salomon JA, Haagsma JA, Davis A, et al. Disability weights for the Global Burden of Disease 2013 study. Lancet Global Health 2015;3(11):e712-e723. https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(15)00069-8/fulltext ; European valuation: Haagsma JA, et al. Population Health Metrics 2015;13:10. https://pmc.ncbi.nlm.nih.gov/articles/PMC4715333/",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-icu-admission-disability-weight",
+        "source": "wtol_national",
+        "summary": "Acute severe intensive care unit admission has a disability weight of 0.655 (95% UI 0.579-0.727) in the European GBD-protocol valuation.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.655,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Europe (Netherlands, Italy, Sweden, Hungary panel)",
+        "year": 2015,
+        "label_raw": "European GBD-protocol disability weight, ICU admission (acute severe) = 0.655 (UI 0.579-0.727)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Haagsma JA, et al. Assessing disability weights based on the responses of 30,660 people from four European countries. Population Health Metrics 2015;13:10. https://pmc.ncbi.nlm.nih.gov/articles/PMC4715333/",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-spinal-cord-lesion-neck-untreated-disability-weight",
+        "source": "wtol_national",
+        "summary": "Untreated spinal cord lesion at neck level has a disability weight of 0.648 (95% UI 0.578-0.728) in the European GBD-protocol valuation.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.648,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Europe (Netherlands, Italy, Sweden, Hungary panel)",
+        "year": 2015,
+        "label_raw": "European GBD-protocol disability weight, spinal cord lesion at neck level (untreated) = 0.648 (UI 0.578-0.728)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Haagsma JA, et al. Assessing disability weights based on the responses of 30,660 people from four European countries. Population Health Metrics 2015;13:10. https://pmc.ncbi.nlm.nih.gov/articles/PMC4715333/",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-heroin-opioid-dependence-severe-disability-weight",
+        "source": "wtol_national",
+        "summary": "Severe heroin/opioid dependence has a disability weight of 0.624 (95% UI 0.553-0.707) in the European GBD-protocol valuation.",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.624,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Europe (Netherlands, Italy, Sweden, Hungary panel)",
+        "year": 2015,
+        "label_raw": "European GBD-protocol disability weight, heroin/opioid dependence (severe) = 0.624 (UI 0.553-0.707)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Haagsma JA, et al. Assessing disability weights based on the responses of 30,660 people from four European countries. Population Health Metrics 2015;13:10. https://pmc.ncbi.nlm.nih.gov/articles/PMC4715333/",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-major-depressive-disorder-severe-disability-weight",
+        "source": "wtol_national",
+        "summary": "A severe episode of major depressive disorder has a GBD 2013 disability weight of 0.658 (95% UI 0.477-0.807; European point estimate 0.571).",
+        "harm_type": "psychological",
+        "harm_magnitude": 0.658,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Global",
+        "year": 2015,
+        "label_raw": "GBD 2013 disability weight, major depressive disorder severe episode = 0.658 (UI 0.477-0.807; European 0.571)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Salomon JA, Haagsma JA, Davis A, et al. Disability weights for the Global Burden of Disease 2013 study. Lancet Global Health 2015;3(11):e712-e723. https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(15)00069-8/fulltext",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-cancer-terminal-no-medication-disability-weight",
+        "source": "wtol_national",
+        "summary": "Terminal-phase cancer without medication has a GBD 2013 disability weight of 0.569 (European 0.588; with medication 0.540 GBD / 0.515 European).",
+        "harm_type": "suffering",
+        "harm_magnitude": 0.569,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Global",
+        "year": 2015,
+        "label_raw": "GBD 2013 disability weight, cancer terminal phase without medication = 0.569 (European 0.588; with medication 0.540 GBD / 0.515 European)",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Salomon JA, Haagsma JA, Davis A, et al. Disability weights for the Global Burden of Disease 2013 study. Lancet Global Health 2015;3(11):e712-e723. https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(15)00069-8/fulltext ; European: Haagsma JA, et al. Population Health Metrics 2015;13:10. https://pmc.ncbi.nlm.nih.gov/articles/PMC4715333/",
+        "confidence": "high"
+      },
+      {
+        "id": "gbd2013-mild-distance-vision-impairment-disability-weight",
+        "source": "wtol_national",
+        "summary": "Mild distance-vision impairment has a GBD 2013 disability weight of 0.003 (95% UI 0.001-0.007), the lowest of all GBD 2013 weights and the lower-bound anchor of the 0.003-0.778 severity span.",
+        "harm_type": "anchor",
+        "harm_magnitude": 0.003,
+        "harm_duration": null,
+        "intent": "na",
+        "jurisdiction": "Global",
+        "year": 2015,
+        "label_raw": "GBD 2013 disability weight, mild distance-vision impairment = 0.003 (UI 0.001-0.007), lowest weight",
+        "informs_ratio": [
+          "W_to_L"
+        ],
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "source_citation": "Salomon JA, Haagsma JA, Davis A, et al. Disability weights for the Global Burden of Disease 2013 study. Lancet Global Health 2015;3(11):e712-e723. https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(15)00069-8/fulltext",
+        "confidence": "high"
+      }
+    ],
+    "vsl_intl": [
+      {
+        "id": "uk-dft-vpf-road-fatality",
+        "source": "vsl_intl",
+        "summary": "The UK Department for Transport values preventing a single road fatality at about GBP 2.0 million (2022 prices), roughly USD 2.55 million in 2024 dollars.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 2550000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "United Kingdom",
+        "year": 2022,
+        "label_raw": "Value of Preventing a Fatality (VPF): GBP 2.0M (~2022 prices)",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "UK Department for Transport, TAG Unit A4.1 — Social Impact Appraisal, Nov 2022, §2.2 (base value GBP 1M in 1997 prices, indexed to GDP per head); current values in the TAG Data Book. https://assets.publishing.service.gov.uk/media/63a32a8d8fa8f539198d9bf3/TAG_Unit_A4.1_-_Social-impact-appraisal_Nov_2022_Accessible_v1.0.pdf.pdf ; https://www.gov.uk/government/publications/tag-data-book",
+        "confidence": "high"
+      },
+      {
+        "id": "eu-ec-average-vsl",
+        "source": "vsl_intl",
+        "summary": "The European Commission estimates the average statistical value of a life for the EU27+UK at EUR 4.7 million (2024 prices), roughly USD 5.09 million in 2024 dollars.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 5090000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "European Union (EU27+UK average)",
+        "year": 2024,
+        "label_raw": "EU average VSL: EUR 4.7M (2024 prices)",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "EUROCONTROL, Standard Inputs for Economic Analyses §44 Value of a Statistical Life, citing European Commission DG MOVE Handbook on the External Costs of Transport (2019), adjusted to 2024 prices. https://ansperformance.eu/economics/cba/standard-inputs/latest/chapters/value_of_a_statistical_life-vsl.html",
+        "confidence": "high"
+      },
+      {
+        "id": "canada-tbs-vsl",
+        "source": "vsl_intl",
+        "summary": "Canada's Treasury Board mandates a Value of Statistical Life of C$6.11 million in 2004 dollars for federal cost-benefit analysis, about USD 6.9 million when inflated to 2024 dollars.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 6900000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "Canada",
+        "year": 2004,
+        "label_raw": "VSL: C$6.11M (2004 dollars), federal CBA mandated value",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Treasury Board of Canada Secretariat, Canadian Cost-Benefit Analysis Guide: Regulatory Proposals (VSL C$6.11M, departments adjust for inflation via StatCan CPI); 2004 to 2024 CPI ~x1.55 ≈ C$9.5M ÷ 1.370 IRS 2024 avg CAD/USD ≈ USD 6.9M. https://www.tbs-sct.canada.ca/rtrap-parfa/analys/analys-eng.pdf ; https://www.canada.ca/en/treasury-board-secretariat/services/federal-regulatory-management/guidelines-tools/policy-cost-benefit-analysis.html",
+        "confidence": "medium"
+      },
+      {
+        "id": "australia-oia-vsl",
+        "source": "vsl_intl",
+        "summary": "Australia's Office of Impact Analysis recommends a Value of Statistical Life of A$5.7 million in 2024 dollars, roughly USD 3.76 million.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 3760000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "Australia",
+        "year": 2024,
+        "label_raw": "VSL: A$5.7M (2024 dollars), OIA recommended value, 3% discount rate",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Office of Impact Analysis, Guidance Note: Value of Statistical Life (Nov 2024), p.2 (A$5.7M VSL in 2024 dollars via ABS Wage Price Index, underlying Abelson 2007, 3% private time-preference discount rate); A$5.7M ÷ 1.516 IRS 2024 avg AUD/USD ≈ USD 3.76M. https://oia.pmc.gov.au/sites/default/files/2024-11/value-statistical-life-guidance-note.pdf ; https://oia.pmc.gov.au/resources/guidance-assessing-impacts/value-statistical-life",
+        "confidence": "high"
+      },
+      {
+        "id": "australia-oia-vly",
+        "source": "vsl_intl",
+        "summary": "Australia's Office of Impact Analysis recommends a Value of a Statistical Life Year of A$245,000 in 2024 dollars, roughly USD 162,000, as a per-life-year anchor.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 162000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "Australia",
+        "year": 2024,
+        "label_raw": "VLY (Value of a Statistical Life Year): A$245,000 (2024 dollars), 3% discount rate",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Office of Impact Analysis, Guidance Note: Value of Statistical Life (Nov 2024) (A$245,000 per statistical life year in 2024 dollars, 3% private time-preference discount rate); A$245,000 ÷ 1.516 IRS 2024 avg AUD/USD ≈ USD 162,000. https://oia.pmc.gov.au/sites/default/files/2024-11/value-statistical-life-guidance-note.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "nz-waka-kotahi-vosl",
+        "source": "vsl_intl",
+        "summary": "New Zealand's Transport Agency (Waka Kotahi) values a statistical life at NZ$12.5 million at July 2021 prices, roughly USD 8.95 million when escalated to 2024 dollars (about USD 7.56 million at the stated 2021 price basis).",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 8950000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "New Zealand",
+        "year": 2021,
+        "label_raw": "VoSL: NZ$12.5M (July 2021 prices), road-transport appraisal value",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "NZ Transport Agency Waka Kotahi, Monetised Benefits and Costs Manual v1.6 (April 2023, carried in v1.7.x 2024); VoSL raised from NZ$4.88M to NZ$12.5M (2020-21 survey of ~8,000 New Zealanders). NZ$12.5M (2021) ÷ 1.654 IRS 2024 avg NZD/USD ≈ USD 7.56M; escalated to 2024 (NZ CPI ~x1.18 ≈ NZ$14.8M) ÷ 1.654 ≈ USD 8.95M. https://www.nzta.govt.nz/resources/monetised-benefits-and-costs-manual ; https://www.greaterauckland.org.nz/2023/05/04/new-values-of-time-and-life/",
+        "confidence": "medium"
+      },
+      {
+        "id": "japan-cabinet-office-human-loss",
+        "source": "vsl_intl",
+        "summary": "Japan's Cabinet Office values a per-fatality human loss at JPY 226.07 million (a 2007-era willingness-to-pay estimate), roughly USD 1.65 million in 2024 dollars after modest inflation.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 1650000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "Japan",
+        "year": 2007,
+        "label_raw": "Value of human life loss (死亡損失): JPY 226.07M (¥2億2,607万円), Cabinet Office WTP study",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Cabinet Office of Japan (内閣府), 交通事故の被害・損失の経済的分析に関する調査研究報告書 (per-fatality human loss JPY 226.07M via contingent-valuation WTP survey; adopted by MLIT for public-works appraisal). Face value ¥226.07M ÷ 151.353 IRS 2024 avg JPY/USD ≈ USD 1.49M; escalated to 2024 (~¥250M) ≈ USD 1.65M. https://www8.cao.go.jp/koutu/chou-ken/19html/houkoku.html ; https://www.mlit.go.jp/tec/hyouka/public/pdf_kentoukai03/04.pdf",
+        "confidence": "high"
+      },
+      {
+        "id": "japan-academic-choice-experiment-vsl",
+        "source": "vsl_intl",
+        "summary": "An academic stated-preference choice experiment puts Japan's Value of Statistical Life at JPY 350 million in 2002 yen, roughly USD 2.31 million in 2024 dollars, an upper-bound cross-check above the Cabinet Office figure.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": null,
+        "intent": "na",
+        "money_value_usd2024": 2310000,
+        "compensation_usd2024": null,
+        "penalty_fine_usd2024": null,
+        "penalty_jail_years": null,
+        "jurisdiction": "Japan",
+        "year": 2002,
+        "label_raw": "Academic choice-experiment VSL: JPY 350M (2002 yen)",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Japanese choice-experiment / stated-preference literature as summarized in OECD, Mortality Risk Valuation in Environment, Health and Transport Policies (2012) (VSL ¥350M in 2002 yen, ≈ US$2.9M at 2002 rates); nominal ¥350M ÷ 151.353 IRS 2024 avg JPY/USD ≈ USD 2.31M. https://www.oecd.org/content/dam/oecd/en/publications/reports/2012/02/mortality-risk-valuation-in-environment-health-and-transport-policies_g1g1690a/9789264130807-en.pdf ; JSCE meta-analysis https://www.jstage.jst.go.jp/article/jscejj/79/20/79_23-20008/_article/-char/en",
+        "confidence": "medium"
+      }
+    ],
+    "qaly_intl": [
+      {
+        "id": "canada-cadth-50000-cad-qaly",
+        "source": "qaly_intl",
+        "summary": "Canada's CADTH applies a de facto willingness-to-pay threshold of ~50,000 CAD/QALY (~36,500 USD in 2024) as the operative cost-effectiveness anchor for drug reimbursement.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": 36500,
+        "jurisdiction": "Canada",
+        "year": 2021,
+        "label_raw": "Canada (CADTH) ~50,000 CAD/QALY",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Skedgel et al., 'The impact of willingness-to-pay threshold on price reduction recommendations for oncology drugs: a review of CADTH assessments,' PubMed 38567953 (https://pubmed.ncbi.nlm.nih.gov/38567953/); Value in Health, 'CADTH's $50,000 Cost-Effectiveness Threshold: Fact or Fiction?' (https://www.valueinhealthjournal.com/article/S1098-3015(16)32187-8/fulltext). Original 50,000 CAD nominal (~2021-2022) x 0.73 USD/CAD = ~36,500 USD (2024).",
+        "confidence": "high"
+      },
+      {
+        "id": "australia-pbac-50000-aud-qaly",
+        "source": "qaly_intl",
+        "summary": "Australia's PBAC uses an implicit ~50,000 AUD/QALY rule-of-thumb (~33,000 USD in 2024), with an empirical recommend/reject band spanning roughly 42,000-76,000 AUD/LY.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": 33000,
+        "jurisdiction": "Australia",
+        "year": null,
+        "label_raw": "Australia (PBAC) ~50,000 AUD/QALY; band ~28,000-76,000 AUD",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Australian Prescriber, 'Economic evaluation of medicines' (https://australianprescriber.tg.org.au/articles/economic-evaluation-of-medicines.html); Wang et al., comparing ICERs to NICE/PBAC, ScienceDirect S1098301518302031 (https://www.sciencedirect.com/science/article/pii/S1098301518302031). Original ~50,000 AUD nominal x 0.66 USD/AUD = ~33,000 USD; rejection ~76,000 AUD/LY (~49,500 USD), near-certain accept ~42,000 AUD/LY (~27,700 USD).",
+        "confidence": "high"
+      },
+      {
+        "id": "germany-iqwig-no-threshold",
+        "source": "qaly_intl",
+        "summary": "Germany's IQWiG explicitly rejects any universal cost-per-QALY willingness-to-pay threshold, instead using an indication-specific efficiency-frontier method, so it supplies no single $/QALY anchor.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": null,
+        "jurisdiction": "Germany",
+        "year": null,
+        "label_raw": "Germany (IQWiG) NO fixed $/QALY threshold (efficiency frontier)",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Caro & Nord et al., 'The efficiency frontier approach to economic evaluation of health-care interventions,' ResearchGate 44699342 (https://www.researchgate.net/publication/44699342_The_efficiency_frontier_approach_to_economic_evaluation_of_health-care_interventions); Gandjour 2015, Int J Health Plann Manage (https://onlinelibrary.wiley.com/doi/10.1002/hpm.2247). Structural caveat: Germany provides no single anchor number.",
+        "confidence": "medium"
+      },
+      {
+        "id": "netherlands-zin-80000-eur-qaly",
+        "source": "qaly_intl",
+        "summary": "The Netherlands' Zorginstituut sets severity-tiered WTP reference values of 20,000/50,000/80,000 EUR/QALY by proportional shortfall, with the most-severe top tier of 80,000 EUR/QALY (~86,400 USD in 2024).",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": 86400,
+        "jurisdiction": "Netherlands",
+        "year": 2015,
+        "label_raw": "Netherlands (ZIN) top tier 80,000 EUR/QALY; tiers 20,000/50,000/80,000 EUR",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Reckers-Droog et al. / 'Varying Willingness to Pay Based on Severity of Illness... Netherlands,' Value in Health S1098-3015(21)01690-9 (https://www.valueinhealthjournal.com/article/S1098-3015(21)01690-9/fulltext). Established 2015; PS 0.10-0.40=20,000 EUR (~21,600 USD), PS 0.41-0.70=50,000 EUR (~54,000 USD), PS 0.71-1.00=80,000 EUR (~86,400 USD) at 1.08 USD/EUR. Top tier used as anchor value.",
+        "confidence": "high"
+      },
+      {
+        "id": "sweden-tlv-1000000-sek-qaly",
+        "source": "qaly_intl",
+        "summary": "Sweden's TLV applies severity-tiered implied WTP up to ~750,000 SEK/QALY (high, ~70,500 USD) and ~1,000,000 SEK/QALY (very high, ~94,000 USD in 2024), with no statutory threshold and >2M SEK/QALY accepted for rare+severe cases.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": 94000,
+        "jurisdiction": "Sweden",
+        "year": null,
+        "label_raw": "Sweden (TLV) high ~750,000 SEK; very-high ~1,000,000 SEK/QALY",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Svensson et al., 'Reimbursement Decisions for Pharmaceuticals in Sweden: Impact of Disease Severity and Cost Effectiveness,' PharmacoEconomics (https://link.springer.com/article/10.1007/s40273-015-0307-6); Quantify Research, 'How much is TLV willing to pay for a QALY in Sweden?' (2024) (https://quantifyresearch.com/2024/01/31/how-much-is-tlv-willing-to-pay-for-a-qaly-in-sweden/). Tiers at 0.094 USD/SEK: low 200k-250k (~19,000-23,500 USD), medium 500k-600k (~47,000-56,000 USD), high 750k (~70,500 USD), very high 1,000,000 (~94,000 USD). Very-high tier used as anchor value.",
+        "confidence": "medium"
+      },
+      {
+        "id": "thailand-hitap-160000-thb-qaly",
+        "source": "qaly_intl",
+        "summary": "Thailand's HITAP uses an explicit national WTP threshold of 160,000 THB/QALY (~4,560 USD in 2024, ~1.3x GDP per capita), above which ICERs trigger price negotiation.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": 4560,
+        "jurisdiction": "Thailand",
+        "year": 2013,
+        "label_raw": "Thailand (HITAP) 160,000 THB/QALY",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "OHE, 'Around the World in HTAs: Thailand' (https://www.ohe.org/insights/around-the-world-in-htas-thailand/); Teerawattananon et al. / HITAP empirical study, ScienceDirect S221188372400090X (https://www.sciencedirect.com/science/article/pii/S221188372400090X). Set 2013 (raised stepwise 100k pre-2010 -> 120k 2010 -> 160k 2013); 160,000 THB x 0.0285 USD/THB = ~4,560 USD (2024).",
+        "confidence": "high"
+      },
+      {
+        "id": "who-choice-cmh-gdp-multiplier-daly",
+        "source": "qaly_intl",
+        "summary": "The WHO-CHOICE / Commission on Macroeconomics and Health rule (2001) judged interventions cost-effective at 1x-3x GDP per capita per DALY averted, a generic global benchmark now deprecated as never rigorously derived.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": null,
+        "jurisdiction": "WHO global / LMIC",
+        "year": 2001,
+        "label_raw": "WHO-CHOICE / CMH 1x-3x GDP per capita per DALY (deprecated)",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Bertram et al., 'Understanding and improving the one and three times GDP per capita cost-effectiveness thresholds,' Health Policy and Planning 32(1):141 (https://academic.oup.com/heapol/article/32/1/141/2555408); WHO Bulletin, 'Thresholds for the cost-effectiveness of interventions: alternative approaches' (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4339959/). Multiplier of GDP/capita, not a fixed figure: at ~13,300 USD 2024 world GDP/capita, 1x-3x ~= 13,300-40,000 USD/DALY; LMIC like Thailand (~7,000 USD GDP/capita) 1x ~= 7,000 USD. money_value_usd2024 null because it scales with GDP per capita. Deprecated as a hard threshold.",
+        "confidence": "medium"
+      },
+      {
+        "id": "qaly-intl-cross-jurisdiction-midpoint",
+        "source": "qaly_intl",
+        "summary": "Excluding the deprecated WHO multiplier and Germany's no-threshold method, the standard non-severity-adjusted cross-jurisdiction WTP-for-one-QALY midpoint sits at roughly 33,000-50,000 USD/QALY, with severity-weighted ceilings reaching ~86,000-94,000 USD/QALY.",
+        "harm_type": "anchor",
+        "harm_magnitude": null,
+        "harm_duration": "1 year",
+        "intent": "na",
+        "money_value_usd2024": 41500,
+        "jurisdiction": "International (high-income aggregate)",
+        "year": 2024,
+        "label_raw": "Cross-jurisdiction standard QALY midpoint ~33,000-50,000 USD; ceilings ~86,000-94,000 USD",
+        "informs_ratio": [
+          "W_to_M"
+        ],
+        "source_citation": "Calibration note synthesized from the qaly_intl jurisdiction set: high-income single-QALY anchors cluster as Thailand ~4,600; Australia ~33,000; Canada ~36,500; Netherlands ~22,000-86,000 (severity-scaled); Sweden ~19,000-94,000 (severity-scaled). Midpoint of the standard band (33,000-50,000) = ~41,500 USD used as money_value_usd2024.",
+        "confidence": "medium"
+      }
+    ],
+    "liberty_dur": [
+      {
+        "id": "germany-stgb-239-3-over-one-week",
+        "source": "liberty_dur",
+        "summary": "Germany's StGB §239(3) raises the punishment range to 1-10 years when unlawful deprivation of liberty exceeds exactly one week, giving an explicit legislative step function for detention duration.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "more than 1 week",
+        "intent": "intentional",
+        "penalty_jail_years": 10,
+        "jurisdiction": "Germany (federal)",
+        "year": null,
+        "label_raw": "Germany — §239(3) StGB statutory threshold (deprivation of liberty > 1 week)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Strafgesetzbuch (StGB) §239(3), text \"länger als eine Woche\"; https://dejure.org/gesetze/StGB/239.html and official English at https://www.gesetze-im-internet.de/englisch_stgb/englisch_stgb.html (aggravated range 1-10 yrs triggered by confinement exceeding one week; §239(4) not under 3 yrs if victim dies).",
+        "confidence": "high"
+      },
+      {
+        "id": "germany-stgb-239-1-basic-anchor",
+        "source": "liberty_dur",
+        "summary": "Germany's StGB §239(1) basic offence punishes unlawful confinement of any short duration (hours to days, below the 1-week threshold) with up to 5 years' imprisonment or a fine, serving as the sub-week lower-bound anchor.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "any (short, e.g. hours-days, below 1-week threshold)",
+        "intent": "intentional",
+        "penalty_jail_years": 5,
+        "jurisdiction": "Germany (federal)",
+        "year": null,
+        "label_raw": "Germany — §239(1) basic offence anchor",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Strafgesetzbuch (StGB) §239(1) (up to 5 years or fine, no duration floor); https://dejure.org/gesetze/StGB/239.html — lower-bound anchor distinguishing sub-week from over-week confinement.",
+        "confidence": "high"
+      },
+      {
+        "id": "usa-ohio-mozingo-4-days",
+        "source": "liberty_dur",
+        "summary": "In State v. William Mozingo Jr. (Summit County, Ohio, 2024) the defendant held victim Chloe Jones hostage in a garage for 4 days and received an indefinite 25 to 31.5 year sentence, aggravated by violence/assault.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "4 days",
+        "intent": "intentional",
+        "penalty_jail_years": 31.5,
+        "jurisdiction": "Ohio, USA",
+        "year": 2024,
+        "label_raw": "USA (Ohio) — State v. William Mozingo Jr., Summit County (Akron)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "State v. William Mozingo Jr., Summit County (Akron), Ohio, sentenced 2024; indefinite 25-31.5 yr sentence (deliberate abduction + assault with baseball bat). https://myfox28columbus.com/amp/news/nation-world/william-mozingo-junior-serial-kidnapper-held-ohio-woman-hostage-beat-her-baseball-bat-learns-his-fate-conviction-cincinnati-kidnapping-high-profile-court-cases-verdict-summit-county-assault (penalty blended with violence/assault).",
+        "confidence": "medium"
+      },
+      {
+        "id": "usa-federal-mitchell-elizabeth-smart-9-months",
+        "source": "liberty_dur",
+        "summary": "In United States v. Brian David Mitchell (D. Utah, 2011), the kidnapping and sexual assault of 14-year-old Elizabeth Smart over ~9 months (June 2002-March 2003) drew two consecutive life sentences without parole.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "9 months",
+        "intent": "intentional",
+        "penalty_jail_years": null,
+        "jurisdiction": "United States (federal, District of Utah)",
+        "year": 2011,
+        "label_raw": "USA (federal) — United States v. Brian David Mitchell (Elizabeth Smart kidnapping)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "United States v. Brian David Mitchell, D. Utah, sentenced 2011; two life sentences no parole (abducted 5 Jun 2002, recovered ~12 Mar 2003; kidnapping + sexual assault of a minor). FBI press release https://archives.fbi.gov/archives/saltlakecity/press-releases/2011/slc052511a.htm ; https://en.wikipedia.org/wiki/Kidnapping_of_Elizabeth_Smart (penalty blended with sexual assault; life sentence = saturation, jail-years not numerically expressible).",
+        "confidence": "medium"
+      },
+      {
+        "id": "usa-ohio-ariel-castro-cleveland",
+        "source": "liberty_dur",
+        "summary": "In State v. Ariel Castro (Ohio, 2013) the captivity of three women for roughly 9-11 years each, compounded with rape and aggravated murder of a fetus, drew life without parole plus 1,000 years and a $100,000 fine.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "~9 to 11 years per victim",
+        "intent": "intentional",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": 135000,
+        "jurisdiction": "Ohio, USA",
+        "year": 2013,
+        "label_raw": "USA (Ohio) — State v. Ariel Castro (Cleveland kidnappings)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "State v. Ariel Castro, Ohio, sentenced 2013; life without parole + 1,000 years + $100,000 fine (~$135k in 2024 USD); pleaded to 937 counts incl. kidnapping, rape, aggravated murder of a fetus. Victims: Michelle Knight ~11 yrs (from Aug 2002), Amanda Berry ~10 yrs (Apr 2003), Gina DeJesus ~9 yrs (Apr 2004), all rescued 6 May 2013. https://en.wikipedia.org/wiki/Ariel_Castro_kidnappings — extreme outlier; multi-year confinement compounded with rape/murder; upper-bound saturation point, not a clean per-time ratio.",
+        "confidence": "low"
+      },
+      {
+        "id": "usa-california-pc-236-237-felony-anchor",
+        "source": "liberty_dur",
+        "summary": "California Penal Code §§236/237 punishes felony false imprisonment by violence, menace, fraud, or deceit on a 16-month/2-year/3-year triad with no minimum detention period, providing a statutory liberty-deprivation anchor.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "any (statute states no minimum period; restraint can be brief)",
+        "intent": "intentional",
+        "penalty_jail_years": 3,
+        "jurisdiction": "California, USA",
+        "year": null,
+        "label_raw": "USA (California) — Penal Code §§236/237 statutory anchor (felony false imprisonment by violence/menace/fraud/deceit)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "California Penal Code §§236-237 (felony triad 16 mo / 2 yr / 3 yr; misdemeanor up to 1 yr county jail; elderly/dependent-adult victim up to 4 yr, 5 if injury). https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=236 — statute states no minimum period (restraint can be brief).",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-ew-kidnap-false-imprisonment-guideline",
+        "source": "liberty_dur",
+        "summary": "The England & Wales Sentencing Council kidnap/false imprisonment guideline treats a prolonged captivity period as a High culpability factor (range up to 16 years, statutory max life), with a 2022 immediate-custody average of 5 years 9 months.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "prolonged period (High culpability factor; duration is a culpability multiplier, not a fixed per-time rate)",
+        "intent": "intentional",
+        "penalty_jail_years": 16,
+        "jurisdiction": "England & Wales, UK",
+        "year": 2022,
+        "label_raw": "UK (England & Wales) — Kidnap/False Imprisonment Sentencing Guideline (Sentencing Council)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Sentencing Council Kidnap/False Imprisonment guideline (offence range community order up to 16 yrs; statutory max life; \"victim held captive over a prolonged period\" is a High culpability factor; 2022 immediate-custody average custodial sentence length 5 yrs 9 mo post guilty-plea). https://sentencingcouncil.org.uk/guidelines/kidnap-false-imprisonment/ — duration is a culpability multiplier rather than a fixed per-time rate.",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-ew-wixon-over-20-years",
+        "source": "liberty_dur",
+        "summary": "In R v Amanda Wixon (Gloucestershire Crown Court, 2026) the victim was held captive for over 20 years (since 1996, discovered March 2021) yet the false-imprisonment-plus-forced-labour sentence was 13 years, illustrating strongly sub-linear scaling.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "over 20 years",
+        "intent": "intentional",
+        "penalty_jail_years": 13,
+        "jurisdiction": "England & Wales, UK",
+        "year": 2026,
+        "label_raw": "UK (England & Wales) — R v Amanda Wixon, Gloucestershire Crown Court",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "R v Amanda Wixon, Gloucestershire Crown Court, sentenced 2026; 13 years (1 count false imprisonment + 2 counts forced/compulsory labour + 3 counts assault); victim held captive since 1996, discovered March 2021. CPS https://www.cps.gov.uk/south-west/news/gloucestershire-woman-who-imprisoned-victim-over-20-years-jailed — illustrates strong sub-linear scaling (20+ yrs deprivation -> 13 yrs custody).",
+        "confidence": "high"
+      },
+      {
+        "id": "uk-ew-sheffield-trafficking-under-2-weeks",
+        "source": "liberty_dur",
+        "summary": "In a Sheffield Crown Court trafficking/false imprisonment case (2023) two men chained to radiators and starved for just under two weeks led to sentences of nearly 20 years each, reflecting a high penalty-per-time due to torture-like aggravation.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "just under 2 weeks",
+        "intent": "intentional",
+        "penalty_jail_years": 20,
+        "jurisdiction": "England & Wales, UK",
+        "year": 2023,
+        "label_raw": "UK (England & Wales) — Sheffield Crown Court trafficking/false imprisonment case (two defendants)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Sheffield Crown Court trafficking/false imprisonment case, 2023; nearly 20 years each (two Albanian men chained to radiators, starved). https://www.thestar.co.uk/news/crime/sheffield-crown-court-men-jailed-for-nearly-20-years-following-deeply-disturbing-false-imprisonment-case-3973189 — high penalty-per-time because aggravated by torture-like conditions (forced labour, violence, starvation); must be isolated from pure liberty_time.",
+        "confidence": "medium"
+      },
+      {
+        "id": "canada-cc-279-2-confinement-anchor",
+        "source": "liberty_dur",
+        "summary": "Canada's Criminal Code s.279(2) forcible/unlawful confinement carries a maximum of 10 years on indictment (18 months summary) with no stated minimum detention period, providing a federal statutory liberty-deprivation anchor.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "any (no stated minimum period)",
+        "intent": "intentional",
+        "penalty_jail_years": 10,
+        "jurisdiction": "Canada (federal)",
+        "year": null,
+        "label_raw": "Canada — Criminal Code s.279(2) forcible/unlawful confinement statutory anchor",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "Criminal Code (Canada) s.279(2) (max 10 yrs on indictment / max 18 mo summary); s.279(1) kidnapping with aggravating factors mandatory minimum 5 yrs (7 with priors), max life. https://laws-lois.justice.gc.ca/eng/acts/c-46/section-279.html — no stated minimum period.",
+        "confidence": "high"
+      },
+      {
+        "id": "canada-bc-r-v-mills-several-hours",
+        "source": "liberty_dur",
+        "summary": "In R v Mills (1998, BC CA) a kidnapping in which the victim was driven around for several hours drew sentences of roughly 4 to 5 years, showing that even brief detentions attract multi-year custody.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "several hours",
+        "intent": "intentional",
+        "penalty_jail_years": 5,
+        "jurisdiction": "British Columbia, Canada",
+        "year": 1998,
+        "label_raw": "Canada — R v Mills, 1998 CanLII 15020 (BC CA)",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "R v Mills, 1998 CanLII 15020 (BC CA); 4-5 yrs (co-accused Babin 4 yrs; Mills ~5 yrs) for kidnapping, victim driven around several hours. Criminal Law Notebook, https://criminalnotebook.ca/index.php/Kidnapping_and_Unlawful_Confinement_(Sentencing_Cases) — short detention drawing multi-year sentence (sub-linear scaling reference).",
+        "confidence": "high"
+      },
+      {
+        "id": "australia-nsw-crimes-act-s86-kerr-36-hours",
+        "source": "liberty_dur",
+        "summary": "Under NSW Crimes Act 1900 s.86 (detain for advantage/kidnapping, basic max 14 years; 25 years if in company or with wounding/GBH), the cited R v Kerr involved detention under threat of violence for around 36 hours.",
+        "harm_type": "liberty",
+        "harm_magnitude": null,
+        "harm_duration": "around 36 hours (R v Kerr)",
+        "intent": "intentional",
+        "penalty_jail_years": 14,
+        "jurisdiction": "New South Wales, Australia",
+        "year": null,
+        "label_raw": "Australia (NSW) — Crimes Act 1900 s.86 statutory anchor + R v Kerr",
+        "informs_ratio": [
+          "liberty_time",
+          "severity_ladder"
+        ],
+        "source_citation": "NSW Crimes Act 1900 s.86 (basic s.86(1) max 14 yrs; 25 yrs if in company per s.86(2)/86A or with wounding/GBH); R v Kerr cited in NSW Judicial Commission Sentencing Bench Book (victim detained under threat of violence around 36 hours). https://www.judcom.nsw.gov.au/publications/benchbks/sentencing/kidnapping.html — penalty_jail_years recorded as basic statutory max (14 yrs).",
+        "confidence": "high"
+      }
+    ],
+    "diyya_blood_money": [
+      {
+        "id": "saudi-diyya-accidental-muslim-man",
+        "source": "diyya_blood_money",
+        "summary": "Saudi Arabia (Hanbali) standard diyya for accidental/wrongful death of a Muslim man is SAR 300,000 (~$80,000), a statutory restitution transfer to the victim's family pegged to ~100 adult camels (not a willingness-to-pay life value).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 80000,
+        "compensation_usd2024": 80000,
+        "jurisdiction": "Saudi Arabia",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Full diyya, accidental death, Muslim man, SAR 300,000",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Life in Saudi Arabia, Blood money (Diyyah) and its calculation, https://lifeinsaudiarabia.net/blood-money-diyyah-and-its-calculation/; Wikipedia, Blood money in Islam, https://en.wikipedia.org/wiki/Blood_money_in_Islam",
+        "confidence": "medium"
+      },
+      {
+        "id": "saudi-diyya-intentional-murder-no-ceiling",
+        "source": "diyya_blood_money",
+        "summary": "Saudi Arabia: intentional murder has no statutory diyya ceiling — the victim's family may demand any amount or qisas (execution), so the price to avoid retaliation is uncapped (severity-ladder anchor rather than a fixed compensation figure).",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "jurisdiction": "Saudi Arabia",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Intentional murder: no diyya ceiling; family may demand any amount or qisas",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Wikipedia, Blood money in Islam, https://en.wikipedia.org/wiki/Blood_money_in_Islam",
+        "confidence": "medium"
+      },
+      {
+        "id": "saudi-diyya-gender-differential-woman",
+        "source": "diyya_blood_money",
+        "summary": "Saudi Arabia: a Muslim woman's diyya is half a man's (SAR 150,000, ~$40,000) — an identity (gender) multiplier of 0.5 applied to the whole compensation schedule, a non-universal divergence axis.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 40000,
+        "compensation_usd2024": 40000,
+        "jurisdiction": "Saudi Arabia",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Muslim woman = 1/2 of man, SAR 150,000",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Money Jihad compilation, https://moneyjihad.wordpress.com/2011/10/14/islam-prices-people-like-livestock/; Wikipedia, Blood money in Islam, https://en.wikipedia.org/wiki/Blood_money_in_Islam",
+        "confidence": "low"
+      },
+      {
+        "id": "saudi-diyya-religion-differential-people-of-the-book-man",
+        "source": "diyya_blood_money",
+        "summary": "Saudi Arabia: a Christian/Jewish ('People of the Book') man's diyya is half a Muslim man's (SAR 150,000, ~$40,000) — a religion-based identity multiplier of 0.5 on the compensation schedule.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 40000,
+        "compensation_usd2024": 40000,
+        "jurisdiction": "Saudi Arabia",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Christian/Jewish man = 1/2 of Muslim man",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Wikipedia, Blood money in Islam, https://en.wikipedia.org/wiki/Blood_money_in_Islam",
+        "confidence": "low"
+      },
+      {
+        "id": "saudi-diyya-religion-differential-other-non-muslim-man",
+        "source": "diyya_blood_money",
+        "summary": "Saudi Arabia: a Hindu/other non-Muslim man's diyya is 1/16 of a Muslim man's (~SAR 6,666, ~$1,778) — the steepest religion-based identity multiplier (0.0625) on the compensation schedule.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 1778,
+        "compensation_usd2024": 1778,
+        "jurisdiction": "Saudi Arabia",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Hindu/other non-Muslim man = 1/16 of Muslim man (~SAR 6,666)",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Wikipedia, Blood money in Islam, https://en.wikipedia.org/wiki/Blood_money_in_Islam",
+        "confidence": "low"
+      },
+      {
+        "id": "iran-diyya-muslim-man-1404",
+        "source": "diyya_blood_money",
+        "summary": "Iran (Twelver Shia) full diyya for a Muslim man in non-sacred months, year 1404, is 16 billion rials (~$27,000 at open-market rate ~600,000 IRR/USD); +1/3 during the four sacred lunar months — a judiciary-decreed restitution transfer, not a VSL.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 27000,
+        "compensation_usd2024": 27000,
+        "jurisdiction": "Iran",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Full diyya Muslim man, 16,000,000,000 IRR, non-sacred months, year 1404",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Nour Law Offices, Diya (blood money) applicable in Iranian year 1404, judiciary decree No. 100/73552/9000 (12 Mar 2025), https://nourlaw.com/diya-blood-money-applicable-in-the-current-iranian-year-1404-21-march-2025-19-march-2026/",
+        "confidence": "low"
+      },
+      {
+        "id": "iran-diyya-gender-differential-woman",
+        "source": "diyya_blood_money",
+        "summary": "Iran: a woman's offender-borne diyya is half a man's (~$13,500), though a May 2019 Supreme Court ruling has the state Fund for Bodily Injuries cover the other half so the family's paid-out total equalizes — the priced value of a woman's life to the offender remains a 0.5 identity multiplier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 13500,
+        "compensation_usd2024": 27000,
+        "jurisdiction": "Iran",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Woman's diyya = 1/2 of man's (offender pays half; state fund covers remainder)",
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Center for Human Rights in Iran, Blood money paid for a woman in Iran is still half that paid for a man (Aug 2019), https://iranhumanrights.org/2019/08/blood-money-paid-for-a-woman-in-iran-is-still-half-that-paid-for-a-man-despite-new-ruling/",
+        "confidence": "medium"
+      },
+      {
+        "id": "uae-diyya-wrongful-death",
+        "source": "diyya_blood_money",
+        "summary": "UAE federal diyya for wrongful/accidental death is AED 200,000 (~$54,500), fixed by Federal Law No. 9 of 2003 and applied uniformly to male or female (no gender differential in the statutory amount); the 2026 Civil Code Art. 259 lets courts add material/moral damages beyond diyya.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 54500,
+        "compensation_usd2024": 54500,
+        "jurisdiction": "United Arab Emirates",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Diyya AED 200,000, Federal Law No. 9 of 2003, gender-uniform",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Ask The Law UAE, Blood money compensation (Diya) in UAE, https://askthelaw.ae/legal-articles/miscellaneous/blood-money-compensation-diya-in-uae/; Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation",
+        "confidence": "high"
+      },
+      {
+        "id": "qatar-diyya-uniform",
+        "source": "diyya_blood_money",
+        "summary": "Qatar diyya is fixed at QAR 200,000 per deceased (~$55,000), explicitly uniform regardless of gender, residency, or religion (male/female, citizen/resident, Muslim/non-Muslim all equal) under Penal Code Law No. 11 of 2004 — a system that rejects identity multipliers.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 55000,
+        "compensation_usd2024": 55000,
+        "jurisdiction": "Qatar",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Diyya QAR 200,000, uniform across gender/residency/religion, Law No. 11 of 2004",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Fatima Al Naimi Law, Traffic accidents in Qatar: compensation and blood money (Diya), https://fatimaalnaimi.qa/traffic-accidents-in-qatar-compensation-and-blood-money-diya/",
+        "confidence": "high"
+      },
+      {
+        "id": "kuwait-diyya-1980-decree",
+        "source": "diyya_blood_money",
+        "summary": "Kuwait full diyya was KWD 10,000 (~$32,500) under Decree-Law No. 67 of 1980, unchanged for about four decades — a long-static statutory restitution floor.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 32500,
+        "compensation_usd2024": 32500,
+        "jurisdiction": "Kuwait",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Diyya KWD 10,000, Decree-Law No. 67 of 1980",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Gulf News, Kuwait doubles blood money from 10,000 to 20,000 dinars and abolishes gender-discriminatory law, https://gulfnews.com/world/gulf/kuwait/kuwait-doubles-blood-money-from-10000-to-20000-dinarsand-abolishes-gender-discriminatory-law-1.500063735",
+        "confidence": "high"
+      },
+      {
+        "id": "kuwait-diyya-2025-doubled-gender-abolished",
+        "source": "diyya_blood_money",
+        "summary": "Kuwait doubled diyya to KWD 20,000 (~$65,000) in 2025 and the new decree-law abolished the gender differential (women's diyya equalized to men's) — a case of a sharia system dropping the identity multiplier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 65000,
+        "compensation_usd2024": 65000,
+        "jurisdiction": "Kuwait",
+        "legal_tradition": "islamic_law",
+        "year": 2025,
+        "label_raw": "Diyya doubled to KWD 20,000 (2025); gender differential abolished",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Gulf News, Kuwait doubles blood money and abolishes gender-discriminatory law, https://gulfnews.com/world/gulf/kuwait/kuwait-doubles-blood-money-from-10000-to-20000-dinarsand-abolishes-gender-discriminatory-law-1.500063735; Arab Times, Kuwait increases blood money value to 20,000 dinars, https://www.arabtimesonline.com/news/kuwait-increases-blood-money-value-to-20000-dinars-with-new-decree-law/",
+        "confidence": "high"
+      },
+      {
+        "id": "pakistan-diyat-fy2024-25",
+        "source": "diyya_blood_money",
+        "summary": "Pakistan diyat for FY 2024-25 is PKR 8,103,955 (~$29,000), set by the Ministry of Finance pegged to 30,630 grams of silver (floats with the silver market, up 20% from FY2023-24) under Penal Code s.323, and applied equally to Muslims and non-Muslims.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "accidental",
+        "money_value_usd2024": 29000,
+        "compensation_usd2024": 29000,
+        "jurisdiction": "Pakistan",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Diyat PKR 8,103,955 (FY2024-25), pegged to 30,630 g silver, religion-uniform",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "ARY News, Pakistan fixes new diyat amount for 2024-25, https://arynews.tv/pakistan-fixes-new-diyat-amount-for-2024-25/; Dawn, https://www.dawn.com/news/1863172",
+        "confidence": "high"
+      },
+      {
+        "id": "nigeria-northern-sharia-diyya-100-camels",
+        "source": "diyya_blood_money",
+        "summary": "Northern Nigeria sharia states (Maliki; e.g. Zamfara, Kano) set homicide diyya at 100 camels or local-market monetary equivalent payable to the victim's heirs as the alternative to qisas — codes specify the camel-count standard rather than a fixed indexed naira sum.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "jurisdiction": "Nigeria (northern Sharia states: Zamfara, Kano)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Homicide diyya = 100 camels or monetary equivalent; alternative to qisas",
+        "informs_ratio": [
+          "L_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Grokipedia, Sharia in Nigeria, https://grokipedia.com/page/Sharia_in_Nigeria; USCIRF, Shari'ah Criminal Law in Northern Nigeria, https://www.uscirf.gov/sites/default/files/USCIRF_ShariahLawinNigeria_report_120919%20v3R.pdf",
+        "confidence": "low"
+      },
+      {
+        "id": "arsh-both-organs-full-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Classical arsh schedule: loss of both eyes, both hands, both feet, nose, tongue, male genitalia, or both ears each = full diyya (100 camels = 1x a life), encoding paired-organ loss as equivalent to death in compensation terms across Sunni, Twelver Shia, and the GCC/Nigeria statutes.",
+        "harm_type": "bodily",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (cross-system: Sunni schools, Twelver Shia/Iran, UAE/Qatar/Nigeria)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "Both eyes/hands/feet/nose/tongue/genitalia/both ears = full diyya",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Malik's Muwatta, Book 43 (Blood-Money), https://www.iium.edu.my/deed/hadith/malik/043_mmt.html; Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-eye-half-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for loss of one eye = 1/2 diyya (50 camels), codified in the UAE as AED 100,000 (~$27,250) — pricing one eye at half a human life, a ratio invariant across Sunni and Shia codes.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.5,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 27250,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (UAE codified; cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One eye = 1/2 diyya (50 camels); UAE AED 100,000",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation; Malik's Muwatta, Book 43, https://www.iium.edu.my/deed/hadith/malik/043_mmt.html",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-hand-half-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for loss of one hand = 1/2 diyya (50 camels), codified in the UAE as AED 100,000 (~$27,250); both hands = full diyya — pricing one hand at half a human life.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.5,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 27250,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (UAE codified; cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One hand = 1/2 diyya (50 camels); UAE AED 100,000",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-foot-half-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for loss of one foot/leg = 1/2 diyya (50 camels), pricing one foot at half a human life — a ratio invariant across Sunni schools and Twelver Shia codes.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.5,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One foot/leg = 1/2 diyya (50 camels)",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Malik's Muwatta, Book 43 (Blood-Money), https://www.iium.edu.my/deed/hadith/malik/043_mmt.html",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-ear-half-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for loss of one ear = 1/2 diyya, codified in the UAE as AED 100,000 (~$27,250); both ears = full diyya — pricing one ear at half a human life.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.5,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 27250,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (UAE codified; cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One ear = 1/2 diyya; UAE AED 100,000",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-finger-tenth-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for loss of one finger (or one toe) = 1/10 diyya (10 camels), UAE equivalent ~AED 20,000 (~$5,450) — pricing a finger at one-tenth of a human life, a ratio invariant across Sunni and Shia codes.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": 5450,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (UAE codified; cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One finger/toe = 1/10 diyya (10 camels); UAE ~AED 20,000",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Malik's Muwatta, Book 43 (Blood-Money), https://www.iium.edu.my/deed/hadith/malik/043_mmt.html; Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-finger-joint-third-of-finger",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for one finger joint = 1/3 of a finger's diyya (~3.33 camels), i.e. ~1/30 of a full life (~0.033) — the schedule's most granular fractional unit.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.033,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One finger joint = 1/3 of a finger's diyya (~3.33 camels, ~1/30 life)",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Malik's Muwatta, Book 43 (Blood-Money), https://www.iium.edu.my/deed/hadith/malik/043_mmt.html",
+        "confidence": "high"
+      },
+      {
+        "id": "arsh-one-tooth-twentieth-diyya",
+        "source": "diyya_blood_money",
+        "summary": "Arsh for loss of one tooth = 1/20 diyya (5 camels), with the UAE applying a 5-camel equivalent per tooth — pricing a tooth at one-twentieth of a human life, invariant across Sunni and Shia codes.",
+        "harm_type": "bodily",
+        "harm_magnitude": 0.05,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "money_value_usd2024": null,
+        "compensation_usd2024": null,
+        "jurisdiction": "Sharia jurisdictions (UAE codified; cross-system)",
+        "legal_tradition": "islamic_law",
+        "year": 2024,
+        "label_raw": "One tooth = 1/20 diyya (5 camels)",
+        "informs_ratio": [
+          "L_to_M",
+          "W_to_M",
+          "severity_ladder"
+        ],
+        "source_citation": "Malik's Muwatta, Book 43 (Blood-Money), https://www.iium.edu.my/deed/hadith/malik/043_mmt.html; Khaleej Times, Shariah and body-parts compensation, https://www.khaleejtimes.com/uae/shariah-and-body-parts-compensation",
+        "confidence": "high"
+      }
+    ],
+    "homicide_diverse": [
+      {
+        "id": "china-art232-intentional-homicide",
+        "source": "homicide_diverse",
+        "summary": "China PRC Criminal Law Art. 232 punishes intentional homicide by death, life, or fixed term >=10 years (3-10 years if circumstances relatively minor); a custodial/capital construct, not monetary compensation.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 10,
+        "jurisdiction": "China (PRC)",
+        "legal_tradition": "chinese_socialist",
+        "year": 1997,
+        "label_raw": "Intentional homicide (Art. 232): death, life, or fixed-term >=10 years; 3-10 years if circumstances relatively minor",
+        "source_citation": "China, PRC Criminal Law Art. 232 (npc.gov.cn, en.npc.gov.cn.cdurl.cn/2020-12/26/c_921604_12.htm)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "china-art233-negligent-homicide",
+        "source": "homicide_diverse",
+        "summary": "China PRC Criminal Law Art. 233 punishes negligently causing death by 3-7 years (<=3 years if minor); a custodial construct whose 7-year cap sits below the intentional 10-year floor, giving a within-jurisdiction intent ratio of ~3.3x.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "penalty_jail_years": 3,
+        "jurisdiction": "China (PRC)",
+        "legal_tradition": "chinese_socialist",
+        "year": 1997,
+        "label_raw": "Negligently causing death (Art. 233): 3-7 years; <=3 years if circumstances minor",
+        "source_citation": "China, PRC Criminal Law Art. 233 (npc.gov.cn, en.npc.gov.cn.cdurl.cn/2020-12/26/c_921604_12.htm)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "russia-art105-1-simple-murder",
+        "source": "homicide_diverse",
+        "summary": "Russia Criminal Code Art. 105 s1 punishes simple murder by 6-15 years; a custodial construct forming the intentional anchor against negligent Art. 109.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 6,
+        "jurisdiction": "Russia",
+        "legal_tradition": "civil_law",
+        "year": 1996,
+        "label_raw": "Murder, simple (Art. 105 s1): 6-15 years",
+        "source_citation": "Russia, Criminal Code No. 63-FZ Art. 105 s1 (Wikipedia: Murder in Russian law)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "russia-art105-2-aggravated-murder",
+        "source": "homicide_diverse",
+        "summary": "Russia Criminal Code Art. 105 s2 punishes aggravated murder by 8-20 years, life, or death (death under standing moratorium since 1996/1999); a custodial/capital construct reserving the unbounded tail for intentional killing.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 8,
+        "jurisdiction": "Russia",
+        "legal_tradition": "civil_law",
+        "year": 1996,
+        "label_raw": "Murder, aggravated (Art. 105 s2): 8-20 years, life, or death (death penalty under moratorium)",
+        "source_citation": "Russia, Criminal Code No. 63-FZ Art. 105 s2 (Wikipedia: Murder in Russian law)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "russia-art109-negligent-death",
+        "source": "homicide_diverse",
+        "summary": "Russia Criminal Code Art. 109 punishes causing death by negligence at up to 2 years (3 if via professional duty breach, 4 if >=2 victims); a custodial construct yielding a ~3x intent ratio against simple murder's 6-year floor.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "penalty_jail_years": 2,
+        "jurisdiction": "Russia",
+        "legal_tradition": "civil_law",
+        "year": 1996,
+        "label_raw": "Causing death by negligence (Art. 109): up to 2 years; up to 3 if professional duty breach; up to 4 if >=2 victims",
+        "source_citation": "Russia, Criminal Code No. 63-FZ Art. 109 (legal-tools.org PDF); sub-tiers from secondary summaries",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "brazil-art121-intentional-homicide",
+        "source": "homicide_diverse",
+        "summary": "Brazil Codigo Penal Art. 121 caput punishes homicidio doloso by 6-20 years reclusao; a custodial construct, no death penalty for ordinary homicide.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 6,
+        "jurisdiction": "Brazil",
+        "legal_tradition": "civil_law",
+        "year": 1940,
+        "label_raw": "Intentional homicide / homicidio doloso (Art. 121 caput): 6-20 years reclusao",
+        "source_citation": "Brazil, Codigo Penal Decreto-Lei 2.848/1940 Art. 121 caput (jurishand.com; Wikipedia: Murder in Brazilian law)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "brazil-art121-3-negligent-homicide",
+        "source": "homicide_diverse",
+        "summary": "Brazil Codigo Penal Art. 121 s3 punishes homicidio culposo by 1-3 years detencao (+1/3 for professional-rule breach or failure to render aid); a custodial construct giving a clean bounded intent ratio of ~6-6.7x.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "penalty_jail_years": 1,
+        "jurisdiction": "Brazil",
+        "legal_tradition": "civil_law",
+        "year": 1940,
+        "label_raw": "Negligent homicide / homicidio culposo (Art. 121 s3): 1-3 years detencao; +1/3 for professional breach or failure to aid",
+        "source_citation": "Brazil, Codigo Penal Decreto-Lei 2.848/1940 Art. 121 s3 (jurishand.com)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "nigeria-south-s319-murder",
+        "source": "homicide_diverse",
+        "summary": "Nigeria (Southern states) Criminal Code Act s. 319 imposes a mandatory death sentence for murder (under-17 offenders detained during the Governor's pleasure); a capital construct, the intentional anchor.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "Nigeria (Southern states)",
+        "legal_tradition": "common_law",
+        "label_raw": "Murder (s. 319): mandatory death sentence; under-17 detained during Governor's pleasure",
+        "source_citation": "Nigeria, Criminal Code Act Cap. C38 s. 319 (jurist.ng/criminal_code_act/sec-319)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "nigeria-south-s325-manslaughter",
+        "source": "homicide_diverse",
+        "summary": "Nigeria (Southern states) Criminal Code Act s. 325 (defined s. 317) makes manslaughter liable to life imprisonment with court discretion to impose less; a custodial construct bundling reckless/negligent killing without a low fixed cap, so the intent multiplier is effectively unbounded against the mandatory death tier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "reckless",
+        "jurisdiction": "Nigeria (Southern states)",
+        "legal_tradition": "common_law",
+        "label_raw": "Manslaughter (s. 325, defined s. 317): liable to life imprisonment, court discretion to impose less",
+        "source_citation": "Nigeria, Criminal Code Act Cap. C38 ss. 317/325 (jurist.ng/criminal_code_act/sec-317, sec-325)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "nigeria-north-s221-culpable-homicide-death",
+        "source": "homicide_diverse",
+        "summary": "Nigeria (Northern states) Penal Code s. 221 punishes culpable homicide punishable with death by death; a capital construct with an Islamic-law overlay, the intentional anchor.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "Nigeria (Northern states)",
+        "legal_tradition": "islamic_law",
+        "year": 1959,
+        "label_raw": "Culpable homicide punishable with death (s. 221): death",
+        "source_citation": "Nigeria (North), Penal Code (Northern States) Federal Provisions Act 1959 s. 221 (ilga.org PDF)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "nigeria-north-s224-culpable-homicide-not-death",
+        "source": "homicide_diverse",
+        "summary": "Nigeria (Northern states) Penal Code s. 224 punishes culpable homicide not punishable with death (covering rash/negligent acts per s. 220(c)) by life or any lesser term plus possible fine; a custodial construct with Islamic-law overlay, unbounded intent tail against the death tier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "jurisdiction": "Nigeria (Northern states)",
+        "legal_tradition": "islamic_law",
+        "year": 1959,
+        "label_raw": "Culpable homicide NOT punishable with death (s. 224, covers rash/negligent acts s. 220(c)): life imprisonment or any lesser term, plus possible fine",
+        "source_citation": "Nigeria (North), Penal Code (Northern States) Federal Provisions Act 1959 ss. 224/220 (Mondaq: Murder, Culpable Homicide in Nigeria)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "indonesia-art338-murder",
+        "source": "homicide_diverse",
+        "summary": "Indonesia KUHP Art. 338 punishes pembunuhan (murder) by a maximum 15 years; a custodial construct, the middle tier of a three-level intent ladder.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 15,
+        "jurisdiction": "Indonesia",
+        "legal_tradition": "civil_law",
+        "year": 1918,
+        "label_raw": "Murder / pembunuhan (Art. 338): max 15 years",
+        "source_citation": "Indonesia, KUHP / Penal Code 1918 Art. 338 (icnl.org KUHP English)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "indonesia-art340-premeditated-murder",
+        "source": "homicide_diverse",
+        "summary": "Indonesia KUHP Art. 340 punishes pembunuhan berencana (premeditated murder) by death, life, or up to 20 years; a custodial/capital construct escalating intentional killing to a premeditated top tier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 20,
+        "jurisdiction": "Indonesia",
+        "legal_tradition": "civil_law",
+        "year": 1918,
+        "label_raw": "Premeditated murder / pembunuhan berencana (Art. 340): death, life, or up to 20 years",
+        "source_citation": "Indonesia, KUHP Art. 340 (ILS Law Firm)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "indonesia-art359-negligent-death",
+        "source": "homicide_diverse",
+        "summary": "Indonesia KUHP Art. 359 punishes negligence causing death by a maximum 5 years (or 1 year detention); a custodial construct giving a ~3x intent ratio against plain murder's 15-year cap.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "penalty_jail_years": 5,
+        "jurisdiction": "Indonesia",
+        "legal_tradition": "civil_law",
+        "year": 1918,
+        "label_raw": "Negligence causing death (Art. 359): max 5 years (or 1 year detention)",
+        "source_citation": "Indonesia, KUHP Art. 359 (icnl.org KUHP English)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "mexico-art302-307-intentional-homicide",
+        "source": "homicide_diverse",
+        "summary": "Mexico Codigo Penal Federal Arts. 302+307 punish homicidio doloso simple by 12-24 years; a custodial construct, no death penalty (abolished 2005), the intentional anchor.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "penalty_jail_years": 12,
+        "jurisdiction": "Mexico (federal)",
+        "legal_tradition": "civil_law",
+        "label_raw": "Intentional homicide / homicidio doloso simple (Arts. 302+307): 12-24 years",
+        "source_citation": "Mexico, Codigo Penal Federal Arts. 302+307 (Justia Mexico Arts. 302-309)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "mexico-art60-negligent-homicide",
+        "source": "homicide_diverse",
+        "summary": "Mexico Codigo Penal Federal Art. 60 caps culpa-based penalties at 1/4 of the corresponding intentional penalty (roughly ~3-6 years for basic homicidio culposo); a custodial construct that structurally fixes the intent multiplier at ~4x by design.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "penalty_jail_years": 3,
+        "jurisdiction": "Mexico (federal)",
+        "legal_tradition": "civil_law",
+        "label_raw": "Negligent homicide / homicidio culposo: Art. 60 caps at 1/4 of intentional penalty, ~3-6 years for basic culposo",
+        "source_citation": "Mexico, Codigo Penal Federal Arts. 60+302 (Justia Mexico); culposo term derived via Art. 60 1/4 rule, state codes vary",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "medium"
+      },
+      {
+        "id": "egypt-art230-premeditated-murder",
+        "source": "homicide_diverse",
+        "summary": "Egypt Penal Code Art. 230 punishes premeditated murder by death (operating alongside qisas, with heirs' pardon able to substitute); a capital construct with mixed Islamic/civil-law character, the top intent tier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "Egypt",
+        "legal_tradition": "islamic_law",
+        "year": 1937,
+        "label_raw": "Premeditated murder (Art. 230): death penalty (alongside qisas; heirs' pardon can substitute)",
+        "source_citation": "Egypt, Penal Code Law No. 58 of 1937 Art. 230 (EIPR, The Death Penalty in Egyptian Law)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "egypt-art234-deliberate-killing-no-premeditation",
+        "source": "homicide_diverse",
+        "summary": "Egypt Penal Code Art. 234 punishes deliberate killing without premeditation by permanent or temporary hard labour (death if accompanied by another felony); a custodial construct, the middle intent tier.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "intentional",
+        "jurisdiction": "Egypt",
+        "legal_tradition": "islamic_law",
+        "year": 1937,
+        "label_raw": "Deliberate killing without premeditation (Art. 234): permanent or temporary hard labour; death if with another felony",
+        "source_citation": "Egypt, Penal Code Law No. 58 of 1937 Art. 234 (UNODC SHERLOC)",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      },
+      {
+        "id": "egypt-art238-negligent-death",
+        "source": "homicide_diverse",
+        "summary": "Egypt Penal Code Art. 238 punishes causing death by negligence/recklessness by >=6 months plus a nominal EGP 200 fine (1937 figure, ~cents in 2024 USD and inflation-voided), rising to 5-10 years for aggravators; a custodial construct illustrating that nominal monetary penalties in old codes are not reliable calibration anchors.",
+        "harm_type": "death",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "negligent",
+        "penalty_jail_years": 0.5,
+        "penalty_fine_usd2024": 0.01,
+        "jurisdiction": "Egypt",
+        "legal_tradition": "islamic_law",
+        "year": 1937,
+        "label_raw": "Causing death by negligence/recklessness (Art. 238): >=6 months and/or fine up to EGP 200 base; up to 5 years if under influence; 1-7 years if >=3 victims; 1-10 years if intoxicated with mass casualties",
+        "source_citation": "Egypt, Penal Code Law No. 58 of 1937 Art. 238 (Ahram Online); EGP 200 is the 1937 nominal figure, negligible in 2024 USD",
+        "informs_ratio": [
+          "In",
+          "severity_ladder"
+        ],
+        "confidence": "high"
+      }
+    ],
+    "vsl_diverse": [
+      {
+        "id": "vsl-china-hoffmann-sp-2016",
+        "source": "vsl_diverse",
+        "jurisdiction": "China",
+        "year": 2016,
+        "summary": "Stated-preference (payment-card WTP) value of a statistical life for urban Chinese residents (Shanghai, Nanning, Jiujiang), ~$615,000 in 2016 USD normalized to ~$800,000 (2024 USD); this is ex ante willingness-to-pay for a 5-in-10,000 annual mortality-risk reduction, not ex post compensation.",
+        "label_raw": "Pooled Chinese VSL, CNY 1.47M (2009) = US$614,805 (2016$)",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 800000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Hoffmann, Krupnick & Qin (2017), Journal of Benefit-Cost Analysis, 'Building a Set of Internationally Comparable VSL Studies: Estimates of Chinese Willingness to Pay to Reduce Mortality Risk'. https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/building-a-set-of-internationally-comparable-value-of-statistical-life-studies-estimates-of-chinese-willingness-to-pay-to-reduce-mortality-risk/F0736C663CC8C30263752C6E7D187526 (2016->2024 CPI x1.30, researcher arithmetic)",
+        "confidence": "high",
+        "legal_tradition": "chinese_socialist"
+      },
+      {
+        "id": "vsl-china-cv-sixcities-2019",
+        "source": "vsl_diverse",
+        "jurisdiction": "China",
+        "year": 2019,
+        "summary": "Contingent-valuation (WTP) value of a statistical life from six representative Chinese cities to reduce air-pollution death risk, CNY 4.76M = ~US$690,000 (2019) normalized to ~$830,000 (2024 USD); WTP construct, not compensation.",
+        "label_raw": "CNY 4.76 million ~ US$690,000 (2019)",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 830000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Chinese Journal of Population, Resources and Environment (2023). https://www.sciencedirect.com/science/article/pii/S2325426223000530 (USD-conversion-year uncertain; researcher arithmetic)",
+        "confidence": "low",
+        "legal_tradition": "chinese_socialist"
+      },
+      {
+        "id": "vsl-india-hedonic-wage-2018",
+        "source": "vsl_diverse",
+        "jurisdiction": "India",
+        "year": 2018,
+        "summary": "Hedonic-wage (compensating wage differential, revealed-preference) value of a statistical life for blue-collar male manufacturing workers in Ahmedabad, Gujarat, INR 44.69M = ~$0.64M (2018 USD) normalized to ~$0.80M (2024 USD); WTP-type anchor, not compensation.",
+        "label_raw": "INR 44.69M (2018) = US$0.64M",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 800000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "'Value of statistical life in India: A hedonic wage approach' (Madheswaran-style), IDEAS/RePEc working paper. https://ideas.repec.org/p/sch/wpaper/407.html (benefit-transfer cross-checks give wider $0.5-1.6M range; USD-year basis uncertain)",
+        "confidence": "low",
+        "legal_tradition": "common_law"
+      },
+      {
+        "id": "vsl-brazil-no-clean-figure",
+        "source": "vsl_diverse",
+        "jurisdiction": "Brazil",
+        "year": 2019,
+        "summary": "No clean single-figure willingness-to-pay VSL was extractable for Brazil; the recent hedonic-wage study (PNS 2019, quantile regression with sample-selection correction) reports a Value of Statistical Injury rather than a headline VSL, so Brazil is flagged as not yet anchorable.",
+        "label_raw": "Brazilian hedonic-wage VSI (PNS 2019) - no headline VSL",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": null,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "ResearchGate 'Inequality and the Value of a Statistical Life'; Brazilian hedonic-wage paper using PNS 2019. Not yet anchorable - needs direct primary-source fetch before use.",
+        "confidence": "low",
+        "legal_tradition": "civil_law"
+      },
+      {
+        "id": "vsl-south-africa-implied-2020",
+        "source": "vsl_diverse",
+        "jurisdiction": "South Africa",
+        "year": 2020,
+        "summary": "Implied 'value of a death averted' (VSL proxy) for South Africa derived from health-spending elasticity on the age-standardised death rate, ZAR 1.89M (2020) ~ US$120,000-130,000 (2024 USD); this is a government revealed/supply-side valuation via budget, not stated willingness-to-pay, making it a methodologically weaker WTP anchor.",
+        "label_raw": "ZAR 1.472M (2015) / ZAR 1.89M (2020) value of a death averted",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 130000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Edoka & Stacey (health-spending elasticity), cited in Barr et al., South African Journal of Economic and Management Sciences (2023, alcohol cost-benefit analysis). https://sajems.org/index.php/sajems/article/view/5314/2956 (implied value, ZAR1.89M 2020 at ~16.5/USD then CPI-adjusted)",
+        "confidence": "low",
+        "legal_tradition": "common_law"
+      },
+      {
+        "id": "vsl-russia-poll-compensation-2015",
+        "source": "vsl_diverse",
+        "jurisdiction": "Russia",
+        "year": 2015,
+        "summary": "Survey/opinion-poll 'cost of financial compensation for death' for Russia, ~$71,500 (early 2015) normalized to ~$94,000 (2024 USD), with a broader literature range of $40,000-$2,000,000; journalistic secondary source, included only to bracket the low end of the WTP spectrum.",
+        "label_raw": "~$71,500 (2015) cost of financial compensation for death",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 94000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "The Bell, 'The value of a Russian life' (journalistic secondary source citing Russian polling). https://en.thebell.io/the-value-of-a-russian-life/ (not peer-reviewed; flag for replacement with academic source)",
+        "confidence": "low",
+        "legal_tradition": "civil_law"
+      },
+      {
+        "id": "vsl-thailand-witvorapong-hedonic-2011",
+        "source": "vsl_diverse",
+        "jurisdiction": "Thailand",
+        "year": 2011,
+        "summary": "Hedonic-wage value of a statistical life for Thailand (Labour Force Survey + Social Security Office, 2012-2014 averaged), mean $1.21M (2011 USD) normalized to ~$1.7M (2024 USD), with income elasticity 1.488 (income-elastic); revealed-preference WTP anchor.",
+        "label_raw": "Mean VSL $1.21M / median $0.66M (2011 USD), income elasticity 1.488",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 1700000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Witvorapong & Komonpaisarn (2020), Journal of Consumer Policy. https://ideas.repec.org/a/kap/jcopol/v43y2020i3d10.1007_s10603-019-09431-2.html (2011->2024 CPI x1.41, researcher arithmetic)",
+        "confidence": "high",
+        "legal_tradition": "civil_law"
+      },
+      {
+        "id": "vsl-thailand-hedonic-ppp-2021",
+        "source": "vsl_diverse",
+        "jurisdiction": "Thailand",
+        "year": 2021,
+        "summary": "Updated hedonic log-wage value of a statistical life for Thailand (national labour-force survey + workplace-risk data 2014-2021), US$2,015,694 (2021, PPP-adjusted); PPP basis means it is not directly comparable to the market-exchange-rate figures.",
+        "label_raw": "VSL US$2,015,694 (2021, PPP); VSI US$697,579",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 2020000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Journal of Applied Economics and Management Strategy. http://kuojs.lib.ku.ac.th/index.php/jaems/article/view/6254 (PPP-adjusted; stated as 2021 PPP USD)",
+        "confidence": "medium",
+        "legal_tradition": "civil_law"
+      },
+      {
+        "id": "vsl-chile-mardones-hedonic-2013",
+        "source": "vsl_diverse",
+        "jurisdiction": "Chile",
+        "year": 2013,
+        "summary": "Best hedonic-wage value of a statistical life for Chile (Heckit 2SLS correcting endogeneity/selection; CASEN 2013 + occupational-risk records), US$3.73M (2013 USD) normalized to ~$5.0M (2024 USD), 95% CI US$3.4M-4.0M; revealed-preference WTP anchor and the high end of this sample.",
+        "label_raw": "US$3.73M (2013 USD), 95% CI $3.4M-4.0M",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 5000000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Mardones & Riquelme (2018), Latin American Research Review. https://www.cambridge.org/core/journals/latin-american-research-review/article/estimation-of-the-value-of-statistical-life-in-chile-and-extrapolation-to-other-latin-american-countries/5F9D844230E591849C0AA11BD4527A19 (2013->2024 CPI x1.34, researcher arithmetic)",
+        "confidence": "high",
+        "legal_tradition": "civil_law"
+      },
+      {
+        "id": "vsl-mexico-hammitt-wagerisk-2002",
+        "source": "vsl_diverse",
+        "jurisdiction": "Mexico",
+        "year": 2002,
+        "summary": "Primary wage-risk (compensating wage differential) value of a statistical life for Mexico City metro workers (~600 workers, perceived and actuarial occupational risk), US$235,000-325,000 (2002 USD) normalized to ~$410,000-565,000 (2024 USD); the genuine primary Mexican WTP/wage-risk anchor (recorded at the ~$490k midpoint).",
+        "label_raw": "US$235,000-325,000 (2002 USD)",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 490000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Hammitt & Ibarraran (2006), Health Economics. https://onlinelibrary.wiley.com/doi/10.1002/hec.1137 (2002->2024 CPI x1.74, researcher arithmetic; 2024-USD midpoint of $410k-$565k range)",
+        "confidence": "high",
+        "legal_tradition": "civil_law"
+      },
+      {
+        "id": "vsl-mexico-becerra-benefit-transfer-2021",
+        "source": "vsl_diverse",
+        "jurisdiction": "Mexico",
+        "year": 2021,
+        "summary": "Benefit-transfer value of a statistical life for Mexico, US$2.0M base (2021 USD) normalized to ~$2.3M (2024 USD) with a sub-national range of $0.4M (Chiapas) to $3.3M (Mexico City); extrapolated downward from an OECD VSL of $9M with income elasticity 1.0, so it is not an independent primary national estimate.",
+        "label_raw": "US$2.0M base (2021 USD); state range $0.4M-$3.3M",
+        "harm_type": "anchor",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "intent": "na",
+        "penalty_jail_years": null,
+        "penalty_fine_usd2024": null,
+        "compensation_usd2024": null,
+        "money_value_usd2024": 2300000,
+        "informs_ratio": [
+          "L_to_M"
+        ],
+        "source_citation": "Becerra-Perez et al. (2024), Int. J. Environmental Research and Public Health, PMC11032065. https://pmc.ncbi.nlm.nih.gov/articles/PMC11032065/ (OECD benefit-transfer, income elasticity 1.0; 2021->2024 CPI x1.16, researcher arithmetic)",
+        "confidence": "low",
+        "legal_tradition": "civil_law"
+      }
+    ],
+    "historical_codes": [
+      {
+        "id": "hammurabi-eye-bone-awilum-talio",
+        "source": "historical_codes",
+        "summary": "Hammurabi SS196-197: destroying the eye or breaking the bone of a social equal (awilum) is punished by talio (in-kind retaliation), not cash — a 1.0 in-kind equivalence of the same injury rather than a compensation price.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "jurisdiction": "Babylon (Old Babylonian Empire)",
+        "legal_tradition": "other",
+        "year": -1754,
+        "label_raw": "Code of Hammurabi SS196-197 (eye/bone of an awilum: talio)",
+        "informs_ratio": [
+          "severity_ladder"
+        ],
+        "source_citation": "Code of Hammurabi SS196-197; eHammurabi https://ehammurabi.org/law/196 ; Wikipedia 'Code of Hammurabi'",
+        "confidence": "high"
+      },
+      {
+        "id": "hammurabi-eye-bone-muskenum-1-mina",
+        "source": "historical_codes",
+        "summary": "Hammurabi S198: the eye or bone of a commoner (muskenum) is priced at a fixed compensation of 1 mina of silver (60 shekels) — the cash-priced reference rung for this victim class — rather than talio.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "jurisdiction": "Babylon (Old Babylonian Empire)",
+        "legal_tradition": "other",
+        "year": -1754,
+        "label_raw": "Code of Hammurabi S198 (muskenum eye/bone = 1 mina = 60 shekels)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Code of Hammurabi S198; eHammurabi https://ehammurabi.org/law/198",
+        "confidence": "high"
+      },
+      {
+        "id": "hammurabi-eye-bone-slave-half-value",
+        "source": "historical_codes",
+        "summary": "Hammurabi S199: injuring a slave's eye or bone is compensated at half the slave's market value, paid to the owner — encoding the slave as chattel so the injury value scales with property price, a separate property-based scale rather than a human life-price.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.5,
+        "harm_duration": "permanent",
+        "jurisdiction": "Babylon (Old Babylonian Empire)",
+        "legal_tradition": "other",
+        "year": -1754,
+        "label_raw": "Code of Hammurabi S199 (slave eye/bone = 1/2 chattel market value, paid to owner)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Code of Hammurabi S199; eHammurabi https://ehammurabi.org/law/199",
+        "confidence": "high"
+      },
+      {
+        "id": "hammurabi-tooth-muskenum-third-mina",
+        "source": "historical_codes",
+        "summary": "Hammurabi SS200-201: an equal's knocked-out tooth draws talio while a commoner's tooth is compensated at 1/3 mina (20 shekels) — within-code ratio places the commoner's tooth at ~0.33 of the commoner's eye/bone, the cheapest body part priced.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.33,
+        "harm_duration": "permanent",
+        "jurisdiction": "Babylon (Old Babylonian Empire)",
+        "legal_tradition": "other",
+        "year": -1754,
+        "label_raw": "Code of Hammurabi SS200-201 (commoner tooth = 1/3 mina = 20 shekels = 0.33 x eye)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Code of Hammurabi SS200-201; eHammurabi assault group https://ehammurabi.org/lch/law-groups/assault",
+        "confidence": "high"
+      },
+      {
+        "id": "hammurabi-miscarriage-10-shekels",
+        "source": "historical_codes",
+        "summary": "Hammurabi SS209-210: causing a free man's daughter to miscarry by striking her is compensated at 10 shekels of silver; if she herself dies, talio applies to the striker's own daughter (life-for-life), with the same act against lower classes priced far lower.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": null,
+        "harm_duration": "n/a",
+        "jurisdiction": "Babylon (Old Babylonian Empire)",
+        "legal_tradition": "other",
+        "year": -1754,
+        "label_raw": "Code of Hammurabi SS209-210 (free man's daughter miscarriage = 10 shekels; her death = talio on striker's daughter)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Code of Hammurabi SS209-210; eHammurabi assault group https://ehammurabi.org/lch/law-groups/assault",
+        "confidence": "medium"
+      },
+      {
+        "id": "twelve-tables-membrum-ruptum-talio",
+        "source": "historical_codes",
+        "summary": "Roman Twelve Tables VIII.2: a maimed/broken limb (membrum ruptum) is the top injury tier, punished by talio in kind unless the parties agree composition — quasi-irreparable, with no fixed cash ceiling.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "jurisdiction": "Roman Republic",
+        "legal_tradition": "civil_law",
+        "year": -451,
+        "label_raw": "Twelve Tables VIII.2 (membrum ruptum: talio unless composition)",
+        "informs_ratio": [
+          "severity_ladder"
+        ],
+        "source_citation": "Twelve Tables VIII.2; Perseus Dict. of Greek & Roman Antiquities 'Talio' https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0063:alphabetic+letter%3DT:entry%3Dtalio-cn",
+        "confidence": "high"
+      },
+      {
+        "id": "twelve-tables-os-fractum-freeman-300-asses",
+        "source": "historical_codes",
+        "summary": "Roman Twelve Tables VIII.3: a broken bone (os fractum) of a free man is compensated at 300 asses and of a slave at 150 asses — a clean 2:1 free:slave status ratio within the bone tier.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "jurisdiction": "Roman Republic",
+        "legal_tradition": "civil_law",
+        "year": -451,
+        "label_raw": "Twelve Tables VIII.3 (os fractum: free man = 300 asses, slave = 150 asses; free:slave = 2:1)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Twelve Tables VIII.3; Perseus 'Talio'/'Iniuria' https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0063:entry=injuria-cn ; Loeb The Twelve Tables (1938) https://www.loebclassics.com/view/twelve_tables/1938/pb_LCL329.477.xml",
+        "confidence": "high"
+      },
+      {
+        "id": "twelve-tables-iniuria-minor-25-asses",
+        "source": "historical_codes",
+        "summary": "Roman Twelve Tables VIII.4: a minor injury/insult (iniuria) is compensated at 25 asses — within-code, 1/12 of a free man's broken bone (300 asses), the lowest priced rung above the talio/bone tiers.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.083,
+        "harm_duration": "temporary",
+        "jurisdiction": "Roman Republic",
+        "legal_tradition": "civil_law",
+        "year": -451,
+        "label_raw": "Twelve Tables VIII.4 (iniuria = 25 asses = 1/12 of free man's broken bone)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Twelve Tables VIII.4; Perseus 'Iniuria' https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0063:id=injuria-cn",
+        "confidence": "high"
+      },
+      {
+        "id": "aethelberht-freeman-wergild-100-shillings",
+        "source": "historical_codes",
+        "summary": "Law of Aethelberht (Kent): the death of a freeman (ceorl) is compensated by a wergild of 100 shillings, the reference life-price (1.0) against which all Kentish body-part prices are scaled.",
+        "harm_type": "death",
+        "intent": "intentional",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "jurisdiction": "Kingdom of Kent (Anglo-Saxon England)",
+        "legal_tradition": "customary",
+        "year": 600,
+        "label_raw": "Law of Aethelberht (Kent): freeman (ceorl) wergild = 100 shillings (life reference = 1.0)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Law of Aethelberht (Kent, c.600); Museum Facts 'Anglo-Saxon Wergild' https://museumfacts.co.uk/history-of-personal-injury-law-anglo-saxon-wergild/",
+        "confidence": "high"
+      },
+      {
+        "id": "aethelberht-foot-eye-50-shillings",
+        "source": "historical_codes",
+        "summary": "Law of Aethelberht (Kent): loss of a foot or an eye is compensated at 50 shillings each — exactly 0.50 of the freeman's wergild, placing major limb/eye loss at half a life.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.5,
+        "harm_duration": "permanent",
+        "jurisdiction": "Kingdom of Kent (Anglo-Saxon England)",
+        "legal_tradition": "customary",
+        "year": 600,
+        "label_raw": "Law of Aethelberht (Kent): foot = 50 sh (0.50), eye = 50 sh (0.50)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Law of Aethelberht (Kent); Museum Facts https://museumfacts.co.uk/history-of-personal-injury-law-anglo-saxon-wergild/ ; Medievalists.net https://www.medievalists.net/2018/01/anglo-saxon-punishments-price-pinky/",
+        "confidence": "medium"
+      },
+      {
+        "id": "aethelberht-thumb-finger-tooth-gradation",
+        "source": "historical_codes",
+        "summary": "Law of Aethelberht (Kent): fine-grained body-part gradation — thumb = 20 shillings (0.20), individual fingers 4-11 sh (~0.04-0.11), front tooth = 6 sh (0.06), molar/other tooth = 1 sh (0.01) — with the tooth the cheapest rung at ~0.01 of a life.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.01,
+        "harm_duration": "permanent",
+        "jurisdiction": "Kingdom of Kent (Anglo-Saxon England)",
+        "legal_tradition": "customary",
+        "year": 600,
+        "label_raw": "Law of Aethelberht (Kent): thumb=20sh(0.20), fingers=4-11sh, front tooth=6sh(0.06), molar=1sh(0.01)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Law of Aethelberht (Kent); Museum Facts https://museumfacts.co.uk/history-of-personal-injury-law-anglo-saxon-wergild/",
+        "confidence": "medium"
+      },
+      {
+        "id": "aethelberht-generative-organ-300-shillings",
+        "source": "historical_codes",
+        "summary": "Law of Aethelberht (Kent): loss of the generative/reproductive organ ('kindling limb') is compensated at 300 shillings = 3x the full freeman wergild — pricing loss of procreative capacity above a single death, signaling heavy weighting of lineage/reproductive future.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 3,
+        "harm_duration": "permanent",
+        "jurisdiction": "Kingdom of Kent (Anglo-Saxon England)",
+        "legal_tradition": "customary",
+        "year": 600,
+        "label_raw": "Law of Aethelberht (Kent): reproductive organ = 300 sh = 3x wergild (above a life)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Law of Aethelberht (Kent); Museum Facts https://museumfacts.co.uk/history-of-personal-injury-law-anglo-saxon-wergild/",
+        "confidence": "medium"
+      },
+      {
+        "id": "alfred-wessex-bodypart-prices",
+        "source": "historical_codes",
+        "summary": "Laws of Alfred (Wessex, c.890): independent ~3-centuries-later corroboration in the same tradition — eye = 66 shillings, foot at the knee = 80, great toe = 20, loss of procreative capacity = 80 — notably pricing the genital injury at foot-tier (NOT above a life), showing the 'reproduction > death' weighting was not universal even within one tradition.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": null,
+        "harm_duration": "permanent",
+        "jurisdiction": "Kingdom of Wessex (Anglo-Saxon England)",
+        "legal_tradition": "customary",
+        "year": 890,
+        "label_raw": "Laws of Alfred (Wessex): eye=66sh, foot(at knee)=80sh, great toe=20sh, procreative capacity=80sh (foot-tier, not above life)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Laws of Alfred (Wessex, c.890); Medievalists.net 'Price of a Pinky' https://www.medievalists.net/2018/01/anglo-saxon-punishments-price-pinky/",
+        "confidence": "medium"
+      },
+      {
+        "id": "welsh-galanas-freeman-3780-pence",
+        "source": "historical_codes",
+        "summary": "Cyfraith Hywel (Wales): the galanas (blood-price for the death) of a free man (bonheddig) is 3,780 pence = 63 cows, the reference life-price (1.0) in the two-layer galanas/sarhaed system where galanas = 3 x sarhaed.",
+        "harm_type": "death",
+        "intent": "intentional",
+        "harm_magnitude": 1,
+        "harm_duration": "permanent",
+        "jurisdiction": "Medieval Wales",
+        "legal_tradition": "customary",
+        "year": 950,
+        "label_raw": "Cyfraith Hywel (Wales): free man galanas = 3,780 pence = 63 cows (life reference = 1.0)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Cyfraith Hywel / Galanas; Wikipedia 'Galanas' https://en.wikipedia.org/wiki/Galanas ; Wikipedia 'Cyfraith Hywel' https://en.wikipedia.org/wiki/Cyfraith_Hywel",
+        "confidence": "high"
+      },
+      {
+        "id": "welsh-sarhaed-base-1260-pence",
+        "source": "historical_codes",
+        "summary": "Cyfraith Hywel (Wales): the base sarhaed (insult/injury price) = galanas / 3 = 1,260 pence, i.e. 0.33 of a free man's life-price — the structural one-third rule linking the dignity/injury layer to the blood-price layer.",
+        "harm_type": "psychological",
+        "intent": "intentional",
+        "harm_magnitude": 0.33,
+        "harm_duration": "n/a",
+        "jurisdiction": "Medieval Wales",
+        "legal_tradition": "customary",
+        "year": 950,
+        "label_raw": "Cyfraith Hywel (Wales): base sarhaed = galanas/3 = 1,260 pence (0.33 of life)",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Cyfraith Hywel / Galanas; Wikipedia 'Galanas' https://en.wikipedia.org/wiki/Galanas",
+        "confidence": "high"
+      },
+      {
+        "id": "welsh-nine-limbs-480-pence-each",
+        "source": "historical_codes",
+        "summary": "Cyfraith Hywel (Wales): the 'nine limbs of equal value' (two hands, two eyes, two feet, two lips/eyelids, nose) are each compensated at 480 pence ~0.127 of a free man's galanas (~1/8 of a life); all nine sum to ~4,320 pence, exceeding one life — a coherent severity ceiling.",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.127,
+        "harm_duration": "permanent",
+        "jurisdiction": "Medieval Wales",
+        "legal_tradition": "customary",
+        "year": 950,
+        "label_raw": "Cyfraith Hywel (Wales): each of nine equal-value limbs = 480 pence (~0.127 of life); all nine > one life",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Cyfraith Hywel / Galanas; Wikipedia 'Galanas' https://en.wikipedia.org/wiki/Galanas ; Wikipedia 'Cyfraith Hywel' https://en.wikipedia.org/wiki/Cyfraith_Hywel",
+        "confidence": "high"
+      },
+      {
+        "id": "welsh-status-flat-limb-graded-dignity",
+        "source": "historical_codes",
+        "summary": "Cyfraith Hywel (Wales): distinctive status design — the physical-loss component is egalitarian and fixed regardless of rank (a king's eye = a villein's eye = 480 pence), while only the dignity/insult component (sarhaed) scales with rank (queen's/heir's sarhaed = 1/3 of the king's).",
+        "harm_type": "bodily",
+        "intent": "intentional",
+        "harm_magnitude": 0.127,
+        "harm_duration": "permanent",
+        "jurisdiction": "Medieval Wales",
+        "legal_tradition": "customary",
+        "year": 950,
+        "label_raw": "Cyfraith Hywel (Wales): body-part value flat across rank (king's eye = villein's eye = 480 pence); only sarhaed status-graded",
+        "informs_ratio": [
+          "severity_ladder",
+          "W_to_M"
+        ],
+        "source_citation": "Cyfraith Hywel; Welsh law (EPFL Wikispeedia mirror of Wikipedia) https://dlab.epfl.ch/wikispeedia/wpcd/wp/w/Welsh_law.htm ; Sarah Woodbury 'Laws of Hywel Dda' https://www.sarahwoodbury.com/laws-of-hywel-dda/",
+        "confidence": "medium"
+      }
     ]
   }
 }
