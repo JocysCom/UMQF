@@ -33,3 +33,9 @@ Append an object to `cases.json`:
 
 These test per-entity `UMQ_base` / `UMQ_final`. Aggregation across entities and the
 Complexity Factor (CF) are not yet covered.
+
+## Open issues
+
+- **Pure suffering scores 0.** When `ΔOS = 0` (suffering with no survival change — see
+  `immortal_tortured_no_survival_change`), the formula returns 0. Proposed fix and the
+  numbers it would give: `proto_suffering_time.py`; design note in `../data/README.md`.

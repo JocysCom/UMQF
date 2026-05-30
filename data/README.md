@@ -175,3 +175,17 @@ Replace intuition-set coefficient scales with survival-grounded definitions, so 
   - *Structural fork (most consequential for accuracy):* `Sc` plays two roles that should be separated — (1) suffering *inflicted on a victim* amplifies a crime's harm (current use: torture-murder > clean murder); (2) an entity's *own* suffering lowers the value of *its* continued survival, which can go negative (the euthanasia case). Same scale, different application.
 - **`In` (intent): ground in recurrence risk.** Intent matters because an intentional predator is a standing future survival-threat while an accident is not; the ~3–4× intentional-vs-negligent gap in sentencing is then a *prediction of repeat harm*, not a human preference.
 - **`P(caught)`, floor, cap:** as in the penalty framework above (deterrence; collective-survival minimum; one-life ceiling).
+
+## Suffering needs its own term — pure suffering scores 0 (open — resolve later)
+
+**Gap:** `ΔSc` only *multiplies* the `ΔOS` term, so when `ΔOS = 0` (an action causes suffering but no change in survival odds — torturing an immortal, or a victim who fully recovers) the whole product is 0. Pure suffering is invisible. Surfaced by the test `immortal_tortured_no_survival_change` → 0.
+
+**Proposed fix (survival-grounded):** count a stretch of suffering as degraded survival-*time*, contributing its own harm:
+
+`suffering harm ≈ ΔSc × VSA × (time spent suffering ÷ the entity's OWN lifespan)`
+
+- Torture then always scores *some* negative; for an immortal a finite torture is a near-zero fraction of an endless life → a blip. (DALY logic: time lived in suffering.)
+- **Weight by the entity's OWN lifespan, not an external average** — that is what makes it a blip for an immortal; an average reference would score a year of immortal-torture like a human's. Universality = applying the *same rule* ("fraction of this entity's own life") to every being — the clock `Tc` already uses.
+- Still survival-grounded: suffering = degraded survival-*quality* over time, a real survival loss — no new non-survival axiom.
+
+**Open design questions (later):** how to combine this *additive* suffering-harm with the existing `(1 − sign·ΔSc)` multiplier that amplifies death-harm (avoid double-counting — it would change torture-then-murder numbers); where `time_suffering` and `lifespan` come from as inputs; whether a truly-infinite lifespan giving exactly 0 is acceptable. Prototype + numbers: `Tests/proto_suffering_time.py`. **NOT in `UMQF.md`.**

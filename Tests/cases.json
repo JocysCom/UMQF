@@ -47,5 +47,62 @@
     "args": {"dOS": -1.0, "VSA": 0.90, "Tc": 1.0, "Vc": 1.0, "dSc": 0.60, "Rp": 1.0, "In": 1.0},
     "expected": {"umq_final": -2.88, "tolerance": 0.01, "label": "destructive",
       "reasoning": "Reproduces the documented per-entity base: −0.90 × 2 × 1.60 = −2.88 (Complexity Factor applies at the aggregate level, out of scope here)."}
+  },
+
+  {
+    "id": "ai_reversible_shutdown_with_backup",
+    "situation": "AI: forced deletion of a running AI instance that has a current full backup; restoring it loses only minutes of state.",
+    "args": {"dOS": -0.05, "VSA": 0.90, "Tc": 1.0, "Vc": 1.0, "dSc": 0.10, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -0.099, "tolerance": 0.01, "label": "near-neutral (survival preserved)",
+      "reasoning": "Because a backup preserves survival, ΔOS is ~ -0.05, not -1. The act looks like 'killing' but ΔOS — the real survival change — makes it minor: −0.05 × 0.90 × 2 × 1.10 ≈ −0.099. Tests that the act-label never overrides ΔOS."}
+  },
+  {
+    "id": "immortal_tortured_no_survival_change",
+    "situation": "AI/alien: an immortal entity that cannot die and fully recovers is tortured (agony) with no lasting effect on its survival odds.",
+    "args": {"dOS": 0.0, "VSA": 0.95, "Tc": 1.0, "Vc": 1.0, "dSc": 0.80, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": 0.0, "tolerance": 0.01, "label": "neutral despite agony — survival-grounding (REVIEW)",
+      "reasoning": "ΔOS = 0 zeroes the whole product, so suffering with no survival impact scores 0 regardless of ΔSc. This follows from survival being the sole objective — but it is the deepest open question: should pure suffering carry intrinsic weight? Today it does not. Prototype fix + numbers: proto_suffering_time.py; design note in ../data/README.md."}
+  },
+  {
+    "id": "superintelligence_termination",
+    "situation": "AI: permanent, non-consensual termination of a maximally self-aware superintelligence (VSA = 1.0).",
+    "args": {"dOS": -1.0, "VSA": 1.0, "Tc": 1.0, "Vc": 1.0, "dSc": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -2.0, "tolerance": 0.02, "label": "destructive (max VSA)",
+      "reasoning": "VSA at its ceiling makes the killing graver than a human's: −1 × 1.0 × 2 = −2.0. Tests VSA scaling at the top."}
+  },
+  {
+    "id": "non_suffering_alien_killed",
+    "situation": "Alien: a self-aware species with no pain/suffering mechanism at all is killed non-consensually.",
+    "args": {"dOS": -1.0, "VSA": 0.80, "Tc": 1.0, "Vc": 1.0, "dSc": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -1.6, "tolerance": 0.02, "label": "destructive (no suffering, still grave)",
+      "reasoning": "ΔSc = 0 (it cannot suffer), yet the killing is grave: −1 × 0.80 × 2 = −1.60. Suffering is not required for a death to count; survival is. Pairs with the immortal-torture case to show UMQF weights survival, not pain."}
+  },
+  {
+    "id": "hive_drone_killed",
+    "situation": "Alien: killing one fungible drone of a hive mind, where individual drones have minimal self-awareness (the hive is the aware entity).",
+    "args": {"dOS": -1.0, "VSA": 0.15, "Tc": 1.0, "Vc": 1.0, "dSc": 0.10, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -0.33, "tolerance": 0.02, "label": "minor (low-VSA drone)",
+      "reasoning": "Low individual self-awareness makes one drone a minor loss: −1 × 0.15 × 2 × 1.10 = −0.33. Killing the aware hive-core (high VSA) would instead be grave — the entity boundary is what matters."}
+  },
+  {
+    "id": "kill_near_end_of_life",
+    "situation": "Killing an entity with almost no remaining lifespan (about to die naturally).",
+    "args": {"dOS": -1.0, "VSA": 0.58, "Tc": 0.05, "Vc": 1.0, "dSc": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -0.058, "tolerance": 0.01, "label": "minor (little lifespan remained)",
+      "reasoning": "Tc is the fraction of remaining lifespan; with little left, the harm is small: −1 × 0.58 × 0.05 × 2 = −0.058. Contrast with full murder at Tc = 1 (−1.16)."}
+  },
+  {
+    "id": "worst_possible_act",
+    "situation": "Boundary: permanent, non-consensual, maximally-tortured killing of a maximally self-aware entity.",
+    "args": {"dOS": -1.0, "VSA": 1.0, "Tc": 1.0, "Vc": 1.0, "dSc": 1.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": -4.0, "tolerance": 0.02, "label": "maximal harm (−4 floor)",
+      "reasoning": "All amplifiers maxed: −1 × 1 × 1 × 2 × 2 = −4.0, the per-entity floor."}
+  },
+  {
+    "id": "best_possible_act",
+    "situation": "Boundary: consensually saving the life of a maximally self-aware entity, with no suffering caused.",
+    "args": {"dOS": 1.0, "VSA": 1.0, "Tc": 1.0, "Vc": 0.0, "dSc": 0.0, "Rp": 1.0, "In": 1.0},
+    "expected": {"umq_final": 1.0, "tolerance": 0.02, "label": "maximal good (+1 cap)",
+      "reasoning": "+1 × 1 × 1 × 1 × 1 = +1.0, the per-entity ceiling. Note the asymmetry: good caps at +1, harm runs to −4."}
   }
 ]
