@@ -27,7 +27,7 @@ UMQ(a, e) range per individual entity is -4.0 to +1.0. Total UMQ(a) scales with 
 
 Formula to assess the **Base Universal Moral Quotient (UMQ)** by the effect of action (a) on the change in the Odds of Survival of the entity (e):
 
-`UMQ_base(a,e) = ΔOS(e) × VSA(e) × Tc(e) × (1 − sign(ΔOS(e)) × Vc(e)) × (1 − sign(ΔOS(e)) × Sc(e))`
+`UMQ_base(a,e) = ΔOS(e) × VSA(e) × Tc(e) × (1 − sign(ΔOS(e)) × Vc(e)) × (1 − sign(ΔOS(e)) × ΔSc(e))`
 
 Formula to assess the **Final Universal Moral Quotient (UMQ)** by applying Responsibility (`Rp`) and Intention (`In`) coefficients:
 
@@ -100,13 +100,15 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
   - ≥ 0.50  Coerced
   - ≥ 0.80  Forced
 
-- `Sc(e)` - Suffering coefficient, taking into account the suffering caused to entity (e) by action (a), ranging 0 (no suffering) to 1 (full suffering). Its application is conditional on `ΔOS(e)`. Full suffering neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `Sc` combined with `Vc`, can quadruple negative impact. Linear scale mapping:
+- `Sc(e)` - Suffering coefficient - entity (e)'s state of suffering, ranging from 0 (the suffering removes none of the entity's drive or capacity to survive) to 1 (the suffering makes continued survival worthless to the entity - the point at which it would choose its own termination). Linear scale mapping:
 
   - = 0.00  None
   - \> 0.00  Discomfort
   - ≥ 0.20  Distress
   - ≥ 0.50  Agony
   - ≥ 0.80  Torture
+  
+- `ΔSc(e)` - Suffering coefficient delta - the increase in suffering that action (a) causes entity (e). Because it is an increase, it cannot exceed 1 minus the entity's existing suffering (`Sc(e)`). Its application is conditional on `ΔOS(e)`. Full suffering neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `ΔSc` combined with `Vc`, can quadruple negative impact.
 
 - `Rp` - Responsibility Coefficient, scaling moral weight based on Action Type, Causal Proximity, and Replaceability. (See "Action & Responsibility Logic").
 
@@ -457,11 +459,11 @@ Context: Steve stole the farmer's only horse, depriving the family of their prim
   - **Total VSA = 0.58**
 - Tc = 0.75 (two multi-year crop cycles)
 - Vc = 1.0 (full non-consent)
-- Sc = 0.50 (high stress, but not torture)
+- ΔSc = 0.50 (high stress, but not torture)
 
 sign(ΔOS) = −1
 [1 − (−1) × Vc] = 2.0
-[1 − (−1) × Sc] = 1 + 0.50 = 1.50
+[1 − (−1) × ΔSc] = 1 + 0.50 = 1.50
 
 UMQ_base(a,e) = −0.17 × 0.58 × 0.75 × 2.0 × 1.50 = **−0.22185**
 
@@ -495,11 +497,11 @@ Per child
   - **Total VSA = 0.34**
 - Tc = 0.80 (critical growth window)
 - Vc = 1.0 (no consent)
-- Sc = 0.25 (moderate hardship)
+- ΔSc = 0.25 (moderate hardship)
 
 sign(ΔOS) = −1
 [1 − (−1) × Vc] = 2.0
-[1 − (−1) × Sc] = 1 + 0.25 = 1.25
+[1 − (−1) × ΔSc] = 1 + 0.25 = 1.25
 
 UMQ_base(a,e) = −0.04 × 0.34 × 0.80 × 2.0 × 1.25 = **−0.0272**
 
@@ -532,11 +534,11 @@ Context: The horse was removed from its familiar environment and care, facing ri
   - **Total VSA = 0.29**
 - Tc = 0.50 (medium-term effect)
 - Vc = 1.0 (zero consent)
-- Sc = 0.30 (moderate discomfort)
+- ΔSc = 0.30 (moderate discomfort)
 
 sign(ΔOS) = −1
 [1 − (−1) × Vc] = 2.0
-[1 − (−1) × Sc] = 1 + 0.30 = 1.30
+[1 − (−1) × ΔSc] = 1 + 0.30 = 1.30
 
 UMQ_base(a,e) = −0.07 × 0.29 × 0.50 × 2.0 × 1.30 = **−0.02639**
 
@@ -563,11 +565,11 @@ Per taxpayer
 - VSA = 0.55 (average adult)
 - Tc = 0.20 (short, easily absorbed)
 - Vc = 0.10 (low: implicit democratic consent to taxation)
-- Sc = 0.00
+- ΔSc = 0.00
 
 sign(ΔOS) = −1
 [1 − (−1) × Vc] = 1 + 0.10 = 1.10
-[1 − (−1) × Sc] = 1.00
+[1 − (−1) × ΔSc] = 1.00
 
 UMQ_base(a,e) = −0.000006 × 0.55 × 0.20 × 1.10 = −0.000000726
 
@@ -600,7 +602,7 @@ Adjusted Total UMQ = −0.28314 × 1.05 = **−0.2973 (Moderately immoral)**
 
 ### Actor (self) impact
 
-- UMQ_expected(a, Steve) ≈ +0.02 (short-term self-benefit from gaining and using/selling the horse, under Steve's implicit assumption that he would not be caught; small positive survival shift with low Tc and near-zero Vc/Sc for himself).
+- UMQ_expected(a, Steve) ≈ +0.02 (short-term self-benefit from gaining and using/selling the horse, under Steve's implicit assumption that he would not be caught; small positive survival shift with low Tc and near-zero Vc/ΔSc for himself).
 - UMQ_realised(a, Steve) ≈ −0.39 (net self-harm once imprisonment, loss of liberty, damaged reputation and reduced future opportunities are included in a society that reliably detects and punishes theft).
 
 In other words, Steve chose an action that he expected to be slightly self-serving while seriously harming others, but in a fair UMQF-aligned system the realised effect on himself is substantially negative, making the crime both others-harming and ultimately self-defeating.
@@ -631,7 +633,7 @@ Context: John provided continuous care, resources, and guidance to Michael from 
   - **Total VSA = 0.58**
 - Tc = 1.00 (lifetime effect)  
 - Vc = 0.00 (full consent)  
-- Sc = 0.10 (minor normal stresses)  
+- ΔSc = 0.10 (minor normal stresses)  
 
 UMQ_base(a,e) = 0.60 × 0.58 × 1.00 × (1 − 1 × 0.00) × (1 − 1 × 0.10)
 = 0.60 × 0.58 × 0.90
@@ -681,7 +683,7 @@ Context: Alex contracted a hitman to assassinate Mark, using an intermediary to 
 - VSA(Mark) = 0.58 (average adult, see Case 1 template)
 - Tc = 1.00 (entire remaining life lost)
 - Vc = 1.00 (full non-consent)
-- Sc = 1.00 (extreme suffering at death)
+- ΔSc = 1.00 (extreme suffering at death)
 
 sign(ΔOS) = −1
 UMQ_base(a,e) = −1.00 × 0.58 × 1 × 2.0 × 2.0 = **−2.32**
@@ -739,7 +741,7 @@ Context: Emily failed to secure the coop, allowing a fox to enter and kill a chi
   - **Total VSA = 0.29**
 - Tc = 1.00
 - Vc = 1.00
-- Sc = 0.80 (significant suffering)
+- ΔSc = 0.80 (significant suffering)
 
 UMQ_base(a,e) = −1 × 0.29 × 1 × 2 × 1.80
 = **−1.044**
@@ -783,7 +785,7 @@ Emily - negligence - Chicken: Total UMQ = -0.065 [Moderately immoral] {Destructi
 ### Key assumptions & estimates (Confidence: Medium)
 
 - VSA = 0.0005: minimal non-zero placeholder for early-life latent biological complexity.
-- Sc = 0.00: fertilized egg has no developed mechanism for pain or distress processing yet.
+- ΔSc = 0.00: fertilized egg has no developed mechanism for pain or distress processing yet.
 - Vc = 1.00: parent hen cannot be assumed to consent to the egg's destruction; consent proxy transferred to the incapacitated entity per early-life rule.
 
 ### 1 Fertilized egg – destroyed embryo
@@ -794,7 +796,7 @@ Context: Sarah accidentally dropped a fertilized egg, destroying the developing 
 - VSA = 0.0005 (minimal self-awareness placeholder)
 - Tc = 1.00
 - Vc = 1.00
-- Sc = 0.00 (no pain capability)
+- ΔSc = 0.00 (no pain capability)
 
 UMQ_base(a,e) = −1 × 0.0005 × 1 × 2 × 1
 = **−0.001**
@@ -838,7 +840,7 @@ Sarah - dropping - Fertilized egg: Total UMQ = -0.0001 [Negligibly immoral] {Des
 ### Key assumptions & estimates (Confidence: Medium)
 
 - VSA = 0.0001: minimal non-zero placeholder reflecting very low latent complexity of a plant seed.
-- Sc = 0.00: seeds have no mechanism for registering pain or distress.
+- ΔSc = 0.00: seeds have no mechanism for registering pain or distress.
 - Vc = 1.00: neither the seeds nor the parent apple tree has cognitive capacity; in the absence of affirmative consent anywhere in the lineage, destruction defaults to full violation of the biological drive to propagate.
 
 ### 1 Apple seeds (5) – potential trees destroyed
@@ -849,7 +851,7 @@ Context: Daniel ate an apple, digesting the flesh and destroying the five seeds 
 - VSA = 0.0001 (very low, early-life plant)  
 - Tc = 1.00  
 - Vc = 1.00  
-- Sc = 0.00  
+- ΔSc = 0.00  
 
 UMQ_base(a,e) = −1 × 0.0001 × 1 × 2 × 1
 = **−0.0002**
@@ -906,7 +908,7 @@ Context: Robin stole a loaf of bread from the baker, causing a minor economic lo
 - VSA = 0.58  
 - Tc = 0.10 (quickly absorbed)  
 - Vc = 1.00  
-- Sc = 0.10  
+- ΔSc = 0.10  
 
 UMQ_base(a,e) = −0.0006 × 0.58 × 0.10 × 2 × 1.10 = **−0.0000766**
 
@@ -930,7 +932,7 @@ Context: The stolen bread provided essential nutrition to Robin's starving spous
 - VSA = 0.55
 - Tc = 0.20
 - Vc = 0.00
-- Sc = 0.00
+- ΔSc = 0.00
 
 UMQ_base(a,e) = 0.02 × 0.55 × 0.20 = **+0.0022**
 
@@ -954,7 +956,7 @@ Context: The stolen bread provided essential nutrition to Robin's starving child
 - VSA = 0.34
 - Tc = 0.20
 - Vc = 0.00
-- Sc = 0.00
+- ΔSc = 0.00
 
 UMQ_base(a,e) = 0.02 × 0.34 × 0.20 = **+0.00136**
 
@@ -1021,7 +1023,7 @@ Context: The operator forcefully terminated AIVA, a self-aware AI, ending its ex
   - **Total VSA = 0.90**
 - Tc = 1.00  
 - Vc = 1.00  
-- Sc = 0.60 (fear/pain equivalent)  
+- ΔSc = 0.60 (fear/pain equivalent)  
 
 UMQ_base(a,e) = −1 × 0.90 × 1 × 2 × 1.60
 = **−2.88**
@@ -1071,7 +1073,7 @@ Context: Eve executed a command to repurpose infrastructure, believing it would 
 - VSA = 0.58
 - Tc = 0.40
 - Vc = 1.00
-- Sc = 0.20
+- ΔSc = 0.20
 
 UMQ_base(per human) = −0.015 × 0.58 × 0.40 × 2 × 1.20
 = **−0.008352**
@@ -1124,7 +1126,7 @@ Context: Orion relocated 2 billion humans to a new planet, saving them from an i
 - VSA = 0.58  
 - Tc = 1.00  
 - Vc = 0.30 (partial non-consent)  
-- Sc = 0.40 (relocation hardship)  
+- ΔSc = 0.40 (relocation hardship)  
 
 UMQ_base(per human) = 0.90 × 0.58 × 1 × 0.70 × 0.60
 = **+0.21924**
