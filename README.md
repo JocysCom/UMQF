@@ -52,7 +52,7 @@ The core axiom: **Morality = Impact on Survival Odds.**
 ### Standard Notation
 
 ```math
-UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \text{sgn}(\Delta OS(e)) \times Vc(e)) \times (1 - \text{sgn}(\Delta OS(e)) \times Sc(e)) \times Rp \times In \right]
+UMQ(a) = \sum_{e} \left[ \Delta OS(e) \times VSA(e) \times Tc(e) \times (1 - \text{sgn}(\Delta OS(e)) \times Vc(e)) \times (1 - \text{sgn}(\Delta OS(e)) \times \Delta Sc(e)) \times Rp \times In \right]
 ```
 
 ### Simplified Logic
@@ -67,7 +67,7 @@ Moral Score = \sum \left( \text{Survival Delta} \times \text{Awareness} \times \
 | **VSA** | **Value of Self-Awareness** | Scales impact by cognitive depth. Killing a fly < Killing a human. |
 | **Tc** | **Time Coefficient** | Duration of impact. Permanent harm > Temporary pain. |
 | **Vc** | **Violation of Consent** | Did the entity agree? Violation flips positive acts to neutral/negative. |
-| **Sc** | **Suffering Coefficient** | Pain multiplier. Cruelty makes a bad act worse. |
+| **ΔSc** | **Suffering Coefficient (delta)** | Increase in suffering the action causes. More suffering makes a bad act worse. |
 | **Rp** | **Responsibility** | Did the actor pull the trigger, or just watch? |
 | **In** | **Intention** | Was it calculated or accidental? |
 

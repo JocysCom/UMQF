@@ -7,17 +7,9 @@ mirrors it so edge cases can be checked numerically. Keep it in sync with UMQF.m
     UMQ_base(a,e) = ΔOS·VSA·Tc·(1 − sign(ΔOS)·Vc)·(1 − sign(ΔOS)·ΔSc)
     UMQ_final     = UMQ_base · Rp · In
 
-ΔSc (suffering coefficient) is the *change* in physically-manifested suffering the
-action causes the entity, measured against its pre-existing suffering. Its lower
-bound is the Treatability parameter T:
-
-    ΔSc ∈ [T, +1],   T ∈ [-1, 0]   (T = -(irremediable fraction); default T = 0)
-
-So relief (a negative ΔSc) is admissible only down to T. T = 0 (treatable, the
-default) means no relief credit; T = -1 (fully irremediable) allows full relief.
-
-The per-entity result is clamped to [-4, +1]: harm is amplified (down to -4), good
-is capped (+1), so relief can neutralize a harm but never super-charge a good.
+ΔSc is the increase in suffering the action causes the entity, on a [0, 1] scale
+(0 = no increase; 1 = full suffering). It cannot exceed 1 minus the entity's
+existing suffering, so callers pass a value already within [0, 1].
 """
 
 
@@ -25,16 +17,11 @@ def sign(x):
     return -1.0 if x < 0 else (1.0 if x > 0 else 0.0)
 
 
-def umq_base(dOS, VSA, Tc, Vc, dSc, T=0.0, clamp=True):
-    """Per-entity UMQ_base. dSc is the raw ΔSc; T is Treatability in [-1, 0]."""
-    if not -1.0 <= T <= 0.0:
-        raise ValueError(f"T (treatability) must be in [-1, 0], got {T}")
-    eff_dSc = min(1.0, max(T, dSc))          # ΔSc bounded to [T, +1]
+def umq_base(dOS, VSA, Tc, Vc, dSc):
+    """Per-entity UMQ_base. dSc (ΔSc) is the suffering increase, on [0, 1]."""
+    dSc = min(1.0, max(0.0, dSc))            # ΔSc ranges [0, 1]
     s = sign(dOS)
-    vc_factor = 1.0 - s * Vc
-    sc_factor = 1.0 - s * eff_dSc
-    base = dOS * VSA * Tc * vc_factor * sc_factor
-    return max(-4.0, min(1.0, base)) if clamp else base
+    return dOS * VSA * Tc * (1.0 - s * Vc) * (1.0 - s * dSc)
 
 
 def umq_final(base, Rp=1.0, In=1.0):
