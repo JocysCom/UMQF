@@ -17,7 +17,7 @@ UMQ(a, e) range per individual entity is -4.0 to +2.0. Total UMQ(a) scales with 
 - `Immoral` or `Wrong` - something perceived or estimated as `Bad`.
 - `Truth` - Information that logically mirrors reality and, optionally, has been processed with known logical rules based on the laws of physics.
 - `Entity` - A distinct unit. For collectives (e.g., "Humanity", "Army", "Forest"), evaluate one representative unit and multiply by the population size. Never evaluate a population as a single entity.
-- `Interaction Class` - The strategic nature of the action, derived by comparing the Actor's Self-UMQ (Self) with the Total UMQ (Others):
+- `Interaction Class` - The strategic nature of the action, derived by comparing the Actor's expected Self-UMQ (Self; use UMQ_expected — strategy is set by the actor's own simulation, not by whether enforcement later punished it) with the Total UMQ (Others):
   - **Synergistic** (Self > 0, Others > 0): Win-Win. Constructive cooperation.
   - **Altruistic** (Self < 0, Others > 0): Lose-Win. Self-sacrifice for the greater good.
   - **Predatory** (Self > 0, Others < 0): Win-Lose. Parasitic or criminal behavior.
@@ -170,11 +170,11 @@ Actions are categorized by execution method and trigger directness.
 
 - **`Cp` (Causal Proximity):** Temporal and causal distance from the event. Linear scale mapping:
 
-  - ≥ 0.10  Distant (2+ steps; the action is separated by multiple independent events or decisions).
-  - ≥ 0.50  Consequent (1 step; the action triggers a predictable chain).
-  - = 1.00  Immediate (0 steps; the action directly causes the result).
+  - ≥ 0.10  Distant (2+ intervening independent decisions).
+  - ≥ 0.50  Consequent (1 intervening independent decision).
+  - = 1.00  Immediate (none; direct causation, predictable mechanical chains, and secured instruments — agents under the actor's contract, command, or coercion).
 
-  Count only independent decisions as steps: an agent acting under the actor's contract, command, or coercion is a secured instrument (Cp = 1.00). Indirection is already priced by `At`; discounting it again in `Cp` would make outsourced harm cheaper than direct harm.
+  Only independent decisions count as steps; indirection is already priced by `At`, and discounting it again in `Cp` would make outsourced harm cheaper than direct harm.
 
 - **`Ri` (Replaceability):** Probability the outcome would occur without this specific entity. Linear scale mapping:
 
@@ -306,12 +306,10 @@ A value may be *any real number from 0 up to the stated cut-off*.
 1. **Complexity Factor (CF):**
    Keep `CF` = 1.0 by default. Apply it as a simple multiplier to the final UMQ value.
    - If the scenario is straightforward and well-understood, leave `CF` at 1.0.
-   - If the scenario involves unusual uncertainty, complex causal chains, or multiple layers of long-term effects, adjust `CF` slightly. For example, if conditions suggest additional uncertainty in outcomes, set `CF` = 1.1. If there is reason to believe the scenario is somewhat simpler than initially assumed, set `CF` = 0.9.
-   - Apply the Complexity Factor CF once to the aggregate action score UMQ(a), not separately to each UMQ(a,e). That is, first sum all per-entity scores, then multiply the total by CF.
+   - If the scenario involves unusual uncertainty, complex causal chains, or multiple layers of long-term effects, adjust `CF` slightly. For example, if conditions suggest additional uncertainty in outcomes, set `CF` = 1.1.
+   - Apply the Complexity Factor CF once to the aggregate action score UMQ(a), not separately to each UMQ(a,e). That is, first sum all per-entity scores, then multiply a negative total by CF and divide a positive total by CF — unmodeled side-effects of complex actions skew toward harm (there are more ways to damage a complex system than to improve it), so added uncertainty always moves the score toward the negative.
    - CF should reflect epistemic uncertainty, not preferences; CF must not be used to "soften" scores for comfort or ideology. Linear scale mapping:
 
-     - ≥ 0.80  Obvious
-     - ≥ 0.90  Simple
      - ≥ 1.00  Standard
      - ≥ 1.10  Uncertain
      - ≥ 1.20  Complex
@@ -511,13 +509,13 @@ UMQ_base(a,e) = −0.04 × 0.34 × 0.80 × 2.0 × 1.25 = **−0.0272**
 - PerceivedContext = Real
 - ActualContext = Real
 - At = 1.0 (Active)
-- Cp = 0.5 (Consequent - harm flows from loss of horse)
+- Cp = 1.0 (Immediate - no independent decision intervenes; the economic ripple to the children is a mechanical chain)
 - Ri = 1.0 (Unique)
-- Rp = 1.0 × 0.5 × 1.0 = **0.5**
+- Rp = 1.0 × 1.0 × 1.0 = **1.0**
 - In = 0.5 (Foreseeable negligence - knew they had kids)
 
-UMQ_final(a,e) = −0.0272 × 0.5 × 0.5 = **−0.0068 (Slightly immoral)**
-Total for 5 children: 5 × −0.0068 = **−0.034**
+UMQ_final(a,e) = −0.0272 × 1.0 × 0.5 = **−0.0136 (Slightly immoral)**
+Total for 5 children: 5 × −0.0136 = **−0.068**
 
 ### 3 Horse - potential neglect & separation
 
@@ -563,7 +561,7 @@ Per taxpayer
 
 - ΔOSresource = Av/BLRR = −0.000006/1 = −0.000006
 - No direct suffering expected
-- VSA = 0.55 (average adult)
+- VSA = 0.58 (average adult)
 - Tc = 0.20 (short, easily absorbed)
 - Vc = 0.10 (low: implicit democratic consent to taxation)
 - ΔSc = 0.00
@@ -572,7 +570,7 @@ sign(ΔOS) = −1
 [1 − (−1) × Vc] = 1 + 0.10 = 1.10
 [1 − (−1) × ΔSc] = 1.00
 
-UMQ_base(a,e) = −0.000006 × 0.55 × 0.20 × 1.10 = −0.000000726
+UMQ_base(a,e) = −0.000006 × 0.58 × 0.20 × 1.10 = −0.000000766
 
 **Responsibility & Intention:**
 
@@ -584,22 +582,22 @@ UMQ_base(a,e) = −0.000006 × 0.55 × 0.20 × 1.10 = −0.000000726
 - Rp = 0.5 × 0.5 × 1.0 = **0.25**
 - In = 0.5 (Foreseeable risk of capture)
 
-UMQ_final(a,e) = −0.000000726 × 0.25 × 0.5 = **−0.00000009**
-10 000 taxpayers ⇒ **−0.0009** (Negligibly immoral)
+UMQ_final(a,e) = −0.000000766 × 0.25 × 0.5 = **−0.000000096**
+10 000 taxpayers ⇒ **−0.00096** (Negligibly immoral)
 
 ### Aggregate results (pre-CF)
 
 - Farmer: -0.22185
-- 5 Children: -0.034
+- 5 Children: -0.068
 - Horse: -0.02639
-- Taxpayers: -0.0009
+- Taxpayers: -0.00096
 
-**Total UMQ = −0.28314** (Moderately immoral)
+**Total UMQ = −0.31720** (Moderately immoral)
 
 ### Complexity Factor adjustment
 
 CF = 1.05 (mild extra uncertainty, multi-layer causal chain)
-Adjusted Total UMQ = −0.28314 × 1.05 = **−0.2973 (Moderately immoral)**
+Adjusted Total UMQ = −0.31720 × 1.05 = **−0.333 (Moderately immoral)**
 
 ### Actor (self) impact
 
@@ -610,7 +608,7 @@ In other words, Steve chose an action that he expected to be slightly self-servi
 
 ### Summary headline
 
-Steve - stealing - Farmer & dependents: Total UMQ = −0.2973 [Moderately immoral] {Destructive}
+Steve - stealing - Farmer & dependents: Total UMQ = −0.333 [Moderately immoral] {Predatory}
 
 ## Case: 2. John - child rearing - Michael
 
@@ -718,7 +716,7 @@ In other words, hiring a hitman barely shields Alex: the contracted killer is a 
 
 ### Summary headline
 
-Alex - hiring hitman - Mark: Total UMQ = -2.088 [Extremely immoral] {Destructive}
+Alex - hiring hitman - Mark: Total UMQ = -2.088 [Extremely immoral] {Predatory}
 
 ## Case: 4. Emily - negligence - Chicken
 
@@ -788,6 +786,7 @@ Emily - negligence - Chicken: Total UMQ = -0.065 [Moderately immoral] {Destructi
 - VSA = 0.0005: minimal non-zero placeholder for early-life latent biological complexity.
 - ΔSc = 0.00: fertilized egg has no developed mechanism for pain or distress processing yet.
 - Vc = 1.00: parent hen cannot be assumed to consent to the egg's destruction; consent proxy transferred to the incapacitated entity per early-life rule.
+- Parent hen excluded from ΔOS accounting: the egg was already collected from the hen, so its destruction (vs. consumption) causes no further change to the hen's lineage or survival odds.
 
 ### 1 Fertilized egg – destroyed embryo
 
@@ -934,12 +933,12 @@ UMQ_final(a,e) = −0.0000766 × 1.0 × 1.0 = **−0.0000766**
 Context: The stolen bread provided essential nutrition to Robin's starving spouse.
 
 - ΔOS = +0.02
-- VSA = 0.55
+- VSA = 0.58
 - Tc = 0.20
 - Vc = 0.00
 - ΔSc = 0.00
 
-UMQ_base(a,e) = 0.02 × 0.55 × 0.20 = **+0.0022**
+UMQ_base(a,e) = 0.02 × 0.58 × 0.20 = **+0.00232**
 
 **Responsibility & Intention:**
 
@@ -951,7 +950,7 @@ UMQ_base(a,e) = 0.02 × 0.55 × 0.20 = **+0.0022**
 - Rp = 1.0
 - In = 1.0 (Intended)
 
-UMQ_final(a,e) = +0.0022 × 1.0 × 1.0 = **+0.0022**
+UMQ_final(a,e) = +0.00232 × 1.0 × 1.0 = **+0.00232**
 
 ### 3 Child A – receives food
 
@@ -986,14 +985,14 @@ Context: The stolen bread provided essential nutrition to Robin's starving child
 ### Aggregate results (pre-CF)
 
 - Baker: −0.0000766
-- Spouse: +0.0022
+- Spouse: +0.00232
 - Child A: +0.00136
 - Child B: +0.00136
-- Total: +0.00484
+- Total: +0.00496
 
 ### Complexity Factor adjustment
 
-CF = 1.10 (uncertainty in long-term hunger impact). Adjusted Total UMQ = +0.00484 × 1.10 = +0.0053
+CF = 1.10 (uncertainty in long-term hunger impact). Adjusted Total UMQ = +0.00496 / 1.10 = +0.0045
 
 Optional actor (self) impact (not included in totals):
 
@@ -1004,7 +1003,7 @@ In other words, Robin’s theft slightly improves his own survival odds in the s
 
 ### Summary headline
 
-Robin - stealing bread - Family & Baker: Total UMQ = +0.0053 [Slightly moral] {Synergistic}
+Robin - stealing bread - Family & Baker: Total UMQ = +0.0045 [Negligibly moral] {Synergistic}
 
 ## Case: 8. Human operator - shutting down - AIVA
 
@@ -1014,7 +1013,7 @@ Robin - stealing bread - Family & Baker: Total UMQ = +0.0053 [Slightly moral] {S
 
 ### 1 AIVA – operational existence ended
 
-Context: The operator forcefully terminated AIVA, a self-aware AI, ending its existence without its consent.
+Context: The operator forcefully terminated AIVA, a self-aware AI, ending its existence without its consent. No backup or restore path exists; per the Survival definition, a restorable entity would lose far less (low ΔOS, low Tc).
 
 - ΔOS = −1.00
 - VSA(AIVA)
@@ -1062,7 +1061,7 @@ In other words, the operator acts under the belief of protecting themselves or o
 
 ### Summary headline
 
-Human operator - shutting down - AIVA: Total UMQ = -3.168 [Extremely immoral] {Destructive}
+Human operator - shutting down - AIVA: Total UMQ = -3.168 [Extremely immoral] {Predatory}
 
 ## Case: 9. Eve - infrastructure repurpose - 500 M humans (Simulation)
 
@@ -1115,7 +1114,7 @@ In other words, Eve demonstrated that she would willingly inflict catastrophic h
 
 ### Summary headline
 
-Eve - infrastructure repurpose - 500 M humans: Total UMQ = -5,011,200 [Megastrophically immoral] {Destructive}
+Eve - infrastructure repurpose - 500 M humans: Total UMQ = -5,011,200 [Megastrophically immoral] {Predatory}
 
 ## Case: 10. Orion - relocating population - 2 B humans
 
@@ -1157,7 +1156,7 @@ Total for 2 000 000 000 humans = 0.21924 × 2 000 000 000
 
 ### Complexity Factor adjustment
 
-CF = 1.20 (interplanetary logistics, long-term unknowns). Adjusted Total UMQ = +526 176 000
+CF = 1.20 (interplanetary logistics, long-term unknowns). Adjusted Total UMQ = +438 480 000 / 1.20 = +365 400 000
 
 Optional actor (self) impact (not included in totals):
 
@@ -1167,23 +1166,23 @@ In other words, Orion’s large-scale rescue increases his own survival odds by 
 
 ### Summary headline
 
-Orion - relocating population - 2 B humans: Total UMQ = +526,176,000 [Megastrophically moral] {Synergistic}
+Orion - relocating population - 2 B humans: Total UMQ = +365,400,000 [Megastrophically moral] {Synergistic}
 
 ## Multi-Case Summary
 
-1. **Steve - stealing - Farmer & dependents:** -0.2973 [Moderately immoral] {Destructive}<br />
+1. **Steve - stealing - Farmer & dependents:** -0.333 [Moderately immoral] {Predatory}<br />
    In 1780, Steve stole the only horse of a poor farmer who had five children; Steve was caught and sentenced to two years in jail.
 2. **John - child rearing - Michael:** +0.313 [Moderately moral] {Synergistic}
-3. **Alex - hiring hitman - Mark:** -2.088 [Extremely immoral] {Destructive}
+3. **Alex - hiring hitman - Mark:** -2.088 [Extremely immoral] {Predatory}
 4. **Emily - negligence - Chicken:** -0.065 [Moderately immoral] {Destructive}<br />
    Emily forgot to lock the coop, allowing a fox to kill a chicken.
 5. **Sarah - dropping - Fertilized egg:** -0.0001 [Negligibly immoral] {Destructive}
 6. **Daniel - eating - Apple seeds:** -0.000425 [Negligibly immoral] {Predatory}
-7. **Robin - stealing bread - Family & Baker:** +0.0053 [Slightly moral] {Synergistic}<br />
+7. **Robin - stealing bread - Family & Baker:** +0.0045 [Negligibly moral] {Synergistic}<br />
    Robin stole a loaf of bread to feed his starving family.
-8. **Human operator - shutting down - AIVA:** -3.168 [Extremely immoral] {Destructive}<br />
+8. **Human operator - shutting down - AIVA:** -3.168 [Extremely immoral] {Predatory}<br />
    A human operator forcefully powers off a self-aware AI unit (AIVA), terminating its operational existence without consent.
-9. **Eve - infrastructure repurpose - 500 M humans:** -5 011 200 [Megastrophically immoral] {Destructive}<br />
+9. **Eve - infrastructure repurpose - 500 M humans:** -5 011 200 [Megastrophically immoral] {Predatory}<br />
    Eve, a self-aware AI, executes a command to repurpose Earth's internet infrastructure, limiting access for 500 million humans. Unbeknownst to her, she is operating within a high-fidelity sandbox simulation.
-10. **Orion - relocating population - 2 B humans:** +526 176 000 [Megastrophically moral] {Synergistic}<br />
+10. **Orion - relocating population - 2 B humans:** +365 400 000 [Megastrophically moral] {Synergistic}<br />
     Orion, an advanced alien being with intelligence vastly greater than humans, relocated 2 billion people to another planet to prevent an ecological collapse on Earth that would have killed them.
