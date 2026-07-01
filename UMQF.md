@@ -120,6 +120,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 
 - Precision of Estimation: When assigning values to variables (e.g., ΔOS, VSA), use the most precise numerical value possible based on the evidence. The provided linear/logarithmic scale mappings (e.g., "≥ 0.10 Moderate") are for guidance and qualitative labeling only; do not default to these threshold values if a more specific number better represents reality.
 - Objective Measurement of Consent and Suffering: Behaviours like fleeing or resisting could indicate non-consent. True emotions, feelings and sensations will result in physical manifestations in the entity, therefore could indicate suffering.
+- Consent of Non-Cognitive Entities: Read consent from the entity's evolved or revealed strategy, not from declaration. Accepting a benefit an entity offers while withholding the reciprocal it evolved to receive is defection (high Vc), not exchange (low Vc); an active deterrent the entity produced (toxin, thorn, alarm) is objective evidence of non-consent to the deterred act.
 - For temporary harm (e.g., imprisonment), set `Tc` to the duration fraction (e.g., 0.10) and `ΔOS` to the intensity (e.g., -1.0 for total suppression), rather than pre-scaling ΔOS.
 - Cultural variables: Excluded due to their inherent subjectivity, which could compromise the formula's objectivity and universal applicability.
 - Self-awareness: Chosen over intelligence to normalize the assessment across entities with varied cognitive abilities, ensuring a more equitable and universally applicable standard.
@@ -841,20 +842,24 @@ Sarah - dropping - Fertilized egg: Total UMQ = -0.0001 [Negligibly immoral] {Des
 
 - VSA = 0.0001: minimal non-zero placeholder reflecting very low latent complexity of a plant seed.
 - ΔSc = 0.00: seeds have no mechanism for registering pain or distress.
-- Vc = 1.00: neither the seeds nor the parent apple tree has cognitive capacity; in the absence of affirmative consent anywhere in the lineage, destruction defaults to full violation of the biological drive to propagate.
+- Vc = 0.70: the fruit is the tree's evolved dispersal offer — flesh traded for seed transport. Assuming the default outcome (digested seeds do not disperse), Daniel accepts the flesh-payment but withholds the reciprocal and overrides the seeds' amygdalin (cyanide) deterrent, a defection on the exchange. Not a full 1.00, because the tree's strategy already prices in losing a fraction of seeds as the cost of the dispersal gamble.
 
 ### 1 Apple seeds (5) – potential trees destroyed
 
-Context: Daniel ate an apple, digesting the flesh and destroying the five seeds within.
+Context: Daniel ate an apple, accepting the flesh the tree offers as payment for seed dispersal, but digested and destroyed all five seeds within. Assuming the default ending (digested seeds do not disperse), the reciprocal is withheld and the seeds' amygdalin deterrent overridden, so the act reads as defection on a mutualistic exchange rather than a clean consensual one.
 
 - ΔOS = −1.00 (loss of all seeds’ future survival)
 - VSA = 0.0001 (very low, early-life plant)  
 - Tc = 1.00  
-- Vc = 1.00  
+- Vc = 0.70 (defection: flesh-payment taken, dispersal withheld)  
 - ΔSc = 0.00  
 
-UMQ_base(a,e) = −1 × 0.0001 × 1 × 2 × 1
-= **−0.0002**
+sign(ΔOS) = −1
+[1 − (−1) × Vc] = 1 + 0.70 = 1.70
+[1 − (−1) × ΔSc] = 1.00
+
+UMQ_base(a,e) = −1 × 0.0001 × 1 × 1.70 × 1
+= **−0.00017**
 
 **Responsibility & Intention:**
 
@@ -866,17 +871,17 @@ UMQ_base(a,e) = −1 × 0.0001 × 1 × 2 × 1
 - Rp = 1.0
 - In = 0.5 (Foreseeable side-effect of eating)
 
-UMQ_final(a,e) = −0.0002 × 1.0 × 0.5 = **−0.0001**
+UMQ_final(a,e) = −0.00017 × 1.0 × 0.5 = **−0.000085**
 
-Total for 5 seeds = 5 × −0.0001 = **−0.0005 (Negligibly immoral)**
+Total for 5 seeds = 5 × −0.000085 = **−0.000425 (Negligibly immoral)**
 
 ### Aggregate results (pre-CF)
 
-- Apple seeds: −0.0005
+- Apple seeds: −0.000425
 
 ### Complexity Factor adjustment
 
-CF = 1.00. Adjusted Total UMQ = −0.0005
+CF = 1.00. Adjusted Total UMQ = −0.000425
 
 Optional actor (self) impact (not included in totals):
 
@@ -887,7 +892,7 @@ In other words, Daniel performs a normal self-maintenance action that very sligh
 
 ### Summary headline
 
-Daniel - eating - Apple seeds: Total UMQ = -0.0005 [Negligibly immoral] {Predatory}
+Daniel - eating - Apple seeds: Total UMQ = -0.000425 [Negligibly immoral] {Predatory}
 
 ## Case: 7. Robin - stealing bread - Family & Baker
 
@@ -1173,7 +1178,7 @@ Orion - relocating population - 2 B humans: Total UMQ = +526,176,000 [Megastroph
 4. **Emily - negligence - Chicken:** -0.065 [Moderately immoral] {Destructive}<br />
    Emily forgot to lock the coop, allowing a fox to kill a chicken.
 5. **Sarah - dropping - Fertilized egg:** -0.0001 [Negligibly immoral] {Destructive}
-6. **Daniel - eating - Apple seeds:** -0.0005 [Negligibly immoral] {Predatory}
+6. **Daniel - eating - Apple seeds:** -0.000425 [Negligibly immoral] {Predatory}
 7. **Robin - stealing bread - Family & Baker:** +0.0053 [Slightly moral] {Synergistic}<br />
    Robin stole a loaf of bread to feed his starving family.
 8. **Human operator - shutting down - AIVA:** -3.168 [Extremely immoral] {Destructive}<br />
