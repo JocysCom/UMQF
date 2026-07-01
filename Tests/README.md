@@ -27,7 +27,8 @@ Append an object to `cases.json`:
       "expected": {"umq_final": .., "tolerance": 0.02, "label": "..", "reasoning": ".."}
     }
 
-`dSc` (ΔSc) is the increase in suffering the action causes, on `[0, 1]`.
+`dSc` (ΔSc) is the signed change in suffering the action causes, on `[−Sc, 1−Sc]`
+(negative = relief of existing suffering; the module clamps to `[−1, 1]`).
 
 ## Scope
 

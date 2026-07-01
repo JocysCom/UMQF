@@ -67,7 +67,7 @@ Moral Score = \sum \left( \text{Survival Delta} \times \text{Awareness} \times \
 | **VSA** | **Value of Self-Awareness** | Scales impact by cognitive depth. Killing a fly < Killing a human. |
 | **Tc** | **Time Coefficient** | Duration of impact. Permanent harm > Temporary pain. |
 | **Vc** | **Violation of Consent** | Did the entity agree? Violation flips positive acts to neutral/negative. |
-| **ΔSc** | **Suffering Coefficient (delta)** | Increase in suffering the action causes. More suffering makes a bad act worse. |
+| **ΔSc** | **Suffering Coefficient (delta)** | Signed change in suffering the action causes. Inflicted suffering makes a bad act worse; relieving suffering amplifies good acts and neutralizes consensual endings. |
 | **Rp** | **Responsibility** | Did the actor pull the trigger, or just watch? |
 | **In** | **Intention** | Was it calculated or accidental? |
 
@@ -225,10 +225,10 @@ Think very hard — your and my future survival depends on it.
 - **Evil**: Negative Score (Total magnitude of negative impact)
 
 ### Moral Score
-- UMQ(a, e) range per individual entity is -4.0 to +1.0. Total UMQ(a) scales with population and is unbounded.
+- UMQ(a, e) range per individual entity is -4.0 to +2.0. Total UMQ(a) scales with population and is unbounded.
 
   - Min: –4.0 – equivalent to murdering a fully self‐aware, complex entity, causing intense suffering and violating its will.
-  - Max: +1.0 – equivalent to creating or saving a life in a fully consensual act that maximizes survival.
+  - Max: +2.0 – equivalent to saving a life in a fully consensual act while fully relieving suffering that had made survival worthless to the entity.
 
 ### The King James Version of the Bible (Book)
 

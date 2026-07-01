@@ -7,9 +7,10 @@ mirrors it so edge cases can be checked numerically. Keep it in sync with UMQF.m
     UMQ_base(a,e) = ΔOS·VSA·Tc·(1 − sign(ΔOS)·Vc)·(1 − sign(ΔOS)·ΔSc)
     UMQ_final     = UMQ_base · Rp · In
 
-ΔSc is the increase in suffering the action causes the entity, on a [0, 1] scale
-(0 = no increase; 1 = full suffering). It cannot exceed 1 minus the entity's
-existing suffering, so callers pass a value already within [0, 1].
+ΔSc is the change in suffering the action causes the entity, on a signed scale:
+−Sc(e) (all existing suffering relieved) to 1 − Sc(e) (suffering raised to
+maximum). Callers pass a value already within the entity's [−Sc, 1−Sc] bounds,
+so this module only clamps to the absolute [−1, 1] envelope.
 """
 
 
@@ -18,8 +19,8 @@ def sign(x):
 
 
 def umq_base(dOS, VSA, Tc, Vc, dSc):
-    """Per-entity UMQ_base. dSc (ΔSc) is the suffering increase, on [0, 1]."""
-    dSc = min(1.0, max(0.0, dSc))            # ΔSc ranges [0, 1]
+    """Per-entity UMQ_base. dSc (ΔSc) is the signed suffering change, on [−1, 1]."""
+    dSc = min(1.0, max(-1.0, dSc))           # ΔSc envelope [−1, 1]; caller enforces [−Sc, 1−Sc]
     s = sign(dOS)
     return dOS * VSA * Tc * (1.0 - s * Vc) * (1.0 - s * dSc)
 

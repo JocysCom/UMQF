@@ -4,10 +4,10 @@ The Universal Moral Quotient (UMQ) Formula objectively quantifies the morality o
 
 ## Output Range
 
-UMQ(a, e) range per individual entity is -4.0 to +1.0. Total UMQ(a) scales with population and is unbounded.
+UMQ(a, e) range per individual entity is -4.0 to +2.0. Total UMQ(a) scales with population and is unbounded.
 
 - Min: –4.0 – equivalent to murdering a fully self‐aware, complex entity, causing intense suffering and violating its will.
-- Max: +1.0 – equivalent to creating or saving a life in a fully consensual act that maximizes survival.
+- Max: +2.0 – equivalent to saving a life in a fully consensual act while fully relieving suffering that had made survival worthless to the entity.
 
 ## Definitions
 
@@ -44,7 +44,7 @@ The actor’s own survival-impact is scored separately using the same formula (e
 Estimate economic or property changes in normalized Global Currency Units (GCU) using the variable `Av(e)`, then convert them into a survival-odds component:
 
 1. Determine the entity’s Baseline Lifetime Resource Requirement `BLRR(e)` in GCU (for an average human BLRR ≈ 1 GCU).
-2. Compute the Relative Resource Shock: `RRS = Av(e) / BLRR(e)`.
+2. Compute the Relative Resource Shock against the entity’s survival buffer: `RRS = Av(e) / max(BLRR(e), remaining lifetime resources of e)` — the same loss shifts survival odds less for a resource-rich entity.
 3. Clamp this value to the interval [−1, +1]: `ΔOSresource = max(-1, min(1, RRS))`.
 4. Add `ΔOSresource` to any other survival effects (injury, social harm, etc.) to obtain the final `ΔOS(e)` inserted into the UMQ formula.
 
@@ -81,7 +81,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
   - ≥ 0.80  Long-term
   - = 1.00  Permanent
 
-- `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU approximates the lifetime resource throughput of an average human (production ≈ consumption in a steady-state economy); see `BLRR` in Resource-to-ΔOS conversion. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.* Linear scale mapping:
+- `Av(e)` - Action value, impact on entity (e) in terms of economic value, quantified in normalized Global Currency Units (GCU), where 1 GCU approximates the lifetime resource throughput of an average human (production ≈ consumption in a steady-state economy); see `BLRR` in Resource-to-ΔOS conversion. Can be positive or negative. *Used only to derive ΔOSresource; do not plug Av directly into the UMQ equation.* Logarithmic scale mapping:
 
   - ≥ 0.0001  Trivial
   - ≥ 0.01    Small
@@ -108,7 +108,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
   - ≥ 0.50  Agony
   - ≥ 0.80  Torture
   
-- `ΔSc(e)` - Suffering coefficient delta - the increase in suffering that action (a) causes entity (e). Because it is an increase, it cannot exceed 1 minus the entity's existing suffering (`Sc(e)`). Its application is conditional on `ΔOS(e)`. Full suffering neutralizes moral value if ΔOS(e) is positive and doubles negative moral value if ΔOS(e) is negative. `ΔSc` combined with `Vc`, can quadruple negative impact.
+- `ΔSc(e)` - Suffering coefficient delta - the change in suffering that action (a) causes entity (e), ranging from −Sc(e) (all existing suffering relieved) to 1 − Sc(e) (suffering raised to maximum). Its application is conditional on `ΔOS(e)`. Inflicted suffering neutralizes positive and doubles negative moral value; relieved suffering mirrors this, doubling positive and neutralizing negative moral value — at Sc = 1 continued survival is already worthless to the entity (per the `Sc` definition), so a fully consensual termination that ends maximal suffering scores near 0, while `Vc` still doubles any non-consensual remainder. `ΔSc` combined with `Vc` can quadruple negative impact.
 
 - `Rp` - Responsibility Coefficient, scaling moral weight based on Action Type, Causal Proximity, and Replaceability. (See "Action & Responsibility Logic").
 
@@ -173,6 +173,8 @@ Actions are categorized by execution method and trigger directness.
   - ≥ 0.10  Distant (2+ steps; the action is separated by multiple independent events or decisions).
   - ≥ 0.50  Consequent (1 step; the action triggers a predictable chain).
   - = 1.00  Immediate (0 steps; the action directly causes the result).
+
+  Count only independent decisions as steps: an agent acting under the actor's contract, command, or coercion is a secured instrument (Cp = 1.00). Indirection is already priced by `At`; discounting it again in `Cp` would make outsourced harm cheaper than direct harm.
 
 - **`Ri` (Replaceability):** Probability the outcome would occur without this specific entity. Linear scale mapping:
 
@@ -326,9 +328,9 @@ A value may be *any real number from 0 up to the stated cut-off*.
    **Example:**
    Suppose uncertain if VSA should be 0.5 or 0.6. Record: “VSA: 0.5-0.6 (Confidence: Medium).” For calculation, use 0.55. If subsequent analysis or consensus improves, later evaluations might fix VSA at 0.55 (High Confidence) or select a narrower range.
 
-3. **Optional qualitative label thresholds (per-entity):**
+3. **Optional qualitative label thresholds:**
 
-   Use the absolute value |UMQ(a,e)| and these thresholds for consistency. Logarithmic scale mapping:
+   Use the absolute value |UMQ(a,e)| (or |UMQ(a)| for aggregates) and these thresholds for consistency. Logarithmic scale mapping:
 
      - ≥ 0          Negligible
      - ≥ 0.005      Slight
@@ -339,8 +341,6 @@ A value may be *any real number from 0 up to the stated cut-off*.
      - ≥ 5×10⁶      Megastrophic
      - ≥ 5×10⁹      Gigastrophic
      - ≥ 5×10¹²     Terastrophic
-
-   For aggregate scores UMQ(a) over large populations, qualitative labels should be interpreted relative to population size and context.
 
 4. **Moral Efficiency & Fidelity Labels:**
 
@@ -694,31 +694,31 @@ UMQ_base(a,e) = −1.00 × 0.58 × 1 × 2.0 × 2.0 = **−2.32**
 - PerceivedContext = Real
 - ActualContext = Real
 - At = 0.9 (Passive - authoritative command)
-- Cp = 0.5 (Consequent)
+- Cp = 1.0 (Immediate - the contracted hitman is a secured instrument, not an independent step)
 - Ri = 1.0 (Unique - initiated the contract)
-- Rp = 0.9 × 0.5 × 1.0 = **0.45**
+- Rp = 0.9 × 1.0 × 1.0 = **0.9**
 - In = 1.0 (Intended)
 
-UMQ_final(a,e) = −2.32 × 0.45 × 1.0 = **−1.044 (Extremely immoral)**
+UMQ_final(a,e) = −2.32 × 0.9 × 1.0 = **−2.088 (Extremely immoral)**
 
 ### Aggregate results (pre-CF)
 
-- Mark: −1.044
+- Mark: −2.088
 
 ### Complexity Factor adjustment
 
-CF = 1.00. Adjusted Total UMQ = −1.044
+CF = 1.00. Adjusted Total UMQ = −2.088
 
 ### Actor (self) impact
 
 - UMQ_expected(a, Alex) ≈ +0.03 (perceived benefit from removing Mark).
 - UMQ_realised(a, Alex) ≈ −0.90 (severe legal consequences).
 
-In other words, Alex's indirect method reduces his responsibility coefficient compared to direct action, but the high base immorality of the act still results in a highly immoral score.
+In other words, hiring a hitman barely shields Alex: the contracted killer is a secured instrument, not an independent causal step, so Alex retains near-full responsibility for the murder.
 
 ### Summary headline
 
-Alex - hiring hitman - Mark: Total UMQ = -1.044 [Extremely immoral] {Destructive}
+Alex - hiring hitman - Mark: Total UMQ = -2.088 [Extremely immoral] {Destructive}
 
 ## Case: 4. Emily - negligence - Chicken
 
@@ -1174,7 +1174,7 @@ Orion - relocating population - 2 B humans: Total UMQ = +526,176,000 [Megastroph
 1. **Steve - stealing - Farmer & dependents:** -0.2973 [Moderately immoral] {Destructive}<br />
    In 1780, Steve stole the only horse of a poor farmer who had five children; Steve was caught and sentenced to two years in jail.
 2. **John - child rearing - Michael:** +0.313 [Moderately moral] {Synergistic}
-3. **Alex - hiring hitman - Mark:** -1.044 [Extremely immoral] {Destructive}
+3. **Alex - hiring hitman - Mark:** -2.088 [Extremely immoral] {Destructive}
 4. **Emily - negligence - Chicken:** -0.065 [Moderately immoral] {Destructive}<br />
    Emily forgot to lock the coop, allowing a fox to kill a chicken.
 5. **Sarah - dropping - Fertilized egg:** -0.0001 [Negligibly immoral] {Destructive}
