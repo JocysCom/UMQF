@@ -153,7 +153,7 @@ Actions are categorized by execution method and trigger directness.
 1. **Active (`At`=1.0):** Direct physical execution by the entity's own form (e.g., Entity A strikes Entity B with its limb).
 2. **Instrumental Active (`At`=1.0):** Direct execution via a tool or mechanism controlled by the entity (e.g., Entity A presses a button to release a projectile).
 3. **Passive (`At`=0.8-1.0):** Indirect execution via a direct, authoritative signal to another agent (e.g., Entity A transmits a command code to Entity B to execute an action).
-4. **Instrumental Passive (`At`=0.1-0.8):** Indirect execution via influence, information sharing, or enabling conditions (e.g., Entity A publishes data that Entity B later uses to build a device).
+4. **Instrumental Passive (`At`=0.1-0.79):** Indirect execution via influence, information sharing, or enabling conditions (e.g., Entity A publishes data that Entity B later uses to build a device).
 
 ### 3. Responsibility Coefficient (`Rp`)
 
