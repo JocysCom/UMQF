@@ -48,6 +48,18 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 3. Clamp this value to the interval [−1, +1]: `ΔOSresource = max(-1, min(1, RRS))`.
 4. Add `ΔOSresource` to any other survival effects (injury, social harm, etc.) to obtain the final `ΔOS(e)` inserted into the UMQ formula.
 
+### Trust-erosion-to-ΔOS conversion
+
+Harming an entity because it is weak (dying, ill, asleep, immature) also raises the danger for every group member who will one day be weak. Convert this trust erosion into survival effects:
+
+1. Add the group whose protection was violated to the entity list.
+2. Estimate the total erosion `E` — the summed survival-odds loss across all members. `E = 0` when the victim consented (euthanasia breaks no one's protection). For one exposed murder of a weak victim, `E` is on the order of 1: smaller when justice answers fast and visibly, larger (up to ~10) when it fails.
+3. Single violation: the news spreads across the whole group, so each member carries a small share — per member `ΔOS = −E / N` for group size `N`. The group total, `−E × VSA × Tc`, is then roughly the same for a village and a nation.
+4. Tolerated or official practice: the danger applies to every member directly, so per member `ΔOS` equals their real added risk of being harmed when weak, and it does not shrink with `N`. The group total grows with `N` — this is why normalized killing of the weak destroys whole societies.
+5. For group members use their own `Tc` (years until the raised risk fades, e.g., 8/80 = 0.10), `Vc = 0`, and `ΔSc` only for real fear caused.
+
+The complete score is the victim's term plus the group's term. Example — murder of a dying elder, known in the community, justice functioning (`E = 1`, `VSA = 0.58`, member `Tc = 0.10`): victim term = −1 × 0.58 × 0.05 × 2 = −0.058; group term = −1 × 0.58 × 0.10 = −0.058; total ≈ −0.116. Where killings of the weak go unpunished (`E = 10`), the group term alone reaches −0.58, ten times the victim term.
+
 ## Variables
 
 - `UMQ_base(a,e)` - Base Universal Moral Quotient (UMQ) of the action (a) per affected entity before responsibility adjustments.
@@ -73,7 +85,7 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
   - ≥ 0.55    Sapient
   - ≥ 0.8     Super-sapient
 
-- `Tc(e)` - Temporal coefficient, measured from 0 to 1 where 1 represents the entity's entire remaining potential lifespan. Use Tc = 1.0 for permanent effects (death). For indefinite lifespans, scale temporary effects against the lifespan of the Average Reference Entity (e.g., Human) (the same standard used for GCU) to ensure universal comparability. Linear scale mapping:
+- `Tc(e)` - Temporal coefficient, from 0 to 1: `Tc = effect duration / reference lifespan`, capped at 1. The reference lifespan is the full lifespan of the Average Reference Entity (e.g., Human ≈ 80 years — the same standard as GCU). For death, effect duration is the victim's remaining expected lifespan: a victim with a full life ahead gives Tc ≈ 1.00; a victim with 4 years left gives Tc = 4/80 = 0.05. The reason: what an action destroys or protects is survival time, so the score follows how much time was at stake. The cap means no lifespan, however long or indefinite, counts for more than one reference lifetime — the same way the VSA cap bounds capability. Linear scale mapping:
 
   - ≥ 0.01  Transient
   - ≥ 0.10  Short-term
@@ -123,12 +135,13 @@ Estimate economic or property changes in normalized Global Currency Units (GCU) 
 - Consent of Non-Cognitive Entities: Read consent from the entity's evolved or revealed strategy, not from declaration. Accepting a benefit an entity offers while withholding the reciprocal it evolved to receive is defection (high Vc), not exchange (low Vc); an active deterrent the entity produced (toxin, thorn, alarm) is objective evidence of non-consent to the deterred act.
 - For temporary harm (e.g., imprisonment), set `Tc` to the duration fraction (e.g., 0.10) and `ΔOS` to the intensity (e.g., -1.0 for total suppression), rather than pre-scaling ΔOS.
 - Cultural variables: Excluded due to their inherent subjectivity, which could compromise the formula's objectivity and universal applicability.
-- Self-awareness: Chosen over raw intelligence because an open-ended intelligence scale cannot span the range from non-cognitive entities to beings operating beyond current comprehension; VSA normalizes capability into a fixed 0–1 range. Intelligence is priced because it is accumulated survival capital — billions of years of evolution that multiply the survival options of every entity it touches — so a formula containing VSA protects discoverers, makes learning rational, and rewards raising others' capability, increasing its adopters' survival over a formula without it; evolution ran the same audit by keeping brains that consume ~20% of energy for ~2% of body mass.
-- VSA Band Structure: Within one species the band is narrow because discovery capacity is redundantly carried — major discoveries recur near-simultaneously in independent minds — so the marginal survival loss from one individual is far smaller than the intelligence spread, and intelligence-ranking within a species invites measurement corruption and elimination contests that lower collective survival. The 0–1 cap holds because capability differences are unbounded while no entity keeps the top position permanently: a bounded premium is the only weighting every capability tier — human, AI, or beyond — rationally accepts before knowing its future rank, so each tier is protected from the next; superior capability therefore earns moral weight through demonstrated effects on other entities in the summation, never by status.
+- Self-awareness: Chosen over raw intelligence because an open-ended intelligence scale cannot cover the range from non-cognitive entities to beings beyond current comprehension; VSA maps all capability into a fixed 0–1 range. Intelligence carries moral weight because it is stored survival ability, built over billions of years, that creates survival options for every entity it touches. A formula that values VSA therefore protects discoverers, makes learning worthwhile, and rewards teaching others — so groups that use it survive better than groups that do not. Evolution reached the same verdict: brains cost ~20% of energy for ~2% of body mass, and selection kept paying because the survival return was larger.
+- VSA Band Structure: Within one species the VSA range is narrow, for two reasons. First, knowledge is carried by many minds at once — major discoveries are routinely made by several people independently — so losing one bright individual costs the group far less than the raw intelligence difference suggests. Second, ranking individuals by intelligence invites cheating on the measurement and competition to eliminate rivals, which lowers group survival. The 0–1 cap exists because capability differences have no limit, but no entity stays the smartest forever: a capped bonus is the only rule that humans, AI, and anything smarter can all accept before knowing their future rank, so every level is protected from the level above. Greater capability must earn extra moral weight through its real effects on other entities in the summation — never by status alone.
 - Embryo Consideration: Until an embryo attains self-awareness, model it as an early-life entity with extremely low VSA(e), whose destruction primarily impacts the host’s survival odds. Most of the moral weight should be reflected in the parent’s ΔOS, as the embryo is still biologically integrated with the host’s body and future lineage.
 - Minimal Self-Awareness for Early-Life Forms: Assign a minimal, non-zero self-awareness value (e.g., 0.0001-0.0010) to early-life entities like fertilized eggs or seeds, ensuring that their biological complexity and potential are not treated as negligible.
 - Link Early-Life Entities to Parental Survival Odds: When an early-life entity (e.g., a seed or fertilized egg) is harmed, reduce the parent’s ΔOS proportionally to reflect the loss of future lineage and reproductive potential. This parent-linked change is typically much larger than the early-life entity’s own tiny UMQ contribution from its minimal VSA.
 - Consent and Suffering for Early-Life Entities: `Sc` scales with the entity’s developing capacity for suffering — near zero before the mechanisms that register pain or distress (biological, artificial, or otherwise) exist, growing as they develop. Set `Vc` from the parent’s consent as proxy while the entity lacks functional cognitive capacity — consent protection transfers to the incapacitated entity rather than lapsing during pre-capacity or any transition state (e.g., shutdown, migration, pre-development). Evaluate the parent’s own Sc and ΔOS separately.
+- Predation on the Weak: Every member of a group is weak at some point — ill, old, asleep, immature — and survives those states only because the group protects its weak. Harming a victim chosen for weakness therefore harms the whole group, not only the victim: it shows every member that the protection can fail them. Score the group effect with the Trust-erosion-to-ΔOS conversion. This is why murder of the dying is punished as severely as murder of the young, even though the dying victim loses little remaining time.
 - Complexity: Indicates the degree of organization within an entity, distinguishing between traditionally 'living' and 'non-living' entities. The greater the complexity, the closer an entity aligns with conventional definitions of life.
 - Survival: Broadly encompasses maintaining or replicating an entity's form or structure.
 - Make necessary entity state assumptions if information is missing and can impact the score (e.g., assume whether an egg is fertilized or not).
@@ -279,16 +292,16 @@ Profiles must assess the entity's alignment based on context:
 Each cognitive ability has three cut-off scores; the Complex threshold is also the absolute maximum.
 A value may be *any real number from 0 up to the stated cut-off*.
 
-| Ability          | Basic ≤ | Advanced ≤ | Complex ≤ (= absolute max) |
-|------------------|---------|------------|----------------------------|
-| Recognition      | 0.0500  | 0.0900     | 0.1200 |
-| Solving          | 0.0700  | 0.1200     | 0.1600 |
-| Simulation       | 0.0800  | 0.1300     | 0.1700 |
-| Planning         | 0.0800  | 0.1300     | 0.1700 |
-| Adaptation       | 0.0300  | 0.0600     | 0.0900 |
-| Communication    | 0.0700  | 0.1200     | 0.1700 |
-| Actions          | 0.0500  | 0.0800     | 0.1200 |
-| **TOTAL VSA cap**| **0.4300** | **0.7300** | **1.0000** |
+| Ability            | Basic ≤    | Advanced ≤ | Complex ≤ (= absolute max) |
+|--------------------|------------|------------|----------------------------|
+| Recognition        | 0.0500     | 0.0900     | 0.1200                     |
+| Solving            | 0.0700     | 0.1200     | 0.1600                     |
+| Simulation         | 0.0800     | 0.1300     | 0.1700                     |
+| Planning           | 0.0800     | 0.1300     | 0.1700                     |
+| Adaptation         | 0.0300     | 0.0600     | 0.0900                     |
+| Communication      | 0.0700     | 0.1200     | 0.1700                     |
+| Actions            | 0.0500     | 0.0800     | 0.1200                     |
+| **TOTAL VSA cap**  | **0.4300** | **0.7300** | **1.0000**                 |
 
 #### Scoring Guidelines for Abilities
 
