@@ -2,7 +2,7 @@
 
 **A standardized mathematical framework for objectively quantifying morality based on survival probability.**
 
-> "Ethics is no longer a philosophical debate. It is an engineering problem."
+> "The finite set of rules that hold for every entity and maximize the overall odds of survival is the Objective Morality."
 
 ## 🚀 Why This Matters
 
